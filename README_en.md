@@ -9,6 +9,10 @@
 [![Rows](https://img.shields.io/badge/Rows-31-informational)](data/registry.csv)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--10--10-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
+<p align="left">
+  <img src="./assets/ogp_design.png" width="80%">
+</p>
+
 *他の言語で読む: [日本語](README.md)*
 
 ---
