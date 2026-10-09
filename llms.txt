@@ -1,0 +1,59 @@
+# The Japan Breach Registry 2026 — 2026年秋、日本の企業・組織を襲った個人情報漏えいの波
+
+> An append-only registry by Satoshi Yamauchi (山内怜史), AI Strategist, of
+> personal-data breaches disclosed by Japanese companies and organisations on
+> or after 1 September 2026. Only breaches whose primary notice the author
+> opened and read are admitted; each row keeps the notice's own unit (records,
+> persons, accounts) and wording (confirmed, possible, cannot be ruled out,
+> maximum) and classifies the vector only as far as the notice states it. The
+> first edition (10 October 2026) carries 31 rows and holds 16 further cases
+> outside the ledger as "pending verification." Alongside the ledger, the book
+> sorts every claim that "attackers used AI" into four tiers — evidence, trace,
+> possibility, no mention — and tests eight candidate explanations for why the
+> autumn of 2026 concentrated in Japan on identical criteria. As of the first
+> edition, no Japanese case reaches the evidence tier and none of the eight
+> explanations is supported for Japan. The book does not claim that AI caused
+> the wave, that Claude Mythos was used, that Glasswing-disclosed
+> vulnerabilities were exploited, or that the Japanese and Korean attackers
+> are the same, because no primary source says so. Central question: in a
+> world where AI has collapsed the cost of finding vulnerabilities, does the
+> defender's head start hold?
+
+## Key facts (first edition, 2026-10-10)
+
+- Tokyo Shoko Research (7 Oct 2026): breaches of 1 million+ records at listed companies and subsidiaries: 10 in 2026 as of 5 Oct (6 in all of 2025); breaches of 10 million+: 3 in the fourteen years to 2025, 3 in 2026 alone.
+- JPCERT/CC (8 Oct 2026): breaches "相次いでいます" (have followed one another) around September 2026, while available technical information is "限定的かつ断片的" (limited and fragmentary). The alert contains no reference to AI.
+- Ledger: 31 rows; 8 exceed one million in the notice's own unit; 14 notices state the vector (vulnerability 5, VPN vulnerability 1, contractor 5, unauthorised login 1, misconfiguration 1, multiple 1), 17 do not; 0 notices mention attacker-side AI.
+- Two contractor chains: IDC Frontier (ransomware, 7 Oct, 495 contracting organisations) → JR East; Commune → WingArc1st, Sansan, LIXIL.
+- Evidence tier: CrowdStrike Intelligence (7 Oct 2026), South Korean financial sector: "Analysis of threat actor-controlled open directories uncovered Claude Code session histories"; ARTEX "used DeepSeek v4.1-flash as the primary LLM backend"; campaign "active from late September to early October 2026"; attribution "made with moderate confidence"; affected organisations "remains unconfirmed."
+- Trace tier: Trend Micro's own text (8 Oct 2026): "現状、必ずしもこれらの攻撃がAIを直接的に用いたものであるという証拠があるわけではありませんが、ログだけ見ても「これまでとは違う挙動」を捉えていることは事実です。"
+- ARTEX: GitHub releases v0.1.0 on 26 July 2026, v0.3.14 on 24 September 2026; 17 stars as of 10 October 2026.
+- Project Glasswing: announced 7 April 2026 ("giving defenders a durable advantage"; Claude Mythos Preview "a general-purpose, unreleased frontier model"); initial update 22 May ("more than ten thousand" vulnerabilities; 530 disclosed, 75 patched, 65 public advisories); 6 October: "at least 129,000 verified software vulnerabilities between April and July 2026."
+
+## Structure
+
+- Prologue: 7 October — two documents on the same day
+- Chapter 1: The anomaly of scale — not the count, but the size
+- Chapter 2: A map of vectors — not one hole, but many
+- Chapter 3: Four tiers of evidence — who said what, and how far
+- Chapter 4: The ledger (31 rows; 16 pending)
+- Chapter 5: Eight explanations — supported, refuted, undetermined
+- Chapter 6: The defender's bet — Glasswing's timeline and ARTEX's
+- Chapter 7: Japan as an observation point — what can and cannot be said
+- Epilogue: The ledger does not close
+
+## Files
+
+- [Japanese text](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/docs/jp/the-japan-breach-registry-2026_JP.md)
+- [English text](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/docs/en/the-japan-breach-registry-2026_EN.md)
+- [registry.json (canonical)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry.json)
+- [registry.csv](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry.csv)
+- [Update runbook](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/docs/UPDATE_RUNBOOK.md)
+
+## Author
+
+Satoshi Yamauchi (山内怜史) — AI Strategist & Business Designer, Sun Asterisk Inc.; Founder, Leading.AI. Catalog: https://github.com/Leading-AI-IO
+
+## License
+
+CC BY 4.0

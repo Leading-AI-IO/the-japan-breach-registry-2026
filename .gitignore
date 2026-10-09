@@ -1,0 +1,9 @@
+﻿# Private keys and revocation certificates must never be placed in this repository
+# (see docs/UPDATE_RUNBOOK.md, appendix B)
+backup-private-key.asc
+private-key.asc
+*.asc
+*.rev
+*.gpg
+*.key
+*.pgp
