@@ -1,5 +1,9 @@
 # The Japan Breach Registry 2026 — The Autumn Wave of Personal-Data Breaches at Japanese Companies and Organisations, Read from a Ledger of Primary Notices
 
+<p align="left">
+  <img src="../../assets/ogp_design.png" alt="The Japan Breach Registry 2026" width="80%">
+</p>
+
 **Author**: Satoshi Yamauchi (山内怜史), AI Strategist
 **First edition**: 10 October 2026
 **License**: CC BY 4.0
