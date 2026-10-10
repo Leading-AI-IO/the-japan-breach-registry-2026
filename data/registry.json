@@ -8,8 +8,8 @@
   "version": "1.0",
   "snapshot_date": "2026-10-10",
   "scope": {
-    "ja": "2026年9月1日以降に、日本に本社または主たる事業所を置く企業・団体・自治体・独立行政法人等が公表した、個人情報の漏えいまたは漏えいの可能性。著者が当事組織の一次公表文を自ら開いて確認した行だけを収載する。",
-    "en": "Personal-data breaches, or possible breaches, disclosed on or after 1 September 2026 by companies, agencies, municipalities and other organisations headquartered or principally operating in Japan. Only rows whose primary notice the author opened and read are admitted."
+    "ja": "2026年9月1日以降に、日本に本社または主たる事業所を置く企業・団体・自治体・独立行政法人等が公表した、個人情報の漏えいまたは漏えいの可能性。著者が当事組織の一次公表文を自ら開いて確認した行だけを収載する。\n\n（2026年10月11日追記）\n第2版以降に新たに収載する行は、外部からの不正アクセス（第三者による不正アクセス、不正ログイン、委託先・利用サービスへの不正アクセスを含む）による漏えいまたは漏えいの可能性に限る。誤送付、誤送信、紛失、誤掲載、設定の誤りによる閲覧可能状態など、外部からの不正アクセスを伴わない事案は収載しない。該当するかどうかは、公表文に外部からの不正アクセスの記述があるかで判定する。第1版で収載した013（ベネフィット・ワン、「プログラムの条件設定不備」）はこの基準に該当しないが、追記専用の規律に従い、第1版の行として残す。",
+    "en": "Personal-data breaches, or possible breaches, disclosed on or after 1 September 2026 by companies, agencies, municipalities and other organisations headquartered or principally operating in Japan. Only rows whose primary notice the author opened and read are admitted.\n\n(Added 11 October 2026)\nFrom the second edition onward, newly admitted rows are limited to breaches, or possible breaches, caused by external unauthorised access (including third-party intrusion, unauthorised login, and unauthorised access to a contractor or a service the organisation uses). Cases without external unauthorised access — misdelivery, mis-sent email, loss, erroneous publication, or data left viewable through a configuration error — are not admitted. Whether a case qualifies is decided by whether the notice itself describes external unauthorised access. Row 013 (Benefit One, 「プログラムの条件設定不備」, a program condition misconfiguration), admitted in the first edition, does not meet this criterion but stays as a first-edition row under the append-only rule."
   },
   "canonical": true,
   "note_on_canonicity": {
@@ -248,7 +248,7 @@
       "ai_mention": "なし",
       "primary_url": "https://corp.benefit-one.co.jp/company/news/news/2026/20260930/20260930.pdf",
       "retrieved": "2026-10-10",
-      "notes_ja": "不正アクセスではなく「プログラムの条件設定不備」。台帳で設定不備に分類した行の一つ"
+      "notes_ja": "不正アクセスではなく「プログラムの条件設定不備」。台帳で設定不備に分類した行の一つ\n（2026年10月11日追記）\n第2版以降の収載基準（外部からの不正アクセスに限る。scope参照）には該当しない。追記専用の規律に従い、第1版の行として残す。"
     },
     {
       "id": "014",

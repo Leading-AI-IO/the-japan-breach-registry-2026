@@ -351,6 +351,10 @@ This distribution does not mean AI was not used. It means that whether it was us
 ## How to read it
 
 - **Admission**: breaches, or possible breaches, disclosed on or after 1 September 2026 by companies, agencies, municipalities and other organisations headquartered or principally operating in Japan, whose primary notice the author opened and read. No lower bound on size.
+
+  (Added 11 October 2026)  
+  From the second edition onward, newly admitted rows are limited to breaches, or possible breaches, caused by external unauthorised access (including third-party intrusion, unauthorised login, and unauthorised access to a contractor or a service the organisation uses). Cases without external unauthorised access — misdelivery, mis-sent email, loss, erroneous publication, or data left viewable through a configuration error — are not admitted. Whether a case qualifies is decided by whether the notice itself describes external unauthorised access. Row 013 (Benefit One, 「プログラムの条件設定不備」, a program condition misconfiguration), admitted in the first edition, does not meet this criterion but stays as a first-edition row under the append-only rule.
+
 - **Scale**: the notice's own unit (records, persons, accounts). Never converted to persons.
 - **Status**: the notice's own wording (confirmed / possible / cannot be ruled out / maximum).
 - **Vector**: classified only as far as the notice states; otherwise "unauthorised access (vector not disclosed)."
