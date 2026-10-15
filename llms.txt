@@ -24,6 +24,7 @@
 - Tokyo Shoko Research (7 Oct 2026): breaches of 1 million+ records at listed companies and subsidiaries: 10 in 2026 as of 5 Oct (6 in all of 2025); breaches of 10 million+: 3 in the fourteen years to 2025, 3 in 2026 alone.
 - JPCERT/CC (8 Oct 2026): breaches "相次いでいます" (have followed one another) around September 2026, while available technical information is "限定的かつ断片的" (limited and fragmentary). The alert contains no reference to AI.
 - Ledger: 31 rows; 8 exceed one million in the notice's own unit; 14 notices state the vector (vulnerability 5, VPN vulnerability 1, contractor 5, unauthorised login 1, misconfiguration 1, multiple 1), 17 do not; 0 notices mention attacker-side AI.
+- (Added 16 October 2026) Ledger: 36 rows, 11 pending. Five pending cases admitted (032 Bookoff Group Holdings, 033 Daiwa Securities, 034 Sagawa Express, 035 Uzabase/NewsPicks, 036 White Essence). 10 rows exceed one million in the notice's own unit; 16 notices state the vector (vulnerability 6, VPN vulnerability 1, contractor 6, unauthorised login 1, misconfiguration 1, multiple 1), 20 do not; 0 notices mention attacker-side AI. A third contractor chain: Scala Communications (022) → Daiwa Securities (033). Follow-ups recorded as dated corrections: 018 GMO Research & AI confirmed 894,082 records taken out (first notice: up to 948,498); 019 Kufu confirmed 308 customers; 023 IDC Frontier judged no data exfiltration (5th notice, 14 Oct); 027 JR East received the contractor's report of no leak (15 Oct).
 - Two contractor chains: IDC Frontier (ransomware, 7 Oct, 495 contracting organisations) → JR East; Commune → WingArc1st, Sansan, LIXIL.
 - Evidence tier: CrowdStrike Intelligence (7 Oct 2026), South Korean financial sector: "Analysis of threat actor-controlled open directories uncovered Claude Code session histories"; ARTEX "used DeepSeek v4.1-flash as the primary LLM backend"; campaign "active from late September to early October 2026"; attribution "made with moderate confidence"; affected organisations "remains unconfirmed."
 - Trace tier: Trend Micro's own text (8 Oct 2026): "現状、必ずしもこれらの攻撃がAIを直接的に用いたものであるという証拠があるわけではありませんが、ログだけ見ても「これまでとは違う挙動」を捉えていることは事実です。"
@@ -36,7 +37,7 @@
 - Chapter 1: The anomaly of scale — not the count, but the size
 - Chapter 2: A map of vectors — not one hole, but many
 - Chapter 3: Four tiers of evidence — who said what, and how far
-- Chapter 4: The ledger (31 rows; 16 pending)
+- Chapter 4: The ledger (31 rows; 16 pending — 36 rows; 11 pending as of 2026-10-16)
 - Chapter 5: Eight explanations — supported, refuted, undetermined
 - Chapter 6: The defender's bet — Glasswing's timeline and ARTEX's
 - Chapter 7: Japan as an observation point — what can and cannot be said

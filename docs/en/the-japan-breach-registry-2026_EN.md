@@ -71,6 +71,9 @@ Three things.
 
 **First, a ledger.** Of the personal-data breaches disclosed by Japanese companies and organisations since 1 September 2026, only those whose primary notice the author opened and read, each recorded in the notice's own unit and wording. The first edition has 31 rows. Cases known only through the press are held outside the ledger as "pending verification."
 
+(Added 16 October 2026)  
+On 16 October 2026 five rows were added from the pending list; the ledger now has 36 rows. None of the five notices mentions attacker-side AI.
+
 **Second, tiers of evidence.** Every claim that "the attacker used AI" is sorted into four tiers — evidence, trace, possibility, no mention — with who said what, when, in the original language. As of the first edition, no Japanese case reaches the evidence tier.
 
 **Third, a test of explanations.** Why did large breaches concentrate in Japan in the autumn of 2026? Eight candidate explanations are tested on identical criteria and sorted into supported, refuted and undetermined. As of the first edition, most are undetermined. The book writes "undetermined."
@@ -151,6 +154,9 @@ Counting the ledger's rows (Chapter 4) that exceed one million in the notice's o
 
 Tokyo Shoko Research's "three" and the ledger's three rows above ten million (005, 028, 017) coincide. The populations differ: TSR counts listed companies and subsidiaries; the ledger counts every organisation whose primary notice could be read, including the Digital Agency and JOGMEC, which are not listed companies.
 
+(Added 16 October 2026)  
+Two of the five rows added on 16 October exceed one million in the notice's own unit: 032 Bookoff Group Holdings, 「最大 約 643 万件」 (up to approx. 6.43 million; a count of member numbers, which the notice says is 「対象となる方の実際の人数ではありません」, not the actual number of persons), and 036 White Essence, 「約105万アカウント」 (approx. 1.05 million accounts). Rows above one million in the ledger rose from 8 to 10. Rows above ten million remain 3.
+
 ## Units are not mixed
 
 This book does not convert records into persons, because the notices themselves refuse to.
@@ -197,6 +203,9 @@ Neither document refers to AI on the attacker's side. The word "AI" does not occ
 
 Of 31 rows, 14 notices state a vector. The other 17 say only "unauthorised access by a third party."
 
+(Added 16 October 2026)  
+With the five added rows, 16 of 36 rows state a vector and 20 do not. The two additions: 036 White Essence (vulnerability), 「弊社が運営する予約サイトのプログラムに存在した脆弱性を悪用され、これを起点として、弊社の基幹システムに不正アクセスされた」 (a vulnerability in the booking site's program was exploited and used as a foothold into the core system); 033 Daiwa Securities (contractor), 「SC 社のサーバーに対する不正アクセスにより、当社のお客様情報への不正アクセスおよび不正取得の形跡が確認された」 (unauthorised access to the contractor's server left traces of access to and acquisition of Daiwa's customer data). The three rows with no vector are 032 Bookoff, 034 Sagawa Express and 035 Uzabase. Row 032 writes 「脆弱性を是正し」 (remediated the vulnerability) as a response measure, not as the intrusion route, so it is classified as vector not disclosed.
+
 **Vulnerability (5)**
 
 - 005 Helpfeel: 「画像アップロードサーバーに存在した脆弱性を悪用し」「任意のコマンドを実行する不正アクセス」 *(exploited a vulnerability in the image-upload server; executed arbitrary commands)*
@@ -233,13 +242,22 @@ Two chains in the ledger spread from one origin to several organisations.
 
 **IDC Frontier**: a ransomware attack beginning around 03:40 on 7 October (023) → JR East (027). Press reports extend it to View Card and JR Kyushu, whose primary notices could not be retrieved; they sit outside the ledger.
 
+(Added 16 October 2026)  
+In its fifth notice on 14 October, IDC Frontier wrote 「当社としては外部へのデータの流出はなかったと判断しています」 (we judge that no data was exfiltrated). In the same notice it wrote that in the IDCF Cloud Portal 「48社のお客さまの登録情報に対して不正な照会が行われたことを確認しました」 (unauthorised queries against the registration data of 48 customers were confirmed). On 15 October JR East added, at the top of the same PDF URL, that the mail-delivery service provider had reported 「えきねっと会員・大人の休日倶楽部会員の個人情報の漏えいがなかったと判断した」 (it judged that there had been no leak of Ekinet and Otona no Kyujitsu Club members' personal data). The figures 約167万件 and 約39万件 remain in the document. The origin (023) has judged "no exfiltration" and the downstream row (027) has received that report; both rows keep their first-notice values, with the correction recorded in the notes column.
+
 **Commune**: unauthorised access to Commune Inc.'s cloud service → WingArc1st (024), Sansan (030), LIXIL (031), each notified by the contractor around 6 October.
 
 Neither chain implies a single attacker. What they show is a structure: when one contractor falls, its clients disclose together. Part of the clustering of disclosure dates on 8–9 October comes from this structure.
 
+(Added 16 October 2026)  
+Adding 033 Daiwa Securities brings a third chain into the ledger. **Scala Communications**: unauthorised login to the i-ask FAQ system (022) → Daiwa Securities (033). Row 022's notice says only 「最大５社」 (up to five client companies) without naming them; 033's notice names the contractor as 「株式会社スカラコミュニケーションズ」. The access windows overlap: row 022 records 2026-10-02 around 20:30 to 10-03 around 08:00, and 033's notice gives 「10 月 2 日 20 時 33 分頃から 10 月 3 日 8 時 1 分頃までの間」 (around 20:33 on 2 October to around 08:01 on 3 October, per the contractor).
+
 ## Rows with no vector
 
 Seventeen rows state none. Times Mobility (6.6 million accounts), Monogatari (10.79 million), Lawson (2.16 million), Seicomart (570,000 accounts), Dai-ichi Life (120,000). Many of the largest rows are here.
+
+(Added 16 October 2026)  
+Of the five added rows, 032 Bookoff (up to approx. 6.43 million), 034 Sagawa Express (count under investigation) and 035 Uzabase (no count stated) state no vector. Rows with no vector are now 20.
 
 "Cause under investigation." That is the honest state of the notice. The book records it as "not disclosed" and does not fill it.
 
@@ -320,6 +338,9 @@ Korean press reported KEPCO describing its own incident as 「최근 인공지�
 
 None of the 31 notices in the ledger refers to AI on the attacker's side. "AI" appears in GMO Research & AI's company name, in WingArc1st's product name "dejiren AI," and in Helpfeel's service description — none a reference to attack technique.
 
+(Added 16 October 2026)  
+The notices for the five rows added on 16 October (032–036) also contain no reference to attacker-side AI. All 36 rows remain in Tier 4.
+
 JPCERT/CC's 8 October alert contains no "AI."
 
 **Tokyo Shoko Research (7 October 2026)** writes 「AI普及で、より強固な対策が必要なのは当然だが」 *(with AI spreading, stronger measures are of course needed)* — a generality, not a claim about any incident.
@@ -398,6 +419,19 @@ This distribution does not mean AI was not used. It means that whether it was us
 | 030 | 2026-10-09 | Sansan (Sansan User Forum community) | Confirmed "1,325 persons"; possible "8,687 persons" | Confirmed + possible | contractor / third-party service | none | [notice](https://jp.corp-sansan.com/news/2026/1009.html) |
 | 031 | 2026-10-09 | LIXIL (Sumai Hiroba and Nekokabe Hiroba communities) | Not stated (scope under investigation) | Possible leak | contractor / third-party service | none | [notice](https://www.lixil.co.jp/announce/notice-info-leak.htm) |
 
+(Added 16 October 2026)  
+For five of the pending cases, the author opened and read the primary notice on 16 October 2026 and admitted them as rows. The first-edition table of 31 rows stays as it is above; the added rows follow. The two tables together match the 36 rows in `data/registry.json`.
+
+### The five rows added on 16 October 2026
+
+| ID | Published | Organisation | Scale (as stated, original unit) | Status | Vector | AI mentioned | Primary source |
+|---|---|---|---|---|---|---|---|
+| 032 | 2026-10-09 | Bookoff Group Holdings (subsidiary's member-management system) | Member records possibly leaked "up to approx. 6.43 million" (note 1: the count of member numbers, "not the actual number of persons") | Exfiltration confirmed (count is a maximum of possible records) | unauthorised access (vector not disclosed) | none | [notice](https://ssl4.eir-parts.net/doc/9278/tdnet/2893077/00.pdf) |
+| 033 | 2026-10-05 | Daiwa Securities (via contractor Scala Communications) | Information on "approx. 110,000 customers" (name, email, account number, etc.); including enquiries without identifying information, "approx. 220,000 records" in total | Possible leak | contractor / third-party service | none | [notice](https://ssl4.eir-parts.net/doc/8601/tdnet/2891437/00.pdf) |
+| 034 | 2026-09-30 | Sagawa Express (parcel-enquiry service) | "The number and scope are under investigation" (as of the 2nd notice; not determined) | Possible exfiltration | unauthorised access (vector not disclosed) | none | [notice](https://www2.sagawa-exp.co.jp/information/detail/420/) |
+| 035 | 2026-10-08 | Uzabase (NewsPicks) | No count stated ("some of the customers who used NewsPicks services up to 8 October 2026") | Possible leak | unauthorised access (vector not disclosed) | none | [notice](https://corp.newspicks.com/info/20261008) |
+| 036 | 2026-10-05 | White Essence (booking site and core system) | "Persons affected: approx. 1.05 million accounts" (customers and related parties registered as of 5 August 2026; items vary by person) | Exfiltration found | vulnerability | none | [notice](https://www.whiteessence.co.jp/news/?action=detail&id=56&p=1) |
+
 ## Counting
 
 - Of 31 rows, 14 notices state the vector; 17 do not.
@@ -406,6 +440,29 @@ This distribution does not mean AI was not used. It means that whether it was us
 - Rows exceeding one million in the notice's own unit: 8 (005, 007, 017, 021, 025, 026, 027, 028).
 - Non-corporate organisations: 2 (002 Digital Agency, 015 JOGMEC).
 - Rows whose subjects are employees rather than customers: 3 (002, 016, part of 026).
+
+(Added 16 October 2026)  
+Follow-up notices the author confirmed between publication of the first edition and 16 October are listed below. Row values are unchanged; each row's notes column carries a dated addition or correction.
+
+| ID | Organisation | Follow-up date | Content (notice's own wording) |
+|---|---|---|---|
+| 001 | Charm | 2026-10-07 (4th notice) | Former members' data 「約2.5万件」 (approx. 25,000 records); 「大部分について漏えいを確認」 (leak confirmed for most), the rest 「漏えいのおそれ」 (possible leak) |
+| 008 | Nippon Rent-A-Car Service | 2026-10-01 (separate incident) | 「55名」 (55 members); 「第一事象報告に係る不正アクセスとは異なる手法」 (a different method from the first incident). Separate from this row's 41 |
+| 018 | GMO Research & AI | 2026-10-14 (2nd notice) | 「最大94万8,498件」 → 「外部に持ち出された件数は89万4,082件であることを確定」 (records taken out confirmed at 894,082). Correction |
+| 019 | Kufu Company | 2026-10-13 (investigation result) | 「少なくとも1名」 → 「対象となるお客さま：308名」 (308 customers); vector 「システムの一部の脆弱性」 (a vulnerability in part of the system). Correction |
+| 023 | IDC Frontier | 2026-10-14 (5th notice) | 「外部へのデータの流出はなかったと判断」 (judged no exfiltration); 「48社」 registration records subject to 「不正な照会」 (unauthorised queries) in the portal. Correction |
+| 027 | JR East | 2026-10-15 (same PDF updated) | Contractor reported 「漏えいがなかったと判断」 (judged no leak). Figures remain. Correction |
+| 028 | Adventure | 2026-10-13 | Phone contact window opened. No change in figures or vector |
+
+With the follow-ups included, notices mentioning attacker-side AI remain at 0. The two rows that reached a confirmed figure (018, 019) both moved below the first-notice maximum. The one row that judged "no exfiltration" (023) changed the status of one downstream row (027). For the other 24 rows, no notice update was confirmed by 16 October; not confirmed does not mean none exists.
+
+(Added 16 October 2026)  
+Counts after adding five rows:
+
+- Of 36 rows, 16 notices state the vector; 20 do not.
+- Vulnerability 6, VPN vulnerability 1, contractor 6, unauthorised login 1, misconfiguration 1, multiple 1.
+- Notices mentioning attacker-side AI: 0.
+- Rows exceeding one million in the notice's own unit: 10 (the first edition's 8 plus 032 and 036).
 
 ## Pending verification (outside the ledger)
 
@@ -432,6 +489,12 @@ Known through the press or secondary sources, but not admitted because the autho
 
 The pending list includes Bookoff (6.43 million), Murauchi.com (7.72 million) and View Card (4.03 million), which would rank near the top by size. The first-edition ledger is not the whole of the autumn of 2026; it is the part the author could reach in primary sources.
 
+(Added 16 October 2026)  
+On 16 October the author retried all 16. The result falls into three groups. The body of the primary notice was reached for nine: View Card, JR Kyushu, Nikkei Inc., Shueisha, Recruit (StudySapuri), Ticket Plus, Japan Atomic Energy Agency, Sakura Internet and Fines. Partial reach (heading and meta description only, a second notice published only as an image, or only the contractor's notice) for three: Uzabase, Daiwa Securities and White Essence. Still unreachable are three: Bookoff (TDnet PDF not retrievable; a second notice dated 13 October is confirmed in the listing), Sagawa Express (notice page requires JavaScript) and Murauchi.com (notice page returns an error). For SoftBank no notice of its own was found; only the subsidiary IDC Frontier's notices (023) exist, so no separate row can stand. Of the nine reached, Ticket Plus states 「不正アクセスおよびデータベースの改ざんは確認されておりません」 (no unauthorised access or database tampering confirmed) and does not meet the admission criterion added on 11 October (external unauthorised access). For the remaining eight and the three partial cases, the author will read the notice body and verify before deciding on admission in the second edition. This addition records reachability; it is not an admission decision.
+
+(Added 16 October 2026)  
+After recording the reachability above, the author opened and read the primary notices of five cases on the same day and admitted them as rows: Bookoff (032, TDnet disclosure of 9 October 2026), Daiwa Securities (033, 5 October 2026), Sagawa Express (034, second notice), Uzabase (035, first notice) and White Essence (036, 5 October 2026). Eleven cases remain pending. Bookoff's second notice, Sagawa Express's third and fourth notices and Uzabase's second notice have not yet been read by the author. For Murauchi.com, the summary page the author could read (updated 15 September 2026) states no count; it stays pending until the author reads the second notice that does.
+
 ---
 
 # Chapter 5: Eight explanations — supported, refuted, undetermined
@@ -443,6 +506,9 @@ Why did large breaches concentrate in Japan in the autumn of 2026? This chapter 
 **Would be observed**: traces of AI tools in notices or forensic reports.
 
 **Observed?** In Korea, yes (Chapter 3, Tier 1). In Japan, no: none of the 31 notices mentions attacker-side AI, and Trend Micro's own text says "not necessarily evidence."
+
+(Added 16 October 2026)  
+The notices of all 36 rows, including the five added, contain no description of attacker-side AI.
 
 **Verdict**: supported for Korea. Causation for the Japanese wave **undetermined**.
 
@@ -459,6 +525,9 @@ Why did large breaches concentrate in Japan in the autumn of 2026? This chapter 
 **Would be observed**: vectors skewed toward a particular weakness, at a higher rate than abroad.
 
 **Observed?** The ledger shows contractor 5, vulnerability 5, VPN 1, misconfiguration 1, unauthorised login 1 — no skew; 17 rows state no vector. No same-basis statistics for comparison abroad were obtained.
+
+(Added 16 October 2026)  
+Across 36 rows — contractor 6, vulnerability 6, VPN 1, misconfiguration 1, unauthorised login 1, multiple 1 — there is still no skew toward one weakness. Rows with no vector are now 20.
 
 **Verdict**: the existence of weaknesses is supported; their Japan-specificity is **undetermined**.
 
@@ -483,6 +552,9 @@ Why did large breaches concentrate in Japan in the autumn of 2026? This chapter 
 **Would be observed**: breach vectors matching CVEs found and disclosed by Glasswing.
 
 **Observed?** None of the 31 notices cites a CVE number. No primary source links a Glasswing-found vulnerability to a Japanese incident. Anthropic's initial update (22 May) reports 530 disclosures, 75 patched and 65 public advisories, but nothing says any of them was exploited in Japan.
+
+(Added 16 October 2026)  
+None of the 36 notices, including the five added, cites a CVE number.
 
 **Verdict**: **no supporting primary source**. This is the third of the four claims the Prologue says the book will not write.
 
@@ -612,6 +684,9 @@ The world's two largest cases carry no AI evidence. The one case with evidence i
 4. In Korea, evidence of attacker-side AI came from the attacker's own machine (CrowdStrike, primary).
 5. The tools were an open-source project two months old and models anyone can use (CrowdStrike, GitHub, primary).
 
+(Added 16 October 2026)  
+Item 3 holds for all 36 notices, including the five rows added on 16 October 2026.
+
 ## What cannot be said
 
 1. Whether AI was used in the Japanese breaches.
@@ -659,6 +734,9 @@ Three things.
 The ledger will be appended.
 
 The sixteen pending cases become rows as their primary notices are verified. When Bookoff's 6.43 million, Murauchi.com's 7.72 million and View Card's 4.03 million enter, the count of million-plus rows in Chapter 1 changes; the change is appended and marked.
+
+(Added 16 October 2026)  
+Five pending cases, including Bookoff (6.43 million), have become rows. Million-plus rows in Chapter 1 rose from 8 to 10, and 11 cases remain pending.
 
 Chapter 3's tiers rise if evidence appears. If an attacker's files are exposed in a Japanese case, it becomes Tier 1. If not, the absence remains.
 

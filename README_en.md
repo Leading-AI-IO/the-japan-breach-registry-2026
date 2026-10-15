@@ -6,7 +6,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
-[![Rows](https://img.shields.io/badge/Rows-31-informational)](data/registry.csv)
+[![Rows](https://img.shields.io/badge/Rows-36-informational)](data/registry.csv)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--10--10-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
 <p align="left">
@@ -64,12 +64,18 @@ Thirty-one breaches disclosed by Japanese companies and organisations since 1 Se
 
 **Eight rows exceed one million in the notice's own unit. Fourteen notices state the vector; seventeen do not. Zero notices mention AI on the attacker's side.**
 
+(Added 16 October 2026)  
+Five pending cases (Bookoff, Daiwa Securities, Sagawa Express, Uzabase, White Essence) were admitted after the author read their primary notices. The ledger now has 36 rows and 11 pending. **Ten rows exceed one million; sixteen notices state the vector, twenty do not; zero notices mention attacker-side AI.** Follow-ups to seven existing rows (GMO Research & AI's confirmed count, IDC Frontier's judgement of no data exfiltration, and others) are recorded as dated additions or corrections in the notes column, without changing row values.
+
 ### Four tiers of evidence
 
 - **Evidence**: one case, the South Korean financial sector (CrowdStrike). Zero in Japan.
 - **Trace**: the Trend Micro remark that Japanese media quoted reads, in Trend Micro's own text, "there is not necessarily evidence that these attacks used AI directly, but it is a fact that the logs alone show 'behaviour unlike before'."
 - **Possibility**: statements attributed to Korean regulators (press-based); absent from the regulators' own releases.
 - **No mention**: all 31 Japanese notices.
+
+(Added 16 October 2026)  
+Including the five added rows, no mention covers all 36 Japanese notices.
 
 ### Eight explanations
 
@@ -85,7 +91,7 @@ The defender's (Project Glasswing: announced 7 April → initial update 22 May, 
 
 | File | Role | Contents |
 | --- | --- | --- |
-| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases |
+| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16) |
 | [registry.csv](./data/registry.csv) | Derived | Spreadsheet-friendly (UTF-8 with BOM, 14 columns) |
 | [build_registry.py](./scripts/build_registry.py) | Generator | Builds the CSV and the Chapter 4 table from the canonical file |
 
@@ -108,6 +114,7 @@ The table in the text and the two data files are updated in the same commit.
 | Date | Version | Contents |
 | --- | --- | --- |
 | 2026-10-10 | v1.0 | First edition. 31 rows, 16 pending |
+| 2026-10-16 | v1.0 | Follow-ups appended. Dated additions/corrections in the notes of 7 rows (018, 019, 023, 027 are corrections). Additions in Chapters 2 and 4. Reachability of the 16 pending cases updated. Five pending cases admitted (032 Bookoff, 033 Daiwa Securities, 034 Sagawa Express, 035 Uzabase, 036 White Essence). 36 rows, 11 pending |
 
 ---
 
