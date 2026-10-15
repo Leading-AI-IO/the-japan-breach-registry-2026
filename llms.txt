@@ -7,7 +7,8 @@
 > persons, accounts) and wording (confirmed, possible, cannot be ruled out,
 > maximum) and classifies the vector only as far as the notice states it. The
 > first edition (10 October 2026) carries 31 rows and holds 16 further cases
-> outside the ledger as "pending verification." Alongside the ledger, the book
+> outside the ledger as "pending verification." The second edition (16 October
+> 2026) carries 36 rows and holds 11 cases pending. Alongside the ledger, the book
 > sorts every claim that "attackers used AI" into four tiers — evidence, trace,
 > possibility, no mention — and tests eight candidate explanations for why the
 > autumn of 2026 concentrated in Japan on identical criteria. As of the first

@@ -7,7 +7,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
 [![Rows](https://img.shields.io/badge/Rows-36-informational)](data/registry.csv)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--10--10-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--10--16-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
 <p align="left">
   <img src="./assets/ogp_design.png" width="80%">
@@ -114,7 +114,8 @@ The table in the text and the two data files are updated in the same commit.
 | Date | Version | Contents |
 | --- | --- | --- |
 | 2026-10-10 | v1.0 | First edition. 31 rows, 16 pending |
-| 2026-10-16 | v1.0 | Follow-ups appended. Dated additions/corrections in the notes of 7 rows (018, 019, 023, 027 are corrections). Additions in Chapters 2 and 4. Reachability of the 16 pending cases updated. Five pending cases admitted (032 Bookoff, 033 Daiwa Securities, 034 Sagawa Express, 035 Uzabase, 036 White Essence). 36 rows, 11 pending |
+| 2026-10-16 | v1.0 (addendum) | Follow-ups appended. Dated additions/corrections in the notes of 7 rows (018, 019, 023, 027 are corrections). Additions in Chapters 2 and 4. Reachability of the 16 pending cases updated. Five pending cases admitted (032 Bookoff, 033 Daiwa Securities, 034 Sagawa Express, 035 Uzabase, 036 White Essence). 36 rows, 11 pending |
+| 2026-10-16 | v2.0 | Second edition. 36 rows, 11 pending. The 31 first-edition rows are unchanged; 032–036 added. Further additions are made to the second edition |
 
 ---
 
@@ -136,7 +137,7 @@ The table in the text and the two data files are updated in the same commit.
 
 **This book does not accept pull requests.** The author is the sole writer, by design. Keeping units unconverted, statuses unupgraded and vectors unfilled are constraints that drift as writers multiply, and a drifting ledger cannot be used for verification.
 
-Issues are welcome, of two kinds: **corrections** (a figure or unit that does not match the notice, a wrong date, a dead URL, a vector classification that does not match the notice's wording — the author checks against the primary notice and appends a correction without deleting the original row, crediting the reporter), and **primary-source locations** for the sixteen pending cases (the author reaches the source, verifies it, and admits the row without discretion).
+Issues are welcome, of two kinds: **corrections** (a figure or unit that does not match the notice, a wrong date, a dead URL, a vector classification that does not match the notice's wording — the author checks against the primary notice and appends a correction without deleting the original row, crediting the reporter), and **primary-source locations** for the eleven pending cases (the author reaches the source, verifies it, and admits the row without discretion).
 
 Issues that include a verdict — "AI caused this," "AI had nothing to do with it" — are accepted minus the verdict. The book records only what primary sources say.
 
