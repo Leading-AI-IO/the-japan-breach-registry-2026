@@ -6,7 +6,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
-[![Rows](https://img.shields.io/badge/Rows-36-informational)](data/registry.csv)
+[![Rows](https://img.shields.io/badge/Rows-71-informational)](data/registry.csv)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--10--16-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
 <p align="left">
@@ -67,12 +67,18 @@ Thirty-one breaches disclosed by Japanese companies and organisations since 1 Se
 (Added 16 October 2026)  
 Five pending cases (Bookoff, Daiwa Securities, Sagawa Express, Uzabase, White Essence) were admitted after the author read their primary notices. The ledger now has 36 rows and 11 pending. **Ten rows exceed one million; sixteen notices state the vector, twenty do not; zero notices mention attacker-side AI.** Follow-ups to seven existing rows (GMO Research & AI's confirmed count, IDC Frontier's judgement of no data exfiltration, and others) are recorded as dated additions or corrections in the notes column, without changing row values.
 
+(Added 26 October 2026)  
+Six pending cases (Shueisha, JAEA, Study Sapuri, Nikkei, Viewcard, JR Kyushu) and 29 cases disclosed on or after 16 October (SourceNext 22,519,960; Capcom 11,774,247; Yumirlink approx. 9 million cumulative; Trustbank 4,454,097; Lindt 3,147,469; and ST approx. 2.5 million; Nikkei approx. 1.83 million; the Digital Agency, MLIT, Osaka University, Tokyo Metropolitan Government and others) were admitted. The ledger now has 71 rows and 25 pending. **Twenty-one rows exceed one million and five exceed ten million; thirty-six notices state the vector, thirty-five do not; zero notices mention attacker-side AI.** Contractor chains grew from two to seven; all five new ones start at a mail-delivery or web-building SaaS (Studio, Yumirlink, blastmail, NEC, FutureShop). Follow-ups to fourteen existing rows (Times Mobility's final figures and first disclosure of the vector, Lawson's corrected data items, skyticket's card-data correction, Sagawa Express's 5th notice — unread, press: up to approx. 53.23 million) are recorded in the notes column.
+
 ### Four tiers of evidence
 
 - **Evidence**: one case, the South Korean financial sector (CrowdStrike). Zero in Japan.
 - **Trace**: the Trend Micro remark that Japanese media quoted reads, in Trend Micro's own text, "there is not necessarily evidence that these attacks used AI directly, but it is a fact that the logs alone show 'behaviour unlike before'."
 - **Possibility**: statements attributed to Korean regulators (press-based); absent from the regulators' own releases.
 - **No mention**: all 31 Japanese notices.
+
+(Added 26 October 2026)  
+**A Japanese case entered the evidence tier.** On 15 October JPCERT/CC, reporting on attack-source servers, wrote that it had confirmed attackers "using AI" to scan known vulnerabilities and attack via APIs (「攻撃者がAIを利用して、既知の脆弱性のスキャンやAPI経由での攻撃などを実施していたことを確認しました」). On 19 October NorForge reported exposed Cairn control panels whose targets included a Japanese retailer. The **trace** tier gained JPCERT/CC's 23 October alert update (attack attempts abusing "Cairn, CyberStrikeAI, ARTEX and other AI-driven penetration-testing platforms" confirmed), Secure Sky Technology (14 Oct) and GMO Cybersecurity by Ierae (19 Oct, press-based). **No mention**: all 71 Japanese notices. The evidence appeared on the attacker's side; the victims' notices still say nothing.
 
 (Added 16 October 2026)  
 Including the five added rows, no mention covers all 36 Japanese notices.
@@ -91,7 +97,7 @@ The defender's (Project Glasswing: announced 7 April → initial update 22 May, 
 
 | File | Role | Contents |
 | --- | --- | --- |
-| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16) |
+| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16; 71 rows and 25 pending as of 2026-10-26) |
 | [registry.csv](./data/registry.csv) | Derived | Spreadsheet-friendly (UTF-8 with BOM, 14 columns) |
 | [build_registry.py](./scripts/build_registry.py) | Generator | Builds the CSV and the Chapter 4 table from the canonical file |
 
@@ -116,6 +122,7 @@ The table in the text and the two data files are updated in the same commit.
 | 2026-10-10 | v1.0 | First edition. 31 rows, 16 pending |
 | 2026-10-16 | v1.0 (addendum) | Follow-ups appended. Dated additions/corrections in the notes of 7 rows (018, 019, 023, 027 are corrections). Additions in Chapters 2 and 4. Reachability of the 16 pending cases updated. Five pending cases admitted (032 Bookoff, 033 Daiwa Securities, 034 Sagawa Express, 035 Uzabase, 036 White Essence). 36 rows, 11 pending |
 | 2026-10-16 | v2.0 | Second edition. 36 rows, 11 pending. The 31 first-edition rows are unchanged; 032–036 added. Further additions are made to the second edition |
+| 2026-10-26 | v3.0 | Third edition. 71 rows, 25 pending. The 36 second-edition rows are unchanged; 037–071 added (6 from pending, 29 disclosed on or after 16 Oct). Dated follow-ups in the notes of 14 rows (007, 025, 028 are corrections). Chapter 3: Japanese evidence tier (JPCERT/CC, 15 Oct) and trace tier (JPCERT/CC, 23 Oct and others) added. Chapter 5: H1, H3, H4, H5, H7 verdicts dated and appended. Chapter 6: Cairn and CyberStrikeAI timelines added |
 
 ---
 

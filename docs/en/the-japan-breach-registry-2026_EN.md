@@ -74,6 +74,9 @@ Three things.
 (Added 16 October 2026)  
 On 16 October 2026 five rows were added from the pending list; the ledger now has 36 rows. None of the five notices mentions attacker-side AI.
 
+(Added 26 October 2026)  
+On 26 October 2026, six rows were added from the pending list and 29 from cases disclosed on or after 16 October; the ledger now has 71 rows and 25 cases pending. None of the 35 added notices mentions attacker-side AI. Between 16 and 26 October, an aggregator's daily list (jouhourouei.clipmaster.jp) ran to dozens of organisations a day; the 71 rows are the part of that whose primary notices the author could open and read.
+
 **Second, tiers of evidence.** Every claim that "the attacker used AI" is sorted into four tiers — evidence, trace, possibility, no mention — with who said what, when, in the original language. As of the first edition, no Japanese case reaches the evidence tier.
 
 **Third, a test of explanations.** Why did large breaches concentrate in Japan in the autumn of 2026? Eight candidate explanations are tested on identical criteria and sorted into supported, refuted and undetermined. As of the first edition, most are undetermined. The book writes "undetermined."
@@ -157,6 +160,9 @@ Tokyo Shoko Research's "three" and the ledger's three rows above ten million (00
 (Added 16 October 2026)  
 Two of the five rows added on 16 October exceed one million in the notice's own unit: 032 Bookoff Group Holdings, 「最大 約 643 万件」 (up to approx. 6.43 million; a count of member numbers, which the notice says is 「対象となる方の実際の人数ではありません」, not the actual number of persons), and 036 White Essence, 「約105万アカウント」 (approx. 1.05 million accounts). Rows above one million in the ledger rose from 8 to 10. Rows above ten million remain 3.
 
+(Added 26 October 2026)  
+Eleven of the 35 rows added on 26 October exceed one million in the notice's own unit: 044 SourceNext 「22,519,960件」, 064 Capcom 「11,774,247件（全世界合計）」 (worldwide), 053 Yumirlink 「延べ約900 万件」 (approx. 9 million, cumulative, estimated), 069 Green Monster 「約 619 万件のユーザー情報等」 (approx. 6.19 million user records, including items that are not personal data), 038 Yamato Transport 「約526万件」, 055 Trustbank 「4,454,097件」, 042 Viewcard 「約 403 万件」, 070 Lindt 「3,147,469件」, 067 and ST 「約250万件」, 045 Nikkei 「約183万件」, 043 JR Kyushu 「約 130 万件」. Rows above one million rose from 10 to 21; rows above ten million from 3 to 5. Two of the ten-million rows (044, 064) were disclosed after Tokyo Shoko Research's 5 October cut-off and are not among its "three." Row 034 Sagawa Express's fifth notice (23 October) is reported in the press as 「最大約5323万件」 (up to approx. 53.23 million); the author has not been able to read it, so the row keeps "under investigation."
+
 ## Units are not mixed
 
 This book does not convert records into persons, because the notices themselves refuse to.
@@ -206,6 +212,12 @@ Of 31 rows, 14 notices state a vector. The other 17 say only "unauthorised acces
 (Added 16 October 2026)  
 With the five added rows, 16 of 36 rows state a vector and 20 do not. The two additions: 036 White Essence (vulnerability), 「弊社が運営する予約サイトのプログラムに存在した脆弱性を悪用され、これを起点として、弊社の基幹システムに不正アクセスされた」 (a vulnerability in the booking site's program was exploited and used as a foothold into the core system); 033 Daiwa Securities (contractor), 「SC 社のサーバーに対する不正アクセスにより、当社のお客様情報への不正アクセスおよび不正取得の形跡が確認された」 (unauthorised access to the contractor's server left traces of access to and acquisition of Daiwa's customer data). The three rows with no vector are 032 Bookoff, 034 Sagawa Express and 035 Uzabase. Row 032 writes 「脆弱性を是正し」 (remediated the vulnerability) as a response measure, not as the intrusion route, so it is classified as vector not disclosed.
 
+(Added 26 October 2026)  
+With the 35 rows added on 26 October, 36 of 71 rows state a vector and 35 do not: vulnerability 12, VPN vulnerability 1, contractor 16, unauthorised login 4, misconfiguration 2, multiple 1, not disclosed 35. The growth is in contractor rows (6 → 16) and unauthorised-login rows (0 → 4). The ten new contractor rows: 051 Studio → 052 Digital Agency; 053 Yumirlink → 065 Nomura Securities; 059 Rakus (blastmail) → 060 Tokyo Metropolitan Government, 061 Cells; 057 NEC → 058 Osaka University; 048 Iwai Cosmo Securities (via Tradeworks); 070 Lindt (via FutureShop); 042 Viewcard and 043 JR Kyushu (via IDC Frontier). The four unauthorised-login rows: 041 Nikkei 「「グーグルワークスペース」のアカウントが7月下旬以降、外部から不正にログインされ」, 045 Nikkei 「クラウドサービスにアクセスするための認証情報が何らかの手段で窃取されました」, 062 Digital Arts (credentials unlawfully obtained and used to enter the operating environment), and 057 NEC (stolen credentials of a legitimate account, classified under contractor). New vulnerability rows cite APIs and public apps — 040 Study Sapuri, 044 SourceNext 「会員情報取得APIを不正に利用し」, 051 Studio, 053 Yumirlink, 068 Treasure Factory, 069 Green Monster 「本アプリの API の機能によるもの」 — which corresponds to the APK-analysis-to-API method JPCERT/CC described on 15 October and NICT's "A2B attack"; whether any given row was breached that way, the notices do not say.
+
+(Corrected 26 October 2026)  
+007 Times Mobility disclosed its vector for the first time in its fifth notice (23 October): 「本事案は Web システムに存在した脆弱性が悪用されたことにより発生したものと判断しております」. The row keeps its first-notice classification (not disclosed) with a dated correction in the notes; counting the correction, 37 rows state a vector and 13 are vulnerabilities.
+
 **Vulnerability (5)**
 
 - 005 Helpfeel: 「画像アップロードサーバーに存在した脆弱性を悪用し」「任意のコマンドを実行する不正アクセス」 *(exploited a vulnerability in the image-upload server; executed arbitrary commands)*
@@ -252,12 +264,18 @@ Neither chain implies a single attacker. What they show is a structure: when one
 (Added 16 October 2026)  
 Adding 033 Daiwa Securities brings a third chain into the ledger. **Scala Communications**: unauthorised login to the i-ask FAQ system (022) → Daiwa Securities (033). Row 022's notice says only 「最大５社」 (up to five client companies) without naming them; 033's notice names the contractor as 「株式会社スカラコミュニケーションズ」. The access windows overlap: row 022 records 2026-10-02 around 20:30 to 10-03 around 08:00, and 033's notice gives 「10 月 2 日 20 時 33 分頃から 10 月 3 日 8 時 1 分頃までの間」 (around 20:33 on 2 October to around 08:01 on 3 October, per the contractor).
 
+(Added 26 October 2026)  
+Since 16 October the chains have grown from two to seven. All five new ones start at a SaaS for mail delivery or web building. **Studio**: a vulnerability in the no-code builder (051; intrusion 30 Sep–1 Oct, confirmed 13 Oct) → the Digital Agency (052, 22 Oct). **Yumirlink**: 「合計 5 システム」 of the Cuenote mail-delivery service (053; detected early 16 Oct) → Nomura Securities (065, 23 Oct). **Rakus**: intrusion into two API servers of blastmail (059; emergency stop 00:30, 21 Oct) → Tokyo Metropolitan Government (060), Cells (061); press counts about 245 client organisations, of which the ledger holds the two whose notices the author read. **NEC**: credentials stolen in an attack on a contractor (057) → Osaka University (058, 「77,851人」), which wrote that NEC had shared its personal data on cloud storage 「本学との契約に基づかず」 (outside its contract with the university). **FutureShop**: a vulnerability in the e-commerce platform's server (23:02 on 17 Oct to 00:16 on 18 Oct) → Lindt (070, 「3,147,469件」). The IDC Frontier chain gained Viewcard (042, 「約 403 万件」) and JR Kyushu (043, 「約 130 万件」), both of which reported on 15 October that the contractor had judged no leak — the same structure as 027. That five of seven chains arose after 16 October shows that the "one contractor falls, every client discloses" structure produced the late-October clustering. It still does not mean a single attacker.
+
 ## Rows with no vector
 
 Seventeen rows state none. Times Mobility (6.6 million accounts), Monogatari (10.79 million), Lawson (2.16 million), Seicomart (570,000 accounts), Dai-ichi Life (120,000). Many of the largest rows are here.
 
 (Added 16 October 2026)  
 Of the five added rows, 032 Bookoff (up to approx. 6.43 million), 034 Sagawa Express (count under investigation) and 035 Uzabase (no count stated) state no vector. Rows with no vector are now 20.
+
+(Added 26 October 2026)  
+Fifteen of the 35 rows added on 26 October state no vector, among them 064 Capcom (11,774,247; the notice says the attack method was identified but does not state it), 038 Yamato Transport, 055 Trustbank, 067 and ST, 046 FANCL/Attenir and 054 Crypton. Rows with no vector are now 35.
 
 "Cause under investigation." That is the honest state of the notice. The book records it as "not disclosed" and does not fill it.
 
@@ -277,6 +295,9 @@ From rows whose notices give both intrusion and discovery dates:
 | 028 | Adventure (1) | 2026-10-02 to 04 | 2026-10-05 | 1–3 days |
 
 The spread is wide. Lawson took more than three weeks from intrusion to discovery; coconala cut the attack off in half a day. "AI made attacks faster" corresponds to nothing in this table. What varies is the defender's detection, and it varies widely.
+
+(Added 26 October 2026)  
+Rows added on 26 October that give both dates: 069 Green Monster, acquisition 27–30 April 2026, detected 17 October (about five and a half months); 062 Digital Arts, traces 「2025 年 7 月頃にさかのぼる」, found in a 9 October review (over a year); 041 Nikkei, late July → early August (about two weeks, on Google's notification); 051 Studio, 30 Sep–1 Oct → 13 Oct (12–13 days); 046 FANCL/Attenir, 3–10 Oct → 15 Oct; 055 Trustbank, 17 Oct → 19 Oct (2 days); 070 Lindt, night of 17–18 Oct → 19 Oct; 068 Treasure Factory, early 20 Oct → same day; 067 and ST, 07:30 on 22 Oct → 10:00 the same day (2.5 hours), disclosed the next day. The spread widened: a six-month-old acquisition and a 2.5-hour detection were disclosed on the same day, 23 October. Time to disclosure is set by whether detection exists, not by the speed of the attack.
 
 ### References
 
@@ -304,6 +325,27 @@ On attribution, CrowdStrike did not tie the activity to a named adversary, asses
 
 This is the only case in the autumn of 2026, in Japan or Korea, in which attacker-side AI use is reported with evidence. The form of the evidence — the attacker's own files left exposed — is rare.
 
+(Added 26 October 2026)  
+**The serial unauthorised-access cases in Japan (JPCERT/CC, 15 October 2026)**
+
+In "連続不正アクセス事案の攻撃手法に関する調査" (Investigation of the attack methods in the serial unauthorised-access cases), JPCERT/CC reported on attack-source servers:
+
+> JPCERT/CCは、複数の組織と連携し、攻撃に使用された可能性のあるインフラの調査を進めています。
+
+> その過程で、攻撃者がAIを利用して、既知の脆弱性のスキャンやAPI経由での攻撃などを実施していたことを確認しました。
+
+*(In the course of this, we confirmed that the attackers were using AI to scan for known vulnerabilities and to attack via APIs.)*
+
+> こうした攻撃元サーバーはインターネット上で複数確認されており、日本以外の地域向けのWebサービスに対しても攻撃を行っていました。
+
+*(Several such attack-source servers have been confirmed on the internet; they were also attacking web services for regions other than Japan.)*
+
+The evidence sits on the attackers' own servers, which under this chapter's definition counts as the attacker's own material. The book records it as the first case in which attacker-side AI use in Japan is reported with evidence — with two limits. The document names neither the AI nor the tool, and it names no victim, so it cannot be matched to any row. "There is an attack server on which attackers used AI" and "a given row's breach came from that server" are different statements.
+
+**Exposed Cairn panels (NorForge, 19 October 2026)**
+
+NorForge examined unauthenticated control panels of the AI pentesting tool Cairn exposed on the internet ("more than 20 likely malicious panels"). Of the busiest cluster: "AIA0001 targets a wide swath of organizations, mostly in the US, Japan and Australia." An operator task read, in translation, "These are confirmed real shopping/e-commerce websites in four countries (US/CA/JP/AU), with traffic of 200,000–1.5 million." One case study is a "Japanese retailer." All tasks ran under a worker named `claudecode_deepseek-v4.1-flash`, "which could mean a Claude Code harness using the Chinese DeepSeek 4.1 Flash model that was released in September." The form of evidence is the same as CrowdStrike's in Korea — the attacker's control plane left exposed. That a Japanese retailer was targeted is evidenced; which retailer is not stated, and no match to a row is possible.
+
 ## Tier 2: Trace
 
 **Trend Micro (Security GO, 8 October 2026, Yuya Sato)**
@@ -315,6 +357,35 @@ Much Japanese coverage quoted Trend Micro as saying that "traces of attacks laun
 *(At present there is not necessarily evidence that these attacks used AI directly, but it is a fact that even the logs alone show "behaviour unlike before.")*
 
 The original is more cautious than the quotation. It contains both "there is not necessarily evidence" and "behaviour unlike before." The book records the original wording.
+
+(Added 26 October 2026)  
+**JPCERT/CC alert, updated 23 October 2026**
+
+The 8 October alert was updated on 9 and 23 October. The 23 October update added:
+
+> ケースE：AIを用いたペネトレーションテスト基盤を悪用した攻撃試行
+
+> CairnやCyberStrikeAI、ARTEXなどのAIを用いたペネトレーションテスト基盤を悪用した攻撃試行が確認されています。
+
+*(Attack attempts abusing AI-driven penetration-testing platforms such as Cairn, CyberStrikeAI and ARTEX have been confirmed.)*
+
+> これらのツールを用いて、主にインターネットに公開されたWebアプリケーションを標的にさまざまな脆弱性を探索して悪用を試行したり、機器の管理不備等を悪用した攻撃（環境設定ファイルやバックアップファイルの窃取など）を確認しています。
+
+> その中には、インターネットに公開されたWSUSサーバーを標的とした攻撃試行も含まれています。
+
+Nine suspicious source IP addresses are listed with observation windows (the earliest from 23 September, the latest to 20 October). What is confirmed is "attack attempts"; whether any led to a breach is not stated. The book places this in Tier 2. It is a separate document from the 15 October investigation above, and the relation between the two is not stated.
+
+**GMO Cybersecurity by Ierae (19 October 2026, press-based)**
+
+According to press reports, the company announced on 19 October that an investigation of attack-source infrastructure targeting Japanese companies confirmed the use of ARTEX; that about 20 Japanese companies were targeted (nine in one industry); that six more AI-driven attack hosts of the same kind were found; and that eight of the targets had disclosed leaks in September–October. Reports also quote the company's view that the eight leaks were "the work of the same attack group." When the author opened the company's site on 26 October it displayed a notice that the site was temporarily running in a simplified mode as a precaution after a vulnerability was disclosed in widely used software, and the post (`https://gmo-cybersecurity.com/blog/20261019/`) could not be read. Until the original can be read, the book treats this as press-based Tier 2 and does not say which rows the eight are.
+
+**Secure Sky Technology (Scutum, 14 October 2026)**
+
+The developer of the Scutum WAF introduced a detection mechanism on the night of 10 October and wrote that by 14 October it had confirmed AI-agent attacks on Japanese companies' websites from at least three IP addresses. The method is undisclosed; the post says that a detection is conclusive ("false negativeはあるかもしれないが、false positiveはほぼない") but that "攻撃者が実際に使っているモデルが何なのかという情報は取得できません" (which model the attacker uses cannot be obtained). Because the method is not public, the book places this in Tier 2.
+
+**Cyber Security Cloud (9 October 2026)** observed attacks that rotated 326 IP addresses in about 40 minutes with more than 1,200 requests and wrote that "a mechanism that can judge from responses, such as AI, may have been used," adding 「なお、これは観測された振る舞いからの推測であり、AIの利用を直接示す痕跡を確認したものではありません」 (this is an inference from observed behaviour; no trace directly showing AI use was confirmed). Tier 3.
+
+**Macnica (7 October 2026)** wrote 「一連の事案でAIが使われたと断定できるログや痕跡は確認されていません」 (no logs or traces that would establish AI use in the series of cases have been confirmed), that no zero-day exploitation had been confirmed, and that what is actually happening is broad probing and exploitation of basic misconfigurations, access-control gaps and known vulnerabilities. Recorded as a document that explicitly states the absence of AI traces.
 
 **South Korean mega-churches (Oasis Security's CEO, press-based)**
 
@@ -341,7 +412,13 @@ None of the 31 notices in the ledger refers to AI on the attacker's side. "AI" a
 (Added 16 October 2026)  
 The notices for the five rows added on 16 October (032–036) also contain no reference to attacker-side AI. All 36 rows remain in Tier 4.
 
+(Added 26 October 2026)  
+The notices for the 35 rows added on 26 October (037–071) also contain no reference to attacker-side AI. All 71 rows are in Tier 4. Three notices mention defender-side AI: 054 Crypton Future Media 「Mythosを活用し状況を把握」 (used Mythos to grasp the situation), 062 Digital Arts (a full review of its systems "using AI" on 9 October), and 005 Helpfeel's final report (AI-assisted static analysis as a countermeasure). These describe the defender, not the attacker.
+
 JPCERT/CC's 8 October alert contains no "AI."
+
+(Corrected 26 October 2026)  
+The alert was updated on 9 and 23 October. The 23 October update added "Case E: attack attempts abusing AI-driven penetration-testing platforms," and with it the word "AI." The first-edition sentence stands as a description of the 8 October text; the update is recorded in Chapter 3 below.
 
 **Tokyo Shoko Research (7 October 2026)** writes 「AI普及で、より強固な対策が必要なのは当然だが」 *(with AI spreading, stronger measures are of course needed)* — a generality, not a claim about any incident.
 
@@ -354,6 +431,9 @@ Professor Hiroki Takakura of the National Institute of Informatics told ASCII of
 Evidence: one case in Korea, none in Japan. Trace: Trend Micro's own text says "not necessarily evidence." Possibility: the Korean regulators' remarks are press-based and absent from their own releases. No mention: all 31 Japanese notices.
 
 This distribution does not mean AI was not used. It means that whether it was used cannot be determined from the Japanese notices. Recording what cannot be determined as undetermined is this chapter's job.
+
+(Added 26 October 2026)  
+As of 26 October 2026 the distribution is: **Evidence** — Korea (CrowdStrike), plus Japan's attack-source servers (JPCERT/CC, 15 Oct) and the exposed Cairn panels (NorForge, 19 Oct). **Trace** — JPCERT/CC's alert (23 Oct), Secure Sky Technology (14 Oct), GMO Cybersecurity (19 Oct, press-based). **Possibility** — Cyber Security Cloud (9 Oct), NICT (13 Oct). **No mention** — all 71 Japanese notices. What changed is that "in Japan, attack-source servers on which attackers used AI existed" can now be said from primary sources. What has not changed is that "the 71 rows' breaches were caused by AI" cannot. The evidence appeared on the attacker's side; the victims' notices, all 71, still say nothing. The distance between the two is the shape of the gap on 26 October.
 
 ### References
 
@@ -422,6 +502,9 @@ This distribution does not mean AI was not used. It means that whether it was us
 (Added 16 October 2026)  
 For five of the pending cases, the author opened and read the primary notice on 16 October 2026 and admitted them as rows. The first-edition table of 31 rows stays as it is above; the added rows follow. The two tables together match the 36 rows in `data/registry.json`.
 
+(Added 26 October 2026)  
+On 26 October 2026 the author added 35 rows (037–071): six from the pending list and 29 disclosed on or after 16 October. The two earlier tables stay as they are; the added rows follow in a third table. The three tables together match the 71 rows in `data/registry.json`.
+
 ### The five rows added on 16 October 2026
 
 | ID | Published | Organisation | Scale (as stated, original unit) | Status | Vector | AI mentioned | Primary source |
@@ -431,6 +514,46 @@ For five of the pending cases, the author opened and read the primary notice on 
 | 034 | 2026-09-30 | Sagawa Express (parcel-enquiry service) | "The number and scope are under investigation" (as of the 2nd notice; not determined) | Possible exfiltration | unauthorised access (vector not disclosed) | none | [notice](https://www2.sagawa-exp.co.jp/information/detail/420/) |
 | 035 | 2026-10-08 | Uzabase (NewsPicks) | No count stated ("some of the customers who used NewsPicks services up to 8 October 2026") | Possible leak | unauthorised access (vector not disclosed) | none | [notice](https://corp.newspicks.com/info/20261008) |
 | 036 | 2026-10-05 | White Essence (booking site and core system) | "Persons affected: approx. 1.05 million accounts" (customers and related parties registered as of 5 August 2026; items vary by person) | Exfiltration found | vulnerability | none | [notice](https://www.whiteessence.co.jp/news/?action=detail&id=56&p=1) |
+
+### The 35 rows added on 26 October 2026
+
+| ID | Published | Organisation | Scale (as stated, original unit) | Status | Vector | AI mentioned | Primary source |
+|---|---|---|---|---|---|---|---|
+| 037 | 2026-09-28 | Shueisha (HAPPY PLUS COMMUNITY blogger platform) | "2,835 persons" (blogger records "2,835"); project records "630"; all emails sent by the system "11,237"; business-partner list "10,780" (email addresses "26", phone numbers "113") | May have been viewed or taken; leak found | misconfiguration | none | [notice](https://www.shueisha.co.jp/wp-content/uploads/2026/09/Shueisha20260928-1.pdf) |
+| 038 | 2026-09-29 | Yamato Transport (Kuroneko deferred-payment service) | "Approx. 5.26 million records" (of which "approx. 490,000" include email addresses); recipients "approx. 50,000"; member merchants "approx. 4,100" (fixed in 4th notice, 16 Oct 2026) | Some data found to have been taken out | unauthorised access (vector not disclosed) | none | [notice](https://www.yamato-hd.co.jp/important/info_260929_1.html) |
+| 039 | 2026-10-01 | Japan Atomic Energy Agency (research-support site on contracted cloud) | Unauthorised downloads "2,419 files", of which "367" contain personal data ("175 persons": 200 photo-ID documents incl. 6 with My Number, 146 special health-check results, 21 radiation-worker certificates) | Leak (confirmed) | unauthorised access (vector not disclosed) | none | [notice](https://www.jaea.go.jp/02/press2026/p26100105/) |
+| 040 | 2026-10-03 | Recruit (Study Sapuri) | "3,687 records" (email addresses) | Unauthorised access confirmed; no leak of data other than email addresses confirmed | vulnerability | none | [notice](https://studysapuri.jp/info/important/#ssntc_303) |
+| 041 | 2026-10-04 | Nikkei Inc. (Google Workspace account) | "1,646 persons" | Suspected leak | unauthorised login | none | [notice](https://www.nikkei.co.jp/nikkeiinfo/news/information/1547.html) |
+| 042 | 2026-10-09 | Viewcard (VIEW's NET; via contractor IDC Frontier) | "Approx. 4.03 million records" (email addresses registered with VIEW's NET) | Possible leak; viewing or acquisition cannot be ruled out | contractor / third-party service | none | [notice](https://www.jreast.co.jp/card/news/pdf/20261009.pdf) |
+| 043 | 2026-10-09 | JR Kyushu (web members; via contractor IDC Frontier) | "Affected (maximum)": JR Kyushu web members "approx. 1.3 million records" | Possible leak; cannot be ruled out | contractor / third-party service | none | [notice](https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/09/202691009_mail_address_access_1.pdf) |
+| 044 | 2026-10-15 | SourceNext (member-information API) | "Affected: 22,519,960 records" | Leak (confirmed) | vulnerability | none | [notice](https://www.sourcenext.com/support/i/2026/1015_info/) |
+| 045 | 2026-10-16 | Nikkei Inc. (development cloud environment) | "Approx. 1.83 million records" (incl. "approx. 150,000" with personal data, of which "approx. 120,000" include email addresses; "approx. 1.68 million" identifiers only) | Leak (confirmed) | unauthorised login | none | [notice](https://www.nikkei.co.jp/nikkeiinfo/news/information/1561.html) |
+| 046 | 2026-10-16 | FANCL / Attenir | FANCL "393,785 records, 368,184 persons"; Attenir "441,162 records, 417,312 persons" | Unauthorised access confirmed; no misuse confirmed | unauthorised access (vector not disclosed) | none | [notice](https://www.fancl.jp/news/pdf/husei.pdf) |
+| 047 | 2026-10-16 | NTT Solmare (Comic Cmoa) | Not stated ("under review") | Leak (confirmed) | unauthorised access (vector not disclosed) | none | [notice](https://www.nttsolmare.com/press/2026/1016.html) |
+| 048 | 2026-10-16 | Iwai Cosmo Securities (via contractor Tradeworks) | "Affected: 4,975 persons (364 added in this notice)" (2nd notice, 20 Oct 2026; 1st notice "4,611 persons") | Leak (confirmed) | contractor / third-party service | none | [notice](https://www.iwaicosmo.co.jp/info/2026/10201710.html) |
+| 049 | 2026-10-17 | Joshin Denki | Not stated | Leak cannot be ruled out; whether data leaked is under confirmation | unauthorised access (vector not disclosed) | none | [notice](https://www.joshin.co.jp/ja/news/info/info-20261017/main/0/link/20261017Notice%20and%20Apology%20Regarding%20System%20Disruption%20Caused%20by%20Unauthorized%20Access.pdf) |
+| 050 | 2026-10-17 | Ishikawa Computer Center (customer-support site) | Not stated | Under investigation | unauthorised access (vector not disclosed) | none | [notice](https://www.icc.co.jp/news/2026/20261017.html) |
+| 051 | 2026-10-18 | Studio Inc. (no-code web builder "Studio") | Not stated ("counts per function are under review") | Unauthorised access confirmed; possible leak; treated as taken | vulnerability | none | [notice](https://studio.design/ja/security/notice/2026-10-incident) |
+| 052 | 2026-10-22 | Digital Agency (web forms; via contractor Studio Inc.) | Opinions etc. "max. 8,833"; recruitment enquiries "max. 250"; vaccination-certificate app enquiries "max. 3,661"; mascot-costume loans "max. 117"; event applications "max. 462"; Studio accounts "35" | Possible leak | contractor / third-party service | none | [notice](https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22) |
+| 053 | 2026-10-19 | Yumirlink (Cuenote FC and other mail-delivery systems) | Estimated "approx. 9 million records (cumulative) including email addresses were output"; "5 systems in total" | Exfiltration of personal data confirmed | vulnerability | none | [notice](https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261019/20261019553124.pdf) |
+| 054 | 2026-10-19 | Crypton Future Media (SONICWIRE / D2R) | Member records "362,137"; quotation/invoice records "671"; non-member newsletter "11" (updated 22 Oct 2026; first notice "max. approx. 420,000") | Leaked (changed from "possible" in 22 Oct update) | unauthorised access (vector not disclosed) | none | [notice](https://www.crypton.co.jp/cfm/news/2026/10/20info) |
+| 055 | 2026-10-20 | Trustbank (Furusato Choice) | "4,454,097 records" ("may change with further investigation") | Leaked externally (facts still being confirmed) | unauthorised access (vector not disclosed) | none | [notice](https://www.trustbank.co.jp/newsroom/newsrelease/news261020/) |
+| 056 | 2026-10-20 | MLIT (Housing Energy-Saving 2024 Campaign office, run by Hakuhodo) | "23,918 persons (16,950 businesses) (preliminary)" | Possible leak | unauthorised access (vector not disclosed) | none | [notice](https://www.mlit.go.jp/report/press/house04_hh_001366.html) |
+| 057 | 2026-10-20 | NEC Corporation (via a contractor) | Not stated | Leak confirmed | contractor / third-party service | none | [notice](https://jpn.nec.com/news/info/20261020.html) |
+| 058 | 2026-10-21 | Osaka University (via contractor NEC) | "77,851 persons (deduplicated)" ("graduates 59,014, students 15,035, staff 3,802") | Leak (confirmed) | contractor / third-party service | none | [notice](https://www.osaka-u.ac.jp/ja/news/topics/2026/10/21004) |
+| 059 | 2026-10-21 | Rakus / Rakus Light Cloud (blastmail) | Number of contracts not stated (sales-management data of "all contracting customers"); contracts whose recipient lists were confirmed leaked updated in later notices (press: "344" as of 24 Oct) | Exfiltration confirmed | unauthorised access (vector not disclosed) | none | [notice](https://www.rakus.co.jp/news/2026/1021-3.html) |
+| 060 | 2026-10-23 | Tokyo Metropolitan Government (via contractor Rakus Light Cloud) | "Max. approx. 16,000 records" | Possible leak | contractor / third-party service | none | [notice](https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317) |
+| 061 | 2026-10-23 | Cells Co. (via contractor Rakus Light Cloud) | "Max. approx. 18,000 records (under review)" | Possible leak | contractor / third-party service | none | [notice](https://www.cells.co.jp/news/115953) |
+| 062 | 2026-10-21 | Digital Arts (cloud-service operating environment) | Not stated | Some customer data possibly viewed by a third party | unauthorised login | none | [notice](https://www.daj.jp/ir/data/daj2326_202703_3q_1.pdf) |
+| 063 | 2026-10-22 | GMO Internet (Onamae.com Desktop Cloud) | "Servers possibly affected: 26,739" | Unauthorised access and exfiltration of customer data confirmed | unauthorised access (vector not disclosed) | none | [notice](https://www.onamae.com/news/article/11593) |
+| 064 | 2026-10-22 | Capcom (CAPCOM ID) | "Affected: 11,774,247 records (worldwide)" (incl. "43" with date of birth etc., "196" with passwords changed without authorisation) | Unauthorised access confirmed; part of customer data found leaked | unauthorised access (vector not disclosed) | none | [notice](https://www.capcom.co.jp/ir/news/html/261022.html) |
+| 065 | 2026-10-23 | Nomura Securities (i-Port; via contractor Yumirlink) | Not stated | Reported as possibly leaked | contractor / third-party service | none | [notice](https://www.nomuraholdings.com/jp/news/topics/20261023.html) |
+| 066 | 2026-10-15 | M3 Inc. (MR-kun pharma-facing service) | m3.com members etc. "25,775 persons" ("6 include email addresses"); pharma-company staff "2,260 persons" ("264 include email addresses") (fixed 23 Oct 2026) | Unauthorised access confirmed; no misuse confirmed | unauthorised access (vector not disclosed) | none | [notice](https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/TYwLIgktADUIxwA5M6XFE/3bcb64e5e6857ebaf8e5a5a4efd8f25f/20261023_Public_J.pdf) |
+| 067 | 2026-10-23 | and ST HD (formerly Adastria) | Customers "approx. 2.5 million records"; business partners "approx. 10,000"; employees "scope under confirmation" | Possible leak | unauthorised access (vector not disclosed) | none | [notice](https://www.andst-hd.co.jp/news/notice/entry-17234/) |
+| 068 | 2026-10-23 | Treasure Factory (case-management system) | Customer records affected "746,277" (email addresses; "of which 11" include name and address). Separately, business partners/employees: "names and email addresses: 750", "names and device identifiers: 1,000" | Unauthorised acquisition confirmed | vulnerability | none | [notice](https://www.treasure-f.com/info/detail/st825/) |
+| 069 | 2026-10-23 | Green Monster (FX Navi app) | "Approx. 6.19 million user records etc." (email "66,003", gender "142,578", age band "139,293", occupation "149,137", X IDs "6,434", first-survey answers "4,809,631", transfer codes "5,120" etc.) | Possibly acquired; no leak confirmed | vulnerability | none | [notice](https://assets.minkabu.jp/news/article_media_content/urn:newsml:tdnet.info:20261023555394/140120261023555394.pdf) |
+| 070 | 2026-10-23 | Lindt & Sprüngli Japan (via contractor FutureShop) | "3,147,469 records" (members at the time of intrusion, excluding withdrawn) | Unauthorised access confirmed; no misuse confirmed | contractor / third-party service | none | [notice](https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/) |
+| 071 | 2026-10-22 | System5 (system linked to its online shop) | "Max. approx. 15,000 persons" (24 Oct 2026) | Possible leak | unauthorised access (vector not disclosed) | none | [notice](https://info.system5.jp/whatsnew/apology-20261024) |
 
 ## Counting
 
@@ -464,6 +587,22 @@ Counts after adding five rows:
 - Notices mentioning attacker-side AI: 0.
 - Rows exceeding one million in the notice's own unit: 10 (the first edition's 8 plus 032 and 036).
 
+(Added 26 October 2026)  
+Follow-ups confirmed between the second edition and 26 October (row values unchanged; dated additions or corrections in the notes column): 005 Helpfeel, final report of 21 Oct (counts unchanged; 「432件」 images owned by 「133名」 found viewed or taken; vulnerability described as unsanitised input interpreted as server commands); 007 Times Mobility, 5th notice of 23 Oct (「6,628,007 件」; ID images with exfiltration traces 「1,464,800 件」; vector disclosed for the first time as a web-system vulnerability — correction); 012 Seicomart, 15 Oct (service restart schedule); 017 Monogatari, 20 Oct (security measures; 「外部の第三者からの断続的な攻撃」 from 09:00 on 2 Oct; no vector detail); 023 IDC Frontier, 6th notice of 18 Oct (backup service restarted); 025 Lawson, 24 Oct update (email addresses and newsletter data not leaked; date of birth possibly leaked — correction; counts unchanged); 028 Adventure, 2nd notice of 16 Oct (card data 「最大6,140名」; first notice's statement on card numbers corrected); 032 Bookoff, 2nd notice of 13 Oct and later PDFs (unreachable, unread; press: 6,383,279 persons); 034 Sagawa Express, 5th notice of 23 Oct (JavaScript-only page, unread; press: up to approx. 53.23 million); 035 Uzabase, 2nd notice of 9 Oct (unread; press: per-item maxima); 030/031 via Commune's 21 Oct follow-up (unread; press: 166,505 persons). Even with the follow-ups, zero notices mention attacker-side AI. The one fixed count (007) moved below the first notice's maximum for ID images; the two changed data scopes moved in opposite directions (025 dropped email addresses, 028 added card numbers); the one vector disclosed afterwards (007) was a vulnerability.
+
+(Added 26 October 2026)  
+Counts after adding 35 rows:
+
+- Of 71 rows, 36 state a vector and 35 do not
+- Vulnerability 12, VPN vulnerability 1, contractor 16, unauthorised login 4, misconfiguration 2, multiple 1
+- Notices mentioning attacker-side AI: 0. Notices mentioning defender-side AI: 3 (005, 054, 062)
+- Rows above one million in the notice's own unit: 21; above ten million: 5 (005, 028, 017, 044, 064)
+- Non-company organisations: 7 (002, 015, 039, 052, 056, 058, 060)
+- Rows whose subjects are employees, staff or related persons rather than customers: 6 (002, 016, part of 026, 039, 041, 058)
+- Chains with both origin and client in the ledger: 6 (IDC Frontier, Commune, Scala Communications, Studio, Yumirlink, Rakus, NEC — FutureShop has only its client 070)
+
+On the admission rule: 049 Joshin Denki and 050 Ishikawa Computer Center state neither scale nor data items; 047 Comic Cmoa and 051 Studio give counts as "under review." They are admitted because the ledger sets no lower bound. A ledger of only the cases whose size is known would be a ledger of what is known, not of what was disclosed.
+
 ## Pending verification (outside the ledger)
 
 Known through the press or secondary sources, but not admitted because the author could not open the primary notice. Each becomes a row when its primary notice is verified. Press-based scales are given for reference only and are not ledger figures.
@@ -495,6 +634,9 @@ On 16 October the author retried all 16. The result falls into three groups. The
 (Added 16 October 2026)  
 After recording the reachability above, the author opened and read the primary notices of five cases on the same day and admitted them as rows: Bookoff (032, TDnet disclosure of 9 October 2026), Daiwa Securities (033, 5 October 2026), Sagawa Express (034, second notice), Uzabase (035, first notice) and White Essence (036, 5 October 2026). Eleven cases remain pending. Bookoff's second notice, Sagawa Express's third and fourth notices and Uzabase's second notice have not yet been read by the author. For Murauchi.com, the summary page the author could read (updated 15 September 2026) states no count; it stays pending until the author reads the second notice that does.
 
+(Added 26 October 2026)  
+On 26 October the author retried the 11 pending cases and added the cases disclosed since 16 October. Six moved into the ledger: Shueisha (037), JAEA (039), Recruit/Study Sapuri (040), Nikkei (041), Viewcard (042; its notice is a PDF under jreast.co.jp/card, not viewcard.co.jp), JR Kyushu (043). Two were removed: Ticket Plus, whose notice says 「不正アクセスおよびデータベースの改ざんは確認されておりません」 and attributes the incident to a cache-setting change, so it does not meet the admission criterion; and SoftBank, for which no notice of its own was found (the 19 October suspension of My SoftBank reports a detected attempt, not a leak). Three remain: Murauchi.com (page unreachable), Fines (body URL unreachable), Sakura Internet (primary notice reached, but the count first appeared in the second notice of 19 August, before the 1 September cut-off; admission is the author's call). Twenty-two were added: two reached but needing a judgement (E-Store, first notice 1 August, final notice 16 October 「約23,356,000人」; MOS Food Services/Value Design, where the data is card numbers, PINs and balances and the contractor states no personal data), one reached but unread (Daiwa Institute of Research), and 19 unreachable (Nifty, Recruit/Carsensor, Hankyu Hanshin Department Stores, Fuji Television, Xebio, Yamada Holdings, Good Smile Company, Kakao Piccoma, Niigata Nippo, Japan Post, Igreks, Chariloto, Burger King Japan, Aena, Medley, ACCESS, FutureShop, Tradeworks and others). Pending is now 25. The full list, in Japanese, is in the Japanese edition and in `data/registry.json`. Pending still includes cases that would rank near the top by size: Sagawa Express's fifth notice (press: up to approx. 53.23 million; row 034 exists but its scale is unread), E-Store (approx. 23.36 million persons), Burger King (approx. 11.18 million). The third edition, too, is the range the author could reach, not the whole of the autumn.
+
 ---
 
 # Chapter 5: Eight explanations — supported, refuted, undetermined
@@ -511,6 +653,9 @@ Why did large breaches concentrate in Japan in the autumn of 2026? This chapter 
 The notices of all 36 rows, including the five added, contain no description of attacker-side AI.
 
 **Verdict**: supported for Korea. Causation for the Japanese wave **undetermined**.
+
+(Added 26 October 2026)  
+For Japan, what should be observed was observed: JPCERT/CC (15 Oct) confirmed attackers "using AI" on attack-source servers and (23 Oct) attack attempts abusing Cairn, CyberStrikeAI and ARTEX (Chapter 3). None of the 71 notices describes attacker-side AI. The verdict splits: **that attackers used AI in Japan — supported (JPCERT/CC, primary); that this caused the breaches in the ledger's rows — undetermined (no primary source ties a document to a row).** On cost, Gambit Security and NorForge give estimates for overseas campaigns; there is none for Japan.
 
 ## H2: Stronger disclosure rules made previously unreported incidents visible (an apparent increase)
 
@@ -529,6 +674,11 @@ The notices of all 36 rows, including the five added, contain no description of 
 (Added 16 October 2026)  
 Across 36 rows — contractor 6, vulnerability 6, VPN 1, misconfiguration 1, unauthorised login 1, multiple 1 — there is still no skew toward one weakness. Rows with no vector are now 20.
 
+(Added 26 October 2026)  
+Across 71 rows: contractor 16, vulnerability 12, unauthorised login 4, misconfiguration 2, VPN 1, multiple 1, not disclosed 35. The growth since 16 October is in contractor (+10) and unauthorised login (+4); the contractor growth comes from chains starting at mail-delivery and web-building SaaS (Chapter 2, seven chains). For late October, "contractor management" is observed as a skew. But a shared SaaS platform falling and every client disclosing is not specific to Japan, and no comparable overseas statistic has been obtained.
+
+**Verdict (26 October 2026)**: weaknesses supported; a skew toward contractors supported for late October; Japan-specificity **undetermined** (unchanged).
+
 **Verdict**: the existence of weaknesses is supported; their Japan-specificity is **undetermined**.
 
 ## H4: A single attacker or campaign
@@ -536,6 +686,11 @@ Across 36 rows — contractor 6, vulnerability 6, VPN 1, misconfiguration 1, una
 **Would be observed**: shared IPs, techniques or attribution between the Japanese and Korean incidents.
 
 **Observed?** For the Korean financial institutions, CrowdStrike analysed overlapping infrastructure as one campaign. For Japan, no primary source indicates a single attacker. What the Japanese rows share are contractor vectors (IDC Frontier, Commune), which are not attribution. JPCERT/CC calls its information "limited and fragmentary."
+
+(Added 26 October 2026)  
+Two primary sources were added. JPCERT/CC (15 Oct) wrote that several attack-source servers were confirmed and "were also attacking web services for regions other than Japan" — several servers attacking Japan and elsewhere, with no statement either way on a single actor. Press-based: GMO Cybersecurity by Ierae reported attack infrastructure targeting about 20 Japanese companies, six further hosts of the same kind, and called the eight disclosed leaks among the targets "the work of the same attack group"; the original is unread and the eight are unidentified. NorForge's Cairn clusters target US, Japanese and Australian retailers and are not tied to the Korean financial campaign.
+
+**Verdict (26 October 2026)**: within Korea — supported (unchanged). Shared attack infrastructure against multiple Japanese organisations — supported in the press, "several confirmed" in the primary source. A joint Japan–Korea campaign — **undetermined** (unchanged).
 
 **Verdict**: supported within the Korean financial sector. A joint Japan–Korea campaign **undetermined**.
 
@@ -547,6 +702,11 @@ Across 36 rows — contractor 6, vulnerability 6, VPN 1, misconfiguration 1, una
 
 **Verdict**: supported for Korea. Explanation of the Japanese wave **undetermined**.
 
+(Added 26 October 2026)  
+A primary source now places ARTEX in Japan: JPCERT/CC's 23 October alert, 「CairnやCyberStrikeAI、ARTEXなどのAIを用いたペネトレーションテスト基盤を悪用した攻撃試行が確認されています」. Of the three tools, ARTEX is the one this chapter named in the first edition; Cairn was reported by Gambit Security on 22 September (overseas retailers) and by NorForge on 19 October (targets including a Japanese retailer); CyberStrikeAI by Team Cymru on 2 March (FortiGate devices). What should be observed — public tools abused in several countries — was observed in Japan. What was confirmed is "attack attempts"; which rows, if any, were breached by these tools is not stated.
+
+**Verdict (26 October 2026)**: Korea — supported (unchanged). Japan — tool diffusion and attack attempts supported (JPCERT/CC, primary); explanation of the ledger's rows **undetermined**.
+
 ## H6: Defender-side AI disclosed vulnerabilities that attackers exploited before patches
 
 **Would be observed**: breach vectors matching CVEs found and disclosed by Glasswing.
@@ -555,6 +715,11 @@ Across 36 rows — contractor 6, vulnerability 6, VPN 1, misconfiguration 1, una
 
 (Added 16 October 2026)  
 None of the 36 notices, including the five added, cites a CVE number.
+
+(Added 26 October 2026)  
+None of the 71 notices cites a CVE number. The one primary source that does is JPCERT/CC's alert, Case C: 「MetabaseのSQLインジェクションの脆弱性（CVE-2026-72898）」, with suspicious IPs active from early August to early September. Nothing the author has read says whether that vulnerability was a Glasswing finding. The late-October rows that state "vulnerability" (007, 051, 053, 068, 070) name none; 007 Times Mobility withheld the method to prevent secondary harm.
+
+**Verdict (26 October 2026)**: **no supporting primary source** (unchanged).
 
 **Verdict**: **no supporting primary source**. This is the third of the four claims the Prologue says the book will not write.
 
@@ -565,6 +730,11 @@ None of the 36 notices, including the five added, cites a CVE number.
 **Observed?** The notices of the large rows (Helpfeel, Times, Monogatari, Lawson, skyticket, Daiichikosho) do not name credential stuffing or password reuse as the vector. Only Scala Communications (022) states an unauthorised login. Charm (001) says the origin of the e-mail addresses and passwords used for unauthorised logins "has not been identified."
 
 **Verdict**: leaning refuted for the large rows. Overall **undetermined**.
+
+(Added 26 October 2026)  
+Rows stating unauthorised login with stolen credentials rose from one to four (041, 045, 062, and 057 under contractor). All describe the credentials as 「何らかの手段で窃取」 or 「不正に取得」, none as bought on a market. The large rows (044, 064, 055, 067, 038) still do not cite unauthorised login.
+
+**Verdict (26 October 2026)**: leaning refuted for the large rows (unchanged); credential theft observed in more small and mid-size rows, link to a growing market **undetermined**.
 
 ## H8: Chance or seasonality
 
@@ -590,6 +760,22 @@ None of the 36 notices, including the five added, cites a CVE number.
 For Japan, not one of the eight can be called supported. Nor can any be called refuted beyond H6's "no supporting source" and H7's "leaning refuted."
 
 This is everything that can be said from primary sources as of 10 October 2026. The book exists to fill in this table.
+
+(Added 26 October 2026)  
+The table as of 26 October 2026:
+
+| Candidate | Verdict (2026-10-26) | Change |
+|---|---|---|
+| H1 Attacker-side AI | Korea: supported / Japan: attacker-side AI use supported (JPCERT/CC); causation for the rows undetermined | Japan's verdict split |
+| H2 Disclosure rules | Undetermined (weakly supported) | None |
+| H3 Japan-specific weaknesses | Weaknesses supported / contractor skew supported for late October / specificity undetermined | Contractor skew added |
+| H4 Single attacker | Korea: supported / Japan: "several servers confirmed" in the primary source / Japan–Korea: undetermined | More primary sources |
+| H5 Tool diffusion | Korea: supported / Japan: attack attempts supported (JPCERT/CC); explanation of rows undetermined | Japan's verdict split |
+| H6 Defender-side AI disclosures | No supporting primary source | None |
+| H7 Credential market | Large rows: leaning refuted / overall undetermined | More unauthorised-login rows |
+| H8 Chance or seasonality | Undetermined | None |
+
+For Japan, parts of two candidates can now be called supported: H1's "attackers used AI" and H5's "public tools were used in attack attempts in Japan." Both are facts on the attacker's side; the tie to the ledger's rows — the victims' side — stays undetermined. The gap the first edition described has, as of 26 October, been half filled, from the attacker's side.
 
 ### References
 
@@ -625,6 +811,9 @@ In four months, defender-side AI found "at least 129,000" verified vulnerabiliti
 | late Sep – early Oct 2026 | ARTEX used against South Korean financial institutions | CrowdStrike: "The campaign was active from late September to early October 2026." |
 | 2026-10-07 | CrowdStrike publishes | as above |
 | approx. 2026-10-08 | Developer reported to announce closed-sourcing, citing abuse | Press-based. When the author checked the GitHub profile and repository README on 10 October, no such statement was present and the repository remained public |
+
+(Added 26 October 2026)  
+Japan entered ARTEX's timeline: 2026-10-15, JPCERT/CC confirms attackers "using AI" on attack-source servers (no tool named; primary); 2026-10-19, GMO Cybersecurity by Ierae reports ARTEX on infrastructure targeting about 20 Japanese companies (press-based; original unreachable); 2026-10-23, JPCERT/CC adds Case E naming Cairn, CyberStrikeAI and ARTEX (primary). The repository's current state (public, private or deleted) could not be checked from the author's working environment on 26 October. Two further tools now sit beside ARTEX. **CyberStrikeAI**: open source by "Ed1s0nZ"; Team Cymru reported on 2 March 2026 its use against FortiGate firewalls (21 IPs running it between 20 January and 26 February; press-based, the report unread). **Cairn**: "an autonomous penetration testing engine"; Gambit Security reported on 22 September 2026, from an attacker's staging server, "105 attack projects" against overseas retailers, "at least 27 companies were compromised," at "a mean of $25.46 over 101 completed scans"; NorForge reported on 19 October 2026, from "more than 20" exposed panels, a cluster targeting US, Japanese and Australian retailers, with successful break-ins taking "a little under 23 hours" and an estimated cost of about $5 per task. The three tools share three things: each was published as open source for penetration testing; the models were not an unreleased frontier model but ones anyone can call by API (DeepSeek v4.1 Flash, GLM, Grok, Opus 4.6); and the evidence came from the attacker's side (staging server, control panels, attack-source servers). What the first edition called "the diffusion of mid-tier capability" is, as of 26 October, a story of three tools rather than one. No new Anthropic primary source on Glasswing or the Cyber Verification Program appeared between 6 and 26 October, as far as the author could find; the defender's timeline stops at 6 October.
 
 The repository had 17 stars when the author checked. What attacked Korean banks was not a famous tool but one published two months earlier and barely known. The models were not an unreleased frontier model but DeepSeek v4.1-flash, GLM-5.3 and Grok 4.6, all available to anyone through an API.
 
@@ -687,6 +876,9 @@ The world's two largest cases carry no AI evidence. The one case with evidence i
 (Added 16 October 2026)  
 Item 3 holds for all 36 notices, including the five rows added on 16 October 2026.
 
+(Added 26 October 2026)  
+Item 3 holds for all 71 notices. Two items are added: 6. In Japan, several attack-source servers on which attackers used AI existed and also attacked targets outside Japan (JPCERT/CC, primary). 7. In Japan, attack attempts abusing public AI pentesting tools (Cairn, CyberStrikeAI, ARTEX) were confirmed (JPCERT/CC, primary). Of what cannot be said, item 1 changes form: whether AI was used in attacks on Japan can now be said (items 6 and 7); what cannot be said is which of the 71 rows' breaches, if any, involved AI. Items 2–4 are unchanged. On 26 October, Japan is an observation point where the AI evidence exists only on the attacker's side; the 71 victims' notices still contain none.
+
 ## What cannot be said
 
 1. Whether AI was used in the Japanese breaches.
@@ -737,6 +929,9 @@ The sixteen pending cases become rows as their primary notices are verified. Whe
 
 (Added 16 October 2026)  
 Five pending cases, including Bookoff (6.43 million), have become rows. Million-plus rows in Chapter 1 rose from 8 to 10, and 11 cases remain pending.
+
+(Added 26 October 2026)  
+On 26 October 35 rows were added: 71 rows, 25 pending; 21 rows above one million, 5 above ten million. Chapter 3's evidence tier gained Japan's attack-source servers (JPCERT/CC). Chapter 5's H1 and H5 split into "supported" for the attacker's side and "undetermined" for the tie to the rows. Chapter 6's attacker timeline became a story of three tools. Thirty-five rows in ten days is what the author could open, not the whole of what was disclosed; the aggregator's daily lists ran to dozens of organisations a day between 16 and 25 October, and what the ledger has not caught up with sits outside it, as pending or not yet even pending.
 
 Chapter 3's tiers rise if evidence appears. If an attacker's files are exposed in a Japanese case, it becomes Tier 1. If not, the absence remains.
 

@@ -5,8 +5,8 @@
   },
   "repository": "https://github.com/Leading-AI-IO/the-japan-breach-registry-2026",
   "license": "CC BY 4.0",
-  "version": "2.0",
-  "snapshot_date": "2026-10-16",
+  "version": "3.0",
+  "snapshot_date": "2026-10-26",
   "scope": {
     "ja": "2026年9月1日以降に、日本に本社または主たる事業所を置く企業・団体・自治体・独立行政法人等が公表した、個人情報の漏えいまたは漏えいの可能性。著者が当事組織の一次公表文を自ら開いて確認した行だけを収載する。\n\n（2026年10月11日追記）\n第2版以降に新たに収載する行は、外部からの不正アクセス（第三者による不正アクセス、不正ログイン、委託先・利用サービスへの不正アクセスを含む）による漏えいまたは漏えいの可能性に限る。誤送付、誤送信、紛失、誤掲載、設定の誤りによる閲覧可能状態など、外部からの不正アクセスを伴わない事案は収載しない。該当するかどうかは、公表文に外部からの不正アクセスの記述があるかで判定する。第1版で収載した013（ベネフィット・ワン、「プログラムの条件設定不備」）はこの基準に該当しないが、追記専用の規律に従い、第1版の行として残す。",
     "en": "Personal-data breaches, or possible breaches, disclosed on or after 1 September 2026 by companies, agencies, municipalities and other organisations headquartered or principally operating in Japan. Only rows whose primary notice the author opened and read are admitted.\n\n(Added 11 October 2026)\nFrom the second edition onward, newly admitted rows are limited to breaches, or possible breaches, caused by external unauthorised access (including third-party intrusion, unauthorised login, and unauthorised access to a contractor or a service the organisation uses). Cases without external unauthorised access — misdelivery, mis-sent email, loss, erroneous publication, or data left viewable through a configuration error — are not admitted. Whether a case qualifies is decided by whether the notice itself describes external unauthorised access. Row 013 (Benefit One, 「プログラムの条件設定不備」, a program condition misconfiguration), admitted in the first edition, does not meet this criterion but stays as a first-edition row under the append-only rule."
@@ -61,7 +61,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www.digital.go.jp/news/2026-0911-01",
       "retrieved": "2026-10-10",
-      "notes_ja": "「ネットワーク接続機器（VPN）の脆弱性を利用してシステムに侵入し」。台帳で経路にVPNを明記した唯一の行"
+      "notes_ja": "「ネットワーク接続機器（VPN）の脆弱性を利用してシステムに侵入し」。台帳で経路にVPNを明記した唯一の行。（2026年10月26日追記）GSS事案の公表文（2026-09-11）に更新なし。デジタル庁は2026年10月22日に別事象（委託先Studio社への不正アクセス、052）を公表した"
     },
     {
       "id": "003",
@@ -112,7 +112,7 @@
       "ai_mention": "なし",
       "primary_url": "https://corp.helpfeel.com/news/news-20260916-1",
       "retrieved": "2026-10-10",
-      "notes_ja": "「画像アップロードサーバーに存在した脆弱性を悪用し」「任意のコマンドを実行する不正アクセス」。第二報 https://corp.helpfeel.com/news/news-20260925-01 。公表文自身が、件数は人数ではないと明記している"
+      "notes_ja": "「画像アップロードサーバーに存在した脆弱性を悪用し」「任意のコマンドを実行する不正アクセス」。第二報 https://corp.helpfeel.com/news/news-20260925-01 。公表文自身が、件数は人数ではないと明記している。（2026年10月26日追記）第三報・最終報告（2026年10月21日、https://corp.helpfeel.com/news/news-20261021 ）。件数は第二報と同じ（「約2,362万件」「約4.9億件」「約240万件」「約1.74億件」）。新たに「432件」の画像（「133名」が所有）について「第三者に閲覧・取得されたことが判明しました」、「約5.7万アカウント」、海外の監督機関への報告「約30の国・地域」。経路は「外部からの入力値が適切に処理されないままサーバー上のコマンドとして解釈されてしまう脆弱性が存在した」「外部のソフトウェア部品や委託先に起因するもの（いわゆるサプライチェーン攻撃）ではなく」。「送信された通信の内容そのものを記録したログは存在しないため、外部へ送信されたデータの項目や件数を直接確認することはできず」。最終報告書受領10-15。防御側対策として「AIを活用したソースコードの静的解析」を挙げるが、攻撃側のAIへの言及なし"
     },
     {
       "id": "006",
@@ -146,7 +146,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www.park24.co.jp/news/2026/09/20260928-1.html",
       "retrieved": "2026-10-10",
-      "notes_ja": "第1報 https://www.park24.co.jp/news/2026/09/web1.html（件数なし）、第3報 https://www.park24.co.jp/news/2026/09/20260929-1.html 。原因は調査中"
+      "notes_ja": "第1報 https://www.park24.co.jp/news/2026/09/web1.html（件数なし）、第3報 https://www.park24.co.jp/news/2026/09/20260929-1.html 。原因は調査中。（2026年10月26日訂正）第5報（2026年10月23日、https://www.park24.co.jp/news/2026/10/20261023-1.html 、投資家向けPDF https://www.park24.co.jp/news/pdf/20261023_02.pdf ）で確定値を公表。タイムズカーWebシステム（外部送信の痕跡あり）「6,628,007 件」、本人確認書類画像（外部送信の痕跡あり）「1,464,800 件」、同（アクセスのみ）「891,602 件」、合計「計 2,356,402 件」。「本人確認書類画像データ約 160 万件について漏えいのおそれがあるとお知らせしておりました」→「外部送信の痕跡が確認された本人確認書類画像データは約 146 万件であることが判明しました」。タイムズクラブWeb：クラブカード番号「19,510 件」、連携サービスID「135,436 件」ほか。経路を初めて公表：「本事案は Web システムに存在した脆弱性が悪用されたことにより発生したものと判断しております」「攻撃者は当該脆弱性を悪用してシステムへ侵入した後、システム内の情報を探索し、取得した情報を利用してデータベースおよびファイル領域へアクセスしていたことを確認しております」。本行の経路分類は初報の値（経路未公表）として残す。本人確認書類画像を「2026 年 10 月末までに削除」、「3,000 円相当の現金または金券」、通期業績予想の修正。攻撃側のAIへの言及なし"
     },
     {
       "id": "008",
@@ -231,7 +231,7 @@
       "ai_mention": "なし",
       "primary_url": "https://online.seicomart.co.jp/delivery/cms/preview.php?disp_flg=pc&pre_no=119",
       "retrieved": "2026-10-10",
-      "notes_ja": "「セイコーマートアプリのサーバーを経由して会員情報を保有するサーバーに対し第三者が不正にアクセスし」"
+      "notes_ja": "「セイコーマートアプリのサーバーを経由して会員情報を保有するサーバーに対し第三者が不正にアクセスし」。（2026年10月26日追記）2026年10月15日「会員向けサービス再開予定のお知らせ」（https://www.secoma.co.jp/images/top/20261015.pdf ）。「10 月下旬の再開を予定」（アプリログイン）、「個人情報をアプリ・WEB サイト等から閲覧できない仕組みへ移行し」。件数の更新なし"
     },
     {
       "id": "013",
@@ -316,7 +316,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www.monogatari.co.jp/news/261005_news/",
       "retrieved": "2026-10-10",
-      "notes_ja": "著者は適時開示の本文（TDnet配信の同文）で照合した。経路は「詳細な調査を進めております」"
+      "notes_ja": "著者は適時開示の本文（TDnet配信の同文）で照合した。経路は「詳細な調査を進めております」。（2026年10月26日追記）2026年10月20日「『焼肉きんぐ』公式アプリにおける今後のセキュリティおよび個人情報保護強化策について」（https://www.monogatari.co.jp/news/261020_news/ ）。「本事案は、2026年10月2日（金）朝9時から、外部の第三者からの断続的な攻撃（不正アクセス）を受けたことにより発生いたしました」。侵入経路の詳細は記載なし。「計11の公式アプリ」を2027年上半期に刷新し「氏名、電話番号の個人情報は保持いたしません」。防御側に「AIを活用した検知システム導入の検討等」。攻撃側のAIへの言及なし。件数の更新なし"
     },
     {
       "id": "018",
@@ -367,7 +367,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www.daiki-suisan.co.jp/files/optionallink/00000164_file.pdf",
       "retrieved": "2026-10-10",
-      "notes_ja": "確認から公表まで約3週間"
+      "notes_ja": "確認から公表まで約3週間。（2026年10月26日追記）2026年10月21〜23日に公式アプリの「緊急のサーバーメンテナンス」を告知（https://www.daiki-suisan.co.jp/topics/archives/130 、同131）。不正アクセスとの関係・件数の記載なし。調査結果の公表は確認できず"
     },
     {
       "id": "021",
@@ -418,7 +418,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www.idcf.jp/news/topics/20261007002",
       "retrieved": "2026-10-10",
-      "notes_ja": "「第三者からのランサムウェア攻撃によるものであることが判明」。本行自体は個人情報漏えいの公表ではないが、027（JR東日本）の経路の起点であるため収載。（2026年10月16日訂正）第5報（2026年10月14日、https://www.idcf.jp/news/topics/20261014001 ）。「これらの事実から、当社としては外部へのデータの流出はなかったと判断しています」。「障害の影響を受けた495の企業・自治体のうち、IDCFクラウドの「スナップショット機能」をご利用いただいていた194のお客さまについて、バックアップデータの取り出しが可能であることを確認しました」。新たに「「IDCFクラウドポータル」において、48社のお客さまの登録情報に対して不正な照会が行われたことを確認しました」「不正に照会された情報には、担当者の個人名を含む可能性があるメールアドレスが2社（各1件）含まれています」。侵入経路は調査項目として挙げられているが、結果は未記載。第3報（10月8日、https://www.idcf.jp/news/topics/20261008001 ）で「第三者からの不正アクセス（ランサムウェア攻撃）」、第4報（10月9日、https://www.idcf.jp/news/topics/20261009001 ）は対応体制の報告。攻撃側のAIへの言及なし"
+      "notes_ja": "「第三者からのランサムウェア攻撃によるものであることが判明」。本行自体は個人情報漏えいの公表ではないが、027（JR東日本）の経路の起点であるため収載。（2026年10月16日訂正）第5報（2026年10月14日、https://www.idcf.jp/news/topics/20261014001 ）。「これらの事実から、当社としては外部へのデータの流出はなかったと判断しています」。「障害の影響を受けた495の企業・自治体のうち、IDCFクラウドの「スナップショット機能」をご利用いただいていた194のお客さまについて、バックアップデータの取り出しが可能であることを確認しました」。新たに「「IDCFクラウドポータル」において、48社のお客さまの登録情報に対して不正な照会が行われたことを確認しました」「不正に照会された情報には、担当者の個人名を含む可能性があるメールアドレスが2社（各1件）含まれています」。侵入経路は調査項目として挙げられているが、結果は未記載。第3報（10月8日、https://www.idcf.jp/news/topics/20261008001 ）で「第三者からの不正アクセス（ランサムウェア攻撃）」、第4報（10月9日、https://www.idcf.jp/news/topics/20261009001 ）は対応体制の報告。攻撃側のAIへの言及なし。（2026年10月26日追記）第6報（2026年10月18日、https://www.idcf.jp/news/topics/20261018001 ）はバックアップサービスの提供再開。「『スナップショット機能』※2は、安全性の確認のために現在も提供を停止しています」。侵入経路・件数の記載なし。連鎖先のビューカード（042）・JR九州（043）を10月26日に収載"
     },
     {
       "id": "024",
@@ -452,7 +452,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www.lawson.co.jp/contents/cont07/1533174_3310.html",
       "retrieved": "2026-10-10",
-      "notes_ja": "「アプリ上で利用者本人に対し情報を表示するためのセキュリティ機構が第三者による不正アクセスを受け」。侵入から判明まで約3週間"
+      "notes_ja": "「アプリ上で利用者本人に対し情報を表示するためのセキュリティ機構が第三者による不正アクセスを受け」。侵入から判明まで約3週間。（2026年10月26日訂正）同一URLの公表文が2026年10月13日・10月19日・10月24日に更新。10月24日：「※2026年10月24日追記：その後の詳細な調査により、「メールアドレス」「メルマガ取得情報」の漏えいはされておらず、「生年月日」の情報漏えいの可能性があることが判明したため、上記のとおり訂正いたしました。」件数は「215万5,345件」「26件」のまま。10月19日に予約機能を再開。本行の対象情報は初報の値として残す。攻撃側のAIへの言及なし"
     },
     {
       "id": "026",
@@ -503,7 +503,7 @@
       "ai_mention": "なし",
       "primary_url": "https://skyticket.jp/news/maintenance/67603",
       "retrieved": "2026-10-10",
-      "notes_ja": "(1)「一部の管理機能を不正に操作され」、(2)「業務管理システムの脆弱性を悪用されたもの」、(3)「予約完了ページがログインをしなくても表示できる状態」（設定不備）。一つの公表文に3つの経路がある。（2026年10月16日追記）親会社サイトに電話窓口開設の告知（2026年10月13日、https://jp.adventurekk.com/news/data-leak-call-center-notice/ ）。件数・経路の変更なし"
+      "notes_ja": "(1)「一部の管理機能を不正に操作され」、(2)「業務管理システムの脆弱性を悪用されたもの」、(3)「予約完了ページがログインをしなくても表示できる状態」（設定不備）。一つの公表文に3つの経路がある。（2026年10月16日追記）親会社サイトに電話窓口開設の告知（2026年10月13日、https://jp.adventurekk.com/news/data-leak-call-center-notice/ ）。件数・経路の変更なし。（2026年10月26日訂正）第2報（2026年10月16日、https://skyticket.jp/news/maintenance/67630 ）。「「skyticketプレミアム」をご利用いただいた一部のお客様のクレジットカード情報等が流出したことが判明いたしました」「人数：最大6,140名」「項目：クレジットカード番号、カード名義人名、有効期限（一部のお客様はカード番号のみ）」「※セキュリティコードは含まれておりません。」「カード情報は暗号化されておりましたが、暗号化に用いる情報も不正に取得されているため、カード情報が読み取られるおそれがございます」。「2018年6月以前は、カード情報を当社サーバーで保管しておりました」「会費のお支払いに関する記録（ログ）が削除されずに当社サーバーに残っておりました」「2026年10月2日から4日までの間の不正アクセスにより、10月3日にこのログが取得されたことを確認いたしました」。第1報の「パスポート番号は流出なし」等の記載はそのまま、カード番号については第1報の記載が訂正された。攻撃側のAIへの言及なし"
     },
     {
       "id": "029",
@@ -537,7 +537,7 @@
       "ai_mention": "なし",
       "primary_url": "https://jp.corp-sansan.com/news/2026/1009.html",
       "retrieved": "2026-10-10",
-      "notes_ja": "「本件はコミューン社のシステムに対する攻撃により発生したものです。」024・031と同じ委託先"
+      "notes_ja": "「本件はコミューン社のシステムに対する攻撃により発生したものです。」024・031と同じ委託先。（2026年10月26日追記）委託先コミューン株式会社の続報（2026年10月21日、https://communeinc.com/ja/news/2026oct21 ）。本文はJavaScript描画のため著者未読。報道ベースでは対象「16万6,505人」、うちメールアドレスを含む「12万5,601人」（初報の推計約30.7万人から確定）。Sansan自身の公表文に追記なし"
     },
     {
       "id": "031",
@@ -554,7 +554,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www.lixil.co.jp/announce/notice-info-leak.htm",
       "retrieved": "2026-10-10",
-      "notes_ja": "委託先はコミューン株式会社（Commune）。「複数の不備が第三者に悪用されたことにより発生」"
+      "notes_ja": "委託先はコミューン株式会社（Commune）。「複数の不備が第三者に悪用されたことにより発生」。（2026年10月26日追記）委託先コミューンの続報は030の補足を参照。LIXIL自身の公表文に追記なし。2026年10月22日の「当社Webシステムの一時停止および緊急メンテナンスについて」（https://newsroom.lixil.com/ja/20261022_notice ）はPHPの脆弱性の公表を受けたもので、「本件に関連した当社システムへの不正アクセスやお客様情報の漏えいは確認されておりません」と記載。本行とは別"
     },
     {
       "id": "032",
@@ -571,7 +571,7 @@
       "ai_mention": "なし",
       "primary_url": "https://ssl4.eir-parts.net/doc/9278/tdnet/2893077/00.pdf",
       "retrieved": "2026-10-16",
-      "notes_ja": "「当社子会社が提供する会員情報を管理するシステムに対して第三者による不正アクセスが行われ、会員情報が外部に流出したことを確認いたしました」。対応として「攻撃元からの通信を遮断し、脆弱性を是正し」と書くが、侵入経路としての記述ではないため経路は未公表とする。第2報（2026-10-13）は著者未読。第1版では照合待ち"
+      "notes_ja": "「当社子会社が提供する会員情報を管理するシステムに対して第三者による不正アクセスが行われ、会員情報が外部に流出したことを確認いたしました」。対応として「攻撃元からの通信を遮断し、脆弱性を是正し」と書くが、侵入経路としての記述ではないため経路は未公表とする。第2報（2026-10-13）は著者未読。第1版では照合待ち。（2026年10月26日追記）第2報（2026年10月13日、https://ssl4.eir-parts.net/doc/9278/tdnet/2894129/00.pdf ）、第2報の一部訂正（10月16日、https://ssl4.eir-parts.net/doc/9278/tdnet/2896130/00.pdf ）、WEB照会機能の追加（10月23日、https://ssl4.eir-parts.net/doc/9278/ir_material10/288762/00.pdf ）。いずれもPDFに著者が到達できず未読（HTML版 https://www.bookoff.co.jp/info/news/2026/post_114.html は画像のみ）。報道ベースでは第2報で対象者「6,383,279人」、会員番号「6,427,735件」、退会会員「212,371人」、経路は「今後の不正アクセスを誘発するおそれがあるため、公表を差し控えます」。10月16日の訂正は対象項目に「職業」「ニックネーム」を追加。本行の値は変えない"
     },
     {
       "id": "033",
@@ -605,7 +605,7 @@
       "ai_mention": "なし",
       "primary_url": "https://www2.sagawa-exp.co.jp/information/detail/420/",
       "retrieved": "2026-10-16",
-      "notes_ja": "著者が読んだのは第2報（2026-10-01）。「『「お荷物問い合わせサービス」への第三者による不正アクセス（第1報）』につきまして、これまでの調査の結果、お客さまの個人情報が外部に流出した可能性があることが判明いたしました」。published は初報（第1報）の日付。第3報（2026-10-01）、第4報（2026-10-09）、FAQ（2026-10-08）は著者未読。第1版では照合待ち"
+      "notes_ja": "著者が読んだのは第2報（2026-10-01）。「『「お荷物問い合わせサービス」への第三者による不正アクセス（第1報）』につきまして、これまでの調査の結果、お客さまの個人情報が外部に流出した可能性があることが判明いたしました」。published は初報（第1報）の日付。第3報（2026-10-01）、第4報（2026-10-09）、FAQ（2026-10-08）は著者未読。第1版では照合待ち。（2026年10月26日追記）第4報（2026年10月9日、https://www2.sagawa-exp.co.jp/information/detail/426/ ）、第5報（10月23日、https://www2.sagawa-exp.co.jp/information/detail/430/ ）。公表ページがJavaScript必須のため著者未読。報道ベース（INTERNET Watch 10月23日 https://internet.watch.impress.co.jp/docs/news/2150814.html 、NHK同日）では第5報で「最大約5323万件（同一人物の重複を含む）」、対象は2026年6月21日〜9月30日の送り状データ（依頼主・届け先の氏名・住所・電話番号）、運賃契約顧客の契約情報、スマートクラブ会員情報。経路の具体は非公表。著者が本文を読むまで、本行の規模は「調査中」のまま残す。読めた時点で、台帳で最大規模の行になる可能性がある"
     },
     {
       "id": "035",
@@ -622,7 +622,7 @@
       "ai_mention": "なし",
       "primary_url": "https://corp.newspicks.com/info/20261008",
       "retrieved": "2026-10-16",
-      "notes_ja": "「業務で利用している管理ツールが第三者による不正アクセスを受け」。第二報（2026-10-09、https://corp.newspicks.com/info/20261009 ）は著者未読。第1版では照合待ち"
+      "notes_ja": "「業務で利用している管理ツールが第三者による不正アクセスを受け」。第二報（2026-10-09、https://corp.newspicks.com/info/20261009 ）は著者未読。第1版では照合待ち。（2026年10月26日追記）第二報（2026年10月9日、https://corp.newspicks.com/info/20261009 ）は本文がJavaScript描画のため著者未読。報道ベースでは項目別の最大値として「メールアドレス最大32.3万件、クレジットカード情報の一部最大36.2万件など」、「NewsPicks が業務で利用する管理ツールの脆弱性を突いたもの」（項目別の最大値であり人数は未公表）。第三報は確認できず。本行の値は変えない"
     },
     {
       "id": "036",
@@ -640,44 +640,604 @@
       "primary_url": "https://www.whiteessence.co.jp/news/?action=detail&id=56&p=1",
       "retrieved": "2026-10-16",
       "notes_ja": "「弊社が運営する予約サイトのプログラムに存在した脆弱性を悪用され、これを起点として、弊社の基幹システムに不正アクセスされたことによるものです」。2026年8月12日のシステム停止の告知は不正アクセスの公表であり、個人情報の持ち出しを公表したのは本公表文（2026-10-05）が初めて。そのため9月1日以降の公表として収載する。第1版では照合待ち"
+    },
+    {
+      "id": "037",
+      "published": "2026-09-28",
+      "org_ja": "集英社（HAPPY PLUS COMMUNITY）",
+      "org_en": "Shueisha (HAPPY PLUS COMMUNITY blogger platform)",
+      "scale_ja": "「2,835 名」（ブロガーに関する情報「2,835 件」）、案件情報「630 件」、本システムから送信したすべてのメール情報「11,237 件」、取引先一覧「10,780 件」（うちメールアドレス「26 件」、電話番号「113 件」）",
+      "scale_en": "\"2,835 persons\" (blogger records \"2,835\"); project records \"630\"; all emails sent by the system \"11,237\"; business-partner list \"10,780\" (email addresses \"26\", phone numbers \"113\")",
+      "status_ja": "閲覧・取得された可能性があり、漏洩したことが判明",
+      "status_en": "May have been viewed or taken; leak found",
+      "data_ja": "氏名、メールアドレス、住所、電話番号、生年月日、性別、職業、プロフィール画像、プロフィール情報、SNSアカウント、フォロワー数、結婚状況、子の有無、身長、肌タイプなど個人別画面に登録された情報",
+      "vector": "設定不備",
+      "dates_ja": "侵入2026-09-09 0:45〜1:25および13:42〜16:46、検知2026-09-09 14:53",
+      "ai_mention": "なし",
+      "primary_url": "https://www.shueisha.co.jp/wp-content/uploads/2026/09/Shueisha20260928-1.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「利用している CMS の設定の不備に起因する API 認証情報を狙った攻撃を受け、特権ユーザーアカウントが不正に作成され、API リクエストを繰り返し実行されたことにより、情報が漏洩したと考えます。」侵入時間内に「100 名のメールアドレス宛に、本システムのテンプレートを利用した メールが合計３通送信された」。外部からの不正アクセス（特権ユーザーアカウントの不正作成）を伴うため収載。経路は「設定不備」に分類したが、013（ベネフィット・ワン）と異なり外部からの侵入を伴う。第1版・第2版では照合待ち"
+    },
+    {
+      "id": "038",
+      "published": "2026-09-29",
+      "org_ja": "ヤマト運輸（クロネコ代金後払いサービス）",
+      "org_en": "Yamato Transport (Kuroneko deferred-payment service)",
+      "scale_ja": "「約526万件」（うちメールアドレスを含むもの「約49万件」）、お届け先「約5万件」、加盟店「約4,100件」（第4報 2026-10-16で確定）",
+      "scale_en": "\"Approx. 5.26 million records\" (of which \"approx. 490,000\" include email addresses); recipients \"approx. 50,000\"; member merchants \"approx. 4,100\" (fixed in 4th notice, 16 Oct 2026)",
+      "status_ja": "一部の情報が不正に持ち出されたことが判明",
+      "status_en": "Some data found to have been taken out",
+      "data_ja": "氏名、住所、電話番号、メールアドレス、商品明細／（お届け先）氏名、住所、電話番号、送り状番号／（加盟店）加盟店名、加盟店コード。クレジットカード情報・パスワードは含まれない",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "検知2026-09-28。対象データの期間2018-10-01〜2026-09-28",
+      "ai_mention": "なし",
+      "primary_url": "https://www.yamato-hd.co.jp/important/info_260929_1.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "初報2026-09-29、第2報10-02、第3報10-09、第4報10-16（件数確定）。published は初報の日付。「第三者による不正アクセスを受けた」とのみ記載し、経路は未公表。第1版・第2版の照合待ちには入っていなかった行"
+    },
+    {
+      "id": "039",
+      "published": "2026-10-01",
+      "org_ja": "日本原子力研究開発機構（研究支援サイト）",
+      "org_en": "Japan Atomic Energy Agency (research-support site on contracted cloud)",
+      "scale_ja": "不正ダウンロード「2,419件」、うち個人情報を含むファイル「367件」（「175人分」。顔写真付公的身分証明証200件〈うち6名分はマイナンバーを含む〉、特殊健康診断結果146件、放射線業務従事者証明書21件）",
+      "scale_en": "Unauthorised downloads \"2,419 files\", of which \"367\" contain personal data (\"175 persons\": 200 photo-ID documents incl. 6 with My Number, 146 special health-check results, 21 radiation-worker certificates)",
+      "status_ja": "漏えい（確認）",
+      "status_en": "Leak (confirmed)",
+      "data_ja": "顔写真付き公的身分証明証、特殊健康診断結果、放射線業務従事者証明書",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "不正アクセス確認2026-09-25、個人情報の含有確認2026-09-29",
+      "ai_mention": "なし",
+      "primary_url": "https://www.jaea.go.jp/02/press2026/p26100105/",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「令和8年9月25日に当機構が契約するクラウド基盤上で運用している研究支援サイトへの不正アクセスを確認しました」。侵入手口の記載なし。独立行政法人（企業でない行）。対象が従業員・関係者である行。第1版・第2版では照合待ち"
+    },
+    {
+      "id": "040",
+      "published": "2026-10-03",
+      "org_ja": "リクルート（スタディサプリ）",
+      "org_en": "Recruit (Study Sapuri)",
+      "scale_ja": "「3,687件」（メールアドレス）",
+      "scale_en": "\"3,687 records\" (email addresses)",
+      "status_ja": "不正アクセス（確認）。メールアドレス以外の流出は「確認されておりません」",
+      "status_en": "Unauthorised access confirmed; no leak of data other than email addresses confirmed",
+      "data_ja": "登録メールアドレスのみ。「氏名・パスワード・決済情報など、メールアドレス以外の個人情報の当社から外部への流出は確認されておりません。」",
+      "vector": "脆弱性",
+      "dates_ja": "発生・判明2026-09-30、同日修正",
+      "ai_mention": "なし",
+      "primary_url": "https://studysapuri.jp/info/important/#ssntc_303",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「システムの一部機能における仕様の不備を突いた第三者の不正アクセス」により、特定のメールアドレスの登録有無を照会された。「仕様の不備」を021（ミスターマックス）と同じく脆弱性に分類。同社の別件（2026-10-15、学校向け「先生からのお知らせ」機能、139校・483ファイル）は「外部からの攻撃や、外部の第三者による不正アクセスではございません」と書かれており、収載基準に該当しない。カーセンサーnet（2026-10-21）は別事案で照合待ち。第1版・第2版では照合待ち"
+    },
+    {
+      "id": "041",
+      "published": "2026-10-04",
+      "org_ja": "日本経済新聞社（Google Workspace アカウント）",
+      "org_en": "Nikkei Inc. (Google Workspace account)",
+      "scale_ja": "「1646人分」",
+      "scale_en": "\"1,646 persons\"",
+      "status_ja": "漏洩した疑い",
+      "status_en": "Suspected leak",
+      "data_ja": "「メールアドレスや氏名など」の社員・取引先の個人情報。「読者や取材先に関するものは含まれていません。」",
+      "vector": "不正ログイン",
+      "dates_ja": "不正ログイン「7月下旬以降」、判明「8月上旬にグーグル社からの通知により」",
+      "ai_mention": "なし",
+      "primary_url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1547.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「「グーグルワークスペース」のアカウントが7月下旬以降、外部から不正にログインされ」「それ以降の不正ログインは確認されていません」。同日に別件（Microsoft 365アカウントへのサイバー攻撃、なりすましメール「約9000件」、https://www.nikkei.co.jp/nikkeiinfo/news/information/1554.html ）も公表。不正ログインは7月で、公表が10月4日のため、公表日基準で収載。別件の開発用クラウド（047）とは別事象。第1版・第2版では照合待ち"
+    },
+    {
+      "id": "042",
+      "published": "2026-10-09",
+      "org_ja": "ビューカード（VIEW's NET・委託先IDCフロンティア）",
+      "org_en": "Viewcard (VIEW's NET; via contractor IDC Frontier)",
+      "scale_ja": "「約 403 万件」（VIEW's NET登録メールアドレス）",
+      "scale_en": "\"Approx. 4.03 million records\" (email addresses registered with VIEW's NET)",
+      "status_ja": "漏えいした可能性。閲覧または取得された可能性を否定できない",
+      "status_en": "Possible leak; viewing or acquisition cannot be ruled out",
+      "data_ja": "メールアドレスのみ。氏名・住所・電話番号・カード番号は「漏えいの可能性なし」",
+      "vector": "委託先",
+      "dates_ja": "判明2026-10-07。侵入日・検知日は記載なし",
+      "ai_mention": "なし",
+      "primary_url": "https://www.jreast.co.jp/card/news/pdf/20261009.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「IDC フロンティア社で発生した不正アクセスに伴うメール配信用外部サービスからのメールアドレス漏えい可能性について」。023の連鎖。viewcard.co.jp のプレス一覧はリダイレクトのため、JR東日本サイト配下のPDFを一次とした。（2026年10月15日更新版 https://www.jreast.co.jp/card/news/pdf/20261015.pdf ）委託先のメール配信サービス会社から、VIEW's NET会員のメールアドレスは漏えいしていなかったと判断した旨の報告があったと追記。027と同じ構造。第1版・第2版では照合待ち"
+    },
+    {
+      "id": "043",
+      "published": "2026-10-09",
+      "org_ja": "JR九州（JR九州Web会員・委託先IDCフロンティア）",
+      "org_en": "JR Kyushu (web members; via contractor IDC Frontier)",
+      "scale_ja": "「対象件数（最大）」JR九州Web会員「約 130 万件」",
+      "scale_en": "\"Affected (maximum)\": JR Kyushu web members \"approx. 1.3 million records\"",
+      "status_ja": "漏えいした可能性。可能性が否定できない",
+      "status_en": "Possible leak; cannot be ruled out",
+      "data_ja": "「電子メールログデータ」内のメールアドレス。氏名・住所・電話番号・カード番号・メルマガ本文は対象外",
+      "vector": "委託先",
+      "dates_ja": "記載なし",
+      "ai_mention": "なし",
+      "primary_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/09/202691009_mail_address_access_1.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「IDC フロンティア社で発生した不正アクセスに伴うメールアドレス等漏えいの可能性について」。023の連鎖。続報（2026年10月15日、https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/15/202691015_mail_address_access.pdf ）で、10月14日にIDCフロンティアから報告を受け「漏えいの事実は確認されませんでした」。本行は初報の値のまま残す。第1版・第2版では照合待ち"
+    },
+    {
+      "id": "044",
+      "published": "2026-10-15",
+      "org_ja": "ソースネクスト（会員情報取得API）",
+      "org_en": "SourceNext (member-information API)",
+      "scale_ja": "「対象件数：22,519,960件」",
+      "scale_en": "\"Affected: 22,519,960 records\"",
+      "status_ja": "漏えい（確認）",
+      "status_en": "Leak (confirmed)",
+      "data_ja": "会員情報（パスワードを含む、と公表文に記載）",
+      "vector": "脆弱性",
+      "dates_ja": "侵入2026-10-09 10時頃、検知2026-10-13 9時頃",
+      "ai_mention": "なし",
+      "primary_url": "https://www.sourcenext.com/support/i/2026/1015_info/",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「会員情報取得APIを不正に利用し」。APIの不正利用を021と同じく脆弱性に分類。対象情報の項目は著者が公表文で確認すること。公表文の単位で1,000万を超える行"
+    },
+    {
+      "id": "045",
+      "published": "2026-10-16",
+      "org_ja": "日本経済新聞社（開発用クラウド環境）",
+      "org_en": "Nikkei Inc. (development cloud environment)",
+      "scale_ja": "「約183万件」（個人情報を含むもの「約15万件」〈うちメールアドレスを含むもの「約12万件」〉、識別子のみ「約168万件」）",
+      "scale_en": "\"Approx. 1.83 million records\" (incl. \"approx. 150,000\" with personal data, of which \"approx. 120,000\" include email addresses; \"approx. 1.68 million\" identifiers only)",
+      "status_ja": "漏洩（確認）",
+      "status_en": "Leak (confirmed)",
+      "data_ja": "「氏名、メールアドレス、住所、電話番号、生年月日のいずれかが含まれる個人情報」。「クレジットカード情報は含まれていません。」",
+      "vector": "不正ログイン",
+      "dates_ja": "不正アクセス2026-10-07未明〜朝、個人情報保護委員会へ報告2026-10-11",
+      "ai_mention": "なし",
+      "primary_url": "https://www.nikkei.co.jp/nikkeiinfo/news/information/1561.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「クラウドサービスにアクセスするための認証情報が何らかの手段で窃取されました」。窃取した認証情報による侵入を不正ログインに分類。041とは別事象。2026年10月23日追記でPHPの脆弱性の公表を受けお問い合わせフォームを変更（本事案の経路ではない）"
+    },
+    {
+      "id": "046",
+      "published": "2026-10-16",
+      "org_ja": "ファンケル／アテニア",
+      "org_en": "FANCL / Attenir",
+      "scale_ja": "ファンケル「393,785 件、368,184 名」、アテニア「441,162 件、417,312 名」",
+      "scale_en": "FANCL \"393,785 records, 368,184 persons\"; Attenir \"441,162 records, 417,312 persons\"",
+      "status_ja": "不正アクセス（確認）。不正利用等は「確認されておりません」",
+      "status_en": "Unauthorised access confirmed; no misuse confirmed",
+      "data_ja": "「メールアドレス、氏名、住所、電話番号、生年月日、性別、お客様番号、サブメールアドレスおよびそのパスワード」（ハッシュ化）。決済情報は含まれない",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "侵入2026-10-03〜10-10、判明2026-10-15（内部調査）、個人情報保護委員会・警察へ報告2026-10-16",
+      "ai_mention": "なし",
+      "primary_url": "https://www.fancl.jp/news/pdf/husei.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「両社が管理するシステムの一部において、外部からの不正アクセスにより」。手口の記載なし。件と名の両方を公表文が書いている行"
+    },
+    {
+      "id": "047",
+      "published": "2026-10-16",
+      "org_ja": "NTTソルマーレ（コミックシーモア）",
+      "org_en": "NTT Solmare (Comic Cmoa)",
+      "scale_ja": "記載なし（「精査中」）",
+      "scale_en": "Not stated (\"under review\")",
+      "status_ja": "流出（確認）",
+      "status_en": "Leak (confirmed)",
+      "data_ja": "「メールアドレス」「ハッシュ化されたパスワード」「生年月日」「性別」「ニックネーム」。「クレジットカード情報は本件の対象システムでは保有しておらず、流出しておりません。」",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "サービス停止2026-10-15 11:35、流出確認2026-10-16",
+      "ai_mention": "なし",
+      "primary_url": "https://www.nttsolmare.com/press/2026/1016.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "初報2026-10-15、第2報10-16（流出確定）、第3報10-16（https://www.nttsolmare.com/press/2026/1016-1.html 、侵入経路と手法を特定し対処と記載するが内容は非公表）。published は流出を公表した第2報の日付。規模の記載がないが、下限を置かない方針により収載"
+    },
+    {
+      "id": "048",
+      "published": "2026-10-16",
+      "org_ja": "岩井コスモ証券（委託先トレードワークス）",
+      "org_en": "Iwai Cosmo Securities (via contractor Tradeworks)",
+      "scale_ja": "「対象：4,975名(今回判明した364名を追加)」（第2報 2026-10-20。第1報は「4,611名」）",
+      "scale_en": "\"Affected: 4,975 persons (364 added in this notice)\" (2nd notice, 20 Oct 2026; 1st notice \"4,611 persons\")",
+      "status_ja": "漏洩（確認）",
+      "status_en": "Leak (confirmed)",
+      "data_ja": "「氏名、メールアドレス他」。「漏洩した情報に、取引暗証番号は含まれておりません。」",
+      "vector": "委託先",
+      "dates_ja": "不正アクセス2026-10-14",
+      "ai_mention": "なし",
+      "primary_url": "https://www.iwaicosmo.co.jp/info/2026/10201710.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「当社インターネット取引のシステム運用・保守業務を委託している株式会社トレードワークス(以下、TW社)のシステムへの不正アクセス」。第1報 https://www.iwaicosmo.co.jp/news/2026/10161410.html 。「7口座分においてお客様の意図しない売買注文が発注(うち5口座で約定)」「今回の不正取引は漏洩した個人情報が利用されたものではありません」。委託先トレードワークスの開示（https://pdf.irpocket.com/C3997/xoA3/IjHJ/LeLI/QUZU.pdf ）は著者未読。published は第1報の日付"
+    },
+    {
+      "id": "049",
+      "published": "2026-10-17",
+      "org_ja": "上新電機",
+      "org_en": "Joshin Denki",
+      "scale_ja": "記載なし",
+      "scale_en": "Not stated",
+      "status_ja": "個人情報漏洩の可能性も否定できない。「情報流出の有無について確認中です。」",
+      "status_en": "Leak cannot be ruled out; whether data leaked is under confirmation",
+      "data_ja": "記載なし",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "不正アクセス認識2026-10-16",
+      "ai_mention": "なし",
+      "primary_url": "https://www.joshin.co.jp/ja/news/info/info-20261017/main/0/link/20261017Notice%20and%20Apology%20Regarding%20System%20Disruption%20Caused%20by%20Unauthorized%20Access.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「当社のネットワークが第三者による不正アクセスの影響を受け」。「個人情報保護委員会へ第一報を入れており」。規模・対象情報の記載がないが、下限を置かない方針により収載"
+    },
+    {
+      "id": "050",
+      "published": "2026-10-17",
+      "org_ja": "石川コンピュータ・センター（顧客向けサポートサイト）",
+      "org_en": "Ishikawa Computer Center (customer-support site)",
+      "scale_ja": "記載なし",
+      "scale_en": "Not stated",
+      "status_ja": "調査中",
+      "status_en": "Under investigation",
+      "data_ja": "記載なし",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "確認2026-10-16",
+      "ai_mention": "なし",
+      "primary_url": "https://www.icc.co.jp/news/2026/20261017.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「原因および侵入経路の特定」中と記載。規模・対象情報の記載がないが、下限を置かない方針により収載"
+    },
+    {
+      "id": "051",
+      "published": "2026-10-18",
+      "org_ja": "Studio（ノーコードWeb制作「Studio」）",
+      "org_en": "Studio Inc. (no-code web builder \"Studio\")",
+      "scale_ja": "記載なし（「機能ごとの対象の件数は、現在精査を進めております。」）",
+      "scale_en": "Not stated (\"counts per function are under review\")",
+      "status_ja": "不正アクセスを確認。流出した可能性。「取得されたものとみなして対応」",
+      "status_en": "Unauthorised access confirmed; possible leak; treated as taken",
+      "data_ja": "「Studioアカウントの情報（ユーザー名、メールアドレス、ハッシュ化されたパスワードなど）」、CMSの内容、フォーム送信内容、APIキー、Webhook URL等",
+      "vector": "脆弱性",
+      "dates_ja": "不正アクセス2026-09-30〜10-01、確認2026-10-13、遮断2026-10-13〜14",
+      "ai_mention": "なし",
+      "primary_url": "https://studio.design/ja/security/notice/2026-10-incident",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「2026年9月30日から10月1日にかけて、第三者がStudioの一部機能の脆弱性を悪用して不正にアクセスし、環境内のデータを外部から取得できる状態にしていたことを確認しております」「第三者が取得した認証情報には、データを書き換えることができる権限も含まれていました」。個別メールの送付は10-16、専用ページ公開は10-18 11:30、最終更新10-20。利用企業・官公庁の連鎖公表あり（052 デジタル庁ほか）。「Studio AI」は製品名"
+    },
+    {
+      "id": "052",
+      "published": "2026-10-22",
+      "org_ja": "デジタル庁（Webフォーム・委託先Studio）",
+      "org_en": "Digital Agency (web forms; via contractor Studio Inc.)",
+      "scale_ja": "ご意見等「最大8,833件」、採用問合せ「最大250件」、接種証明書アプリ問合せ「最大3,661件」、マイナちゃん衣装貸出「最大117件」、イベント申込「最大462件」、Studioアカウント「35件」",
+      "scale_en": "Opinions etc. \"max. 8,833\"; recruitment enquiries \"max. 250\"; vaccination-certificate app enquiries \"max. 3,661\"; mascot-costume loans \"max. 117\"; event applications \"max. 462\"; Studio accounts \"35\"",
+      "status_ja": "漏えいした可能性",
+      "status_en": "Possible leak",
+      "data_ja": "フォーム送信内容（範囲は「現在精査中」）",
+      "vector": "委託先",
+      "dates_ja": "Studio社から報告受領2026-10-16。対象フォームの利用期間2021-05〜2023-03",
+      "ai_mention": "なし",
+      "primary_url": "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「Studio 株式会社における不正アクセスによる個人情報の漏えいの可能性について」。Studio社の報告として「第三者が同社のクラウド環境に不正にアクセスをし、環境内のデータを外部から取得できる状態にしていた」。051の連鎖。002（GSS）とは別事象"
+    },
+    {
+      "id": "053",
+      "published": "2026-10-19",
+      "org_ja": "ユミルリンク（Cuenote FC等）",
+      "org_en": "Yumirlink (Cuenote FC and other mail-delivery systems)",
+      "scale_ja": "「メールアドレスを含む情報延べ約900 万件が出力された」と試算、「合計 5 システム」",
+      "scale_en": "Estimated \"approx. 9 million records (cumulative) including email addresses were output\"; \"5 systems in total\"",
+      "status_ja": "個人情報が外部に持ち出されたことを確認",
+      "status_en": "Exfiltration of personal data confirmed",
+      "data_ja": "「メールアドレスを含む情報」",
+      "vector": "脆弱性",
+      "dates_ja": "検知2026-10-16未明",
+      "ai_mention": "なし",
+      "primary_url": "https://finance-frontend-pc-dist.west.edge.storage-yahoo.jp/disclosure/20261019/20261019553124.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "適時開示（原本 https://ssl4.eir-parts.net/doc/4372/tdnet/2896738/00.pdf 。著者が到達できたのはYahoo!ファイナンス配信の同文）。「プログラムの脆弱性により、当社サポート・品質管理担当者のサービスへの認証情報を取得していること」を確認。委託元の連鎖公表あり（058 野村證券、埼玉県ほか）。延べ件数であり人数ではない"
+    },
+    {
+      "id": "054",
+      "published": "2026-10-19",
+      "org_ja": "クリプトン・フューチャー・メディア（SONICWIRE／D2R）",
+      "org_en": "Crypton Future Media (SONICWIRE / D2R)",
+      "scale_ja": "会員登録情報「362,137件」、見積・請求情報「671件」、非会員メルマガ「11件」（2026-10-22更新。初報は「最大約42万件」）",
+      "scale_en": "Member records \"362,137\"; quotation/invoice records \"671\"; non-member newsletter \"11\" (updated 22 Oct 2026; first notice \"max. approx. 420,000\")",
+      "status_ja": "漏えいした（2026-10-22更新で「可能性」から変更）",
+      "status_en": "Leaked (changed from \"possible\" in 22 Oct update)",
+      "data_ja": "「氏名、メールアドレス、ハッシュ化されたパスワード（※ソルト付きハッシュ値のみ）、システム固有の識別情報（登録日、最終ログイン日等）」",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "検知2026-10-17 20時頃、サーバー停止同日23:39、警察2026-10-18、個人情報保護委員会2026-10-19",
+      "ai_mention": "なし",
+      "primary_url": "https://www.crypton.co.jp/cfm/news/2026/10/20info",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「第三者による不正アクセスが発生し、お客様の個人情報の一部が閲覧・取得されたことが判明いたしました」。2026年10月22日更新で見出しが「漏えいの可能性に関するお知らせ」から「漏えいのお詫びとお知らせ」に変わった。公表文に「当社では、不正アクセス検知後、Mythosを活用し状況を把握、「SONICWIRE」および「D2R」のサービス停止を含めた緊急措置を速やかに講じております。」とある（防御側での使用の記述。攻撃側ではない）"
+    },
+    {
+      "id": "055",
+      "published": "2026-10-20",
+      "org_ja": "トラストバンク（ふるさとチョイス）",
+      "org_en": "Trustbank (Furusato Choice)",
+      "scale_ja": "「4,454,097件」（「今後の調査により変動する可能性があります。」）",
+      "scale_en": "\"4,454,097 records\" (\"may change with further investigation\")",
+      "status_ja": "外部に流出（事実関係は「確認を進めております」）",
+      "status_en": "Leaked externally (facts still being confirmed)",
+      "data_ja": "「氏名、メールアドレス、住所、電話番号、ハッシュ化されたパスワード、寄附控除試算額」",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "不正アクセス2026-10-17（公表文「2026年10月17日（土）に不正アクセスがあったことを確認し」）、通常と異なるアクセス傾向の把握2026-10-19、サービス停止同日15:50、個人情報保護委員会へ報告2026-10-20",
+      "ai_mention": "なし",
+      "primary_url": "https://www.trustbank.co.jp/newsroom/newsrelease/news261020/",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「当社が管理する会員情報に対し、第三者による不正アクセスが行われ」。技術的手口の記載なし。自治体側の連鎖公表が多数ある（台帳には起点の本行のみ収載）。公表文の単位で100万を超える行"
+    },
+    {
+      "id": "056",
+      "published": "2026-10-20",
+      "org_ja": "国土交通省（住宅省エネ2024キャンペーン事務局・博報堂）",
+      "org_en": "MLIT (Housing Energy-Saving 2024 Campaign office, run by Hakuhodo)",
+      "scale_ja": "「23,918名（16,950事業者）（速報値）」",
+      "scale_en": "\"23,918 persons (16,950 businesses) (preliminary)\"",
+      "status_ja": "漏洩した可能性",
+      "status_en": "Possible leak",
+      "data_ja": "「法人の代表者情報（氏名、肩書）」「個人事業主情報（氏名、住所）」「補助金担当者に係る情報（氏名、部署、役職、業務で用いている住所・電話番号・メールアドレス）」",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "記載なし",
+      "ai_mention": "なし",
+      "primary_url": "https://www.mlit.go.jp/report/press/house04_hh_001366.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「外部から不正操作があり、交付申請等の手続きを行うために登録されている事業者の情報が漏洩した可能性がある」。「本補助事業を利用された消費者に係る個人情報の漏洩は確認されておりません。」中央官庁の行（002に続く2行目）。PDF https://www.mlit.go.jp/report/press/content/002027565.pdf"
+    },
+    {
+      "id": "057",
+      "published": "2026-10-20",
+      "org_ja": "日本電気（NEC・委託先経由）",
+      "org_en": "NEC Corporation (via a contractor)",
+      "scale_ja": "記載なし",
+      "scale_en": "Not stated",
+      "status_ja": "漏えいを確認",
+      "status_en": "Leak confirmed",
+      "data_ja": "「お客さまの保有する個人情報やシステム関連情報など」",
+      "vector": "委託先",
+      "dates_ja": "攻撃時期「9月下旬」",
+      "ai_mention": "なし",
+      "primary_url": "https://jpn.nec.com/news/info/20261020.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「委託先が9月下旬にサイバー攻撃を受け、窃取された正規アカウントの認証情報が悪用されたことにより」「サーバ内のファイルが暗号化されたことにより、各種システムが利用できない状態となりました」。連鎖先に大阪大学（059）"
+    },
+    {
+      "id": "058",
+      "published": "2026-10-21",
+      "org_ja": "大阪大学（委託先NEC）",
+      "org_en": "Osaka University (via contractor NEC)",
+      "scale_ja": "「77,851人（重複を除く。）」（「卒業生59,014名、在学生15,035名、教職員 3,802名」）",
+      "scale_en": "\"77,851 persons (deduplicated)\" (\"graduates 59,014, students 15,035, staff 3,802\")",
+      "status_ja": "漏えい（確認）",
+      "status_en": "Leak (confirmed)",
+      "data_ja": "卒業生・在学生・教職員の個人情報",
+      "vector": "委託先",
+      "dates_ja": "ダウンロード2026-09-26",
+      "ai_mention": "なし",
+      "primary_url": "https://www.osaka-u.ac.jp/ja/news/topics/2026/10/21004",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「NECは本学との契約に基づかず、当該協力会社との情報共有のため、本学の個人情報を含むファイルをクラウドストレージ上で共有していたことが確認されました」。057の連鎖。大学（企業でない行）"
+    },
+    {
+      "id": "059",
+      "published": "2026-10-21",
+      "org_ja": "ラクス／ラクスライトクラウド（ブラストメール）",
+      "org_en": "Rakus / Rakus Light Cloud (blastmail)",
+      "scale_ja": "契約者数の記載なし（「すべてのご契約者さま」の販売管理情報）。配信先リストの漏えいを確認した契約数は続報で更新（報道ベースで10-24時点「344件」）",
+      "scale_en": "Number of contracts not stated (sales-management data of \"all contracting customers\"); contracts whose recipient lists were confirmed leaked updated in later notices (press: \"344\" as of 24 Oct)",
+      "status_ja": "外部に持ち出されたことを確認",
+      "status_en": "Exfiltration confirmed",
+      "data_ja": "販売管理システムの会社名、担当者名、電話番号、メールアドレス、請求先メールアドレス、契約・支払い履歴／一部契約者の配信先リスト。カード番号は非保持",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "緊急停止2026-10-21 0:30",
+      "ai_mention": "なし",
+      "primary_url": "https://www.rakus.co.jp/news/2026/1021-3.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「外部の第三者が、株式会社ラクスライトクラウドのAPI用サーバー2台に侵入してコマンドを実行し、販売管理システムおよびサービスのデータベースに接続して、データを持ち出したことを確認しております」。侵入経路は調査中。ラクスライトクラウドの継続更新ページ（https://info.blastmail.jp/information_20261021.html ）は著者未読。委託元の連鎖公表が多数（060 東京都、061 セルズ、カカオピッコマ、新潟日報、東京メトロ、NHK出版ほか。台帳には一次公表文を読めた委託元のみ収載）"
+    },
+    {
+      "id": "060",
+      "published": "2026-10-23",
+      "org_ja": "東京都（委託先ラクスライトクラウド）",
+      "org_en": "Tokyo Metropolitan Government (via contractor Rakus Light Cloud)",
+      "scale_ja": "「最大約16,000件」",
+      "scale_en": "\"Max. approx. 16,000 records\"",
+      "status_ja": "漏えいした可能性",
+      "status_en": "Possible leak",
+      "data_ja": "「氏名、メールアドレス、属性」",
+      "vector": "委託先",
+      "dates_ja": "記載なし",
+      "ai_mention": "なし",
+      "primary_url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317",
+      "retrieved": "2026-10-26",
+      "notes_ja": "059の連鎖。自治体の行"
+    },
+    {
+      "id": "061",
+      "published": "2026-10-23",
+      "org_ja": "セルズ（委託先ラクスライトクラウド「ブラストメール」）",
+      "org_en": "Cells Co. (via contractor Rakus Light Cloud)",
+      "scale_ja": "「対象となる可能性のある配信先情報：最大約18,000件（現在精査中）」",
+      "scale_en": "\"Max. approx. 18,000 records (under review)\"",
+      "status_ja": "漏えいのおそれ",
+      "status_en": "Possible leak",
+      "data_ja": "メールアドレス、氏名、会社名、弊社ソフトの保守契約期間に関する情報",
+      "vector": "委託先",
+      "dates_ja": "記載なし",
+      "ai_mention": "なし",
+      "primary_url": "https://www.cells.co.jp/news/115953",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「この度、弊社が利用しているメール配信サービス「ブラストメール」（運営・株式会社ラクスライトクラウド）において、第三者による不正アクセスが発生し、同社から「一部の契約者の配信先情報が外部に持ち出された」との報告を受けました。」第一報。059の連鎖"
+    },
+    {
+      "id": "062",
+      "published": "2026-10-21",
+      "org_ja": "デジタルアーツ（クラウドサービス運用環境）",
+      "org_en": "Digital Arts (cloud-service operating environment)",
+      "scale_ja": "記載なし",
+      "scale_en": "Not stated",
+      "status_ja": "一部のお客様の情報が第三者に閲覧された可能性",
+      "status_en": "Some customer data possibly viewed by a third party",
+      "data_ja": "対象サービス：i-FILTER@Cloud、m-FILTER@Cloud（Modern Edition）、m-FILTER MailAdviser Microsoft 365対応版、FINAL CODE@Cloud、z-FILTER、Desk",
+      "vector": "不正ログイン",
+      "dates_ja": "侵入の痕跡は「2025 年 7 月頃にさかのぼるものが含まれております」。総点検2026-10-09",
+      "ai_mention": "なし",
+      "primary_url": "https://www.daj.jp/ir/data/daj2326_202703_3q_1.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「当社クラウドサービスの運用に用いる認証情報が第三者に不正に取得され、これを用いたサービス運用環境への侵入が判明いたしました」。公表文に「2026 年 10 月９日、AI を活用して当社のシステム・製品および社内環境の総点検を実施いたしました」とある（防御側のAIへの言及。攻撃側ではない）"
+    },
+    {
+      "id": "063",
+      "published": "2026-10-22",
+      "org_ja": "GMOインターネット（お名前.com デスクトップクラウド）",
+      "org_en": "GMO Internet (Onamae.com Desktop Cloud)",
+      "scale_ja": "「影響の可能性があるサーバー：26,739件」",
+      "scale_en": "\"Servers possibly affected: 26,739\"",
+      "status_ja": "不正なアクセスと、お客様の情報が外部に持ち出された事実を確認",
+      "status_en": "Unauthorised access and exfiltration of customer data confirmed",
+      "data_ja": "「サーバー内に保存されていた情報（取引ツールに保存されたお取引口座のログイン情報等を含みます）」",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "調査開始2026-10-19、不正なプログラムの設置確認2026-10-20、警察相談2026-10-22",
+      "ai_mention": "なし",
+      "primary_url": "https://www.onamae.com/news/article/11593",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「一部のお客様のサーバー環境に、第三者による不正なプログラムが設置されていることを確認いたしました」「本サービスのシステムにセキュリティ上の問題が存在し」。グループの第4報（2026-10-24、https://group.gmo/info/alert/20261024/ ）に「国内外の70を超える証券会社・FX会社等に開設されたお客様の取引口座に対する不正操作」、攻撃者からの金銭要求、政府への能動的サイバー防御の要請。「AI時代においても」は決意表明であり攻撃側の言及ではない"
+    },
+    {
+      "id": "064",
+      "published": "2026-10-22",
+      "org_ja": "カプコン（CAPCOM ID）",
+      "org_en": "Capcom (CAPCOM ID)",
+      "scale_ja": "「対象件数：11,774,247件（全世界合計）」（うち「43件」は生年月日等、「196件」はパスワードの不正変更）",
+      "scale_en": "\"Affected: 11,774,247 records (worldwide)\" (incl. \"43\" with date of birth etc., \"196\" with passwords changed without authorisation)",
+      "status_ja": "不正アクセスを確認。お客様情報の一部が漏えいしたことが判明",
+      "status_en": "Unauthorised access confirmed; part of customer data found leaked",
+      "data_ja": "「メールアドレス、システム固有の識別情報」（アカウント作成日時、最終ログイン日時、ログイン回数、最終ログイン時のクライアントIP）。43件は「生年月日、性別、国・地域、ニックネーム」",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "検知2026-10-19、判明2026-10-20、警察・個人情報保護委員会へ報告2026-10-21",
+      "ai_mention": "なし",
+      "primary_url": "https://www.capcom.co.jp/ir/news/html/261022.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "時系列に「攻撃手段の特定と対応を開始」とあり、攻撃手段の内容は非公表。「お客様ご自身で設定されたパスワードの漏えいは確認されておりません」。公表文の単位で1,000万を超える行（全世界合計）"
+    },
+    {
+      "id": "065",
+      "published": "2026-10-23",
+      "org_ja": "野村證券（i-Port・委託先ユミルリンク）",
+      "org_en": "Nomura Securities (i-Port; via contractor Yumirlink)",
+      "scale_ja": "記載なし",
+      "scale_en": "Not stated",
+      "status_ja": "外部に漏えいした可能性があるとの報告を受けた",
+      "status_en": "Reported as possibly leaked",
+      "data_ja": "「保存されていたお客様のメールアドレス等」。「ポートフォリオに関する情報やお客様の証券取引口座に関する情報は、今回の漏えいの可能性がある情報には含まれていません。」",
+      "vector": "委託先",
+      "dates_ja": "委託先の不正アクセス確認2026-10-16、持ち出し確認2026-10-22",
+      "ai_mention": "なし",
+      "primary_url": "https://www.nomuraholdings.com/jp/news/topics/20261023.html",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「委託先が運営するメール配信サービスの一部システムへの不正アクセスが確認され」。053の連鎖"
+    },
+    {
+      "id": "066",
+      "published": "2026-10-15",
+      "org_ja": "エムスリー（MR君）",
+      "org_en": "M3 Inc. (MR-kun pharma-facing service)",
+      "scale_ja": "m3.com会員等「25,775 名」（うち「6 名はメールアドレスを含む」）、製薬企業の担当者「2,260 名」（うち「264 名はメールアドレスを含む」）（2026-10-23確定）",
+      "scale_en": "m3.com members etc. \"25,775 persons\" (\"6 include email addresses\"); pharma-company staff \"2,260 persons\" (\"264 include email addresses\") (fixed 23 Oct 2026)",
+      "status_ja": "不正アクセスを確認。「不正利用された事実は確認されておりません。」",
+      "status_en": "Unauthorised access confirmed; no misuse confirmed",
+      "data_ja": "「氏名、勤務先、一部の方のメールアドレス」等",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "確認2026-10-14、同日中に経路を遮断",
+      "ai_mention": "なし",
+      "primary_url": "https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/TYwLIgktADUIxwA5M6XFE/3bcb64e5e6857ebaf8e5a5a4efd8f25f/20261023_Public_J.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "初報2026-10-15（https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/4YBQ3JACTocGVgQmIVkSHe/bed9ff0b11db690e1217e0329c484104/20261015_Public_J.pdf ）。published は初報の日付、規模は10-23の確定値。「判明した不正アクセスの経路を遮断し」と書くが経路は非公表"
+    },
+    {
+      "id": "067",
+      "published": "2026-10-23",
+      "org_ja": "アンドエスティHD（旧アダストリア）",
+      "org_en": "and ST HD (formerly Adastria)",
+      "scale_ja": "お客さま「約250万件」、お取引先さま「約1万件」、従業員「該当範囲確認中」",
+      "scale_en": "Customers \"approx. 2.5 million records\"; business partners \"approx. 10,000\"; employees \"scope under confirmation\"",
+      "status_ja": "流出した可能性",
+      "status_en": "Possible leak",
+      "data_ja": "「氏名・生年月日・性別・住所・電話番号・メールアドレス・会員ID」／（取引先）「会社名・発注先/返品先住所・担当者氏名・電話番号・メールアドレス」。決済情報・パスワードは含まれない",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "侵入2026-10-22 7:30頃、検知同日10:00頃（サーバー隔離）、遮断同日17:00、警察・個人情報保護委員会2026-10-23",
+      "ai_mention": "なし",
+      "primary_url": "https://www.andst-hd.co.jp/news/notice/entry-17234/",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「外部からの不正アクセスにより、当社の複数サーバーに対して順次ログイン試行、侵入、およびデータ抽出が行われました」。侵入から公表まで約1日。公表文の単位で100万を超える行"
+    },
+    {
+      "id": "068",
+      "published": "2026-10-23",
+      "org_ja": "トレジャー・ファクトリー（案件管理システム）",
+      "org_en": "Treasure Factory (case-management system)",
+      "scale_ja": "対象となるお客様情報「746,277 件」（対象情報はメールアドレス。「氏名・住所を含むもの」は「上記のうち 11 件」）。別に取引先業者・従業員等の「氏名・メールアドレス750件」、「氏名・端末識別情報1,000件」",
+      "scale_en": "Customer records affected \"746,277\" (email addresses; \"of which 11\" include name and address). Separately, business partners/employees: \"names and email addresses: 750\", \"names and device identifiers: 1,000\"",
+      "status_ja": "不正に取得されたことを確認",
+      "status_en": "Unauthorised acquisition confirmed",
+      "data_ja": "メールアドレス（うち11件は氏名・住所を含む）。「クレジットカード番号、セキュリティコードその他の決済に関する情報」は含まれない。店舗・アプリで管理するお客様情報は別システムのため対象外",
+      "vector": "脆弱性",
+      "dates_ja": "不正アクセス2026-10-20未明〜朝、同日アクセスログ調査で確認、案件管理システムへの外部アクセス停止同日10:30、出張買取・トレファク引越等の申込フォーム受付停止同日11:05",
+      "ai_mention": "なし",
+      "primary_url": "https://www.treasure-f.com/info/detail/st825/",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「第三者による当社システムの脆弱性を悪用した不正アクセスが行われ、お客様情報等が不正に取得されたことを確認いたしました」「データベースへのアクセスに関する脆弱性が第三者に悪用されたことが原因とみております」「直近で公表されているPHPに関する脆弱性を悪用したものではなく、当該脆弱性との関連はないことを確認しております」。対象は「出張買取」「トレファク引越」の申込受付等に使う案件管理システム。お客様情報の件数・項目は公表文中の表の画像にあり、著者が画像を目視で読んだ（2026-10-26）"
+    },
+    {
+      "id": "069",
+      "published": "2026-10-23",
+      "org_ja": "グリーンモンスター（FXなび）",
+      "org_en": "Green Monster (FX Navi app)",
+      "scale_ja": "「約 619 万件のユーザー情報等」（メールアドレス「6 万 6003 件」、性別「14 万 2578 件」、年代「13 万 9293 件」、職業分類「14 万 9137 件」、X（旧Twitter）のID「6434 件」、初回アンケートの回答「480 万 9631 件」、引き継ぎコード「5120 件」等）",
+      "scale_en": "\"Approx. 6.19 million user records etc.\" (email \"66,003\", gender \"142,578\", age band \"139,293\", occupation \"149,137\", X IDs \"6,434\", first-survey answers \"4,809,631\", transfer codes \"5,120\" etc.)",
+      "status_ja": "取得されたおそれ。「ユーザー情報等の漏えいは確認されておりません」",
+      "status_en": "Possibly acquired; no leak confirmed",
+      "data_ja": "上記。「当該ユーザー情報等には個⼈情報には該当しないものも含まれます。」",
+      "vector": "脆弱性",
+      "dates_ja": "取得のおそれ2026-04-27 20:26頃〜04-30 14:26頃、不正アクセス確認2026-10-17",
+      "ai_mention": "なし",
+      "primary_url": "https://assets.minkabu.jp/news/article_media_content/urn:newsml:tdnet.info:20261023555394/140120261023555394.pdf",
+      "retrieved": "2026-10-26",
+      "notes_ja": "適時開示（TDnet原本は著者が到達できず、minkabu配信の同文）。「取得が可能となった原因については、本アプリの API の機能によるものであることを確認しております」。APIの機能を021と同じく脆弱性に分類。4月の取得を10月まで検知できなかった行。「株たす」「トウシカ」は調査中"
+    },
+    {
+      "id": "070",
+      "published": "2026-10-23",
+      "org_ja": "リンツ＆シュプルングリージャパン（委託先フューチャーショップ）",
+      "org_en": "Lindt & Sprüngli Japan (via contractor FutureShop)",
+      "scale_ja": "「3,147,469件」（侵入時点の会員、退会済み除く）",
+      "scale_en": "\"3,147,469 records\" (members at the time of intrusion, excluding withdrawn)",
+      "status_ja": "不正アクセス（確認）。悪用は「確認されておりません」",
+      "status_en": "Unauthorised access confirmed; no misuse confirmed",
+      "data_ja": "「会員ID、⽒名、メールアドレス、住所、電話番号、⽣年⽉⽇、性別」、ログインパスワード（ハッシュ化）等。決済・カード情報は含まない",
+      "vector": "委託先",
+      "dates_ja": "侵入2026-10-17 23:02〜10-18 0:16、委託先から報告受領2026-10-19、オンラインショップ停止2026-10-21 16:00",
+      "ai_mention": "なし",
+      "primary_url": "https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「FS社によれば、…同社のサーバーで使⽤していたソフトウェアの脆弱性を悪⽤された外部からの不正アクセスを受け」。委託先フューチャーショップ自身の公表文は著者未読。公表文の単位で100万を超える行"
+    },
+    {
+      "id": "071",
+      "published": "2026-10-22",
+      "org_ja": "システムファイブ（オンラインショップ連携システム）",
+      "org_en": "System5 (system linked to its online shop)",
+      "scale_ja": "「最大で約15,000名様」（2026-10-24）",
+      "scale_en": "\"Max. approx. 15,000 persons\" (24 Oct 2026)",
+      "status_ja": "漏えいした可能性",
+      "status_en": "Possible leak",
+      "data_ja": "氏名、メールアドレス、ポイント情報、商品レビュー関連情報",
+      "vector": "不正アクセス（経路未公表）",
+      "dates_ja": "記載なし",
+      "ai_mention": "なし",
+      "primary_url": "https://info.system5.jp/whatsnew/apology-20261024",
+      "retrieved": "2026-10-26",
+      "notes_ja": "「弊社オンラインショップと連携する一部システムへの不正アクセス」「弊社内ネットワークやショッピングカートシステム自体の脆弱性に起因する不正アクセスは確認されておりません」。2026年10月24日の公表文に「10月22日にお知らせいたしました」とあり、published は初報（10月22日）の日付"
     }
   ],
   "pending": [
-    {
-      "org_ja": "ビューカード",
-      "published": "2026-10-09",
-      "reported_scale": "報道では約403万件（メールアドレス）",
-      "reason": "ニュースリリース一覧でPDFの存在は確認したが本文を取得できず",
-      "reference": "https://www.viewcard.co.jp/press/"
-    },
-    {
-      "org_ja": "JR九州",
-      "published": "2026-10-09",
-      "reported_scale": "報道では最大約130万件（メールアドレス）",
-      "reason": "一次公表文を未取得",
-      "reference": ""
-    },
-    {
-      "org_ja": "日本経済新聞社",
-      "published": "2026-10-04頃",
-      "reported_scale": "報道では1,646人分（Google Workspace）ほか",
-      "reason": "一次公表文を未取得",
-      "reference": ""
-    },
-    {
-      "org_ja": "集英社（HAPPY PLUS COMMUNITY）",
-      "published": "2026-09-28",
-      "reported_scale": "報道ではブロガー2,835人分ほか",
-      "reason": "公表PDFの本文を未取得",
-      "reference": "https://www.shueisha.co.jp/wp-content/uploads/2026/09/Shueisha20260928-1.pdf"
-    },
-    {
-      "org_ja": "リクルート（スタディサプリ）",
-      "published": "2026-10-03",
-      "reported_scale": "報道では3,687件",
-      "reason": "一次公表文を未発見",
-      "reference": ""
-    },
     {
       "org_ja": "チケットプラス（チケプラ）",
       "published": "2026-10-01",
@@ -686,39 +1246,172 @@
       "reference": ""
     },
     {
-      "org_ja": "日本原子力研究開発機構",
-      "published": "2026-10-01",
-      "reported_scale": "報道では175人分",
-      "reason": "一次公表文を未取得",
-      "reference": ""
-    },
-    {
       "org_ja": "ムラウチドットコム",
       "published": "2026年9〜10月",
       "reported_scale": "二次資料では7,716,811件",
-      "reason": "一次公表文を未取得",
+      "reason": "公表ページ https://murauchi.com/static-pages/privacy/pressrelease.html は著者が開けず（エラー）。第二報PDF（2026-09-15、日本語ファイル名）も取得不能。報道ベースでは初報2026-07-24、経路「弊社が管理する Web システムの一部に存在していた脆弱性」。初報が9月1日より前のため、読めた場合も期間の判断が要る（2026-10-26）",
       "reference": ""
     },
     {
       "org_ja": "さくらインターネット",
       "published": "2026-09-10（第三報）",
-      "reported_scale": "二次資料では最大1,360,563アカウント",
-      "reason": "一次公表文を未取得",
-      "reference": ""
+      "reported_scale": "第二報（2026-08-19 PDF）・第三報（2026-09-10）とも「対象となる可能性のある会員情報の総数は1,360,563アカウントです」",
+      "reason": "一次公表文に到達（第三報 https://www.sakura.ad.jp/corporate/information/newsreleases/2026/09/10/1968225692/ 、第二報 https://www.sakura.ad.jp/corporate/wp-content/uploads/2026/08/260819-ir_1.pdf ）。ただし件数の初出は8月19日の第二報で、初報は8月17日。公表日基準（9月1日以降）の期間外。036（ホワイトエッセンス）と異なり個人情報の対象は8月に公表済み。収載するかは著者の判断（2026-10-26）",
+      "reference": "https://www.sakura.ad.jp/corporate/information/newsreleases/2026/09/10/1968225692/"
     },
     {
-      "org_ja": "Fines",
-      "published": "2026年9〜10月",
+      "org_ja": "ファインズ（予約システム）",
+      "published": "2026-09-25（速報）",
       "reported_scale": "二次資料では1,536,322件",
+      "reason": "一覧ページ（https://e-tenki.co.jp/news/ ）で速報の存在は確認したが、本文URL（日本語パーセントエンコード）を著者が開けず。報道ベースでは1,536,322件、9月22日に異常検知、「第三者からの不正アクセスが判明した」（2026-10-26）",
+      "reference": "https://e-tenki.co.jp/news/"
+    },
+    {
+      "org_ja": "Eストアー（ショップサーブ）",
+      "published": "2026-08-01（初報）・2026-10-16（最終報）",
+      "reported_scale": "最終報で「漏えい対象者数は、約23,356,000人です。」「約2,096,900人」がカード情報の一部を含む、「対象店舗は7,858店です。」",
+      "reason": "一次公表文に到達（最終報）。初報が8月1日で期間外。001（チャーム）と同じ境界の扱いにするかは著者の判断。経路は「アプリケーションの脆弱性を悪用して不正なプログラムを実行し」、攻撃期間2026-05-21〜08-01",
+      "reference": "https://estore.jp/press/20261016/"
+    },
+    {
+      "org_ja": "大和総研（内藤証券のシステム）",
+      "published": "2026-10-15",
+      "reported_scale": "「最大 631名」",
+      "reason": "一次PDFに到達したが、本文の項目を著者が未読。033（大和証券）とは別事案",
+      "reference": "https://www.dir.co.jp/release/2026101501.pdf"
+    },
+    {
+      "org_ja": "ビーケー・ジャパン（バーガーキング公式アプリ）",
+      "published": "2026-10-15",
+      "reported_scale": "報道では約1,118万件。侵入10/2〜10/7、発覚10/13",
       "reason": "一次公表文を未取得",
       "reference": ""
     },
     {
-      "org_ja": "ソフトバンク",
-      "published": "",
-      "reported_scale": "",
-      "reason": "報道で名が挙がるが、該当する一次公表文を未発見（IDCフロンティアは子会社として023に収載）",
+      "org_ja": "アエナ",
+      "published": "2026-10-14",
+      "reported_scale": "報道では最大817,215件",
+      "reason": "一次公表文を未取得",
       "reference": ""
+    },
+    {
+      "org_ja": "メドレー（アットリンク）",
+      "published": "2026-10-15",
+      "reported_scale": "報道では最大787医療機関",
+      "reason": "一次公表文を未取得",
+      "reference": ""
+    },
+    {
+      "org_ja": "ACCESS（台湾子会社）",
+      "published": "2026-10-15",
+      "reported_scale": "報道では155,280顧客ID等",
+      "reason": "一次公表文を未取得",
+      "reference": ""
+    },
+    {
+      "org_ja": "阪急阪神百貨店／エイチ・ツー・オー リテイリング（H2O ID）",
+      "published": "2026-10-19",
+      "reported_scale": "報道では約126万件",
+      "reason": "一次PDFのURLを特定できず",
+      "reference": "https://www.wwdjapan.com/articles/2529775"
+    },
+    {
+      "org_ja": "ニフティ（回線申込・受付管理システム）",
+      "published": "2026-10-19（第1報）・10-21（第2報）",
+      "reported_scale": "報道では第1報「最大54万2513件」→第2報「最大1万8000件」",
+      "reason": "一次ページを著者が開けず（エラー）",
+      "reference": "https://www.nifty.co.jp/newsrelease/nifty202610215453.htm"
+    },
+    {
+      "org_ja": "リクルート（カーセンサーnet／C-MATCH）",
+      "published": "2026-10-21",
+      "reported_scale": "報道では最大370万9551件",
+      "reason": "一次ページを著者が開けず（エラー）。040（スタディサプリ）とは別事案",
+      "reference": "https://www.recruit.co.jp/newsroom/pressrelease/2026/1021_149447.html"
+    },
+    {
+      "org_ja": "フジテレビジョン（番組宣伝システム）",
+      "published": "2026-10-20",
+      "reported_scale": "報道では「最大730件」（メディア関係者）",
+      "reason": "一次PDFを取得できず",
+      "reference": "https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf"
+    },
+    {
+      "org_ja": "ゼビオホールディングス（GALLERY・2／Commerble）",
+      "published": "2026-10-23",
+      "reported_scale": "報道では購入者情報 最大約128,000件ほか",
+      "reason": "適時開示PDFを取得できず",
+      "reference": "https://www.release.tdnet.info/inbs/140120261022554661.pdf"
+    },
+    {
+      "org_ja": "ヤマダホールディングス（ヤマダビデオ・スマホゴールド会員）",
+      "published": "2026-10-23",
+      "reported_scale": "件数・漏えいの有無は調査中（報道）",
+      "reason": "一次PDFを取得できず",
+      "reference": "https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf"
+    },
+    {
+      "org_ja": "グッドスマイルカンパニー（公式ショップ）",
+      "published": "2026-10-23",
+      "reported_scale": "件数非公表（報道）",
+      "reason": "一次ページを開けず",
+      "reference": "https://support.goodsmile.com/hc/ja/articles/63547468806297"
+    },
+    {
+      "org_ja": "カカオピッコマ（委託先ブラストメール）",
+      "published": "2026-10-24",
+      "reported_scale": "報道では1,002,404件",
+      "reason": "本文を開けず",
+      "reference": "https://www.kakaopiccoma.com/info/"
+    },
+    {
+      "org_ja": "新潟日報（委託先ブラストメール）",
+      "published": "2026-10-22",
+      "reported_scale": "報道では最大約25万3000件",
+      "reason": "一次ページを開けず",
+      "reference": "https://www.niigata-nippo.co.jp/articles/-/929700"
+    },
+    {
+      "org_ja": "日本郵便（国際郵便 調査請求Web受付サービス）",
+      "published": "2026-10-16",
+      "reported_scale": "報道では約600件",
+      "reason": "一次URLを特定できず",
+      "reference": ""
+    },
+    {
+      "org_ja": "イグレックス（ワイメール）",
+      "published": "2026-10-24",
+      "reported_scale": "委託元に双葉町、南魚沼市ほか（報道）",
+      "reason": "一次ページを未取得",
+      "reference": "https://igreks.jp/archives/782"
+    },
+    {
+      "org_ja": "チャリ・ロト",
+      "published": "2026-10-24",
+      "reported_scale": "報道では373名",
+      "reason": "一次ページを未取得",
+      "reference": "https://chariloto.jp/news/20261024/index.html"
+    },
+    {
+      "org_ja": "モスフードサービス／バリューデザイン（モスカード）",
+      "published": "2026-10-23",
+      "reported_scale": "報道では113万3,070件（カード番号・PIN・残高）",
+      "reason": "一次公表文に到達したが、対象はカード番号・PIN・残高で、バリューデザインは氏名等の個人情報を「該当なし」とする。個人情報の漏えいとして収載するかは著者の判断",
+      "reference": "https://www.valuedesign.jp/news/info/20261023"
+    },
+    {
+      "org_ja": "フューチャーショップ",
+      "published": "2026-10-23",
+      "reported_scale": "070（リンツ）の委託先",
+      "reason": "委託先自身の公表文を未読",
+      "reference": ""
+    },
+    {
+      "org_ja": "トレードワークス",
+      "published": "2026-10-23",
+      "reported_scale": "048（岩井コスモ証券）の委託先",
+      "reason": "適時開示PDFを未読",
+      "reference": "https://www.release.tdnet.info/inbs/140120261023555541.pdf"
     }
   ]
 }
