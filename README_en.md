@@ -6,7 +6,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
-[![Rows](https://img.shields.io/badge/Rows-584-informational)](data/registry.csv)
+[![Rows](https://img.shields.io/badge/Rows-844-informational)](data/registry.csv)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--10-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
 <p align="left">
@@ -85,6 +85,9 @@ Fourteen pending cases, 184 cases disclosed 3–7 November and 9 cases disclosed
 (Added 10 November 2026)  
 Sixty-four cases disclosed 6–9 November, 8 cases disclosed 30 October – 5 November that the fourth edition and the 8 November addition had missed, and 5 pending cases were admitted. The ledger now has 584 rows and 110 pending. Large new rows include Nitori Holdings up to 37.62 million (the largest in the ledger); Sharefull up to approx. 7.5 million personal accounts; SEGA 2,196,044; Shogakukan 1,993,665; Hotelovers 1,578,779; Aioi Nissay Dowa Insurance approx. 444,000; OPEN DOOR (Travelko) 381,926; Sato Food Service 318,513. **Fifty-four rows exceed one million and nine exceed ten million; 482 notices state the vector, 102 do not. 60 of the 77 new rows (78%) came through a contractor.** The contractor rows break down into Arara (30), Prestige International's group company Prestige Core Solution (17; roadside-assistance intake for insurers and card issuers), the SMBC Consumer Finance guarantee system (5 rows, 7 banks) and others; LENDY Servicer is a new chain. Only 13 rows had been found for 6 November on 8 November; 47 were added, making 60. Gaps against the aggregator remain for 3–5 November and were not examined. Of the 284 fifth-edition rows, the author opened and read the primary notices of 9 (301–309); at the author's instruction, AI agents re-fetched and checked the notices of the other 275 (310–584), correcting values in 8 (procedure and results in Chapter 4). Follow-ups for 2 existing rows (275 Ryohin Keikaku, 055 Trust Bank) were added to the notes.
 
+(Added 14 November 2026)  
+128 cases disclosed 10–13 November, 108 cases disclosed 7 September – 9 November that earlier additions had missed, and 24 pending cases were admitted. The ledger now has 844 rows and 120 pending. Large new rows include Iris Plaza approx. 7.7 million people; Arcadia (disaster-alert service SpeeCAN RAIDEN) approx. 3.136 million email addresses (an estimate); the Japan Chamber of Commerce and Industry up to approx. 980,000 people (approx. 1.97 million records); Yeny 1,332,505; Kawajun 1,214,183; Osaka Metropolitan University approx. 170,000 people. **Sixty rows exceed one million and nine exceed ten million; 719 notices state the vector, 125 do not. 224 of the 260 new rows (86%) came through a contractor.** Beyond the Arara chain, disclosures followed from new chain origins: the logistics platform OPENLOGI, the e-ticketing service teket, and Fireworks AI as the processor of Notion's AI feature. Follow-ups were added to 20 existing rows (EDION's second notice found tampering of payment processing and withdrew its first notice's "no leak of card data or passwords"). Notices of 14 November were not yet captured at the time of the work.
+
 (Corrected 3 November 2026)  
 **Chapter 1's "not the count, but the size" is corrected for October.** Trend Micro's own article of 16 October (primary) counts 52 incidents in 1–9 October alone (about 5.8 a day, 2.6 times the January–September average). But 170 of the ledger's 268 October rows are contractor rows: much of the rise is organisations disclosing one intrusion, not the number of intrusions. Collapsing contractor chains, the 300 rows correspond to roughly 144 independent intrusions, about a third with a disclosed vector. Tokyo Shoko Research counted eight 10-million-plus breaches at listed companies by 23 October (three as of 5 October). **H7's "leaning refuted for large rows" is withdrawn**: skyticket, Prestige International and Yumirlink describe abused credentials, though taken during the intrusion, not bought on a market.
 
@@ -110,6 +113,9 @@ None of the 207 new notices mentions attacker-side AI about its own incident; no
 (Added 10 November 2026)  
 None of the 77 notices added on 10 November mentions attacker-side AI about its own incident either; no mention stands at 583 of 584 rows.
 
+(Added 14 November 2026)  
+None of the 260 notices added on 14 November mentions attacker-side AI about its own incident either; no mention stands at 843 of 844 rows.
+
 ### Eight explanations
 
 Attacker-side AI, disclosure rules, Japan-specific weaknesses, a single actor, tool diffusion, defender-side AI disclosing vulnerabilities, credential markets, chance. Tested on identical criteria, **none is supported for Japan.** The book writes "undetermined" and leaves it there.
@@ -124,7 +130,7 @@ The defender's (Project Glasswing: announced 7 April → initial update 22 May, 
 
 | File | Role | Contents |
 | --- | --- | --- |
-| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16; 71 rows and 25 pending as of 2026-10-26; 300 rows and 67 pending as of 2026-11-03; 507 rows and 91 pending as of 2026-11-08; 584 rows and 110 pending as of 2026-11-10) |
+| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16; 71 rows and 25 pending as of 2026-10-26; 300 rows and 67 pending as of 2026-11-03; 507 rows and 91 pending as of 2026-11-08; 584 rows and 110 pending as of 2026-11-10; 844 rows and 120 pending as of 2026-11-14) |
 | [registry.csv](./data/registry.csv) | Derived | Spreadsheet-friendly (UTF-8 with BOM, 14 columns) |
 | [build_registry.py](./scripts/build_registry.py) | Generator | Builds the CSV and the Chapter 4 table from the canonical file |
 
@@ -153,6 +159,7 @@ The table in the text and the two data files are updated in the same commit.
 | 2026-11-03 | v4.0 | Fourth edition. 300 rows, 67 pending. The 71 third-edition rows are unchanged; 072–300 added (14 from pending, 215 disclosed 9 Oct – 2 Nov). Dated follow-ups in the notes of 19 rows (023, 028, 047, 053, 070, 071 are corrections). Chapters 1, 2 and 4 appended. Chapter 3: row 079, the first Japanese notice to mention attacker-side AI about its own incident (Tier 3). Corrections: Chapter 1 (count in October), Chapter 2 (counting of vectors by independent intrusion), Chapter 5 H7, Chapter 7 statement 3; additions to the Prologue, H1, H3, H4 and the Epilogue |
 | 2026-11-08 | v5.0 | Fifth edition. 507 rows, 91 pending. The 300 fourth-edition rows are unchanged; 301–507 added (14 from pending, 184 disclosed 3–7 Nov, 9 disclosed 8 Oct – 2 Nov missed by the fourth edition). Dated follow-ups in the notes of 9 rows (241, 004, 215 are corrections). Six pending entries already admitted in v4.0 removed from the list; 2 out-of-period and 14 out-of-criteria cases removed; 55 added. Additions to the Prologue and Chapters 1–4. Chapter 5 onward not revisited |
 | 2026-11-10 | v5.0 (addendum) | Before publication of the fifth edition, disclosures up to 9 November added. 584 rows, 110 pending. The 207 rows added on 8 November are unchanged; 508–584 added (5 from pending, 64 disclosed 6–9 Nov, 8 disclosed 30 Oct – 5 Nov missed by the fourth edition and the 8 November addition). Follow-ups in the notes of 2 rows (275, 055). 5 pending cases admitted; 24 added. Additions to the Prologue and Chapters 1–4. Chapter 5 onward not revisited |
+| 2026-11-14 | v6.0 | Sixth edition. 844 rows, 120 pending. The 584 fifth-edition rows are unchanged; 585–844 added (24 from pending, 128 disclosed 10–13 Nov, 108 disclosed 7 Sep – 9 Nov missed by earlier additions). Dated follow-ups in the notes of 20 rows (053, 119, 361, 445, 549 are corrections). All 110 pending cases retried: 23 moved, 2 removed, 35 added. Prologue and Chapters 1–4 appended; Chapter 5 onward not reviewed |
 
 ---
 
