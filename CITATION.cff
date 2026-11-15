@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this registry, please cite it as below."
+title: "The Japan Breach Registry 2026: The Autumn Wave of Personal-Data Breaches at Japanese Companies and Organisations — What a Ledger of Primary Notices Objectively Shows"
+type: dataset
+authors:
+  - family-names: Yamauchi
+    given-names: Satoshi
+    affiliation: "Leading.AI LLC"
+version: "6.0.1"
+date-released: "2026-11-15"
+license: CC-BY-4.0
+repository-code: "https://github.com/Leading-AI-IO/the-japan-breach-registry-2026"
+keywords:
+  - personal data breach
+  - data breach registry
+  - cybersecurity
+  - Japan
+preferred-citation:
+  type: data
+  title: "The Japan Breach Registry 2026: The Autumn Wave of Personal-Data Breaches at Japanese Companies and Organisations — What a Ledger of Primary Notices Objectively Shows"
+  authors:
+    - family-names: Yamauchi
+      given-names: Satoshi
+  year: 2026
+  date-published: "2026-11-14"
+  version: "6.0.1"
+  url: "https://github.com/Leading-AI-IO/the-japan-breach-registry-2026"

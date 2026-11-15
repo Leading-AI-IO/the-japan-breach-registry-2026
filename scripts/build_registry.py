@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""registry.json（正本）から registry.csv と第4章の本文表（Markdown）を生成する。
+"""registry.json（正本）から registry.csv・registry_en.csv と第4章の本文表（Markdown）を生成する。
 
 使い方:
     python3 scripts/build_registry.py
 
 生成物:
-    data/registry.csv
+    data/registry.csv       （日本語だけの12列）
+    data/registry_en.csv    （英語だけの12列。引用は日本語の公表文からの翻訳）
     docs/jp/_table_ch4.md   （第4章に貼り込む本文表・日本語）
     docs/en/_table_ch4.md   （同・英語）
 """
@@ -16,21 +17,36 @@ import pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SRC = ROOT / "data" / "registry.json"
 
-COLS = [
-    ("id", "ID", "ID"),
-    ("published", "公表日", "Published"),
-    ("org_ja", "企業・組織", "Organisation"),
-    ("org_en", "企業・組織（英）", "Organisation (EN)"),
-    ("scale_ja", "規模（公表文の単位のまま）", "Scale (as stated)"),
-    ("status_ja", "状態", "Status"),
-    ("status_en", "状態（英）", "Status (EN)"),
-    ("data_ja", "対象情報", "Data affected"),
-    ("vector", "経路", "Vector"),
-    ("dates_ja", "侵入日・確認日", "Intrusion / detection dates"),
-    ("ai_mention", "AIへの言及", "AI mentioned"),
-    ("primary_url", "一次URL", "Primary URL"),
-    ("retrieved", "到達日", "Retrieved"),
-    ("notes_ja", "補足", "Notes"),
+# 日本語版（registry.csv）：(キー, 見出し)
+COLS_JA = [
+    ("id", "ID"),
+    ("published", "公表日"),
+    ("org_ja", "企業・組織"),
+    ("scale_ja", "規模（公表文の単位のまま）"),
+    ("status_ja", "状態"),
+    ("data_ja", "対象情報"),
+    ("vector", "経路"),
+    ("dates_ja", "侵入日・確認日"),
+    ("ai_mention", "AIへの言及"),
+    ("primary_url", "一次URL"),
+    ("retrieved", "到達日"),
+    ("notes_ja", "補足"),
+]
+
+# 英語版（registry_en.csv）：(キー, 見出し)。vector は VECTOR_EN で訳す
+COLS_EN = [
+    ("id", "ID"),
+    ("published", "Published"),
+    ("org_en", "Organisation"),
+    ("scale_en", "Scale (as stated)"),
+    ("status_en", "Status"),
+    ("data_en", "Data affected"),
+    ("vector", "Vector"),
+    ("dates_en", "Intrusion / detection dates"),
+    ("ai_mention_en", "AI mentioned"),
+    ("primary_url", "Primary URL"),
+    ("retrieved", "Retrieved"),
+    ("notes_en", "Notes"),
 ]
 
 VECTOR_EN = {
@@ -53,9 +69,19 @@ def write_csv(data):
     out = ROOT / "data" / "registry.csv"
     with out.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
-        w.writerow([f"{ja} / {en}" for _, ja, en in COLS])
+        w.writerow([h for _, h in COLS_JA])
         for r in data["rows"]:
-            w.writerow([r.get(k, "") for k, _, _ in COLS])
+            w.writerow([r[k] for k, _ in COLS_JA])
+    return out
+
+
+def write_csv_en(data):
+    out = ROOT / "data" / "registry_en.csv"
+    with out.open("w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f)
+        w.writerow([h for _, h in COLS_EN])
+        for r in data["rows"]:
+            w.writerow([VECTOR_EN[r[k]] if k == "vector" else r[k] for k, _ in COLS_EN])
     return out
 
 
@@ -109,6 +135,7 @@ def summary(data):
 if __name__ == "__main__":
     data = load()
     print("csv  ->", write_csv(data))
+    print("csv  ->", write_csv_en(data))
     print("ja   ->", write_table(data, "ja"))
     print("en   ->", write_table(data, "en"))
     summary(data)

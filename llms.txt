@@ -24,6 +24,13 @@
 > are the same, because no primary source says so. Central question: in a
 > world where AI has collapsed the cost of finding vulnerabilities, does the
 > defender's head start hold?
+>
+> (Corrected 15 November 2026)
+> From the fifth edition, a row is admitted when the organisation's own
+> primary notice was reached and its text confirms the case is in scope. AI
+> agents retrieve and check the notices; the author spot-checks and decides
+> boundary cases. The 300 rows up to the fourth edition are rows whose notice
+> the author opened and read.
 
 ## Key facts (first edition, 2026-10-10)
 
@@ -65,6 +72,7 @@
 - [English text](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/docs/en/the-japan-breach-registry-2026_EN.md)
 - [registry.json (canonical)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry.json)
 - [registry.csv](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry.csv)
+- (Added 15 November 2026) [registry_en.csv (English; quotations translated from the Japanese notices; registry.csv is Japanese only)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry_en.csv)
 - [Update runbook](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/docs/UPDATE_RUNBOOK.md)
 
 ## Author

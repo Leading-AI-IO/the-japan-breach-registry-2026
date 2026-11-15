@@ -7,7 +7,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
 [![Rows](https://img.shields.io/badge/Rows-844-informational)](data/registry.csv)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--10-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--15-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
 <p align="left">
   <img src="./assets/ogp_design.png" width="80%">
@@ -131,10 +131,14 @@ The defender's (Project Glasswing: announced 7 April → initial update 22 May, 
 | File | Role | Contents |
 | --- | --- | --- |
 | [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16; 71 rows and 25 pending as of 2026-10-26; 300 rows and 67 pending as of 2026-11-03; 507 rows and 91 pending as of 2026-11-08; 584 rows and 110 pending as of 2026-11-10; 844 rows and 120 pending as of 2026-11-14) |
-| [registry.csv](./data/registry.csv) | Derived | Spreadsheet-friendly (UTF-8 with BOM, 14 columns) |
+| [registry.csv](./data/registry.csv) | Derived | Spreadsheet-friendly (UTF-8 with BOM, 14 columns)<br>(Corrected 15 November 2026)<br>From v6.0.1, Japanese only, 12 columns (UTF-8 with BOM). The verbatim wording of the notices is in this file |
+| [registry_en.csv](./data/registry_en.csv) | Derived | (Added 15 November 2026)<br>English only, 12 columns (UTF-8 with BOM). Quotations are translated from the Japanese notices; the verbatim wording is in registry.csv |
 | [build_registry.py](./scripts/build_registry.py) | Generator | Builds the CSV and the Chapter 4 table from the canonical file |
 
 The table in the text and the two data files are updated in the same commit.
+
+(Added 15 November 2026)  
+From v6.0.1 there are two CSV files, the Japanese `registry.csv` and the English `registry_en.csv`, and the table in the text and the three data files are updated in the same commit. Both CSV files are generated from the canonical `registry.json`.
 
 ---
 
@@ -160,6 +164,7 @@ The table in the text and the two data files are updated in the same commit.
 | 2026-11-08 | v5.0 | Fifth edition. 507 rows, 91 pending. The 300 fourth-edition rows are unchanged; 301–507 added (14 from pending, 184 disclosed 3–7 Nov, 9 disclosed 8 Oct – 2 Nov missed by the fourth edition). Dated follow-ups in the notes of 9 rows (241, 004, 215 are corrections). Six pending entries already admitted in v4.0 removed from the list; 2 out-of-period and 14 out-of-criteria cases removed; 55 added. Additions to the Prologue and Chapters 1–4. Chapter 5 onward not revisited |
 | 2026-11-10 | v5.0 (addendum) | Before publication of the fifth edition, disclosures up to 9 November added. 584 rows, 110 pending. The 207 rows added on 8 November are unchanged; 508–584 added (5 from pending, 64 disclosed 6–9 Nov, 8 disclosed 30 Oct – 5 Nov missed by the fourth edition and the 8 November addition). Follow-ups in the notes of 2 rows (275, 055). 5 pending cases admitted; 24 added. Additions to the Prologue and Chapters 1–4. Chapter 5 onward not revisited |
 | 2026-11-14 | v6.0 | Sixth edition. 844 rows, 120 pending. The 584 fifth-edition rows are unchanged; 585–844 added (24 from pending, 128 disclosed 10–13 Nov, 108 disclosed 7 Sep – 9 Nov missed by earlier additions). Dated follow-ups in the notes of 20 rows (053, 119, 361, 445, 549 are corrections). All 110 pending cases retried: 23 moved, 2 removed, 35 added. Prologue and Chapters 1–4 appended; Chapter 5 onward not reviewed |
+| 2026-11-15 | v6.0.1 | Revision of the sixth edition. The 844 rows and 120 pending cases are unchanged. Each row in `registry.json` gained English fields (data_en, dates_en, ai_mention_en, notes_en); `registry.csv` is now Japanese only (12 columns) and a new `registry_en.csv` is English only (12 columns; quotations translated from the Japanese notices). A Japanese word left at the end of row 323's English status was removed, with a correction in its English notes (also in the Chapter 4 table of the English text). The date on the Last Updated badge, the pending count under Contributing, and the admission criterion in `llms.txt` were corrected, and `registry_en.csv` was added to `llms.txt`. `.zenodo.json` and `CITATION.cff` added for Zenodo |
 
 ---
 
@@ -182,6 +187,9 @@ The table in the text and the two data files are updated in the same commit.
 **This book does not accept pull requests.** The author is the sole writer, by design. Keeping units unconverted, statuses unupgraded and vectors unfilled are constraints that drift as writers multiply, and a drifting ledger cannot be used for verification.
 
 Issues are welcome, of two kinds: **corrections** (a figure or unit that does not match the notice, a wrong date, a dead URL, a vector classification that does not match the notice's wording — the author checks against the primary notice and appends a correction without deleting the original row, crediting the reporter), and **primary-source locations** for the eleven pending cases (the author reaches the source, verifies it, and admits the row without discretion).
+
+(Corrected 15 November 2026)  
+The pending cases number 120 as of the sixth edition (14 November 2026), not eleven.
 
 Issues that include a verdict — "AI caused this," "AI had nothing to do with it" — are accepted minus the verdict. The book records only what primary sources say.
 
