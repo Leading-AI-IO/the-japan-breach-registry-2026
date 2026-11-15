@@ -5,7 +5,7 @@ type: dataset
 authors:
   - family-names: Yamauchi
     given-names: Satoshi
-    affiliation: "Leading.AI LLC",
+    affiliation: "Leading.AI LLC"
     orcid: "https://orcid.org/0009-0002-1976-656X"
 version: "6.1"
 doi: 10.5281/zenodo.24243319
