@@ -6,6 +6,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24243319.svg)](https://doi.org/10.5281/zenodo.24243319)
 [![Rows](https://img.shields.io/badge/Rows-844-informational)](data/registry.csv)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--15-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
