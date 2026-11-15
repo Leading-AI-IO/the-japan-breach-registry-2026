@@ -73,7 +73,9 @@
 - [registry.json (canonical)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry.json)
 - [registry.csv](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry.csv)
 - (Added 15 November 2026) [registry_en.csv (English; quotations translated from the Japanese notices; registry.csv is Japanese only)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry_en.csv)
+- (Added 15 November 2026) [registry_en.json (English only, with English key names; pending cases translated; generated from registry.json)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/data/registry_en.json)
 - [Update runbook](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/docs/UPDATE_RUNBOOK.md)
+- (Added 15 November 2026) [Update runbook, English edition](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026/blob/main/docs/UPDATE_RUNBOOK_en.md)
 
 ## Author
 

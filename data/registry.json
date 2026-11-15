@@ -13,8 +13,8 @@
   },
   "canonical": true,
   "note_on_canonicity": {
-    "ja": "本ファイルが台帳の正本である。registry.csv と本文の第4章の表は scripts/build_registry.py により本ファイルから生成され、同一のコミットで更新される。\n\n（2026年11月15日追記）\n第6版の改訂（v6.0.1）で、各行に英訳の欄（data_en・dates_en・ai_mention_en・notes_en）を加え、日本語だけの registry.csv と英語だけの registry_en.csv の2つをこのファイルから生成するようにした。英訳の欄にある引用は日本語の公表文からの翻訳であり、公表文の逐語は日本語の欄と registry.csv にある。日本語の欄の値は変えていない。",
-    "en": "This file is the canonical registry. registry.csv and the Chapter 4 table are generated from it by scripts/build_registry.py and updated in the same commit.\n\n(Added 15 November 2026)\nIn the revision of the sixth edition (v6.0.1), each row gained English fields (data_en, dates_en, ai_mention_en, notes_en), and two files are now generated from this file: registry.csv in Japanese only and registry_en.csv in English only. Quotations in the English fields are translated from the Japanese notices; the verbatim wording is in the Japanese fields and in registry.csv. No Japanese value was changed."
+    "ja": "本ファイルが台帳の正本である。registry.csv と本文の第4章の表は scripts/build_registry.py により本ファイルから生成され、同一のコミットで更新される。\n\n（2026年11月15日追記）\n第6版の改訂（v6.0.1）で、各行に英訳の欄（data_en・dates_en・ai_mention_en・notes_en）を加え、日本語だけの registry.csv と英語だけの registry_en.csv の2つをこのファイルから生成するようにした。英訳の欄にある引用は日本語の公表文からの翻訳であり、公表文の逐語は日本語の欄と registry.csv にある。日本語の欄の値は変えていない。\n英語だけの registry_en.json も、このファイルから生成する（英語の欄だけを持ち、キーは英語名）。照合待ちにも英訳の欄（org_en・published_en・reported_scale_en・reason_en・reference_en）を加えた。",
+    "en": "This file is the canonical registry. registry.csv and the Chapter 4 table are generated from it by scripts/build_registry.py and updated in the same commit.\n\n(Added 15 November 2026)\nIn the revision of the sixth edition (v6.0.1), each row gained English fields (data_en, dates_en, ai_mention_en, notes_en), and two files are now generated from this file: registry.csv in Japanese only and registry_en.csv in English only. Quotations in the English fields are translated from the Japanese notices; the verbatim wording is in the Japanese fields and in registry.csv. No Japanese value was changed.\nThe English-only registry_en.json is also generated from this file (English fields only, with English key names). Pending entries gained English fields as well (org_en, published_en, reported_scale_en, reason_en, reference_en)."
   },
   "rules": {
     "append_only": true,
@@ -17761,845 +17761,1443 @@
   "pending": [
     {
       "org_ja": "チケットプラス（チケプラ）",
+      "org_en": "Ticket Plus (Tixplus)",
       "published": "2026-10-01",
+      "published_en": "2026-10-01",
       "reported_scale": "報道では最大107人",
+      "reported_scale_en": "Up to 107 people according to press reports",
       "reason": "2026-11-14 再試行：https://tixplus.jp/feature/info/ は再度 client_error。WebSearchは行わず（前回同様、別URLなし）。 （前回までの記録）二次資料の題名は「別の人の情報が表示された件」で、不正アクセスでなくシステム不具合の可能性（未確認）。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://tixplus.jp/feature/info/。理由：client_error（取得エラー）",
-      "reference": "https://tixplus.jp/feature/info/"
+      "reason_en": "2026-11-14 retry: https://tixplus.jp/feature/info/ returned client_error again. No web search was run (as before, there is no other URL). (Earlier record) The secondary source's title is \"A case where another person's information was displayed\", which may indicate a system malfunction rather than unauthorised access (unconfirmed). The primary notice could not be reached (retried 2026-11-08). URL tried: https://tixplus.jp/feature/info/. Reason: client_error (retrieval error).",
+      "reference": "https://tixplus.jp/feature/info/",
+      "reference_en": "https://tixplus.jp/feature/info/"
     },
     {
       "org_ja": "ムラウチドットコム",
+      "org_en": "Murauchi.com",
       "published": "2026-07-24（初報、報道）",
+      "published_en": "2026-07-24 (first report, press)",
       "reported_scale": "二次資料では7,716,811件",
+      "reported_scale_en": "7,716,811 records according to a secondary source",
       "reason": "2026-11-14 再試行：https://murauchi.com/static-pages/privacy/pressrelease.html は再度 client_error。 （前回までの記録）初報が9月1日より前のため読めた場合も期間の判断が要る。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://murauchi.com/static-pages/privacy/pressrelease.html、https://www.murauchi.com/static-pages/privacy/pressrelease.html、https://x.gd/GpRiC。理由：client_error（3URLとも）",
-      "reference": "https://murauchi.com/static-pages/privacy/pressrelease.html"
+      "reason_en": "2026-11-14 retry: https://murauchi.com/static-pages/privacy/pressrelease.html returned client_error again. (Earlier record) The first report predates 1 September, so even if it could be read, a judgement on the period would be needed. The primary notice could not be reached (retried 2026-11-08). URLs tried: https://murauchi.com/static-pages/privacy/pressrelease.html, https://www.murauchi.com/static-pages/privacy/pressrelease.html, https://x.gd/GpRiC. Reason: client_error (all three URLs).",
+      "reference": "https://murauchi.com/static-pages/privacy/pressrelease.html",
+      "reference_en": "https://murauchi.com/static-pages/privacy/pressrelease.html"
     },
     {
       "org_ja": "ニフティ（回線申込・受付管理システム）",
+      "org_en": "NIFTY (line application and reception management system)",
       "published": "2026-10-19（第1報）・10-21（第2報）",
+      "published_en": "2026-10-19 (first report), 10-21 (second report)",
       "reported_scale": "報道では第1報「最大54万2513件」→第2報「最大1万8000件」",
+      "reported_scale_en": "According to press reports, \"up to 542,513\" in the first report, revised to \"up to 18,000\" in the second",
       "reason": "2026-11-14 再試行：https://www.nifty.co.jp/newsrelease/nifty202610215453.htm と nifty202610195434.htm は再度 client_error。WebSearchでも別ドメインの同文なし（INTERNET Watch・ScanNetSecurity・rocket-boys 等の報道のみ）。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.nifty.co.jp/newsrelease/nifty202610215453.htm、https://www.nifty.co.jp/newsrelease/nifty202610195434.htm。理由：client_error（2URLとも）。WebSearchで別ドメインの同文は見つからず（報道のみ）",
-      "reference": "https://www.nifty.co.jp/newsrelease/nifty202610215453.htm"
+      "reason_en": "2026-11-14 retry: https://www.nifty.co.jp/newsrelease/nifty202610215453.htm and nifty202610195434.htm returned client_error again. A web search also found no identical text on another domain (only press reports by INTERNET Watch, ScanNetSecurity, rocket-boys and others). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: https://www.nifty.co.jp/newsrelease/nifty202610215453.htm, https://www.nifty.co.jp/newsrelease/nifty202610195434.htm. Reason: client_error (both URLs). A web search found no identical text on another domain (press reports only).",
+      "reference": "https://www.nifty.co.jp/newsrelease/nifty202610215453.htm",
+      "reference_en": "https://www.nifty.co.jp/newsrelease/nifty202610215453.htm"
     },
     {
       "org_ja": "フジテレビジョン（番組宣伝システム）",
+      "org_en": "Fuji Television Network (programme promotion system)",
       "published": "2026-10-20",
+      "published_en": "2026-10-20",
       "reported_scale": "報道では「最大730件」",
+      "reported_scale_en": "\"Up to 730\" according to press reports",
       "reason": "2026-11-14 再試行：fujitv.co.jp はドメイン全体が SITE_BLOCKED のまま（2026-11-14に同ドメインの https://www.fujitv.co.jp/company/news/r20261105_30885221.pdf で確認）。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf、https://www.fujitv.co.jp/company/news/。理由：SITE_BLOCKED（ドメイン全体が遮断）",
-      "reference": "https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf"
+      "reason_en": "2026-11-14 retry: the whole fujitv.co.jp domain is still SITE_BLOCKED (confirmed on 2026-11-14 with https://www.fujitv.co.jp/company/news/r20261105_30885221.pdf on the same domain). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf, https://www.fujitv.co.jp/company/news/. Reason: SITE_BLOCKED (the whole domain is blocked).",
+      "reference": "https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf",
+      "reference_en": "https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf"
     },
     {
       "org_ja": "ヤマダホールディングス／ヤマダデンキ（ヤマダビデオ・スマホゴールド会員）",
+      "org_en": "Yamada Holdings / Yamada Denki (Yamada Video and Smartphone Gold members)",
       "published": "2026-10-23",
+      "published_en": "2026-10-23",
       "reported_scale": "件数・漏えいの有無は調査中（報道）",
+      "reported_scale_en": "Number of records and whether data leaked are under investigation (press reports)",
       "reason": "2026-11-14 再試行：https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf と https://www.yamada-denki.jp/information/pdf/261023_3.pdf はいずれも robots_disallowed。WebSearchで続報・別URLなし（rocket-boys・ScanNetSecurity・SmartScope のみ）。 （前回までの記録）ScanNetSecurity（2026-10-28）によれば表題「外部からの不正アクセスに伴う一部サービスの停止について」、10/22 16:13頃からサービス停止。個人情報への影響の記述は報道上も不明。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf、https://www.yamada-denki.jp/information/pdf/261023_3.pdf、https://www.yamada-denki.jp/information/。理由：robots_disallowed（3URLとも）",
-      "reference": "https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf"
+      "reason_en": "2026-11-14 retry: https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf and https://www.yamada-denki.jp/information/pdf/261023_3.pdf were both robots_disallowed. A web search found no follow-up or other URL (only rocket-boys, ScanNetSecurity and SmartScope). (Earlier record) According to ScanNetSecurity (2026-10-28), the title was \"Suspension of some services due to unauthorised access from outside\", and services were suspended from about 16:13 on 10/22. The press does not make clear whether personal information was affected. The primary notice could not be reached (retried 2026-11-08). URLs tried: https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf, https://www.yamada-denki.jp/information/pdf/261023_3.pdf, https://www.yamada-denki.jp/information/. Reason: robots_disallowed (all three URLs).",
+      "reference": "https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf",
+      "reference_en": "https://www.yamada-holdings.jp/ir/press/2026/261023_3.pdf"
     },
     {
       "org_ja": "グッドスマイルカンパニー（公式ショップ）",
+      "org_en": "Good Smile Company (official shop)",
       "published": "2026-10-23（第1報）・10-29（第3報）",
+      "published_en": "2026-10-23 (first report), 10-29 (third report)",
       "reported_scale": "報道では第3報で約2,800名（カード番号全16桁・セキュリティコード等）、別に402,466枚（下4桁・有効期限）",
+      "reported_scale_en": "According to press reports, about 2,800 people in the third report (full 16-digit card numbers, security codes and so on), and separately 402,466 cards (last four digits and expiry date)",
       "reason": "2026-11-14 再試行：記事URL（https://support.goodsmile.com/hc/ja/articles/63718007508761 ）は再度 client_error。https://www.goodsmile.com/ja/news （直近10件）に不正アクセス・流出の告知はなく、11/06「『グッドスマイルカンパニー公式ショップ』 一部再開に関するお知らせ」（https://www.goodsmile.com/ja/news/7087 、本文未読）等のみ。 （前回までの記録）INTERNET Watch（2026-10-30）で第3報の表題「不正アクセスによるお客様情報流出の可能性について（第3報）」と2026-10-29公表を確認（二次）。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://support.goodsmile.com/hc/ja/articles/63718007508761、https://support.goodsmile.com/hc/ja/articles/63547468806297。理由：client_error（2URLとも）。長URL版は未試行（前回URL長すぎで取得不可）",
-      "reference": "https://support.goodsmile.com/hc/ja/articles/63718007508761"
+      "reason_en": "2026-11-14 retry: the article URL (https://support.goodsmile.com/hc/ja/articles/63718007508761) returned client_error again. https://www.goodsmile.com/ja/news (latest 10 items) has no notice of unauthorised access or leakage, only items such as the 11/06 \"Notice on partial reopening of the Good Smile Company official shop\" (https://www.goodsmile.com/ja/news/7087, body not read). (Earlier record) INTERNET Watch (2026-10-30) confirmed, as a secondary source, the third report's title \"Possible leakage of customer information through unauthorised access (third report)\" and its publication on 2026-10-29. The primary notice could not be reached (retried 2026-11-08). URLs tried: https://support.goodsmile.com/hc/ja/articles/63718007508761, https://support.goodsmile.com/hc/ja/articles/63547468806297. Reason: client_error (both URLs). The long-URL version has not been tried (the URL was too long to retrieve last time).",
+      "reference": "https://support.goodsmile.com/hc/ja/articles/63718007508761",
+      "reference_en": "https://support.goodsmile.com/hc/ja/articles/63718007508761"
     },
     {
       "org_ja": "新潟日報（委託先ブラストメール）",
+      "org_en": "Niigata Nippo (contractor Blast Mail)",
       "published": "2026-10-22",
+      "published_en": "2026-10-22",
       "reported_scale": "報道では会員最大約25万3,000人、別に約7,000人分を調査中",
+      "reported_scale_en": "According to press reports, up to about 253,000 members, plus about 7,000 more under investigation",
       "reason": "2026-11-14 再試行：https://www.niigata-nippo.co.jp/articles/-/929700 は再度 robots_disallowed。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.niigata-nippo.co.jp/articles/-/929700、https://www.niigata-nippo.co.jp/info/。理由：robots_disallowed（2URLとも）",
-      "reference": "https://www.niigata-nippo.co.jp/articles/-/929700"
+      "reason_en": "2026-11-14 retry: https://www.niigata-nippo.co.jp/articles/-/929700 was robots_disallowed again. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: https://www.niigata-nippo.co.jp/articles/-/929700, https://www.niigata-nippo.co.jp/info/. Reason: robots_disallowed (both URLs).",
+      "reference": "https://www.niigata-nippo.co.jp/articles/-/929700",
+      "reference_en": "https://www.niigata-nippo.co.jp/articles/-/929700"
     },
     {
       "org_ja": "コミューン（Commune・Commune for Work）",
+      "org_en": "Commune (Commune and Commune for Work)",
       "published": "2026-10-09（続報2026-10-21）",
+      "published_en": "2026-10-09 (follow-up 2026-10-21)",
       "reported_scale": "報道では10/21続報で延べ16万6,505人（メールアドレスを含む12万5,601人）",
+      "reported_scale_en": "According to press reports, 166,505 people in total in the 10/21 follow-up (125,601 of them with email addresses)",
       "reason": "2026-11-14 再試行：https://communeinc.com/ja/news/2026oct21 は再度JS描画で本文未読（表題「【続報】当社サービスへの不正アクセスについて」のみ）。 （前回までの記録）著者がブラウザで開く必要あり。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://communeinc.com/ja/news/2026oct21。理由：JS描画で本文未読（タイトル「【続報】当社サービスへの不正アクセスについて」のみ取得）",
-      "reference": "https://communeinc.com/ja/news/2026oct21"
+      "reason_en": "2026-11-14 retry: https://communeinc.com/ja/news/2026oct21 is again rendered by JavaScript and its body was not read (only the title \"[Follow-up] Unauthorised access to our service\"). (Earlier record) The author needs to open it in a browser. The primary notice could not be reached (retried 2026-11-08). URL tried: https://communeinc.com/ja/news/2026oct21. Reason: rendered by JavaScript, body not read (only the title \"[Follow-up] Unauthorised access to our service\" was retrieved).",
+      "reference": "https://communeinc.com/ja/news/2026oct21",
+      "reference_en": "https://communeinc.com/ja/news/2026oct21"
     },
     {
       "org_ja": "スタディスト（Teachme Compass・委託先コミューン）",
+      "org_en": "Studist (Teachme Compass, contractor Commune)",
       "published": "2026-10-09",
+      "published_en": "2026-10-09",
       "reported_scale": "piyologでは漏えいなしまたは停止告知のみ",
+      "reported_scale_en": "According to piyolog, no leakage or only a suspension notice",
       "reason": "2026-11-14 再試行：https://studist.jp/news/news_20261009 は再度JS描画で本文未読（表題のみ。漏えいの有無は確認できず）。 （前回までの記録）漏えいなしなら excluded。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://studist.jp/news/news_20261009。理由：JS描画で本文未読（タイトル「コミューン株式会社が提供する「Commune」への不正アクセスおよび「Teachme Compass」の一時停止について」のみ）",
-      "reference": "https://studist.jp/news/news_20261009"
+      "reason_en": "2026-11-14 retry: https://studist.jp/news/news_20261009 is again rendered by JavaScript and its body was not read (title only; whether data leaked could not be confirmed). (Earlier record) If there was no leakage, the row is excluded. The primary notice could not be reached (retried 2026-11-08). URL tried: https://studist.jp/news/news_20261009. Reason: rendered by JavaScript, body not read (only the title \"Unauthorised access to 'Commune', provided by Commune Inc., and temporary suspension of 'Teachme Compass'\" was retrieved).",
+      "reference": "https://studist.jp/news/news_20261009",
+      "reference_en": "https://studist.jp/news/news_20261009"
     },
     {
       "org_ja": "TVer（問い合わせ・資料請求フォーム・委託先Studio）",
+      "org_en": "TVer (enquiry and document-request forms, contractor Studio)",
       "published": "2026-10-20",
+      "published_en": "2026-10-20",
       "reported_scale": "二次資料では問い合わせ734件、資料請求1,067件（延べ）",
+      "reported_scale_en": "According to secondary sources, 734 enquiries and 1,067 document requests (cumulative)",
       "reason": "2026-11-14 再試行：https://tver.co.jp/news/20261020.html は再度 client_error。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://tver.co.jp/news/20261020.html。理由：client_error",
-      "reference": "https://tver.co.jp/news/20261020.html"
+      "reason_en": "2026-11-14 retry: https://tver.co.jp/news/20261020.html returned client_error again. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://tver.co.jp/news/20261020.html. Reason: client_error.",
+      "reference": "https://tver.co.jp/news/20261020.html",
+      "reference_en": "https://tver.co.jp/news/20261020.html"
     },
     {
       "org_ja": "Awarefy（コーポレートサイトのフォーム・委託先Studio）",
+      "org_en": "Awarefy (corporate-site form, contractor Studio)",
       "published": "2026-10-19",
+      "published_en": "2026-10-19",
       "reported_scale": "二次資料では件数非公表",
+      "reported_scale_en": "According to secondary sources, the number of records was not disclosed",
       "reason": "2026-11-14 再試行：https://www.awarefy.com/news/corporate-261019 はメタ情報のみ（表題「Studio株式会社で発生した不正アクセスに伴う個人情報漏えいのおそれに関するお知らせ （10/19第一報）」、「【2026年10月19日(月)発表】」、「当社コーポレートウェブサイトの制作・運用に利用している外部サービス「Studio」で不正アクセスが発生しました。」）。本文（情報項目・件数）は読めず。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.awarefy.com/news/corporate-261019。理由：JS描画で本文未読（メタ情報のみ：表題「Studio株式会社で発生した不正アクセスに伴う個人情報漏えいのおそれに関するお知らせ （10/19第一報）」、「【2026年10月19日(月)発表】」）",
-      "reference": "https://www.awarefy.com/news/corporate-261019"
+      "reason_en": "2026-11-14 retry: https://www.awarefy.com/news/corporate-261019 gave metadata only (title \"Notice of possible personal-data leakage through unauthorised access at Studio, Inc. (first report of 10/19)\", \"[Announced Monday 19 October 2026]\", \"Unauthorised access occurred at the external service 'Studio', which we use to build and operate our corporate website.\"). The body (data items, number of records) could not be read. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.awarefy.com/news/corporate-261019. Reason: rendered by JavaScript, body not read (metadata only: title \"Notice of possible personal-data leakage through unauthorised access at Studio, Inc. (first report of 10/19)\", \"[Announced Monday 19 October 2026]\").",
+      "reference": "https://www.awarefy.com/news/corporate-261019",
+      "reference_en": "https://www.awarefy.com/news/corporate-261019"
     },
     {
       "org_ja": "Studio連鎖の未読分：久留米市／音楽によるまちづくり推進実行委員会（KURUME MUSIC FES）、静岡新聞社、伊豆新聞本社、デーリー東北新聞社、MAPPA EXPO 15th Anniversary事務局、新潟市、長岡市",
+      "org_en": "Unread parts of the Studio chain: Kurume City / Music-Based Community Development Executive Committee (KURUME MUSIC FES), The Shizuoka Shimbun, Izu Shimbun Honsha, Daily Tohoku Shimbun, MAPPA EXPO 15th Anniversary secretariat, Niigata City, Nagaoka City",
       "published": "2026-10-16〜10-19",
+      "published_en": "2026-10-16 to 10-19",
       "reported_scale": "二次資料（GitHub color4pen/security-notes #47）では順に75件、最大約3,000件、227件、423件、確認中、記載なし、記載なし",
+      "reported_scale_en": "According to a secondary source (GitHub color4pen/security-notes #47), in that order: 75 records, up to about 3,000, 227, 423, under confirmation, not stated, not stated",
       "reason": "2026-11-14 再試行：GitHub issue #47 を再取得：静岡新聞社・伊豆新聞本社は公表URLの記載なし、久留米市はYahoo!ニュース、新潟市・長岡市は新潟日報記事（https://www.niigata-nippo.co.jp/articles/-/927209 ）のみ。MAPPA EXPO（https://expo.mappa.co.jp/infomation/QVIAWjFu ）はメタ情報のみ（表題「【MAPPA EXPO公式サイトが利用するクラウドサービス「STUDIO」への不正アクセスに関するお知らせとお詫び】」）で本文未読。長岡市は既存行238（2026-10-29、悠久山野球場・栃尾体育施設、Studio）と同一事案の可能性（未確認）。 （前回までの記録）同じ照合待ち項目のうち MBC開発（5件）は到達し rows.json に起票。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://github.com/color4pen/security-notes/issues/47、https://www.daily-tohoku.news/archives/CNTS2026101603707、https://expo.mappa.co.jp/infomation/QVIAWjFu。理由：デーリー東北：robots_disallowed。MAPPA：JS描画で本文未読（表題「【MAPPA EXPO公式サイトが利用するクラウドサービス「STUDIO」への不正アクセスに関するお知らせとお詫び】」のみ）。久留米市・静岡新聞社・伊豆新聞本社・新潟市・長岡市：WebSearch各2回で当事組織のURLを特定できず（GitHub issue も当事組織URLを載せていない）",
-      "reference": "https://github.com/color4pen/security-notes/issues/47"
+      "reason_en": "2026-11-14 retry: GitHub issue #47 was retrieved again. For The Shizuoka Shimbun and Izu Shimbun Honsha no published URL is given; for Kurume City only Yahoo! News; for Niigata City and Nagaoka City only a Niigata Nippo article (https://www.niigata-nippo.co.jp/articles/-/927209). MAPPA EXPO (https://expo.mappa.co.jp/infomation/QVIAWjFu) gave metadata only (title \"[Notice and apology regarding unauthorised access to the cloud service 'STUDIO' used by the MAPPA EXPO official site]\") and its body was not read. Nagaoka City may be the same case as existing row 238 (2026-10-29, Yukyuzan Baseball Stadium and Tochio Sports Facility, Studio) (unconfirmed). (Earlier record) Of the same pending items, MBC Development (5 records) was reached and entered in rows.json. The primary notice could not be reached (retried 2026-11-08). URLs tried: https://github.com/color4pen/security-notes/issues/47, https://www.daily-tohoku.news/archives/CNTS2026101603707, https://expo.mappa.co.jp/infomation/QVIAWjFu. Reason: Daily Tohoku: robots_disallowed. MAPPA: rendered by JavaScript, body not read (only the title \"[Notice and apology regarding unauthorised access to the cloud service 'STUDIO' used by the MAPPA EXPO official site]\"). Kurume City, The Shizuoka Shimbun, Izu Shimbun Honsha, Niigata City, Nagaoka City: two web searches each could not identify the organisation's own URL (the GitHub issue does not give the organisation's URL either).",
+      "reference": "https://github.com/color4pen/security-notes/issues/47",
+      "reference_en": "https://github.com/color4pen/security-notes/issues/47"
     },
     {
       "org_ja": "大日本印刷（honto・委託先ユミルリンク）",
+      "org_en": "Dai Nippon Printing (honto, contractor Yumeru Link)",
       "published": "2026-10-20頃",
+      "published_en": "around 2026-10-20",
       "reported_scale": "報道ではユミルリンクから情報が持ち出されたとの報告（第一報時点）",
+      "reported_scale_en": "According to press reports, a report that information was taken out from Yumeru Link (as of the first report)",
       "reason": "2026-11-14 再試行：https://honto.jp/ トップに告知なし。WebSearchで honto 側・DNP側の一次URLを特定できず（SmartScope・rocket-boys のみ）。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.dnp.co.jp/news/。理由：DNPニュース一覧（9/3〜11/2の30件）に該当なし。WebSearch 2回で honto 側の公表URLも特定できず",
-      "reference": "https://www.dnp.co.jp/news/"
+      "reason_en": "2026-11-14 retry: no notice on the top page of https://honto.jp/. A web search could not identify a primary URL on either the honto or the DNP side (only SmartScope and rocket-boys). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.dnp.co.jp/news/. Reason: the DNP news list (30 items from 9/3 to 11/2) has no matching item. Two web searches also failed to identify honto's own notice URL.",
+      "reference": "https://www.dnp.co.jp/news/",
+      "reference_en": "https://www.dnp.co.jp/news/"
     },
     {
       "org_ja": "WASABI SWITCH 連鎖の未読分：FTF、BuySell Technologies グループ",
+      "org_en": "Unread parts of the WASABI SWITCH chain: FTF, BuySell Technologies group",
       "published": "BuySellは報道で2026-11-01頃",
+      "published_en": "BuySell: around 2026-11-01 according to press reports",
       "reported_scale": "報道ではBuySell Technologiesグループが注文情報1,369件・顧客情報224件",
+      "reported_scale_en": "According to press reports, the BuySell Technologies group: 1,369 order records and 224 customer records",
       "reason": "2026-11-14 再試行：FTF は既存行160（2026-10-26、WASABI SWITCH）で収載済み。BuySell Technologies：https://www.buysell-technologies.com/news/ は robots_disallowed。WebSearchは二次資料（atsoho・rocket-boys）のみ。 （前回までの記録）同じ項目のうちシュッピン・緑和堂・アンカーネットワークサービス・tricycle-ce は到達し rows.json に起票。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：。理由：WebSearch 各2回で当事組織のURLを特定できず（atsoho・rocket-boys の二次資料のみ）",
-      "reference": ""
+      "reason_en": "2026-11-14 retry: FTF is already admitted as existing row 160 (2026-10-26, WASABI SWITCH). BuySell Technologies: https://www.buysell-technologies.com/news/ is robots_disallowed. A web search found only secondary sources (atsoho, rocket-boys). (Earlier record) Of the same item, Shuppin, Ryokudo, Anchor Network Service and tricycle-ce were reached and entered in rows.json. The primary notice could not be reached (retried 2026-11-08). URLs tried: none. Reason: two web searches each could not identify the organisation's own URL (secondary sources atsoho and rocket-boys only).",
+      "reference": "",
+      "reference_en": ""
     },
     {
       "org_ja": "ソニー生命保険（契約者専用サイト等）",
+      "org_en": "Sony Life Insurance (policyholder-only site and others)",
       "published": "2026-10-28",
+      "published_en": "2026-10-28",
       "reported_scale": "報道では約38.5万件（メディケア生命の契約者・被保険者）。2026年11月9日の続報（報道）では新たに約290万件、累計320万件超",
+      "reported_scale_en": "According to press reports, about 385,000 records (Medicare Life policyholders and insured persons). According to the 9 November 2026 follow-up (press), a further 2.9 million, over 3.2 million in total",
       "reason": "2026-11-14 再試行：https://www.sonylife.co.jp/info/popup/261028_oshirase2.pdf は再度 robots_disallowed、https://www.sonyfg.co.jp/ja/news/index.html は client_error。 （前回までの記録）メディケア生命の行（res_1024_1028）と同一事案の当事者側。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.sonylife.co.jp/info/popup/261028_oshirase2.pdf、https://www.sonyfg.co.jp/ja/news/。理由：sonylife.co.jp：robots_disallowed。sonyfg.co.jp：client_error。WebSearchで別ドメインの同文なし （2026-11-10再挑戦）一次公表文に到達できず（2026-11-10）。試したURL：https://www.sonylife.co.jp/、https://www.sonyfg.co.jp/ja/news/、https://www.sonyfg.co.jp/ja/、https://www.sonyfg.co.jp/en/news/、https://www.release.tdnet.info/inbs/I_list_001_20261109.html。理由：sonylife.co.jp は robots_disallowed、sonyfg.co.jp は client_error、TDnet一覧は robots_disallowed。WebSearch でも11/9の公表文URLを特定できず（ソニーフィナンシャルグループ（8729）の11/9適時開示も見つからず）。照合待ち（10/28初報 261028_oshirase2.pdf）と同一事案の続報。既存行209 メディケア生命は同じ事案の委託元側の行で、行にする際は、メディケア生命分（約38.5万件、二次資料）が累計に含まれるかの確認が要る。",
-      "reference": "https://www.sonylife.co.jp/info/popup/261028_oshirase2.pdf"
+      "reason_en": "2026-11-14 retry: https://www.sonylife.co.jp/info/popup/261028_oshirase2.pdf was robots_disallowed again, and https://www.sonyfg.co.jp/ja/news/index.html returned client_error. (Earlier record) This is the same case as the Medicare Life row (res_1024_1028), seen from the contracting party's side. The primary notice could not be reached (retried 2026-11-08). URLs tried: https://www.sonylife.co.jp/info/popup/261028_oshirase2.pdf, https://www.sonyfg.co.jp/ja/news/. Reason: sonylife.co.jp: robots_disallowed. sonyfg.co.jp: client_error. A web search found no identical text on another domain. (Retried 2026-11-10) The primary notice could not be reached (2026-11-10). URLs tried: https://www.sonylife.co.jp/, https://www.sonyfg.co.jp/ja/news/, https://www.sonyfg.co.jp/ja/, https://www.sonyfg.co.jp/en/news/, https://www.release.tdnet.info/inbs/I_list_001_20261109.html. Reason: sonylife.co.jp is robots_disallowed, sonyfg.co.jp is client_error, and the TDnet list is robots_disallowed. A web search also could not identify the URL of the 11/9 notice (the 11/9 timely disclosure of Sony Financial Group (8729) was not found either). This is a follow-up to the same case as the pending item (first report of 10/28, 261028_oshirase2.pdf). Existing row 209, Medicare Life, is the row for the same case on the commissioning side; when this becomes a row, it must be checked whether the Medicare Life portion (about 385,000 records, secondary source) is included in the cumulative total.",
+      "reference": "https://www.sonylife.co.jp/info/popup/261028_oshirase2.pdf",
+      "reference_en": "https://www.sonylife.co.jp/info/popup/261028_oshirase2.pdf"
     },
     {
       "org_ja": "毎日新聞社（ニュースレター等・委託先ユミルリンク）",
+      "org_en": "The Mainichi Newspapers (newsletters and others, contractor Yumeru Link)",
       "published": "2026-10-26",
+      "published_en": "2026-10-26",
       "reported_scale": "二次資料では第2報で延べ2,328件",
+      "reported_scale_en": "According to secondary sources, 2,328 records in total in the second report",
       "reason": "2026-11-14 再試行：mainichi.co.jp は再度 SITE_BLOCKED。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.mainichi.co.jp/info/news/20261026.html。理由：SITE_BLOCKED",
-      "reference": "https://www.mainichi.co.jp/info/news/20261026.html"
+      "reason_en": "2026-11-14 retry: mainichi.co.jp was SITE_BLOCKED again. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.mainichi.co.jp/info/news/20261026.html. Reason: SITE_BLOCKED.",
+      "reference": "https://www.mainichi.co.jp/info/news/20261026.html",
+      "reference_en": "https://www.mainichi.co.jp/info/news/20261026.html"
     },
     {
       "org_ja": "朝日新聞社（メール配信・委託先ユミルリンク）",
+      "org_en": "The Asahi Shimbun Company (email delivery, contractor Yumeru Link)",
       "published": "2026-10-26",
+      "published_en": "2026-10-26",
       "reported_scale": "二次資料では続報（10/29）で延べ70,921件",
+      "reported_scale_en": "According to secondary sources, 70,921 records in total in the follow-up (10/29)",
       "reason": "2026-11-14 再試行：asahi.com は再度 SITE_BLOCKED。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.asahi.com/corporate/info/16995713。理由：SITE_BLOCKED",
-      "reference": "https://www.asahi.com/corporate/info/16995713"
+      "reason_en": "2026-11-14 retry: asahi.com was SITE_BLOCKED again. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.asahi.com/corporate/info/16995713. Reason: SITE_BLOCKED.",
+      "reference": "https://www.asahi.com/corporate/info/16995713",
+      "reference_en": "https://www.asahi.com/corporate/info/16995713"
     },
     {
       "org_ja": "ドン・キホーテ・長崎屋・橘百貨店・UDリテール（時計修理・委託先のランサムウェア被害）",
+      "org_en": "Don Quijote, Nagasakiya, Tachibana Department Store and UD Retail (watch repair, ransomware attack on a contractor)",
       "published": "2026-10-28",
+      "published_en": "2026-10-28",
       "reported_scale": "報道では件数非公表",
+      "reported_scale_en": "Number of records not disclosed according to press reports",
       "reason": "2026-11-14 再試行：https://ppih.co.jp/news/ の10月下旬〜11月に時計修理の件はなし（11/02のデジタル社債管理システムの件＝既存行322のみ）。donki.com は前回 robots_disallowed のため未再試行。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.donki.com/updata/news/info_84zw5.pdf?pre=ip、https://ppih.co.jp/news/。理由：donki.com：robots_disallowed。PPIHニュース一覧の10月下旬〜11月に該当なし（11/2のデジタル社債管理システムの件は別事案）。WebSearchで別URLなし",
-      "reference": "https://www.donki.com/updata/news/info_84zw5.pdf?pre=ip"
+      "reason_en": "2026-11-14 retry: PPIH's news page (https://ppih.co.jp/news/) has no watch-repair item for late October to November (only the 11/02 digital corporate-bond management system item, which is existing row 322). donki.com was robots_disallowed last time and was not retried. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: https://www.donki.com/updata/news/info_84zw5.pdf?pre=ip, https://ppih.co.jp/news/. Reason: donki.com: robots_disallowed. The PPIH news list for late October to November has no matching item (the 11/2 digital corporate-bond management system item is a different case). A web search found no other URL.",
+      "reference": "https://www.donki.com/updata/news/info_84zw5.pdf?pre=ip",
+      "reference_en": "https://www.donki.com/updata/news/info_84zw5.pdf?pre=ip"
     },
     {
       "org_ja": "TBSグロウディア（TBSショッピング・委託先メール配信）",
+      "org_en": "TBS Glowdia (TBS Shopping, contractor for email delivery)",
       "published": "2026-10-28",
+      "published_en": "2026-10-28",
       "reported_scale": "報道では最大4万9,995人分（延べ）",
+      "reported_scale_en": "According to press reports, up to 49,995 people (cumulative)",
       "reason": "2026-11-14 再試行：https://www.tbs-glowdia.co.jp/news/ は robots_disallowed、https://www.tbs.co.jp/shopping/ は SITE_BLOCKED。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.tbs-glowdia.co.jp/。理由：robots_disallowed。WebSearchで一次URLを特定できず",
-      "reference": "https://www.tbs-glowdia.co.jp/"
+      "reason_en": "2026-11-14 retry: https://www.tbs-glowdia.co.jp/news/ is robots_disallowed and https://www.tbs.co.jp/shopping/ is SITE_BLOCKED. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.tbs-glowdia.co.jp/. Reason: robots_disallowed. A web search could not identify a primary URL.",
+      "reference": "https://www.tbs-glowdia.co.jp/",
+      "reference_en": "https://www.tbs-glowdia.co.jp/"
     },
     {
       "org_ja": "palan（Metabase経由のデータベース）",
+      "org_en": "palan (database via Metabase)",
       "published": "2026-10-26",
+      "published_en": "2026-10-26",
       "reported_scale": "二次資料では最大33,348名。岐阜県の報道資料では1,135名分",
+      "reported_scale_en": "Up to 33,348 people according to secondary sources. 1,135 people according to a press release by Gifu Prefecture",
       "reason": "2026-11-14 再試行：https://palan.co.jp/news/20261026 は再度JS描画（description「このたび、弊社が社内業務で利用している外部のデータ分析ツール（Metabase社が提供するBIツール）において、同ツールの脆弱性を悪用した第三者による不正アクセスを受け、弊社サービスのデータベースに保…」のみ）。件数・情報項目は読めず。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://palan.co.jp/news/20261026。理由：JS描画で本文未読（表題「不正アクセスによる個人情報の漏えいに関するお知らせとお詫び | 株式会社palan」とdescription「…同ツールの脆弱性を悪用した第三者による不正アクセスを受け…」のみ）",
-      "reference": "https://palan.co.jp/news/20261026"
+      "reason_en": "2026-11-14 retry: https://palan.co.jp/news/20261026 is again rendered by JavaScript (only the description: \"A third party exploited a vulnerability in the external data-analysis tool (a BI tool provided by Metabase) that we use for internal work, and accessed the database of our service without authorisation, ...\"). The number of records and data items could not be read. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://palan.co.jp/news/20261026. Reason: rendered by JavaScript, body not read (only the title \"Notice and apology regarding leakage of personal information through unauthorised access | palan Inc.\" and the description \"... a third party exploited a vulnerability in the tool and accessed ... without authorisation ...\").",
+      "reference": "https://palan.co.jp/news/20261026",
+      "reference_en": "https://palan.co.jp/news/20261026"
     },
     {
       "org_ja": "十文字学園女子大学",
+      "org_en": "Jumonji University",
       "published": "2026-10-28",
+      "published_en": "2026-10-28",
       "reported_scale": "報道では調査中",
+      "reported_scale_en": "Under investigation according to press reports",
       "reason": "2026-11-14 再試行：https://www.jumonji-u.ac.jp/important/systemfailure_20261028/ は再度 client_error（前回到達時は漏えい（可能性）の記述なし・調査中）。 （前回までの記録）前回取得時の内容：「2026年9月19日、本学のシステムに対する外部からのサイバー攻撃を確認」「情報漏えいの有無を含め、詳細な調査を行っております。」続報次第。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.jumonji-u.ac.jp/important/systemfailure_20261028/。理由：client_error（2026-11-08。前回は到達済みで、本文に漏えい（可能性）の記述なし・調査中）",
-      "reference": "https://www.jumonji-u.ac.jp/important/systemfailure_20261028/"
+      "reason_en": "2026-11-14 retry: https://www.jumonji-u.ac.jp/important/systemfailure_20261028/ returned client_error again (when last reached, it contained no statement of leakage (or possible leakage) and said the matter was under investigation). (Earlier record) Content at the last retrieval: \"On 19 September 2026, we confirmed a cyberattack from outside on the University's systems\" and \"We are conducting a detailed investigation, including whether information was leaked.\" To be decided depending on follow-up reports. The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.jumonji-u.ac.jp/important/systemfailure_20261028/. Reason: client_error (2026-11-08. It was reached earlier, and its body had no statement of leakage (or possible leakage) and said the matter was under investigation).",
+      "reference": "https://www.jumonji-u.ac.jp/important/systemfailure_20261028/",
+      "reference_en": "https://www.jumonji-u.ac.jp/important/systemfailure_20261028/"
     },
     {
       "org_ja": "東建コーポレーション",
+      "org_en": "Token Corporation",
       "published": "2026-10-28",
+      "published_en": "2026-10-28",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14 再試行：一次公表文に到達（https://www.token.co.jp/20261028.html 、本文見出し「当社システムへのサイバー攻撃に関するお知らせ」2026年10月28日。前回の robots 拒否は解消）。判定保留（基準1は続報次第）：「外部からサイバー攻撃を受けたことが判明いたしました」「個人情報の漏えい等の有無およびその影響範囲については、調査が進み次第発表いたします。」で、漏えい（可能性）の記述なし。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.token.co.jp/20261028.html。理由：robots_disallowed",
-      "reference": "https://www.token.co.jp/20261028.html"
+      "reason_en": "2026-11-14 retry: the primary notice was reached (https://www.token.co.jp/20261028.html, body heading \"Notice regarding a cyberattack on our systems\", 28 October 2026; the earlier robots refusal has cleared). Decision on hold (criterion 1 depends on follow-up reports): it says \"it has come to light that we were subjected to a cyberattack from outside\" and \"whether personal information was leaked and the extent of its impact will be announced as the investigation progresses\", with no statement of leakage (or possible leakage). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.token.co.jp/20261028.html. Reason: robots_disallowed.",
+      "reference": "https://www.token.co.jp/20261028.html",
+      "reference_en": "https://www.token.co.jp/20261028.html"
     },
     {
       "org_ja": "南城市（尚巴志ハーフマラソン・ブラストメール）",
+      "org_en": "Nanjo City (Sho Hashi Half Marathon, Blast Mail)",
       "published": "2026-10-26（二次資料の見出し日）",
+      "published_en": "2026-10-26 (headline date of a secondary source)",
       "reported_scale": "報道ではランナー1万1,117件のメールアドレス漏えいの可能性",
+      "reported_scale_en": "According to press reports, possible leakage of 11,117 runners' email addresses",
       "reason": "2026-11-14 再試行：https://www.city.nanjo.okinawa.jp/ トップに告知なし。WebSearchは二次資料（rocket-boys・琉球新報）のみ。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：。理由：WebSearchで市・大会事務局の一次URLを特定できず（rocket-boys の二次資料のみ）",
-      "reference": ""
+      "reason_en": "2026-11-14 retry: no notice on the top page of https://www.city.nanjo.okinawa.jp/. A web search found only secondary sources (rocket-boys and the Ryukyu Shimpo). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: none. Reason: a web search could not identify the primary URL of the city or the race secretariat (rocket-boys, a secondary source, only).",
+      "reference": "",
+      "reference_en": ""
     },
     {
       "org_ja": "iichi",
+      "org_en": "iichi",
       "published": "2026-10-27（二次資料の見出し日）",
+      "published_en": "2026-10-27 (headline date of a secondary source)",
       "reported_scale": "件数不明（名称のみ）",
+      "reported_scale_en": "Number of records unknown (name only)",
       "reason": "2026-11-14 再試行：WebSearchで該当なし（iichi の一次URLを特定できず）。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：。理由：WebSearchで該当なし。innovatopia の日別一覧に名称があるだけで内容未確認",
-      "reference": ""
+      "reason_en": "2026-11-14 retry: a web search found nothing relevant (iichi's primary URL could not be identified). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: none. Reason: a web search found nothing relevant. The name appears only in innovatopia's daily list, and its content has not been confirmed.",
+      "reference": "",
+      "reference_en": ""
     },
     {
       "org_ja": "九州FG証券（セミナー受付）",
+      "org_en": "Kyushu FG Securities (seminar reception)",
       "published": "2026-10-28（二次資料の見出し日）",
+      "published_en": "2026-10-28 (headline date of a secondary source)",
       "reported_scale": "件数不明（名称のみ）",
+      "reported_scale_en": "Number of records unknown (name only)",
       "reason": "2026-11-14 再試行：WebSearchで該当なし（九州FG証券の一次URLを特定できず）。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：。理由：WebSearchで該当なし。innovatopia の日別一覧に名称があるだけ",
-      "reference": ""
+      "reason_en": "2026-11-14 retry: a web search found nothing relevant (Kyushu FG Securities' primary URL could not be identified). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: none. Reason: a web search found nothing relevant. The name appears only in innovatopia's daily list.",
+      "reference": "",
+      "reference_en": ""
     },
     {
       "org_ja": "フェスタリア",
+      "org_en": "Festaria",
       "published": "2026-10-28（二次資料の見出し日）",
+      "published_en": "2026-10-28 (headline date of a secondary source)",
       "reported_scale": "件数不明（名称のみ）",
+      "reported_scale_en": "Number of records unknown (name only)",
       "reason": "2026-11-14 再試行：WebSearchで該当なし。既存行208（ペルソナ、ユミルリンク）との関係も未確認。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：。理由：WebSearchで該当なし。innovatopia の日別一覧に「フェスタリア ペルソナ（H2Oのカード会員）」とあるだけ",
-      "reference": ""
+      "reason_en": "2026-11-14 retry: a web search found nothing relevant. Its relationship to existing row 208 (Persona, Yumeru Link) is also unconfirmed. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URLs tried: none. Reason: a web search found nothing relevant. innovatopia's daily list has only \"Festaria, Persona (H2O card members)\".",
+      "reference": "",
+      "reference_en": ""
     },
     {
       "org_ja": "MONO Investment（投資のコンシェルジュ）",
+      "org_en": "MONO Investment (Investment Concierge)",
       "published": "2026-10-29",
+      "published_en": "2026-10-29",
       "reported_scale": "報道では件数精査中",
+      "reported_scale_en": "Number of records under scrutiny according to press reports",
       "reason": "2026-11-14 再試行：https://monoinv.com/news/newsrelease-20261029/ は再度JS描画（meta description「「投資のコンシェルジュ」への不正アクセスによるお客様情報の流出に関するお詫びとお知らせ」のみ）。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://monoinv.com/news/newsrelease-20261029/。理由：JS描画で本文未読（description「「投資のコンシェルジュ」への不正アクセスによるお客様情報の流出に関するお詫びとお知らせ」のみ）",
-      "reference": "https://monoinv.com/news/newsrelease-20261029/"
+      "reason_en": "2026-11-14 retry: https://monoinv.com/news/newsrelease-20261029/ is again rendered by JavaScript (only the meta description: \"Apology and notice regarding leakage of customer information through unauthorised access to 'Investment Concierge'\"). (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://monoinv.com/news/newsrelease-20261029/. Reason: rendered by JavaScript, body not read (only the description \"Apology and notice regarding leakage of customer information through unauthorised access to 'Investment Concierge'\").",
+      "reference": "https://monoinv.com/news/newsrelease-20261029/",
+      "reference_en": "https://monoinv.com/news/newsrelease-20261029/"
     },
     {
       "org_ja": "iDA（求人サイト「MyBRANDS」）",
+      "org_en": "iDA (job site \"MyBRANDS\")",
       "published": "2026-10-30",
+      "published_en": "2026-10-30",
       "reported_scale": "報道では最大約13万5千件",
+      "reported_scale_en": "Up to about 135,000 records according to press reports",
       "reason": "2026-11-14 再試行：https://ida-mode.com/lp/news/unauthorized-access-2026-10/ は再度 robots_disallowed。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://ida-mode.com/lp/news/unauthorized-access-2026-10/。理由：robots_disallowed",
-      "reference": "https://ida-mode.com/lp/news/unauthorized-access-2026-10/"
+      "reason_en": "2026-11-14 retry: https://ida-mode.com/lp/news/unauthorized-access-2026-10/ was robots_disallowed again. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://ida-mode.com/lp/news/unauthorized-access-2026-10/. Reason: robots_disallowed.",
+      "reference": "https://ida-mode.com/lp/news/unauthorized-access-2026-10/",
+      "reference_en": "https://ida-mode.com/lp/news/unauthorized-access-2026-10/"
     },
     {
       "org_ja": "リオン・ドールコーポレーション（にいつフードグリーンカード）",
+      "org_en": "Lion d'Or Corporation (Niitsu Food Green Card)",
       "published": "2026-10-30",
+      "published_en": "2026-10-30",
       "reported_scale": "件数・経路とも不明",
+      "reported_scale_en": "Number of records and route both unknown",
       "reason": "2026-11-14 再試行：https://liondor.jp/news/2026/7726/ の本文は店頭掲示用の画像のみでテキストなし（件数・経路・不正アクセスの有無を読めず）。 （前回までの記録）不正アクセスによるものかも未確認。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://liondor.jp/news/2026/7726/。理由：本文未読（見出し「「にいつフードグリーンカード」会員様の個人情報漏えいの可能性に関するお知らせとお詫び」と掲載日2026-10-30のみ）",
-      "reference": "https://liondor.jp/news/2026/7726/"
+      "reason_en": "2026-11-14 retry: the body of https://liondor.jp/news/2026/7726/ is only an image for in-store display with no text (the number of records, route and whether unauthorised access occurred could not be read). (Earlier record) It is also unconfirmed whether this was caused by unauthorised access. The primary notice could not be reached (retried 2026-11-08). URL tried: https://liondor.jp/news/2026/7726/. Reason: body not read (only the heading \"Notice and apology regarding possible leakage of personal information of 'Niitsu Food Green Card' members\" and the posting date 2026-10-30).",
+      "reference": "https://liondor.jp/news/2026/7726/",
+      "reference_en": "https://liondor.jp/news/2026/7726/"
     },
     {
       "org_ja": "cover-ing（IKEAソファ用カバー販売）",
+      "org_en": "cover-ing (IKEA sofa cover sales)",
       "published": "2026-11-02頃",
+      "published_en": "around 2026-11-02",
       "reported_scale": "報道では約5年間サーバー内ファイルが外部閲覧可能",
+      "reported_scale_en": "According to press reports, files on the server were viewable from outside for about five years",
       "reason": "2026-11-14 再試行：今回は試行せず（運営会社名・一次URLが不明のまま）。 （前回までの記録）設定不備（閲覧可能状態）のみなら基準外の可能性。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：。理由：WebSearchで運営会社名・一次URLを特定できず（IKEA商品ページばかりヒット）",
-      "reference": ""
+      "reason_en": "2026-11-14 retry: not attempted this time (the operating company's name and primary URL remain unknown). (Earlier record) If it was only a configuration error (a viewable state), it may fall outside the criteria. The primary notice could not be reached (retried 2026-11-08). URLs tried: none. Reason: a web search could not identify the operating company's name or primary URL (only IKEA product pages came up).",
+      "reference": "",
+      "reference_en": ""
     },
     {
       "org_ja": "ANA 続報（Amadeus・影響人数）",
+      "org_en": "ANA follow-up (Amadeus, number of people affected)",
       "published": "2026-10-30",
+      "published_en": "2026-10-30",
       "reported_scale": "報道では約3万7800人（うち約1700人はパスポート番号等）",
+      "reported_scale_en": "According to press reports, about 37,800 people (about 1,700 of them with passport numbers and so on)",
       "reason": "2026-11-14 再試行：既存行231の一次URL https://www.anahd.co.jp/group/pr/202610/notification.html に続報・更新の記載なし（影響人数の記載なし）。https://www.ana.co.jp/ja/jp/topics/notice/ は client_error。 （前回までの記録）ANA行（2026-10-29初報）の続報。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://www.aviationwire.jp/archives/353359/print/。理由：報道記事は一次URLを載せていない（ANAトップのみ）。site:ana.co.jp 検索でも続報URLを特定できず",
-      "reference": "https://www.aviationwire.jp/archives/353359/print/"
+      "reason_en": "2026-11-14 retry: the primary URL of existing row 231, https://www.anahd.co.jp/group/pr/202610/notification.html, has no follow-up or update (no number of people affected is stated). https://www.ana.co.jp/ja/jp/topics/notice/ returned client_error. (Earlier record) A follow-up to the ANA row (first report 2026-10-29). The primary notice could not be reached (retried 2026-11-08). URL tried: https://www.aviationwire.jp/archives/353359/print/. Reason: the press article does not give a primary URL (only the ANA top page). A site:ana.co.jp search also could not identify the follow-up URL.",
+      "reference": "https://www.aviationwire.jp/archives/353359/print/",
+      "reference_en": "https://www.aviationwire.jp/archives/353359/print/"
     },
     {
       "org_ja": "Mリーグ機構（公式サイト・公式オンラインショップ）",
+      "org_en": "Japan Professional Mahjong League \"M.LEAGUE\" Organisation (official site and official online shop)",
       "published": "2026-11-02",
+      "published_en": "2026-11-02",
       "reported_scale": "報道では9,502人、注文履歴13,922件",
+      "reported_scale_en": "According to press reports, 9,502 people and 13,922 order-history records",
       "reason": "2026-11-14 再試行：https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff は再度JS描画（「記事を読み込み中…」）。メタ情報（概要文）に「第三者による不正アクセスを受け」「個人情報が漏えいしたことを確認いたしました」とあるが、本文（件数・情報項目）は読めず、本文での確認に当たらないため保留。 （前回までの記録）公表日・運営主体は確認できたので、本文が読めれば起票可能。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff。理由：JS描画で本文未読（「記事を読み込み中…」）。メタ情報で表題「Mリーグ公式サイトおよび公式オンラインショップへの不正アクセスによるお客様情報の漏えいについて（お詫びとご報告）」、2026年11月2日、一般社団法人Mリーグ機構、「第三者による不正アクセス」、漏えいを「確認」と判明",
-      "reference": "https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff"
+      "reason_en": "2026-11-14 retry: https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff is again rendered by JavaScript (\"Loading article...\"). The metadata (summary text) says \"received unauthorised access from a third party\" and \"confirmed that personal information had been leaked\", but the body (number of records, data items) could not be read, so this does not count as confirmation in the body and the row is on hold. (Earlier record) The publication date and operator were confirmed, so the row can be entered once the body can be read. The primary notice could not be reached (retried 2026-11-08). URL tried: https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff. Reason: rendered by JavaScript, body not read (\"Loading article...\"). From the metadata: title \"Leakage of customer information through unauthorised access to the M.LEAGUE official site and official online shop (apology and report)\", 2 November 2026, M.LEAGUE Organisation (general incorporated association), \"unauthorised access by a third party\", and leakage \"confirmed\".",
+      "reference": "https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff",
+      "reference_en": "https://m-league.jp/news/article/?id=article-8d1eb109-c366-444e-8525-c30a6e9ec8ff"
     },
     {
       "org_ja": "日刊工業新聞社（メール配信サービス）",
+      "org_en": "The Nikkan Kogyo Shimbun (email delivery service)",
       "published": "不明",
+      "published_en": "unknown",
       "reported_scale": "不明",
+      "reported_scale_en": "unknown",
       "reason": "2026-11-14 再試行：https://corp.nikkan.co.jp/topics/view/1479 は再度 client_error。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://corp.nikkan.co.jp/topics/view/1479。理由：client_error。WebSearchでも公表日・委託先・件数は特定できず（検索結果にはニュースウェーブ21の別事案が出る）",
-      "reference": "https://corp.nikkan.co.jp/topics/view/1479"
+      "reason_en": "2026-11-14 retry: https://corp.nikkan.co.jp/topics/view/1479 returned client_error again. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://corp.nikkan.co.jp/topics/view/1479. Reason: client_error. A web search also could not identify the publication date, contractor or number of records (the results show a different case at News Wave 21).",
+      "reference": "https://corp.nikkan.co.jp/topics/view/1479",
+      "reference_en": "https://corp.nikkan.co.jp/topics/view/1479"
     },
     {
       "org_ja": "SBI証券（デジタル特典付き社債・NTTデータ委託先）",
+      "org_en": "SBI Securities (corporate bonds with digital benefits, NTT Data contractor)",
       "published": "2026-10-31",
+      "published_en": "2026-10-31",
       "reported_scale": "報道（atsoho）では近鉄社債購入者1,169名（氏名・購入金額）",
+      "reported_scale_en": "According to press reports (atsoho), 1,169 purchasers of Kintetsu bonds (names and purchase amounts)",
       "reason": "2026-11-14 再試行：SBI証券のお知らせ一覧（sbisec.co.jp の home_info_list）に該当なし。 （前回までの記録）NTTデータ第2報（2026-11-02、https://www.nttdata.com/global/ja/news/release/2026/110200 ）は発行体名・販売会社名を記載せず。 一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://atsoho.com/blog/sbi-securities-kintetsu-bond-data-breach。理由：atsoho：client_error。WebSearch 2回で sbisec.co.jp 上の公表URLを特定できず。ビジネス+IT記事（188006）にSBI証券の記載なし",
-      "reference": "https://atsoho.com/blog/sbi-securities-kintetsu-bond-data-breach"
+      "reason_en": "2026-11-14 retry: the SBI Securities notice list (home_info_list on sbisec.co.jp) has no matching item. (Earlier record) The second NTT Data report (2026-11-02, https://www.nttdata.com/global/ja/news/release/2026/110200) does not name the issuer or the selling company. The primary notice could not be reached (retried 2026-11-08). URL tried: https://atsoho.com/blog/sbi-securities-kintetsu-bond-data-breach. Reason: atsoho: client_error. Two web searches could not identify a published URL on sbisec.co.jp. The Business+IT article (188006) does not mention SBI Securities.",
+      "reference": "https://atsoho.com/blog/sbi-securities-kintetsu-bond-data-breach",
+      "reference_en": "https://atsoho.com/blog/sbi-securities-kintetsu-bond-data-breach"
     },
     {
       "org_ja": "ジグザグ（WorldShopping）",
+      "org_en": "Zigzag (WorldShopping)",
       "published": "2026-10-19",
+      "published_en": "2026-10-19",
       "reported_scale": "報道ベース",
+      "reported_scale_en": "Press-report based",
       "reason": "2026-11-14 再試行：https://www.zig-zag.co.jp/news の10月分に該当なし。最も近い「【重要】PHPの脆弱性に関する当社サービスへの影響と対応完了のお知らせ」（2026/10/22、https://www.zig-zag.co.jp/corporate/20261023-security/ 、WorldShopping BIZ が対象）は「現時点で本脆弱性に起因する不正アクセスや、お客様のデータに関する情報漏えいなどの事象は確認されておりません。」で、報道の事案と同一かは不明。 （前回までの記録）一次公表文に到達できず（2026-11-08再挑戦）。試したURL：https://rocket-boys.co.jp/?p=44312。理由：rocket-boys：client_error。WebSearch 2回で zig-zag.co.jp 等の一次URLを特定できず",
-      "reference": "https://rocket-boys.co.jp/?p=44312"
+      "reason_en": "2026-11-14 retry: the October items on https://www.zig-zag.co.jp/news have no matching notice. The closest, \"[Important] Impact of the PHP vulnerability on our services and notice of completed response\" (2026/10/22, https://www.zig-zag.co.jp/corporate/20261023-security/, covering WorldShopping BIZ), says \"At present, no unauthorised access caused by this vulnerability, nor any event such as leakage of customer data, has been confirmed.\" It is unclear whether this is the same case as the one reported in the press. (Earlier record) The primary notice could not be reached (retried 2026-11-08). URL tried: https://rocket-boys.co.jp/?p=44312. Reason: rocket-boys: client_error. Two web searches could not identify a primary URL on zig-zag.co.jp or elsewhere.",
+      "reference": "https://rocket-boys.co.jp/?p=44312",
+      "reference_en": "https://rocket-boys.co.jp/?p=44312"
     },
     {
       "org_ja": "一般社団法人TOAST（問い合わせフォーム・委託先Studio）",
+      "org_en": "TOAST General Incorporated Association (enquiry form, contractor Studio)",
       "published": "2026-10-25",
+      "published_en": "2026-10-25",
       "reported_scale": "「対象件数：11件」",
+      "reported_scale_en": "\"Number of records affected: 11\"",
       "reason": "2026-11-14 再試行：今回は試行せず（note.com 上の公表文で、当事組織のドメイン上かの著者判断待ちは変わらず）。 （前回までの記録）一次公表文は当事組織の公式noteアカウント（note.com）上で、当事組織のドメイン上ではない。収載基準（当事組織の一次公表文）に当たるかは著者判断のため、第5版では照合待ちに置く。内容：「Studio」への不正アクセスに伴う情報流出の可能性、「対象件数：11件」",
-      "retrieved": "2026-11-08",
-      "reference": "https://note.com/toast_edu/n/n39aa811b9dba"
+      "reason_en": "2026-11-14 retry: not attempted this time (the notice is on note.com, and the author's judgement on whether it counts as being on the organisation's own domain remains pending). (Earlier record) The primary notice is on the organisation's official note account (note.com), not on the organisation's own domain. Whether it meets the admission criterion (the organisation's own primary notice) is for the author to judge, so it is held as pending in the fifth edition. Content: possible leakage of information through unauthorised access to \"Studio\", \"Number of records affected: 11\".",
+      "reference": "https://note.com/toast_edu/n/n39aa811b9dba",
+      "reference_en": "https://note.com/toast_edu/n/n39aa811b9dba"
     },
     {
       "org_ja": "BEENOS Entertainment・DH（「AKB48 Mail」メール配信・外部メール配信サービス アララ「repica」）",
+      "org_en": "BEENOS Entertainment and DH (\"AKB48 Mail\" email delivery, external email delivery service Arara \"repica\")",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "記載なし（「漏洩の詳細、対象者について、サービス提供元に確認をしております」）",
+      "reported_scale_en": "Not stated (\"We are confirming the details of the leak and the persons concerned with the service provider\")",
       "reason": "2026-11-14 再試行：今回は試行せず（ameblo.jp 上の公表文で、当事組織のドメイン上かの著者判断待ちは変わらず）。 （前回までの記録）一次公表文はAKB48公式ブログ（ameblo.jp）上で、当事組織のドメイン上ではない。収載基準に当たるかは著者判断のため、第5版では照合待ちに置く。内容：メール配信サービス「repica」への不正アクセスに伴うメールアドレスの漏洩、件数は記載なし",
-      "retrieved": "2026-11-08",
-      "reference": "https://ameblo.jp/akihabara48/entry-12983659799.html"
+      "reason_en": "2026-11-14 retry: not attempted this time (the notice is on ameblo.jp, and the author's judgement on whether it counts as being on the organisation's own domain remains pending). (Earlier record) The primary notice is on the AKB48 official blog (ameblo.jp), not on the organisation's own domain. Whether it meets the admission criterion is for the author to judge, so it is held as pending in the fifth edition. Content: leakage of email addresses through unauthorised access to the email delivery service \"repica\"; the number of records is not stated.",
+      "reference": "https://ameblo.jp/akihabara48/entry-12983659799.html",
+      "reference_en": "https://ameblo.jp/akihabara48/entry-12983659799.html"
     },
     {
       "org_ja": "アソビュー（「アソビュー！」会員向けメール配信・委託先アララ「アララメッセージ」）",
+      "org_en": "Asoview (email delivery to \"Asoview!\" members, contractor Arara \"Arara Message\")",
       "published": "2026-11-03",
+      "published_en": "2026-11-03",
       "reported_scale": "二次資料（情報漏洩まとめ.site・piyolog）では会員情報15,821,184件",
+      "reported_scale_en": "15,821,184 member records according to secondary sources (Joho Rouei Matome site and piyolog)",
       "reason": "2026-11-14 再試行：https://www.asoview.co.jp/news/articles/AyTdT_tX は再度JS描画（title と description 冒頭のみ）。 （前回までの記録）一次ページ https://www.asoview.co.jp/news/articles/AyTdT_tX はJS描画で、WebFetchではtitle「委託先メール配信サービスへの不正アクセスに関するお詫びとお知らせ」とdescription冒頭（「弊社がメール配信に利用している、アララ株式会社（以下「アララ社」）が提供するメール配信サービス「アララメッセージ」…」）のみ取得。本文未読。連鎖名：アララ（241）。山梨県・福井市・沖縄県・松江市・大阪中之島美術館のアソビュー経由分の親事案",
-      "reference": "https://www.asoview.co.jp/news/articles/AyTdT_tX"
+      "reason_en": "2026-11-14 retry: https://www.asoview.co.jp/news/articles/AyTdT_tX is again rendered by JavaScript (only the title and the start of the description). (Earlier record) The primary page https://www.asoview.co.jp/news/articles/AyTdT_tX is rendered by JavaScript; WebFetch retrieved only the title \"Apology and notice regarding unauthorised access to a contractor's email delivery service\" and the start of the description (\"the email delivery service 'Arara Message', provided by Arara Inc. (hereinafter 'Arara'), which we use for email delivery ...\"). Body not read. Chain name: Arara (241). Parent case of the portions reaching Yamanashi Prefecture, Fukui City, Okinawa Prefecture, Matsue City and the Osaka Nakanoshima Museum of Art through Asoview.",
+      "reference": "https://www.asoview.co.jp/news/articles/AyTdT_tX",
+      "reference_en": "https://www.asoview.co.jp/news/articles/AyTdT_tX"
     },
     {
       "org_ja": "コープぎふ・コープあいち・コープみえ・東海コープ事業連合（メール配信・委託先アララ「repica」）",
+      "org_en": "Co-op Gifu, Co-op Aichi, Co-op Mie and Tokai Co-op Business Federation (email delivery, contractor Arara \"repica\")",
       "published": "2026-11-03",
+      "published_en": "2026-11-03",
       "reported_scale": "公表文「メールアドレス160,751件」（東海3生協合計、2026年10月8日〜10月29日配信分）",
+      "reported_scale_en": "Notice: \"160,751 email addresses\" (total for the three Tokai co-operatives, messages sent 8 to 29 October 2026)",
       "reason": "2026-11-14 再試行：https://www.coop-gifu.jp/news/index.php?no=20261103163320 を再取得。本文に「不正アクセス」「第三者」「攻撃」の語はなく（「ご登録いただいたメールアドレスが外部に流出したことが判明いたしました。」「メールアドレス160,751件です。」）、判定保留のまま。 （前回までの記録）一次公表文に到達（コープぎふ https://www.coop-gifu.jp/news/index.php?no=20261103163320 、コープみえ https://www.coop-mie.jp/2026/11/03/mail_owabi/ ）。判定保留：公表文に「不正アクセス」「第三者」の語がなく、「アララ株式会社のメール配信サービス「repica」から、ご登録いただいたメールアドレスが外部に流出したことが判明いたしました。」のみ。アララ連鎖（241）の一部だが、公表文自身に外部からの不正アクセスの記述がない。収載するかは著者判断",
-      "reference": "https://www.coop-gifu.jp/news/index.php?no=20261103163320"
+      "reason_en": "2026-11-14 retry: https://www.coop-gifu.jp/news/index.php?no=20261103163320 was retrieved again. The body contains none of the words \"unauthorised access\", \"third party\" or \"attack\" (it says \"it has come to light that the email addresses you registered were leaked outside\" and \"160,751 email addresses\"), so the decision stays on hold. (Earlier record) The primary notices were reached (Co-op Gifu https://www.coop-gifu.jp/news/index.php?no=20261103163320, Co-op Mie https://www.coop-mie.jp/2026/11/03/mail_owabi/). Decision on hold: the notices do not contain the words \"unauthorised access\" or \"third party\", saying only \"it has come to light that the email addresses you registered were leaked outside from Arara Inc.'s email delivery service 'repica'\". This is part of the Arara chain (241), but the notice itself does not describe external unauthorised access. Whether to admit it is for the author to judge.",
+      "reference": "https://www.coop-gifu.jp/news/index.php?no=20261103163320",
+      "reference_en": "https://www.coop-gifu.jp/news/index.php?no=20261103163320"
     },
     {
       "org_ja": "京セラコミュニケーションシステム（子会社エムオーテックスのWebサイト5サイト）",
+      "org_en": "Kyocera Communication Systems (five websites of subsidiary MOTEX)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "件数記載なし",
+      "reported_scale_en": "Number of records not stated",
       "reason": "2026-11-14 再試行：https://www.kccs.co.jp/news/important/2026/1104/ に続報なし。「現時点でお客様情報の外部流出は確認されておりませんが、さらなる調査を進めております。」（見出しは「情報流出の可能性」、「個人情報」の語なし）。 （前回までの記録）一次公表文に到達（https://www.kccs.co.jp/news/important/2026/1104/ 、表題「【重要なお知らせ】当社子会社Webサイトへの不正アクセスについて」）。判定保留（基準3は続報次第）：「2026年11月2日（月）、MOTEXのWebサイトに対して第三者による不正アクセスを確認し、同日、当該Webサイトを停止いたしました。」「現時点でお客様情報の外部流出は確認されておりませんが、さらなる調査を進めております。」見出しに「情報流出の可能性」。「個人情報」の語なし",
-      "reference": "https://www.kccs.co.jp/news/important/2026/1104/"
+      "reason_en": "2026-11-14 retry: https://www.kccs.co.jp/news/important/2026/1104/ has no follow-up. \"No leakage of customer information to the outside has been confirmed at present, but we are continuing the investigation.\" (The heading says \"possible information leakage\"; the words \"personal information\" do not appear.) (Earlier record) The primary notice was reached (https://www.kccs.co.jp/news/important/2026/1104/, title \"[Important notice] Unauthorised access to a subsidiary's website\"). Decision on hold (criterion 3 depends on follow-up reports): \"On Monday 2 November 2026 we confirmed unauthorised access by a third party to MOTEX's website and suspended the website the same day.\" \"No leakage of customer information to the outside has been confirmed at present, but we are continuing the investigation.\" The heading says \"possible information leakage\". The words \"personal information\" do not appear.",
+      "reference": "https://www.kccs.co.jp/news/important/2026/1104/",
+      "reference_en": "https://www.kccs.co.jp/news/important/2026/1104/"
     },
     {
       "org_ja": "日本郵便（UGX送り状作成システム「Hubez」・提供元レントングループ）",
+      "org_en": "Japan Post (UGX waybill creation system \"Hubez\", provider Renton Group)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "件数記載なし",
+      "reported_scale_en": "Number of records not stated",
       "reason": "2026-11-14 再試行：https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_02.html に続報なし。「現時点でUGXに係る個人情報の流出は確認されておりません。」「不正な攻撃があったことが判明しました。」 （前回までの記録）一次公表文に到達（https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_02.html 、表題「UGX送り状作成システム「Hubez」及び関連システムの緊急メンテナンスについて」）。判定保留：「不正な攻撃があったことが判明しました。」「現時点でUGXに係る個人情報の流出は確認されておりません。」漏えい（可能性）の記述なし。「不正アクセス」の語もなし。二次資料（読売）の「集配委託先への不正アクセスで3,763人の氏名漏えい」は別事案の可能性（未確認）",
-      "reference": "https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_02.html"
+      "reason_en": "2026-11-14 retry: https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_02.html has no follow-up. \"At present no leakage of personal information relating to UGX has been confirmed.\" \"It has come to light that there was an unauthorised attack.\" (Earlier record) The primary notice was reached (https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_02.html, title \"Emergency maintenance of the UGX waybill creation system 'Hubez' and related systems\"). Decision on hold: \"It has come to light that there was an unauthorised attack.\" \"At present no leakage of personal information relating to UGX has been confirmed.\" No statement of leakage (or possible leakage), and the words \"unauthorised access\" do not appear. A secondary source (Yomiuri), \"names of 3,763 people leaked through unauthorised access to a collection and delivery contractor\", may be a different case (unconfirmed).",
+      "reference": "https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_02.html",
+      "reference_en": "https://www.post.japanpost.jp/service/send/oversea/information/2026/1104_02.html"
     },
     {
       "org_ja": "インテージ（インターネット調査システム）",
+      "org_en": "Intage (internet survey system)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "件数記載なし",
+      "reported_scale_en": "Number of records not stated",
       "reason": "2026-11-14 再試行：https://www.intage.co.jp/news/8967/ に続報なし。「現時点の調査において、個人情報およびアンケート回答データの漏洩は確認されておりません。」 （前回までの記録）一次公表文に到達（https://www.intage.co.jp/news/8967/ 、表題「インターネット調査システムへの不正アクセスに関するご報告とお知らせ」）。判定保留（基準3は続報次第）：「アンケートシステムにおいて外部からの不正アクセスが確認された」「現時点の調査において、個人情報およびアンケート回答データの漏洩は確認されておりません。」",
-      "reference": "https://www.intage.co.jp/news/8967/"
+      "reason_en": "2026-11-14 retry: https://www.intage.co.jp/news/8967/ has no follow-up. \"In the investigation so far, no leakage of personal information or questionnaire response data has been confirmed.\" (Earlier record) The primary notice was reached (https://www.intage.co.jp/news/8967/, title \"Report and notice regarding unauthorised access to the internet survey system\"). Decision on hold (criterion 3 depends on follow-up reports): \"unauthorised access from outside was confirmed on the questionnaire system\"; \"In the investigation so far, no leakage of personal information or questionnaire response data has been confirmed.\"",
+      "reference": "https://www.intage.co.jp/news/8967/",
+      "reference_en": "https://www.intage.co.jp/news/8967/"
     },
     {
       "org_ja": "インヴェンティット（MDM「mobiconnect」へのサイバー攻撃・自社サービス）",
+      "org_en": "Inventit (cyberattack on the MDM service \"mobiconnect\", own service)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "件数非公表（二次資料：顧客がアップロードしたファイルの一部が第三者に取得され流出、10月31日検知）",
+      "reported_scale_en": "Number of records not disclosed (secondary source: some files uploaded by customers were obtained by a third party and leaked; detected on 31 October)",
       "reason": "2026-11-14 再試行：https://www.yourinventit.com/news/20261104/ は再度 robots_disallowed。 （前回までの記録）一次ページ https://www.yourinventit.com/news/20261104/ がrobots拒否。ARTPASS（アララ経由、最大約100万件）とは別事案",
-      "reference": "https://www.yourinventit.com/news/20261104/"
+      "reason_en": "2026-11-14 retry: https://www.yourinventit.com/news/20261104/ was robots_disallowed again. (Earlier record) The primary page https://www.yourinventit.com/news/20261104/ is refused by robots. A different case from ARTPASS (via Arara, up to about 1 million records).",
+      "reference": "https://www.yourinventit.com/news/20261104/",
+      "reference_en": "https://www.yourinventit.com/news/20261104/"
     },
     {
       "org_ja": "インヴェンティット（チケットサービス「ARTPASS」メールマガジン・委託先アララ「アララ メッセージ」）",
+      "org_en": "Inventit (email newsletter of the ticket service \"ARTPASS\", contractor Arara \"Arara Message\")",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "二次資料では最大約100万件（精査中）、メールアドレスのみ",
+      "reported_scale_en": "Up to about 1 million records according to secondary sources (under scrutiny), email addresses only",
       "reason": "2026-11-14 再試行：https://art.passes.jp/ のお知らせ一覧で表題「【重要】メールマガジン配信業務委託先への不正アクセスに関するお詫びとお知らせ（11月13日更新）」（2026.11.13更新）を確認。記事URL（パーセントエンコード版）はWebFetchプロキシが長さ超過で拒否（PROXY_REJECTED）し本文未読。 （前回までの記録）一次ページ（art.passes.jp/post/【重要】メールマガジン配信業務委託先への不正アクセスに関するお詫びとお知らせ）はURLが長すぎてWebFetchプロキシが拒否。連鎖名：アララ（241）。大阪中之島美術館・京都市（11/6）の親事案",
-      "reference": "https://art.passes.jp/post/"
+      "reason_en": "2026-11-14 retry: on the notice list of https://art.passes.jp/, the title \"[Important] Apology and notice regarding unauthorised access to the contractor for email newsletter delivery (updated 13 November)\" (updated 2026.11.13) was confirmed. The WebFetch proxy rejected the article URL (percent-encoded version) as too long (PROXY_REJECTED), and the body was not read. (Earlier record) The WebFetch proxy rejected the primary page (art.passes.jp/post/[Important] Apology and notice regarding unauthorised access to the contractor for email newsletter delivery) because the URL is too long. Chain name: Arara (241). Parent case of Osaka Nakanoshima Museum of Art and Kyoto City (11/6).",
+      "reference": "https://art.passes.jp/post/",
+      "reference_en": "https://art.passes.jp/post/"
     },
     {
       "org_ja": "フィノバレー（地域通貨プラットフォーム「MoneyEasy」のメール配信・アララ「アララ メッセージ」）",
+      "org_en": "Finnovalley (email delivery for the local-currency platform \"MoneyEasy\", Arara \"Arara Message\")",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "二次資料ではメールアドレス594,799件（同社利用環境全体）",
+      "reported_scale_en": "594,799 email addresses according to secondary sources (the company's whole environment)",
       "reason": "2026-11-14 再試行：https://finnovalley.jp/Uf6HSANO/20261104_01 は再度 client_error。 （前回までの記録）一次ページ https://finnovalley.jp/Uf6HSANO/20261104_01 が取得エラー（client_error）。連鎖名：アララ（241）。十八親和銀行（MINAコイン・ゆでぴ）、飛騨信用組合（さるぼぼコイン）、君津信用組合（アクアコイン）、世田谷Pay、アインPay等の親事案",
-      "reference": "https://finnovalley.jp/Uf6HSANO/20261104_01"
+      "reason_en": "2026-11-14 retry: https://finnovalley.jp/Uf6HSANO/20261104_01 returned client_error again. (Earlier record) Retrieval error (client_error) for the primary page https://finnovalley.jp/Uf6HSANO/20261104_01. Chain name: Arara (241). Parent case of 18 Shinwa Bank (MINA Coin, Yudepi), Hida Credit Union (Sarubobo Coin), Kimitsu Credit Union (Aqua Coin), Setagaya Pay, Ain Pay and others.",
+      "reference": "https://finnovalley.jp/Uf6HSANO/20261104_01",
+      "reference_en": "https://finnovalley.jp/Uf6HSANO/20261104_01"
     },
     {
       "org_ja": "せたがやPay（世田谷区商店街振興組合連合会・外部メール配信サービス）",
+      "org_en": "Setagaya Pay (Setagaya Ward Federation of Shopping Street Promotion Associations, external email delivery service)",
       "published": "2026-11-04（URLから）",
+      "published_en": "2026-11-04 (from the URL)",
       "reported_scale": "piyologでは配信事業者全体で約59万件、せたがやPay分は精査中",
+      "reported_scale_en": "About 590,000 records for the whole delivery provider according to piyolog; the Setagaya Pay portion is under scrutiny",
       "reason": "2026-11-14 再試行：https://setagayapay.com/news/20261104 は再度JS描画（meta description のみ、運営主体名なし）。 （前回までの記録）一次ページ https://setagayapay.com/news/20261104 はJS描画で本文未読（description「外部メール配信サービスへの不正アクセスに関するお詫びとお知らせ」のみ）。連鎖名：アララ（241）／フィノバレー（未確認）",
-      "reference": "https://setagayapay.com/news/20261104"
+      "reason_en": "2026-11-14 retry: https://setagayapay.com/news/20261104 is again rendered by JavaScript (only the meta description, with no operator name). (Earlier record) The primary page https://setagayapay.com/news/20261104 is rendered by JavaScript and its body was not read (only the description \"Apology and notice regarding unauthorised access to an external email delivery service\"). Chain name: Arara (241) / Finnovalley (unconfirmed).",
+      "reference": "https://setagayapay.com/news/20261104",
+      "reference_en": "https://setagayapay.com/news/20261104"
     },
     {
       "org_ja": "板橋区商店街振興組合連合会（「いたばしPay」自動送信メール・アララ「アララメッセージ」）",
+      "org_en": "Itabashi Ward Federation of Shopping Street Promotion Associations (automatic emails of \"Itabashi Pay\", Arara \"Arara Message\")",
       "published": "2026-11-04（URLから）",
+      "published_en": "2026-11-04 (from the URL)",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14 再試行：https://itabashipay.jp/news/news20261104 は client_error。 （前回までの記録）一次ページ https://itabashipay.jp/news/news20261104 はJS描画で本文未読（title「外部メール配信サービスにおける不正アクセスの報道について」、descriptionに「アララメッセージ」「第三者による不正…」）。連鎖名：アララ（241）",
-      "reference": "https://itabashipay.jp/news/news20261104"
+      "reason_en": "2026-11-14 retry: https://itabashipay.jp/news/news20261104 returned client_error. (Earlier record) The primary page https://itabashipay.jp/news/news20261104 is rendered by JavaScript and its body was not read (title \"Regarding press reports of unauthorised access to an external email delivery service\"; the description mentions \"Arara Message\" and \"unauthorised ... by a third party\"). Chain name: Arara (241).",
+      "reference": "https://itabashipay.jp/news/news20261104",
+      "reference_en": "https://itabashipay.jp/news/news20261104"
     },
     {
       "org_ja": "させぼeコイン（佐世保市デジタル地域通貨・自動送信メール・アララ「アララメッセージ」）",
+      "org_en": "Sasebo eCoin (Sasebo City digital local currency, automatic emails, Arara \"Arara Message\")",
       "published": "2026-11-04（URLから）",
+      "published_en": "2026-11-04 (from the URL)",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14 再試行：https://saseboecoin.jp/news/news20261104 はJS描画（サイト説明のみ、本文・運営主体名なし）。 （前回までの記録）一次ページ https://saseboecoin.jp/news/news20261104 はJS描画で本文未読。運営主体名も未確認。連鎖名：アララ（241）",
-      "reference": "https://saseboecoin.jp/news/news20261104"
+      "reason_en": "2026-11-14 retry: https://saseboecoin.jp/news/news20261104 is rendered by JavaScript (only the site description, with no body or operator name). (Earlier record) The primary page https://saseboecoin.jp/news/news20261104 is rendered by JavaScript and its body was not read. The operator's name is also unconfirmed. Chain name: Arara (241).",
+      "reference": "https://saseboecoin.jp/news/news20261104",
+      "reference_en": "https://saseboecoin.jp/news/news20261104"
     },
     {
       "org_ja": "真庭市（デジタル地域通貨「まにこいん」自動送信メール・アララ「アララメッセージ」）",
+      "org_en": "Maniwa City (digital local currency \"Manicoin\", automatic emails, Arara \"Arara Message\")",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14 再試行：https://manicoin.jp/news/9x7SOX2x はJS描画（サイト説明のみ、本文なし）。 （前回までの記録）一次ページ https://manicoin.jp/news/9x7SOX2x は未取得（同種サイトがJS描画のため未試行）。連鎖名：アララ（241）",
-      "reference": "https://manicoin.jp/news/9x7SOX2x"
+      "reason_en": "2026-11-14 retry: https://manicoin.jp/news/9x7SOX2x is rendered by JavaScript (only the site description, with no body). (Earlier record) The primary page https://manicoin.jp/news/9x7SOX2x was not retrieved (not tried, because similar sites are rendered by JavaScript). Chain name: Arara (241).",
+      "reference": "https://manicoin.jp/news/9x7SOX2x",
+      "reference_en": "https://manicoin.jp/news/9x7SOX2x"
     },
     {
       "org_ja": "西宮市（「にしのみやスマート申請」のメール配信サービス・TKC再委託先アララ）",
+      "org_en": "Nishinomiya City (email delivery service of \"Nishinomiya Smart Application\", Arara as TKC's subcontractor)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "二次資料では調査中（登録者154,146人）",
+      "reported_scale_en": "Under investigation according to secondary sources (154,146 registered users)",
       "reason": "2026-11-14 再試行：記者発表PDF https://www.nishi.or.jp/shisei/koho/kishahappyoshiryo/2026/202611/R081104_suma-toshinsei.pdf は robots_disallowed。HTMLページは表題とPDFリンクのみ（前回確認）。 （前回までの記録）一次ページ https://www.nishi.or.jp/shisei/koho/kishahappyoshiryo/2026/202611/R081104_suma-toshin.html は表題「「にしのみやスマート申請」が使用するメール配信サービスにおける 個人情報の漏えいの可能性について（第1報）」（更新日2026年11月4日）と記者発表PDFへのリンクのみで、本文（件数・経路）はPDF（R081104_suma-toshinsei.pdf）にあり未読。連鎖名：アララ（241）／TKC",
-      "reference": "https://www.nishi.or.jp/shisei/koho/kishahappyoshiryo/2026/202611/R081104_suma-toshin.html"
+      "reason_en": "2026-11-14 retry: the press-release PDF https://www.nishi.or.jp/shisei/koho/kishahappyoshiryo/2026/202611/R081104_suma-toshinsei.pdf is robots_disallowed. The HTML page has only a title and a link to the PDF (confirmed earlier). (Earlier record) The primary page https://www.nishi.or.jp/shisei/koho/kishahappyoshiryo/2026/202611/R081104_suma-toshin.html has only the title \"Possible leakage of personal information in the email delivery service used by 'Nishinomiya Smart Application' (first report)\" (updated 4 November 2026) and a link to the press-release PDF; the body (number of records, route) is in the PDF (R081104_suma-toshinsei.pdf) and has not been read. Chain name: Arara (241) / TKC.",
+      "reference": "https://www.nishi.or.jp/shisei/koho/kishahappyoshiryo/2026/202611/R081104_suma-toshin.html",
+      "reference_en": "https://www.nishi.or.jp/shisei/koho/kishahappyoshiryo/2026/202611/R081104_suma-toshin.html"
     },
     {
       "org_ja": "大東市（TKC再委託先アララ メッセージ）",
+      "org_en": "Daito City (TKC's subcontractor Arara Message)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "二次資料では非公表",
+      "reported_scale_en": "Not disclosed according to secondary sources",
       "reason": "2026-11-14 再試行：https://www.city.daito.lg.jp/soshiki/59/74276.html は再度 client_error。 （前回までの記録）一次ページ https://www.city.daito.lg.jp/soshiki/59/74276.html が取得エラー（client_error）。連鎖名：アララ（241）／TKC",
-      "reference": "https://www.city.daito.lg.jp/soshiki/59/74276.html"
+      "reason_en": "2026-11-14 retry: https://www.city.daito.lg.jp/soshiki/59/74276.html returned client_error again. (Earlier record) Retrieval error (client_error) for the primary page https://www.city.daito.lg.jp/soshiki/59/74276.html. Chain name: Arara (241) / TKC.",
+      "reference": "https://www.city.daito.lg.jp/soshiki/59/74276.html",
+      "reference_en": "https://www.city.daito.lg.jp/soshiki/59/74276.html"
     },
     {
       "org_ja": "八尾市（TKC再委託先アララ メッセージ）",
+      "org_en": "Yao City (TKC's subcontractor Arara Message)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14 再試行：https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009689/1026044.html は再度 client_error。 （前回までの記録）一次ページ https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009689/1026044.html が取得エラー（client_error）。連鎖名：アララ（241）／TKC",
-      "reference": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009689/1026044.html"
+      "reason_en": "2026-11-14 retry: https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009689/1026044.html returned client_error again. (Earlier record) Retrieval error (client_error) for the primary page https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009689/1026044.html. Chain name: Arara (241) / TKC.",
+      "reference": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009689/1026044.html",
+      "reference_en": "https://www.city.yao.osaka.jp/shisei/seisaku_keikaku_zaisei/1009689/1026044.html"
     },
     {
       "org_ja": "佐野市（TKC再委託先アララ メッセージ）",
+      "org_en": "Sano City (TKC's subcontractor Arara Message)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14 再試行：https://www.city.sano.lg.jp/jyuyonaoshirase/29300.html は再度 client_error。 （前回までの記録）一次ページ https://www.city.sano.lg.jp/jyuyonaoshirase/29300.html が取得エラー（client_error）。連鎖名：アララ（241）／TKC",
-      "reference": "https://www.city.sano.lg.jp/jyuyonaoshirase/29300.html"
+      "reason_en": "2026-11-14 retry: https://www.city.sano.lg.jp/jyuyonaoshirase/29300.html returned client_error again. (Earlier record) Retrieval error (client_error) for the primary page https://www.city.sano.lg.jp/jyuyonaoshirase/29300.html. Chain name: Arara (241) / TKC.",
+      "reference": "https://www.city.sano.lg.jp/jyuyonaoshirase/29300.html",
+      "reference_en": "https://www.city.sano.lg.jp/jyuyonaoshirase/29300.html"
     },
     {
       "org_ja": "カカクコム（価格.com・食べログ等5サービスのメール配信・業務委託先アララ）",
+      "org_en": "Kakaku.com (email delivery for five services including Kakaku.com and Tabelog, contractor Arara)",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "二次資料では約570万件（5サービス合計）",
+      "reported_scale_en": "About 5.7 million records according to secondary sources (total for the five services)",
       "reason": "2026-11-14 再試行：https://corporate.kakaku.com/news/20261105 は再度JS描画（title のみ、委託先名・件数なし）。 （前回までの記録）一次ページ https://corporate.kakaku.com/news/20261105 はJS描画で本文未読（title「業務委託先への不正アクセスに伴う当社サービスをご利用いただいているお客さまのメールアドレス漏えいについて」のみ）。連鎖名：アララ（241）",
-      "reference": "https://corporate.kakaku.com/news/20261105"
+      "reason_en": "2026-11-14 retry: https://corporate.kakaku.com/news/20261105 is again rendered by JavaScript (title only, with no contractor name or number of records). (Earlier record) The primary page https://corporate.kakaku.com/news/20261105 is rendered by JavaScript and its body was not read (only the title \"Leakage of email addresses of customers using our services due to unauthorised access to a business contractor\"). Chain name: Arara (241).",
+      "reference": "https://corporate.kakaku.com/news/20261105",
+      "reference_en": "https://corporate.kakaku.com/news/20261105"
     },
     {
       "org_ja": "日之出出版（「Safari Lounge」メール配信・アララ「repica」）",
+      "org_en": "Hinode Publishing (\"Safari Lounge\" email delivery, Arara \"repica\")",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "二次資料ではメールアドレス82,095件",
+      "reported_scale_en": "82,095 email addresses according to secondary sources",
       "reason": "2026-11-14 再試行：https://safarilounge.jp/news/3370/ は再度404。ニュース一覧 https://safarilounge.jp/news/ では「2026.11.05 不正アクセスについてのお詫びとお知らせ」のリンク先が同URLで、本文に到達できない。 （前回までの記録）一次URL https://safarilounge.jp/news/3370/ は404（見出し「2026.11.05　メール配信サービスへの不正アクセスによるメールアドレス流出に関するお詫びとお知らせ」のみ表示）。正しいURL未特定。連鎖名：アララ「repica」（241）",
-      "reference": "https://safarilounge.jp/news/3370/"
+      "reason_en": "2026-11-14 retry: https://safarilounge.jp/news/3370/ returned 404 again. On the news list https://safarilounge.jp/news/, the link for \"2026.11.05 Apology regarding unauthorised access\" points to the same URL, so the body cannot be reached. (Earlier record) The primary URL https://safarilounge.jp/news/3370/ returns 404 (only the heading \"2026.11.05 Apology and notice regarding leakage of email addresses through unauthorised access to the email delivery service\" is displayed). The correct URL has not been identified. Chain name: Arara \"repica\" (241).",
+      "reference": "https://safarilounge.jp/news/3370/",
+      "reference_en": "https://safarilounge.jp/news/3370/"
     },
     {
       "org_ja": "フジテレビジョン（委託先アララのメール配信サービス）",
+      "org_en": "Fuji Television Network (contractor Arara's email delivery service)",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "二次資料では26,273人",
+      "reported_scale_en": "26,273 people according to secondary sources",
       "reason": "2026-11-14 再試行：fujitv.co.jp はドメイン全体が SITE_BLOCKED のまま（同URLで再確認）。 （前回までの記録）fujitv.co.jp はドメイン全体がSITE_BLOCKED（https://www.fujitv.co.jp/company/news/r20261105_30885221.pdf ）。10/20の番組宣伝システム事案（pending既存）とは別事案。連鎖名：アララ（241）",
-      "reference": "https://www.fujitv.co.jp/company/news/r20261105_30885221.pdf"
+      "reason_en": "2026-11-14 retry: the whole fujitv.co.jp domain is still SITE_BLOCKED (reconfirmed with the same URL). (Earlier record) The whole fujitv.co.jp domain is SITE_BLOCKED (https://www.fujitv.co.jp/company/news/r20261105_30885221.pdf). A different case from the 10/20 programme promotion system case (existing pending item). Chain name: Arara (241).",
+      "reference": "https://www.fujitv.co.jp/company/news/r20261105_30885221.pdf",
+      "reference_en": "https://www.fujitv.co.jp/company/news/r20261105_30885221.pdf"
     },
     {
       "org_ja": "ODKソリューションズ（UCARO等のメール配信・アララ「アララ メッセージ」）",
+      "org_en": "ODK Solutions (email delivery for UCARO and others, Arara \"Arara Message\")",
       "published": "不明（第3報まで。11月6日更新）",
+      "published_en": "unknown (up to the third report; updated 6 November)",
       "reported_scale": "piyologでは791,551件",
+      "reported_scale_en": "791,551 records according to piyolog",
       "reason": "2026-11-14 再試行：https://ssl4.eir-parts.net/doc/3839/ir_material8/289303/00.pdf は robots_disallowed。 （前回までの記録）適時開示PDF https://ssl4.eir-parts.net/doc/3839/ir_material8/289303/00.pdf を未読（時間内に試行できず）。初報の公表日未確認。近畿大学（11/5）の親事案。連鎖名：アララ（241）",
-      "reference": "https://ssl4.eir-parts.net/doc/3839/ir_material8/289303/00.pdf"
+      "reason_en": "2026-11-14 retry: https://ssl4.eir-parts.net/doc/3839/ir_material8/289303/00.pdf is robots_disallowed. (Earlier record) The timely-disclosure PDF https://ssl4.eir-parts.net/doc/3839/ir_material8/289303/00.pdf was not read (no time to try). The publication date of the first report is unconfirmed. Parent case of Kindai University (11/5). Chain name: Arara (241).",
+      "reference": "https://ssl4.eir-parts.net/doc/3839/ir_material8/289303/00.pdf",
+      "reference_en": "https://ssl4.eir-parts.net/doc/3839/ir_material8/289303/00.pdf"
     },
     {
       "org_ja": "那須塩原市（TKC再委託先アララ メッセージ）",
+      "org_en": "Nasushiobara City (TKC's subcontractor Arara Message)",
       "published": "不明（piyologに掲載。日付未確認）",
+      "published_en": "unknown (listed on piyolog; date unconfirmed)",
       "reported_scale": "不明",
+      "reported_scale_en": "unknown",
       "reason": "2026-11-14 再試行：https://www.city.nasushiobara.tochigi.jp/taisetsu/24611.html は再度 client_error。 （前回までの記録）一次ページ https://www.city.nasushiobara.tochigi.jp/taisetsu/24611.html が取得エラー（client_error）。公表日も未確認。連鎖名：アララ（241）／TKC",
-      "reference": "https://www.city.nasushiobara.tochigi.jp/taisetsu/24611.html"
+      "reason_en": "2026-11-14 retry: https://www.city.nasushiobara.tochigi.jp/taisetsu/24611.html returned client_error again. (Earlier record) Retrieval error (client_error) for the primary page https://www.city.nasushiobara.tochigi.jp/taisetsu/24611.html. The publication date is also unconfirmed. Chain name: Arara (241) / TKC.",
+      "reference": "https://www.city.nasushiobara.tochigi.jp/taisetsu/24611.html",
+      "reference_en": "https://www.city.nasushiobara.tochigi.jp/taisetsu/24611.html"
     },
     {
       "org_ja": "横浜銀行（カードローン・フリーローンの保証会社SMBCコンシューマーファイナンス）",
+      "org_en": "Bank of Yokohama (guarantor SMBC Consumer Finance for card loans and free loans)",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14 再試行：https://www.boy.co.jp/ と https://www.boy.co.jp/news/ （2026年欄は空）に該当なし、https://www.boy.co.jp/news/2026.html は client_error。WebSearchは二次資料（atsoho 等）のみ。 （前回までの記録）一次PDF https://ssl4.eir-parts.net/doc/7186/ir_material33/289484/00.pdf がrobots拒否。同行サイトの同文URL未特定。連鎖名：SMBCコンシューマーファイナンス保証システム",
-      "reference": "https://ssl4.eir-parts.net/doc/7186/ir_material33/289484/00.pdf"
+      "reason_en": "2026-11-14 retry: nothing relevant on https://www.boy.co.jp/ or https://www.boy.co.jp/news/ (the 2026 column is empty), and https://www.boy.co.jp/news/2026.html returned client_error. A web search found only secondary sources (atsoho and others). (Earlier record) The primary PDF https://ssl4.eir-parts.net/doc/7186/ir_material33/289484/00.pdf is refused by robots. The identical text on the bank's own site has not been identified. Chain name: SMBC Consumer Finance guarantee system.",
+      "reference": "https://ssl4.eir-parts.net/doc/7186/ir_material33/289484/00.pdf",
+      "reference_en": "https://ssl4.eir-parts.net/doc/7186/ir_material33/289484/00.pdf"
     },
     {
       "org_ja": "荘内銀行（カードローン「Q's ポケット」・保証提携先SMBCコンシューマーファイナンス）",
+      "org_en": "Shonai Bank (card loan \"Q's Pocket\", guarantee partner SMBC Consumer Finance)",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "二次資料では非公表（対象者特定中）",
+      "reported_scale_en": "Not disclosed according to secondary sources (persons affected being identified)",
       "reason": "2026-11-14 再試行：https://www.shonai.co.jp/cms_source/data/shonai/info/files/info20261105_2.pdf は再度 client_error。 （前回までの記録）一次PDF https://www.shonai.co.jp/cms_source/data/shonai/info/files/info20261105_2.pdf が取得エラー（client_error）。連鎖名：SMBCコンシューマーファイナンス保証システム",
-      "reference": "https://www.shonai.co.jp/cms_source/data/shonai/info/files/info20261105_2.pdf"
+      "reason_en": "2026-11-14 retry: https://www.shonai.co.jp/cms_source/data/shonai/info/files/info20261105_2.pdf returned client_error again. (Earlier record) Retrieval error (client_error) for the primary PDF https://www.shonai.co.jp/cms_source/data/shonai/info/files/info20261105_2.pdf. Chain name: SMBC Consumer Finance guarantee system.",
+      "reference": "https://www.shonai.co.jp/cms_source/data/shonai/info/files/info20261105_2.pdf",
+      "reference_en": "https://www.shonai.co.jp/cms_source/data/shonai/info/files/info20261105_2.pdf"
     },
     {
       "org_ja": "東洋大学（本学関係者の一部アカウント）",
+      "org_en": "Toyo University (some accounts of university-related persons)",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "件数記載なし",
+      "reported_scale_en": "Number of records not stated",
       "reason": "2026-11-14 再試行：https://www.toyo.ac.jp/news/20261105-20479.html に続報なし。「影響範囲は現在調査中であり、判明した事項は改めてご報告いたします。」で、個人情報の漏えい（可能性）の記述なし（文部科学省・個人情報保護委員会への報告には言及）。 （前回までの記録）一次公表文に到達（https://www.toyo.ac.jp/news/20261105-20479.html 、表題「本学アカウントへの不正アクセスについて（お詫びとお知らせ）」2026.11.05）。判定保留（基準3は続報次第）：「このたび、本学関係者の一部のアカウントに対する不正アクセスが確認されました。」「影響範囲は現在調査中であり」。漏えい（可能性）の明示なし、項目の記載なし",
-      "reference": "https://www.toyo.ac.jp/news/20261105-20479.html"
+      "reason_en": "2026-11-14 retry: https://www.toyo.ac.jp/news/20261105-20479.html has no follow-up. \"The extent of the impact is under investigation, and matters that come to light will be reported again.\" There is no statement of leakage (or possible leakage) of personal information (reports to the Ministry of Education and the Personal Information Protection Commission are mentioned). (Earlier record) The primary notice was reached (https://www.toyo.ac.jp/news/20261105-20479.html, title \"Unauthorised access to the University's accounts (apology and notice)\", 2026.11.05). Decision on hold (criterion 3 depends on follow-up reports): \"Unauthorised access to some accounts of persons connected with the University has now been confirmed.\" \"The extent of the impact is under investigation.\" No explicit statement of leakage (or possible leakage) and no data items.",
+      "reference": "https://www.toyo.ac.jp/news/20261105-20479.html",
+      "reference_en": "https://www.toyo.ac.jp/news/20261105-20479.html"
     },
     {
       "org_ja": "日本郵便（共同運営事業者 寺田倉庫の委託先アララ・「防災ゆうストレージ」利用者）",
+      "org_en": "Japan Post (Terada Warehouse, a co-operating operator, and its contractor Arara; users of \"Bosai Yu Storage\")",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "二次資料では件数記載なし",
+      "reported_scale_en": "Number of records not stated in secondary sources",
       "reason": "2026-11-14 再試行：WebSearchで一次URLを特定できず（ScanNetSecurity 2026/11/06 の日本郵便の記事は国際郵便マイページ＝既存行235の件）。https://www.post.japanpost.jp/notification/ は SERVER_ERROR。 （前回までの記録）一次URL未特定（二次資料 https://jouhourouei.clipmaster.jp/cases/733c761a5576f138 ）。寺田倉庫（新行）の対象サービスに「防災ゆうストレージ」が含まれる。連鎖名：アララ（241）",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/733c761a5576f138"
+      "reason_en": "2026-11-14 retry: a web search could not identify a primary URL (ScanNetSecurity's 2026/11/06 article on Japan Post concerns the international mail My Page, which is existing row 235). https://www.post.japanpost.jp/notification/ returned SERVER_ERROR. (Earlier record) Primary URL not identified (secondary source https://jouhourouei.clipmaster.jp/cases/733c761a5576f138). The services covered by the Terada Warehouse row (new) include \"Bosai Yu Storage\". Chain name: Arara (241).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/733c761a5576f138",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/733c761a5576f138"
     },
     {
       "org_ja": "森永乳業（関係会社のウェブサイト・同一サーバー上の17社18サイト）",
+      "org_en": "Morinaga Milk Industry (websites of affiliated companies, 18 sites of 17 companies on the same server)",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "件数記載なし",
+      "reported_scale_en": "Number of records not stated",
       "reason": "2026-11-14 再試行：https://www.morinagamilk.co.jp/release/newsentry-4759.html に続報なし。「現時点では個人情報の漏えいは確認されておりません。」 （前回までの記録）一次公表文に到達（https://www.morinagamilk.co.jp/release/newsentry-4759.html 、表題「当社関係会社における不正アクセス発生に関するお知らせ」2026年11月05日）。判定保留（基準3は続報次第）：「2026年11月4日、当社の関係会社のウェブサイトに対し、第三者による不正アクセスが発生したことを確認いたしました。」「現時点では個人情報の漏えいは確認されておりません。」。089（森永乳業・コミューン）とは別事案",
-      "reference": "https://www.morinagamilk.co.jp/release/newsentry-4759.html"
+      "reason_en": "2026-11-14 retry: https://www.morinagamilk.co.jp/release/newsentry-4759.html has no follow-up. \"At present no leakage of personal information has been confirmed.\" (Earlier record) The primary notice was reached (https://www.morinagamilk.co.jp/release/newsentry-4759.html, title \"Notice of unauthorised access at our affiliated companies\", 5 November 2026). Decision on hold (criterion 3 depends on follow-up reports): \"On 4 November 2026 we confirmed that unauthorised access by a third party had occurred on the websites of our affiliated companies.\" \"At present no leakage of personal information has been confirmed.\" A different case from 089 (Morinaga Milk Industry and Commune).",
+      "reference": "https://www.morinagamilk.co.jp/release/newsentry-4759.html",
+      "reference_en": "https://www.morinagamilk.co.jp/release/newsentry-4759.html"
     },
     {
       "org_ja": "消防庁（武力攻撃事態等における安否情報収集・提供システム・運用保守委託事業者富士ソフト）",
+      "org_en": "Fire and Disaster Management Agency (safety-information collection and provision system for armed-attack situations; maintenance contractor Fuji Soft)",
       "published": "2026-11-05",
+      "published_en": "2026-11-05",
       "reported_scale": "件数記載なし",
+      "reported_scale_en": "Number of records not stated",
       "reason": "2026-11-14 再試行：https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html に続報なし。漏えい（可能性）の記述なし（富士ソフトから「第三者による不正アクセスが行われたことが確認された」との報告のみ）。 （前回までの記録）一次公表文に到達（https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html 、表題「武力攻撃事態等における安否情報収集・提供システムへの不正アクセスについて」令和8年11月5日）。判定保留（基準3は続報次第）：「運用保守業務の委託事業者である富士ソフト株式会社より、第三者による不正アクセスが行われたことが確認されたとの報告を受けました。」。個人情報・漏えいの語なし。PDF https://www.soumu.go.jp/main_content/001099907.pdf は未読",
-      "reference": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
+      "reason_en": "2026-11-14 retry: https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html has no follow-up. No statement of leakage (or possible leakage) (only a report from Fuji Soft that \"unauthorised access by a third party was confirmed\"). (Earlier record) The primary notice was reached (https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html, title \"Unauthorised access to the safety-information collection and provision system for armed-attack situations\", 5 November, Reiwa 8). Decision on hold (criterion 3 depends on follow-up reports): \"We received a report from Fuji Soft Inc., the contractor for operation and maintenance, that unauthorised access by a third party had been confirmed.\" The words \"personal information\" and \"leakage\" do not appear. The PDF https://www.soumu.go.jp/main_content/001099907.pdf has not been read.",
+      "reference": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html",
+      "reference_en": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
     },
     {
       "org_ja": "SBC信越放送（SBCアプリ ポイントサービス会員）",
+      "org_en": "SBC Shinetsu Broadcasting (members of the SBC app point service)",
       "published": "2026-11-06",
+      "published_en": "2026-11-06",
       "reported_scale": "二次資料（SmartScope 2026-11-07）では「最大約14,000件」（第一報時点）。氏名、生年月日、性別、住所、電話番号、メールアドレス、暗号化されたパスワード。11月4日に流出の可能性を確認",
+      "reported_scale_en": "According to a secondary source (SmartScope, 2026-11-07), \"up to about 14,000 records\" (as of the first report). Name, date of birth, sex, address, telephone number, email address, encrypted password. Possible leakage was confirmed on 4 November.",
       "reason": "2026-11-14 再試行：https://sbc21.co.jp/blogwp/sbcinfo/info/3465 は再度 robots_disallowed。 （前回までの記録）一次公表文URLを特定したが取得できず（robots 拒否）：https://sbc21.co.jp/blogwp/sbcinfo/info/3465 （題名「SBCアプリ 不正アクセスによる個人情報流出の可能性について（第一報）」） （2026-11-10再挑戦）一次公表文に到達できず（2026-11-10）。試したURL：https://sbc21.co.jp/blogwp/sbcinfo/info/3465（robots_disallowed）、https://sbc21.co.jp/（robots_disallowed）。理由：sbc21.co.jp がドメイン全体で robots によりWebFetchを拒否。別ドメインの同文はWebSearchで見つからず（二次資料 smartscope.blog も上記URLのみを挙げる）。題名は二次資料によれば「SBCアプリ 不正アクセスによる個人情報流出の可能性について（第一報）」。著者がブラウザで開く必要あり。",
-      "reference": "https://sbc21.co.jp/blogwp/sbcinfo/info/3465"
+      "reason_en": "2026-11-14 retry: https://sbc21.co.jp/blogwp/sbcinfo/info/3465 was robots_disallowed again. (Earlier record) The URL of the primary notice was identified but could not be retrieved (robots refusal): https://sbc21.co.jp/blogwp/sbcinfo/info/3465 (title \"SBC app: possible leakage of personal information through unauthorised access (first report)\"). (Retried 2026-11-10) The primary notice could not be reached (2026-11-10). URLs tried: https://sbc21.co.jp/blogwp/sbcinfo/info/3465 (robots_disallowed), https://sbc21.co.jp/ (robots_disallowed). Reason: sbc21.co.jp refuses WebFetch by robots across the whole domain. A web search found no identical text on another domain (the secondary source smartscope.blog also gives only the URL above). According to the secondary source the title is \"SBC app: possible leakage of personal information through unauthorised access (first report)\". The author needs to open it in a browser.",
+      "reference": "https://sbc21.co.jp/blogwp/sbcinfo/info/3465",
+      "reference_en": "https://sbc21.co.jp/blogwp/sbcinfo/info/3465"
     },
     {
       "org_ja": "大阪市（大阪市プレミアム付商品券2026・運営JTB・EVENTIFY・ギフトパッド事業共同体／メール配信アララ）",
+      "org_en": "Osaka City (Osaka City Premium Gift Voucher 2026, operated by the JTB / EVENTIFY / Giftpad joint venture; email delivery by Arara)",
       "published": "2026-11-06",
+      "published_en": "2026-11-06",
       "reported_scale": "二次資料（ひまなねこブログ 2026-11-08）では件数・漏えいアドレスは「調査中」。利用者と参加店舗のメールアドレスが漏えいした可能性。11月6日20時10分 第一報",
+      "reported_scale_en": "According to a secondary source (Himananeko blog, 2026-11-08), the number of records and leaked addresses are \"under investigation\". Email addresses of users and participating shops may have leaked. First report at 20:10 on 6 November.",
       "reason": "2026-11-14 再試行：https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html は再度 client_error（同じ大阪市の ictsenryakushitsu のページは今回取得でき、別事案として rows に起票）。 （前回までの記録）一次公表文URLを特定したが取得できず（client_error、2回）：https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html 。報道発表一覧 https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/ も取得エラー （2026-11-10再挑戦）一次公表文に到達できず（2026-11-10）。試したURL：https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html（client_error）、http://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html（client_error）、https://www.city.osaka.lg.jp/keizaisenryaku/page/0000691115.html（client_error）。理由：city.osaka.lg.jp がWebFetchで取得エラー。同文PDFや事業の特設サイト上の同文はWebSearchで見つからず（https://www.city.osaka.lg.jp/keizaisenryaku/cmsfiles/contents/0000434/434582/126.pdf は2026年4月のメールマガジンで無関係）。堺市の同種事案（同じ事業共同体・アララ）は台帳に行として収載（525）。",
-      "reference": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html"
+      "reason_en": "2026-11-14 retry: https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html returned client_error again (the ictsenryakushitsu page of the same city was retrieved this time and entered in rows as a different case). (Earlier record) The URL of the primary notice was identified but could not be retrieved (client_error, twice): https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html. The press-release list https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/ also returned a retrieval error. (Retried 2026-11-10) The primary notice could not be reached (2026-11-10). URLs tried: https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html (client_error), http://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html (client_error), https://www.city.osaka.lg.jp/keizaisenryaku/page/0000691115.html (client_error). Reason: city.osaka.lg.jp returns a retrieval error to WebFetch. A web search found no identical PDF or identical text on the programme's special site (https://www.city.osaka.lg.jp/keizaisenryaku/cmsfiles/contents/0000434/434582/126.pdf is an unrelated April 2026 email newsletter). Sakai City's similar case (same joint venture, Arara) is admitted in the registry as a row (525).",
+      "reference": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html",
+      "reference_en": "https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000691115.html"
     },
     {
       "org_ja": "警視庁（災害時の職員安否確認システム・運用委託先が利用するアララ）",
+      "org_en": "Tokyo Metropolitan Police Department (disaster-time staff safety-confirmation system; Arara used by the operations contractor)",
       "published": "2026-11-06頃（報道。公表日未確認）",
+      "published_en": "around 2026-11-06 (press; publication date unconfirmed)",
       "reported_scale": "報道（TBS NEWS DIG 2026-11-07）では職員と家族のメールアドレス等が漏えいした可能性。件数の記載なし。「職員の名前や住所などの情報は漏洩していないということです。」",
+      "reported_scale_en": "According to a press report (TBS NEWS DIG, 2026-11-07), email addresses and other data of staff and their families may have leaked. Number of records not stated. \"Information such as staff names and addresses has reportedly not leaked.\"",
       "reason": "2026-11-14 再試行：WebSearchで警視庁ドメイン上の公表文を特定できず。 （前回までの記録）警視庁ドメイン上の公表文が見つからない。報道 https://news.cube-soft.jp/article/4113145 （TBS配信の転載）のみ。警視庁が自サイトで公表したかは未確認 （2026-11-10再挑戦）一次公表文に到達できず（2026-11-10）。試したURL：https://www.keishicho.metro.tokyo.lg.jp/ （新着情報の11月分は「2026年11月5日 国費調達情報(オープンカウンター)」の1件のみで本件なし）、WebSearch「site:keishicho.metro.tokyo.lg.jp 不正アクセス 安否確認」（該当なし）。理由：警視庁ドメイン上に公表文が見当たらない。報道 https://news.cube-soft.jp/article/4113145 （TBS NEWS DIG、2026年11月7日 02:56）は「警視庁によると」とするのみで、自サイトでの公表は確認できない。",
-      "reference": "https://news.cube-soft.jp/article/4113145"
+      "reason_en": "2026-11-14 retry: a web search could not identify a notice on the Metropolitan Police Department's domain. (Earlier record) No notice found on the Metropolitan Police Department's domain. Only the press report https://news.cube-soft.jp/article/4113145 (a reprint of a TBS distribution). Whether the Department published it on its own site is unconfirmed. (Retried 2026-11-10) The primary notice could not be reached (2026-11-10). URLs tried: https://www.keishicho.metro.tokyo.lg.jp/ (the November items in the new-information list contain only one entry, \"5 November 2026 National-budget procurement information (open counter)\", and not this case), and the web search \"site:keishicho.metro.tokyo.lg.jp unauthorised access safety confirmation\" (no match). Reason: no notice is found on the Department's domain. The press report https://news.cube-soft.jp/article/4113145 (TBS NEWS DIG, 7 November 2026, 02:56) says only \"according to the Metropolitan Police Department\", and publication on its own site could not be confirmed.",
+      "reference": "https://news.cube-soft.jp/article/4113145",
+      "reference_en": "https://news.cube-soft.jp/article/4113145"
     },
     {
       "org_ja": "Securitize Japan（デジタル証券プラットフォーム）",
+      "org_en": "Securitize Japan (digital securities platform)",
       "published": "不明（委託元各社は10/30〜11/2に公表）",
+      "published_en": "unknown (the commissioning companies published on 10/30 to 11/2)",
       "reported_scale": "INTERNET Watch（2026-11-06）：NTTデータの公表によれば「システムの認証機能の脆弱性を悪用して管理者権限が不正に取得され」情報が持ち出された。発生は10月29日。件数は委託元ごと",
+      "reported_scale_en": "INTERNET Watch (2026-11-06): according to NTT Data's announcement, \"administrator privileges were obtained illegally by exploiting a vulnerability in the system's authentication function\" and information was taken out. It occurred on 29 October. The number of records varies by commissioning company.",
       "reason": "2026-11-14 再試行：https://securitize.co.jp/ とプレスリリース一覧（1ページ目）に該当なし（最新は2026/10/06のBlackRockの件）。 （前回までの記録）Securitize Japan 自身の公表文を未発見。INTERNET Watch記事（https://internet.watch.impress.co.jp/docs/news/2154378.html）は記事公開時点で公式サイト https://securitize.co.jp/ に告知なしと記載。委託元の未収載分3社（LIFULL・PPIH・リムズキャピタル、いずれも11/2）は late.json に起こした",
-      "reference": "https://internet.watch.impress.co.jp/docs/news/2154378.html"
+      "reason_en": "2026-11-14 retry: nothing relevant on https://securitize.co.jp/ or the first page of its press-release list (the latest is the 2026/10/06 BlackRock item). (Earlier record) Securitize Japan's own notice has not been found. The INTERNET Watch article (https://internet.watch.impress.co.jp/docs/news/2154378.html) states that, at the time of publication, the official site https://securitize.co.jp/ carried no notice. Three commissioning companies not yet admitted (LIFULL, PPIH and Rhymes Capital, all 11/2) were entered in late.json.",
+      "reference": "https://internet.watch.impress.co.jp/docs/news/2154378.html",
+      "reference_en": "https://internet.watch.impress.co.jp/docs/news/2154378.html"
     },
     {
       "org_ja": "近鉄不動産（分譲マンション販売メール・委託先の再委託先アララ）",
+      "org_en": "Kintetsu Real Estate (email on condominium sales; Arara as subcontractor of the contractor)",
       "published": "2026-11-02（初報）・2026-11-05（続報）",
+      "published_en": "2026-11-02 (first report), 2026-11-05 (follow-up)",
       "reported_scale": "二次資料（SmartScope）では続報で「漏えいした情報件数が49,213件と判明」。メールアドレスとメール本文。WITH LAUREL会員・関西エリアの新築マンション資料請求者",
+      "reported_scale_en": "According to a secondary source (SmartScope), the follow-up says \"the number of leaked records turned out to be 49,213\". Email addresses and email bodies. WITH LAUREL members and requesters of materials on new condominiums in the Kansai area.",
       "reason": "2026-11-14 再試行：https://www.kintetsu-re.co.jp/r/pdf/261105.pdf は robots_disallowed。 （前回までの記録）一次PDFを特定したが取得できず（client_error）：初報 https://www.kintetsu-re.co.jp/r/pdf/261102.pdf 、続報 https://www.kintetsu-re.co.jp/r/pdf/261105.pdf 。existing/pending に該当なし（第4版で漏れていた候補）",
-      "reference": "https://www.kintetsu-re.co.jp/r/pdf/261105.pdf"
+      "reason_en": "2026-11-14 retry: https://www.kintetsu-re.co.jp/r/pdf/261105.pdf is robots_disallowed. (Earlier record) The primary PDFs were identified but could not be retrieved (client_error): first report https://www.kintetsu-re.co.jp/r/pdf/261102.pdf, follow-up https://www.kintetsu-re.co.jp/r/pdf/261105.pdf. Not found in existing or pending (a candidate missed in the fourth edition).",
+      "reference": "https://www.kintetsu-re.co.jp/r/pdf/261105.pdf",
+      "reference_en": "https://www.kintetsu-re.co.jp/r/pdf/261105.pdf"
     },
     {
       "org_ja": "福岡市（一斉情報配信サービス運営事業者への不正アクセス・市民局防災推進課）",
+      "org_en": "Fukuoka City (unauthorised access to the operator of a mass-notification service; Citizens' Affairs Bureau, Disaster Prevention Promotion Division)",
       "published": "2026-10-14",
+      "published_en": "2026-10-14",
       "reported_scale": "未確認（検索結果のPDF題名のみ）",
+      "reported_scale_en": "Unconfirmed (only the PDF title in a search result)",
       "reason": "2026-11-14 再試行：https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2026/documents/261014_kojinjohoryushutsukanouseijian.pdf は SERVER_ERROR。アルカディアの親事案は今回 rows に起票（https://raiden.site.ktaiwork.jp/archives/4597 ）。 （前回までの記録）一次PDF https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2026/documents/261014_kojinjohoryushutsukanouseijian.pdf を未取得（時間の都合）。アルカディア連鎖と推定（未確認）。existing/pending に該当なし（既存行104 福岡市はStudio連鎖で別事案）",
-      "reference": "https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2026/documents/261014_kojinjohoryushutsukanouseijian.pdf"
+      "reason_en": "2026-11-14 retry: https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2026/documents/261014_kojinjohoryushutsukanouseijian.pdf returned SERVER_ERROR. The parent case of Arcadia was entered in rows this time (https://raiden.site.ktaiwork.jp/archives/4597). (Earlier record) The primary PDF https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2026/documents/261014_kojinjohoryushutsukanouseijian.pdf was not retrieved (for lack of time). Presumed to belong to the Arcadia chain (unconfirmed). Not found in existing or pending (existing row 104, Fukuoka City, is a different case in the Studio chain).",
+      "reference": "https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2026/documents/261014_kojinjohoryushutsukanouseijian.pdf",
+      "reference_en": "https://www.city.fukuoka.lg.jp/shisei/kouhou-hodo/hodo-happyo/2026/documents/261014_kojinjohoryushutsukanouseijian.pdf"
     },
     {
       "org_ja": "ソニー少額短期保険（開発・テスト環境への不正アクセス）",
+      "org_en": "Sony Assurance Short-Term Insurance (unauthorised access to development and test environments)",
       "published": "2026-11-09",
+      "published_en": "2026-11-09",
       "reported_scale": "従業員らの個人情報108件（二次資料の記載。Webシステムの脆弱性）",
+      "reported_scale_en": "Personal information of 108 employees and others (as stated in a secondary source; a vulnerability in a web system)",
       "reason": "2026-11-14 再試行：sonyfg.co.jp のニュース一覧は client_error（#14と同時に試行）。sonysai.co.jp は前回 robots_disallowed のため未再試行。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://www.sonysai.co.jp/、https://www.sonyfg.co.jp/ja/news/、https://www.sonyfg.co.jp/ja/。理由：sonysai.co.jp は robots_disallowed（同社の公式ドメインかも未確認）、sonyfg.co.jp は client_error。WebSearch で一次URLを特定できず。",
-      "reference": "なし（二次資料でも一次URLを特定できず）"
+      "reason_en": "2026-11-14 retry: the sonyfg.co.jp news list returned client_error (tried together with #14). sonysai.co.jp was robots_disallowed last time and was not retried. (Earlier record) The primary notice could not be reached (2026-11-10). URLs tried: https://www.sonysai.co.jp/, https://www.sonyfg.co.jp/ja/news/, https://www.sonyfg.co.jp/ja/. Reason: sonysai.co.jp is robots_disallowed (it is also unconfirmed whether it is the company's official domain), and sonyfg.co.jp returned client_error. A web search could not identify a primary URL.",
+      "reference": "なし（二次資料でも一次URLを特定できず）",
+      "reference_en": "None (no primary URL could be identified, even in secondary sources)"
     },
     {
       "org_ja": "ENEOS（EV充電サービス「ENEOS Charge Plus」法人会員・委託先プレステージ・コアソリューション）",
+      "org_en": "ENEOS (EV charging service \"ENEOS Charge Plus\" corporate members; contractor Prestige Core Solutions)",
       "published": "2026-11-09",
+      "published_en": "2026-11-09",
       "reported_scale": "不明（二次資料では ENEOSカーリース最大8,500契約の件が Charge Plus 法人会員にも波及）",
+      "reported_scale_en": "Unknown (in secondary sources, the ENEOS Car Lease case of up to 8,500 contracts spread to Charge Plus corporate members)",
       "reason": "2026-11-14 再試行：https://www.eneos.co.jp/announcement/20261109.html は再度 client_error。https://www.eneos.co.jp/chargeplus/info/ の1ページ目（最新2026/9/30）に該当なし。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://www.eneos.co.jp/announcement/20261109.html、https://www.eneos.co.jp/announcement/、https://www.eneos.co.jp/chargeplus/info/。理由：20261109.html と announcement 一覧は client_error。chargeplus/info の1ページ目は最新が2026年9月30日付で、10〜11月の項目なし。11/2付の ENEOSカーリースの公表文（510として収載）には Charge Plus への言及も11/9の追記もない。連鎖名：プレステージ・インターナショナル（290）。",
-      "reference": "https://internet.watch.impress.co.jp/docs/news/2153279.html"
+      "reason_en": "2026-11-14 retry: https://www.eneos.co.jp/announcement/20261109.html returned client_error again. The first page of https://www.eneos.co.jp/chargeplus/info/ (latest 2026/9/30) has no matching item. (Earlier record) The primary notice could not be reached (2026-11-10). URLs tried: https://www.eneos.co.jp/announcement/20261109.html, https://www.eneos.co.jp/announcement/, https://www.eneos.co.jp/chargeplus/info/. Reason: 20261109.html and the announcement list returned client_error. The first page of chargeplus/info has the latest item dated 30 September 2026 and no October or November items. The 11/2 ENEOS Car Lease notice (admitted as 510) mentions neither Charge Plus nor an 11/9 addition. Chain name: Prestige International (290).",
+      "reference": "https://internet.watch.impress.co.jp/docs/news/2153279.html",
+      "reference_en": "https://internet.watch.impress.co.jp/docs/news/2153279.html"
     },
     {
       "org_ja": "teket（電子チケット販売・管理サービス「teket」）",
+      "org_en": "teket (electronic ticket sales and management service \"teket\")",
       "published": "2026-11-08（二次資料。一次ページのURL・タイトルからの推定）",
+      "published_en": "2026-11-08 (secondary source; inferred from the URL and title of the primary page)",
       "reported_scale": "精査中（二次資料：全会員の氏名・メールアドレス、登録・購入会員の生年月日・住所・電話番号等、チケット情報）",
+      "reported_scale_en": "Under scrutiny (secondary source: names and email addresses of all members; dates of birth, addresses, telephone numbers and so on of registered and purchasing members; ticket information)",
       "reason": "2026-11-14 再試行：https://corporate.teket.jp/news/privacy_261108 は再度JS描画（メタ情報の表題「【重要】不正アクセスによる情報流出に関するお詫びとお知らせ（第一報）」のみ）。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://corporate.teket.jp/news/privacy_261108 、https://corporate.teket.jp/news 、https://teket.jp/ 。理由：corporate.teket.jp は Studio.Design のJS描画で、WebFetchでは title「【重要】不正アクセスによる情報流出に関するお詫びとお知らせ（第一報）」とmetaのみ取得、本文未読。teket.jp はメンテナンス告知（「2026年11月05日(木) 20:30〜未定」）のみ。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/c77f0cab138856e7"
+      "reason_en": "2026-11-14 retry: https://corporate.teket.jp/news/privacy_261108 is again rendered by JavaScript (only the metadata title \"[Important] Apology and notice regarding information leakage through unauthorised access (first report)\"). (Earlier record) The primary notice could not be reached (2026-11-10). URLs tried: https://corporate.teket.jp/news/privacy_261108, https://corporate.teket.jp/news, https://teket.jp/. Reason: corporate.teket.jp is rendered by JavaScript (Studio.Design); WebFetch retrieved only the title \"[Important] Apology and notice regarding information leakage through unauthorised access (first report)\" and the meta tags, and the body was not read. teket.jp shows only a maintenance notice (\"Thursday 5 November 2026, 20:30 until further notice\").",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/c77f0cab138856e7",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/c77f0cab138856e7"
     },
     {
       "org_ja": "FWD生命保険（代理店向けシステム「FWD navi」・代理店募集人アカウントの不正ログイン）",
+      "org_en": "FWD Life Insurance (agency system \"FWD navi\", unauthorised login to agent accounts)",
       "published": "2026-11-09（二次資料）",
+      "published_en": "2026-11-09 (secondary source)",
       "reported_scale": "最大9,000件（11月9日9時時点、二次資料）",
+      "reported_scale_en": "Up to 9,000 records (as of 9:00 on 9 November, secondary source)",
       "reason": "2026-11-14 再試行：https://www.fwdlife.co.jp/system-information/ は再度JS描画（title「代理店向けシステムへの不正アクセスに伴うお客さま情報の漏えいについて」のみ）。https://www.fwdlife.co.jp/ にも告知なし。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://www.fwdlife.co.jp/system-information/ 、https://www.fwdlife.co.jp/system-information/index.html 。理由：JS描画で、WebFetchでは title「代理店向けシステムへの不正アクセスに伴うお客さま情報の漏えいについて | FWD生命」とmeta description のみ取得、本文・PDFリンクなし。WebSearchで別URL（PDF等）は見つからず。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/51c56beaf594cade"
+      "reason_en": "2026-11-14 retry: https://www.fwdlife.co.jp/system-information/ is again rendered by JavaScript (only the title \"Leakage of customer information through unauthorised access to the system for agencies\"). No notice on https://www.fwdlife.co.jp/ either. (Earlier record) The primary notice could not be reached (2026-11-10). URLs tried: https://www.fwdlife.co.jp/system-information/, https://www.fwdlife.co.jp/system-information/index.html. Reason: rendered by JavaScript; WebFetch retrieved only the title \"Leakage of customer information through unauthorised access to the system for agencies | FWD Life\" and the meta description, with no body or PDF link. A web search found no other URL (such as a PDF).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/51c56beaf594cade",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/51c56beaf594cade"
     },
     {
       "org_ja": "アクサ損害保険（ロードサービス委託先プレステージ・コアソリューション）",
+      "org_en": "AXA General Insurance (roadside assistance contractor Prestige Core Solutions)",
       "published": "2026-11-02（二次資料）",
+      "published_en": "2026-11-02 (secondary source)",
       "reported_scale": "記載なし（innovatopia）",
+      "reported_scale_en": "Not stated (innovatopia)",
       "reason": "2026-11-14 再試行：一次公表文に到達（https://www.axa-direct.co.jp/company/official_info/announce/2026/261102.html 、表題「ロードサービス提携業者への不正アクセスの発生に関するお知らせ（第1報）」2026年11月2日、最終更新日2026年11月10日だが本文は第1報のまま）。判定保留：「第三者による不正アクセスが発生したことが判明いたしました。」「情報が外部に流出した可能性につきまして、現在調査を進めております。」「当社のお客さまの情報の流出の有無および影響範囲につきましては確認できておりません。」で、漏えい（可能性）を肯定する文がない。連鎖名：プレステージ・インターナショナル（290）。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://www.axa-direct.co.jp/company/official_info/announce/2026/261102.html 。理由：client_error。連鎖名：プレステージ・インターナショナル（290）。",
-      "reference": "https://www.axa-direct.co.jp/company/official_info/announce/2026/261102.html"
+      "reason_en": "2026-11-14 retry: the primary notice was reached (https://www.axa-direct.co.jp/company/official_info/announce/2026/261102.html, title \"Notice of unauthorised access at a roadside assistance partner (first report)\", 2 November 2026, last updated 10 November 2026 but the body is still the first report). Decision on hold: \"It has come to light that unauthorised access by a third party occurred.\" \"We are investigating the possibility that information was leaked outside.\" \"Whether our customers' information was leaked and the extent of the impact have not been confirmed.\" There is no sentence affirming leakage (or possible leakage). Chain name: Prestige International (290). (Earlier record) The primary notice could not be reached (2026-11-10). URL tried: https://www.axa-direct.co.jp/company/official_info/announce/2026/261102.html. Reason: client_error. Chain name: Prestige International (290).",
+      "reference": "https://www.axa-direct.co.jp/company/official_info/announce/2026/261102.html",
+      "reference_en": "https://www.axa-direct.co.jp/company/official_info/announce/2026/261102.html"
     },
     {
       "org_ja": "日本カーソリューションズ（委託先プレステージ・コアソリューション）",
+      "org_en": "Nippon Car Solutions (contractor Prestige Core Solutions)",
       "published": "2026-11-02（二次資料）",
+      "published_en": "2026-11-02 (secondary source)",
       "reported_scale": "精査中（innovatopia）",
+      "reported_scale_en": "Under scrutiny (innovatopia)",
       "reason": "2026-11-14 再試行：https://www.ncsol.co.jp/news/ と PDF はいずれも robots_disallowed。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://www.ncsol.co.jp/cms/wp-content/uploads/2026/11/20261102_Itakusaki-unauthorized-access-jyouhouRouei.pdf 。理由：robots_disallowed。連鎖名：プレステージ・インターナショナル（290）。",
-      "reference": "https://innovatopia.jp/cyber-security/cyber-security-news/119858/"
+      "reason_en": "2026-11-14 retry: https://www.ncsol.co.jp/news/ and the PDF are both robots_disallowed. (Earlier record) The primary notice could not be reached (2026-11-10). URL tried: https://www.ncsol.co.jp/cms/wp-content/uploads/2026/11/20261102_Itakusaki-unauthorized-access-jyouhouRouei.pdf. Reason: robots_disallowed. Chain name: Prestige International (290).",
+      "reference": "https://innovatopia.jp/cyber-security/cyber-security-news/119858/",
+      "reference_en": "https://innovatopia.jp/cyber-security/cyber-security-news/119858/"
     },
     {
       "org_ja": "キムラユニティー（ロードサービス受付・手配の委託先プレステージ・コアソリューション）",
+      "org_en": "Kimura Unity (contractor Prestige Core Solutions for roadside assistance reception and dispatch)",
       "published": "2026-11-04（報道）",
+      "published_en": "2026-11-04 (press)",
       "reported_scale": "記載なし（LOGISTICS TODAY）",
+      "reported_scale_en": "Not stated (LOGISTICS TODAY)",
       "reason": "2026-11-14 再試行：https://www.kimura-unity.co.jp/ と https://www.kimura-unity.co.jp/ir/ir_news.html は一覧本文なし（ナビゲーションのみ）、/news/ は client_error。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://www.kimura-unity.co.jp/ 、https://www.kimura-unity.co.jp/ir/ir_news.html 。理由：一覧に該当項目が読めず、一次URL未特定。連鎖名：プレステージ・インターナショナル（290）。",
-      "reference": "https://www.logi-today.com/1018986"
+      "reason_en": "2026-11-14 retry: https://www.kimura-unity.co.jp/ and https://www.kimura-unity.co.jp/ir/ir_news.html have no list body (navigation only), and /news/ returned client_error. (Earlier record) The primary notice could not be reached (2026-11-10). URLs tried: https://www.kimura-unity.co.jp/, https://www.kimura-unity.co.jp/ir/ir_news.html. Reason: no matching item could be read in the lists, and the primary URL has not been identified. Chain name: Prestige International (290).",
+      "reference": "https://www.logi-today.com/1018986",
+      "reference_en": "https://www.logi-today.com/1018986"
     },
     {
       "org_ja": "LENDY債権回収（債権回収業務システム・第三者による不正な利用者登録とログイン）",
+      "org_en": "LENDY Servicing (debt collection system; unauthorised user registration and login by a third party)",
       "published": "不明（委託元のIDOM・沖縄銀行は2026-11-06に公表）",
+      "published_en": "unknown (the commissioning parties IDOM and Okinawa Bank published on 2026-11-06)",
       "reported_scale": "不明",
+      "reported_scale_en": "unknown",
       "reason": "2026-11-14 再試行：https://lendy-servicing.jp/ は client_error。 （前回までの記録）一次公表文に到達できず（2026-11-10）。試したURL：https://lendy-servicing.jp/news/ 。理由：client_error。委託元の公表文（IDOM・沖縄銀行）は 台帳に行として収載。新しい連鎖の起点の可能性。",
-      "reference": "https://idom-inc.com/news/press/20261106-38772.html"
+      "reason_en": "2026-11-14 retry: https://lendy-servicing.jp/ returned client_error. (Earlier record) The primary notice could not be reached (2026-11-10). URL tried: https://lendy-servicing.jp/news/. Reason: client_error. The commissioning parties' notices (IDOM and Okinawa Bank) are admitted in the registry as rows. This may be the starting point of a new chain.",
+      "reference": "https://idom-inc.com/news/press/20261106-38772.html",
+      "reference_en": "https://idom-inc.com/news/press/20261106-38772.html"
     },
     {
       "org_ja": "日本デジタル研究所（JDL）第二報（既存行356の続報）",
+      "org_en": "Japan Digital Laboratory (JDL) second report (follow-up to existing row 356)",
       "published": "2026-11-09（二次資料の記事URLから）",
+      "published_en": "2026-11-09 (from the URL of a secondary source's article)",
       "reported_scale": "顧客情報28,475件が流出した可能性（セキュリティ対策Labの見出し）",
+      "reported_scale_en": "Customer information on 28,475 records may have leaked (headline of Security Measures Lab)",
       "reason": "2026-11-14 再試行：https://www.jdl.co.jp/info/security-info202611.html は第一報（「【対象となる情報件数】28,921件」）のみで第二報の記載・リンクなし。第二報のURL未特定。 （前回までの記録）続報の一次公表文に到達できず（2026-11-10）。試したURL：https://www.jdl.co.jp/info/security-info202611.html （第一報のみ掲載、件数「28,921件」）。理由：第二報のURL未特定。セキュリティ対策Labの記事（https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/ ）も client_error。",
-      "reference": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
+      "reason_en": "2026-11-14 retry: https://www.jdl.co.jp/info/security-info202611.html carries only the first report (\"[Number of records affected] 28,921\") and has no mention of or link to a second report. The URL of the second report has not been identified. (Earlier record) The primary notice of the follow-up could not be reached (2026-11-10). URL tried: https://www.jdl.co.jp/info/security-info202611.html (first report only, number of records \"28,921\"). Reason: the URL of the second report has not been identified. The Security Measures Lab article (https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/) also returned client_error.",
+      "reference": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/",
+      "reference_en": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
     },
     {
       "org_ja": "山陰合同銀行（保証会社SMBCコンシューマーファイナンス）",
+      "org_en": "San-in Godo Bank (guarantor SMBC Consumer Finance)",
       "published": "未確認",
+      "published_en": "unconfirmed",
       "reported_scale": "二次資料では1,585人",
+      "reported_scale_en": "1,585 people according to secondary sources",
       "reason": "2026-11-14 再試行：https://www.gogin.co.jp/ トップに告知なし、/news/ は SERVER_ERROR。WebSearchは二次資料（atsoho 等）のみ。 （前回までの記録）候補の発見のみ。一次公表文は未取得（2026-11-10）。台帳・照合待ちのどちらにもない。",
-      "reference": "https://rocket-boys.co.jp/security-measures-lab/sanin_godo_bank_article/"
+      "reason_en": "2026-11-14 retry: no notice on the top page of https://www.gogin.co.jp/, and /news/ returned SERVER_ERROR. A web search found only secondary sources (atsoho and others). (Earlier record) A candidate was only found. The primary notice has not been retrieved (2026-11-10). It is in neither the registry nor the pending list.",
+      "reference": "https://rocket-boys.co.jp/security-measures-lab/sanin_godo_bank_article/",
+      "reference_en": "https://rocket-boys.co.jp/security-measures-lab/sanin_godo_bank_article/"
     },
     {
       "org_ja": "徳島大学病院",
+      "org_en": "Tokushima University Hospital",
       "published": "未確認",
+      "published_en": "unconfirmed",
       "reported_scale": "未確認",
+      "reported_scale_en": "unconfirmed",
       "reason": "2026-11-14 再試行：https://www.tokushima-hosp.jp/news/info.html?news_id=1093 と /news/ は client_error。二次資料（ScanNetSecurity 2026/01/14）に徳島大学病院の不正アクセス（16,945件）の記事があり、news_id=1093 が2026年9月1日以降の事案かも未確認。 （前回までの記録）候補の発見のみ。一次公表文は未取得（2026-11-10）。台帳・照合待ちのどちらにもない。",
-      "reference": "https://www.tokushima-hosp.jp/news/info.html?news_id=1093"
+      "reason_en": "2026-11-14 retry: https://www.tokushima-hosp.jp/news/info.html?news_id=1093 and /news/ returned client_error. A secondary source (ScanNetSecurity 2026/01/14) has an article on unauthorised access at Tokushima University Hospital (16,945 records), and it is also unconfirmed whether news_id=1093 concerns a case on or after 1 September 2026. (Earlier record) A candidate was only found. The primary notice has not been retrieved (2026-11-10). It is in neither the registry nor the pending list.",
+      "reference": "https://www.tokushima-hosp.jp/news/info.html?news_id=1093",
+      "reference_en": "https://www.tokushima-hosp.jp/news/info.html?news_id=1093"
     },
     {
       "org_ja": "藤田医科大学病院",
+      "org_en": "Fujita Health University Hospital",
       "published": "未確認",
+      "published_en": "unconfirmed",
       "reported_scale": "二次資料では1,365件",
+      "reported_scale_en": "1,365 records according to secondary sources",
       "reason": "2026-11-14 再試行：WebSearchで藤田医科大学病院の一次公表文を特定できず（検索で出た岡崎医療センターのPDFは個人情報の取扱方針で無関係）。 （前回までの記録）候補の発見のみ。一次公表文は未取得（2026-11-10）。台帳・照合待ちのどちらにもない。",
-      "reference": "https://atsoho.com/blog/fujita-health-university-hospital-data-breach"
+      "reason_en": "2026-11-14 retry: a web search could not identify the primary notice of Fujita Health University Hospital (the Okazaki Medical Center PDF that appeared in the search is a personal-information handling policy and is unrelated). (Earlier record) A candidate was only found. The primary notice has not been retrieved (2026-11-10). It is in neither the registry nor the pending list.",
+      "reference": "https://atsoho.com/blog/fujita-health-university-hospital-data-breach",
+      "reference_en": "https://atsoho.com/blog/fujita-health-university-hospital-data-breach"
     },
     {
       "org_ja": "小学館（kyoiku.sho.jp・脆弱性経由）",
+      "org_en": "Shogakukan (kyoiku.sho.jp, via a vulnerability)",
       "published": "2026-11-09（二次資料）",
+      "published_en": "2026-11-09 (secondary source)",
       "reported_scale": "未確認",
+      "reported_scale_en": "unconfirmed",
       "reason": "2026-11-14 再試行：WebSearchで該当なし（kyoiku.sho.jp の一次URLを特定できず）。既存行553（小学館、アララ）とは別事案とされる。 （前回までの記録）候補の発見のみ。一次公表文は未取得（2026-11-10）。台帳・照合待ちのどちらにもない。",
-      "reference": "（URL未特定）"
+      "reason_en": "2026-11-14 retry: a web search found nothing relevant (the primary URL of kyoiku.sho.jp could not be identified). Said to be a different case from existing row 553 (Shogakukan, Arara). (Earlier record) A candidate was only found. The primary notice has not been retrieved (2026-11-10). It is in neither the registry nor the pending list.",
+      "reference": "（URL未特定）",
+      "reference_en": "(URL not identified)"
     },
     {
       "org_ja": "ジーエス・ユアサ バッテリー（委託先プレステージ・コアソリューション）",
+      "org_en": "GS Yuasa Battery (contractor Prestige Core Solutions)",
       "published": "2026-11-02〜04（二次資料）",
+      "published_en": "2026-11-02 to 04 (secondary source)",
       "reported_scale": "未確認",
+      "reported_scale_en": "unconfirmed",
       "reason": "2026-11-14 再試行：https://www.gs-yuasa.com/jp/ とニュースルーム新着（https://newsroom.gs-yuasa.com/latest-articles 、1ページ目）に該当なし。 （前回までの記録）候補の発見のみ。一次公表文は未取得（2026-11-10）。台帳・照合待ちのどちらにもない。",
-      "reference": "（URL未特定）"
+      "reason_en": "2026-11-14 retry: nothing relevant on https://www.gs-yuasa.com/jp/ or on the latest items of the newsroom (https://newsroom.gs-yuasa.com/latest-articles, first page). (Earlier record) A candidate was only found. The primary notice has not been retrieved (2026-11-10). It is in neither the registry nor the pending list.",
+      "reference": "（URL未特定）",
+      "reference_en": "(URL not identified)"
     },
     {
       "org_ja": "SBI損害保険（委託先プレステージ・コアソリューション）",
+      "org_en": "SBI General Insurance (contractor Prestige Core Solutions)",
       "published": "2026-11-02〜04（二次資料）",
+      "published_en": "2026-11-02 to 04 (secondary source)",
       "reported_scale": "未確認",
+      "reported_scale_en": "unconfirmed",
       "reason": "2026-11-14 再試行：一次公表文に到達（https://www.sbisonpo.co.jp/company/information/2026/1104.html 、表題「当社の業務委託先における不正アクセスについて」2026年11月4日）。判定保留：委託先はプレステージ・コアソリューション（「ロードサービス業務を委託している株式会社プレステージ・コアソリューション（以下「PCS社」）において不正アクセス被害が発生（※1）したことが、判明いたしました。」）だが、「漏えい」の語なく「PCS社への不正アクセスにより影響の可能性があるものは、ロードサービスをPCS社に委託した案件となります。」で、個人情報の漏えい（可能性）を明記していない。連鎖名：プレステージ・インターナショナル（290）。 （前回までの記録）候補の発見のみ。一次公表文は未取得（2026-11-10）。台帳・照合待ちのどちらにもない。",
-      "reference": "https://www.sbisonpo.co.jp/company/information/2026/1104.html"
+      "reason_en": "2026-11-14 retry: the primary notice was reached (https://www.sbisonpo.co.jp/company/information/2026/1104.html, title \"Unauthorised access at our business contractor\", 4 November 2026). Decision on hold: the contractor is Prestige Core Solutions (\"It has come to light that unauthorised access damage occurred (*1) at Prestige Core Solutions Co., Ltd. (hereinafter 'PCS'), to which we outsource roadside assistance operations.\"), but the word \"leakage\" does not appear, and it says \"Cases that may be affected by the unauthorised access to PCS are those in which roadside assistance was outsourced to PCS\", without stating leakage (or possible leakage) of personal information. Chain name: Prestige International (290). (Earlier record) A candidate was only found. The primary notice has not been retrieved (2026-11-10). It is in neither the registry nor the pending list.",
+      "reference": "https://www.sbisonpo.co.jp/company/information/2026/1104.html",
+      "reference_en": "https://www.sbisonpo.co.jp/company/information/2026/1104.html"
     },
     {
       "org_ja": "筑後市（市公式ホームページ）",
+      "org_en": "Chikugo City (city official website)",
       "published": "2026-11-10",
+      "published_en": "2026-11-10",
       "reported_scale": "記載なし（漏えいの有無・件数は調査中）",
+      "reported_scale_en": "Not stated (whether data leaked and the number of records are under investigation)",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：不正アクセスは明記（「第三者による市公式ホームページへの不正アクセスが確認されたことを受け、11月4日より同ホームページを一時閉鎖しておりました。」）だが、漏えい（可能性）の明示なし（「本件による個人情報の漏えいの有無および対象範囲（件数）などについては、現在も調査を継続しております。」）。表題「市公式ホームページの再開について（お詫びとお知らせ）」（更新日2026年11月10日）。11月4日前後の初報・「PHPの脆弱性に対する筑後市ホームページの対応作業完了について」は未読。",
-      "reference": "https://www.city.chikugo.lg.jp/shisei/_6166/_1882/_32180.html"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): unauthorised access is stated explicitly (\"Following confirmation of unauthorised access by a third party to the city's official website, the website had been temporarily closed since 4 November.\"), but there is no explicit statement of leakage (or possible leakage) (\"Whether personal information was leaked in this incident and the extent (number of records) are still under investigation.\"). Title \"Reopening of the city's official website (apology and notice)\" (updated 10 November 2026). The first report around 4 November and \"Completion of the Chikugo City website's response work to the PHP vulnerability\" have not been read.",
+      "reference": "https://www.city.chikugo.lg.jp/shisei/_6166/_1882/_32180.html",
+      "reference_en": "https://www.city.chikugo.lg.jp/shisei/_6166/_1882/_32180.html"
     },
     {
       "org_ja": "パルマ（当社が運営するWebサービス）",
+      "org_en": "Palma (web services operated by the company)",
       "published": "2026-11-10",
+      "published_en": "2026-11-10",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：「当社が運営するWebサービスに対し、第三者による不正アクセスの痕跡を確認いたしました。」とあるが、漏えい（可能性）の明示なし（「情報漏えいの有無について調査を進めております」）。表題「当社Webサービスへの不正アクセスに関するお知らせ」（2026.11.10）。",
-      "reference": "https://www.palma.jp/news/2794/"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): it says \"We confirmed traces of unauthorised access by a third party to the web services we operate\", but there is no explicit statement of leakage (or possible leakage) (\"We are investigating whether information was leaked\"). Title \"Notice regarding unauthorised access to our web services\" (2026.11.10).",
+      "reference": "https://www.palma.jp/news/2794/",
+      "reference_en": "https://www.palma.jp/news/2794/"
     },
     {
       "org_ja": "昭和音楽大学（電子チケット「teket」）",
+      "org_en": "Showa University of Music (electronic tickets \"teket\")",
       "published": "2026-11-10",
+      "published_en": "2026-11-10",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：「電子チケットサービス「teket」より、不正アクセス事案が発生したとの公表がありました。」のみで、漏えい（可能性）・対象者の記述なし。表題「【重要】電子チケット「teket」をご利用のお客様へ」（2026/11/10）。連鎖名：teket。",
-      "reference": "https://www.tosei-showa-music.ac.jp/news/information/20261110_004032.html"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): it says only \"An announcement has been made that an unauthorised access incident occurred at the electronic ticket service 'teket'\", with no description of leakage (or possible leakage) or of the persons affected. Title \"[Important] To customers using the electronic ticket service 'teket'\" (2026/11/10). Chain name: teket.",
+      "reference": "https://www.tosei-showa-music.ac.jp/news/information/20261110_004032.html",
+      "reference_en": "https://www.tosei-showa-music.ac.jp/news/information/20261110_004032.html"
     },
     {
       "org_ja": "東洋英和女学院 中学部・高等部（楓祭ステージ公演のチケット・teket）",
+      "org_en": "Toyo Eiwa Girls' School, Junior and Senior High School (tickets for the Kaede Festival stage performances, teket)",
       "published": "2026-11-10",
+      "published_en": "2026-11-10",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：「運営会社より不正アクセスに関する発表がございました。」「本件の対象となるのは、今年度の楓祭ステージ公演（…）のためにサービスへ登録をした皆様・チケットをお申し込みいただいた皆様（…）となります。」とあり対象者は示すが、漏えい（可能性）の語なし。表題「【重要】イベントチケット購入サイト「teket」における不正アクセスに関するご報告とお詫び」（2026/11/10）。連鎖名：teket。",
-      "reference": "https://www.toyoeiwa.ac.jp/chu-ko/news/2026/11/025237.html"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): it says \"An announcement regarding unauthorised access was made by the operating company\" and \"Those covered by this incident are everyone who registered with the service for this year's Kaede Festival stage performances and everyone who applied for tickets (...)\", which identifies the persons affected, but the words for leakage (or possible leakage) do not appear. Title \"[Important] Report and apology regarding unauthorised access to the event ticket purchase site 'teket'\" (2026/11/10). Chain name: teket.",
+      "reference": "https://www.toyoeiwa.ac.jp/chu-ko/news/2026/11/025237.html",
+      "reference_en": "https://www.toyoeiwa.ac.jp/chu-ko/news/2026/11/025237.html"
     },
     {
       "org_ja": "鹿児島県吹奏楽連盟（コンクールのライブ配信チケット・teket）",
+      "org_en": "Kagoshima Prefectural Brass Band Association (live-stream tickets for the contest, teket)",
       "published": "2026-11-10",
+      "published_en": "2026-11-10",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：「コンクール時にライブ配信チケット販売を行ったTeketが、不正アクセスを受けたとの報告がありました。」のみで、漏えい（可能性）の記述なし。表題「teket(テケト)における不正アクセスに関するご案内」（2026年11月10日）。連鎖名：teket。",
-      "reference": "https://suiren-kagoshima.jp/?p=6224"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): it says only \"We received a report that Teketo, which sold live-stream tickets at the time of the contest, suffered unauthorised access\", with no description of leakage (or possible leakage). Title \"Information on unauthorised access to teket (Teketo)\" (10 November 2026). Chain name: teket.",
+      "reference": "https://suiren-kagoshima.jp/?p=6224",
+      "reference_en": "https://suiren-kagoshima.jp/?p=6224"
     },
     {
       "org_ja": "カイロソフト（「カイロくんのアンテナショップ（Stores）」の発送業務・オープンロジ）",
+      "org_en": "Kairosoft (shipping operations for \"Kairokun's Antenna Shop (Stores)\", Openlogi)",
       "published": "2026-11-11",
+      "published_en": "2026-11-11",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準2）：本文は「情報漏洩が発生したことが発表されました。」のみで、不正アクセス・原因の記述なし（オープンロジの公表文には不正アクセスの記述あり）。表題「『株式会社オープンロジの情報漏洩に関する影響について』」（2026/11/11）。連鎖名：オープンロジ。",
-      "reference": "https://kairosoft.net/press/20261111.html"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 2): the body says only \"It has been announced that an information leak occurred\", with no description of unauthorised access or cause (Openlogi's own notice does describe unauthorised access). Title \"'Impact of the information leak at Openlogi Inc.'\" (2026/11/11). Chain name: Openlogi.",
+      "reference": "https://kairosoft.net/press/20261111.html",
+      "reference_en": "https://kairosoft.net/press/20261111.html"
     },
     {
       "org_ja": "井筒まい泉（LINEスタンプカードを運用する外部システム）",
+      "org_en": "Izutsu Maisen (external system operating the LINE stamp card)",
       "published": "2026-11-11",
+      "published_en": "2026-11-11",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：「当社のLINEスタンプカードを運用する外部システムへの第三者による不正アクセスが確認された」が、「現時点で、当社のLINEサービスをご利用のお客様の個人情報の漏えいは確認されておりません。」で、可能性の記述もなし。表題「LINEスタンプカードのサービス一時停止について」（2026-11-11）。",
-      "reference": "https://mai-sen.com/news/other/post-3154/"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): it says \"unauthorised access by a third party to the external system operating our LINE stamp card was confirmed\", but also \"At present, no leakage of personal information of customers using our LINE service has been confirmed\", and does not mention a possibility either. Title \"Temporary suspension of the LINE stamp card service\" (2026-11-11).",
+      "reference": "https://mai-sen.com/news/other/post-3154/",
+      "reference_en": "https://mai-sen.com/news/other/post-3154/"
     },
     {
       "org_ja": "靖國神社（メールマガジン・社報「靖國」デジタル版の登録受付・委託先ブラストメール）",
+      "org_en": "Yasukuni Shrine (email newsletter and registration for the digital edition of the bulletin \"Yasukuni\"; contractor Blast Mail)",
       "published": "2026-11-11",
+      "published_en": "2026-11-11",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：「「ブラストメール」（運営：株式会社ラクスライトクラウド）において、令和8年10月20日、外部からの不正アクセスが検知されました。」とあるが、「委託先からの報告によれば、現時点で、皆様の情報（お名前、メールアドレス）の漏洩は確認されておりません。」。表題「メールマガジン等の配信委託先における不正アクセスについて」（令和8年11月11日）。同日の授与品サイトの告知（id=734）は rows に起票。連鎖名：ブラストメール（059）。",
-      "reference": "https://www.yasukuni.or.jp/news_detail.html?id=735"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): it says \"On 20 October, Reiwa 8, unauthorised access from outside was detected at 'Blast Mail' (operated by Rakus Light Cloud Co., Ltd.)\", but \"According to the report from the contractor, no leakage of your information (name, email address) has been confirmed at present.\" Title \"Unauthorised access at the contractor for delivering email newsletters and other mail\" (11 November, Reiwa 8). The same-day notice on the souvenir-items site (id=734) was entered in rows. Chain name: Blast Mail (059).",
+      "reference": "https://www.yasukuni.or.jp/news_detail.html?id=735",
+      "reference_en": "https://www.yasukuni.or.jp/news_detail.html?id=735"
     },
     {
       "org_ja": "リーフ・パブリケーションズ（Sake World メールマガジン・ブラストメール）",
+      "org_en": "Leaf Publications (Sake World email newsletter, Blast Mail)",
       "published": "2026-11-11",
+      "published_en": "2026-11-11",
       "reported_scale": "記載なし",
+      "reported_scale_en": "Not stated",
       "reason": "2026-11-14：一次公表文に到達。判定保留（基準1）：「当社が利用していたメール配信サービス「ブラストメール」(株式会社ラクスライトクラウド提供)において、第三者による不正アクセスが発生しました。」「運営会社からは、当社のメールマガジン配信先情報の漏えいは確認されていないとの報告を受けております。」。表題「【ご報告】メール配信サービス「ブラストメール」への不正アクセスについて」（2026年 11月 11日）。連鎖名：ブラストメール（059）。",
-      "reference": "https://sakeworld.jp/event/2026-11-11/"
+      "reason_en": "2026-11-14: the primary notice was reached. Decision on hold (criterion 1): \"Unauthorised access by a third party occurred at the email delivery service 'Blast Mail' (provided by Rakus Light Cloud Co., Ltd.) that we used.\" \"We have received a report from the operating company that no leakage of the delivery-recipient information of our email newsletter has been confirmed.\" Title \"[Report] Unauthorised access to the email delivery service 'Blast Mail'\" (11 November 2026). Chain name: Blast Mail (059).",
+      "reference": "https://sakeworld.jp/event/2026-11-11/",
+      "reference_en": "https://sakeworld.jp/event/2026-11-11/"
     },
     {
       "org_ja": "SecureNavi（Notionの委託先Fireworks AI社への不正アクセス）",
+      "org_en": "SecureNavi (unauthorised access to Fireworks AI, Notion's contractor)",
       "published": "2026-11-11（URLと集計サイトから。逐語未確認）",
+      "published_en": "2026-11-11 (from the URL and an aggregator site; verbatim wording unconfirmed)",
       "reported_scale": "二次資料では調査中",
+      "reported_scale_en": "Under investigation according to secondary sources",
       "reason": "2026-11-14：一次公表文はWebFetchで表題とmetaのみ取得、本文未読（表題「当社が利用するクラウドサービスの委託先への不正アクセスに伴う、お客様に関する情報漏えいの可能性についてのお詫びとお知らせ（第一報）」）。連鎖名：Notion／Fireworks AI（LRM・フェイガーの行と同一起点）。",
-      "reference": "https://secure-navi-inc.jp/news/news_20261111"
+      "reason_en": "2026-11-14: for the primary notice, WebFetch retrieved only the title and meta tags, and the body was not read (title \"Apology and notice regarding possible leakage of customer information due to unauthorised access to the contractor of a cloud service we use (first report)\"). Chain name: Notion / Fireworks AI (the same starting point as the LRM and Fager rows).",
+      "reference": "https://secure-navi-inc.jp/news/news_20261111",
+      "reference_en": "https://secure-navi-inc.jp/news/news_20261111"
     },
     {
       "org_ja": "FABRIC TOKYO（検証用システム）",
+      "org_en": "FABRIC TOKYO (verification system)",
       "published": "2026-11-11（二次資料）",
+      "published_en": "2026-11-11 (secondary source)",
       "reported_scale": "二次資料では699人",
+      "reported_scale_en": "699 people according to secondary sources",
       "reason": "2026-11-14：一次公表文に到達できず（2026-11-14、2回）。試したURL：https://fabric-tokyo.com/news/show/20261111-to-all-customers 。理由：client_error。二次資料（集計サイト）によれば原因は検証用システムのアクセスキーが「外部委託先から流出した可能性が高く」。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/d2aeb925d3a98afb"
+      "reason_en": "2026-11-14: the primary notice could not be reached (2026-11-14, twice). URL tried: https://fabric-tokyo.com/news/show/20261111-to-all-customers. Reason: client_error. According to a secondary source (aggregator site), the cause is that the access key to the verification system \"was highly likely leaked from an external contractor\".",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/d2aeb925d3a98afb",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/d2aeb925d3a98afb"
     },
     {
       "org_ja": "HUMAN MADE（「CURRY UP」ECサイト等・物流委託先オープンロジ）",
+      "org_en": "HUMAN MADE (\"CURRY UP\" e-commerce site and others; logistics contractor Openlogi)",
       "published": "2026-11-11（二次資料）",
+      "published_en": "2026-11-11 (secondary source)",
       "reported_scale": "二次資料では非公表（影響範囲を特定中）",
+      "reported_scale_en": "Not disclosed according to secondary sources (extent of impact being identified)",
       "reason": "2026-11-14：一次公表文（適時開示）に到達できず。試したURL：https://www.release.tdnet.info/inbs/140120261111574117.pdf （robots_disallowed）。WebSearch 2回で自社サイトの同文・Yahoo!ファイナンス等の転載を特定できず。連鎖名：オープンロジ。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/86836c25f88ba239"
+      "reason_en": "2026-11-14: the primary notice (timely disclosure) could not be reached. URL tried: https://www.release.tdnet.info/inbs/140120261111574117.pdf (robots_disallowed). Two web searches could not identify identical text on the company's own site or a reprint on Yahoo! Finance or elsewhere. Chain name: Openlogi.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/86836c25f88ba239",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/86836c25f88ba239"
     },
     {
       "org_ja": "Cocolive（不動産テック「KASIKA」で利用する一部のWebサーバ）",
+      "org_en": "Cocolive (some web servers used for the real-estate tech service \"KASIKA\")",
       "published": "2026-11-11（二次資料）",
+      "published_en": "2026-11-11 (secondary source)",
       "reported_scale": "二次資料では非公表",
+      "reported_scale_en": "Not disclosed according to secondary sources",
       "reason": "2026-11-14：一次公表文（適時開示）に到達できず。試したURL：https://www.release.tdnet.info/inbs/140120261111573847.pdf （robots_disallowed）。WebSearchで自社サイトの同文を特定できず。二次資料によれば「外部からの不審なアクセスの痕跡」を11月7日に検知。漏えい（可能性）の有無は未確認。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/0f81e811f9a4c5ec"
+      "reason_en": "2026-11-14: the primary notice (timely disclosure) could not be reached. URL tried: https://www.release.tdnet.info/inbs/140120261111573847.pdf (robots_disallowed). A web search could not identify identical text on the company's own site. According to a secondary source, \"traces of suspicious access from outside\" were detected on 7 November. Whether data leaked (or may have leaked) is unconfirmed.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/0f81e811f9a4c5ec",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/0f81e811f9a4c5ec"
     },
     {
       "org_ja": "岡山県（「おかやまVitalityウォーク」・住友生命の委託先NTTデータ）",
+      "org_en": "Okayama Prefecture (\"Okayama Vitality Walk\", NTT Data, contractor of Sumitomo Life)",
       "published": "2026-11-11（二次資料）",
+      "published_en": "2026-11-11 (secondary source)",
       "reported_scale": "二次資料では25件",
+      "reported_scale_en": "25 records according to secondary sources",
       "reason": "2026-11-14：一次公表文に到達できず（2026-11-14、2回）。試したURL：https://www.pref.okayama.jp/site/presssystem/1065566.html 。理由：「Request Rejected」のエラーページ。既存行331・534・566（岡山県・アララ関連）とは別事案。連鎖名：住友生命Vitality／NTTデータ（579）。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/307f864db275a0ed"
+      "reason_en": "2026-11-14: the primary notice could not be reached (2026-11-14, twice). URL tried: https://www.pref.okayama.jp/site/presssystem/1065566.html. Reason: \"Request Rejected\" error page. A different case from existing rows 331, 534 and 566 (Okayama Prefecture, Arara-related). Chain name: Sumitomo Life Vitality / NTT Data (579).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/307f864db275a0ed",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/307f864db275a0ed"
     },
     {
       "org_ja": "日本サッカー協会（「JFA STORE」の「GMO後払い」利用者・GMOペイメントサービスの委託先が利用するメール配信サービス）",
+      "org_en": "Japan Football Association (users of \"GMO Atobarai\" at \"JFA STORE\"; email delivery service used by a contractor of GMO Payment Service)",
       "published": "2026-11-11（二次資料）",
+      "published_en": "2026-11-11 (secondary source)",
       "reported_scale": "二次資料では11名（メールアドレス）",
+      "reported_scale_en": "11 people (email addresses) according to secondary sources",
       "reason": "2026-11-14：一次公表文に到達できず。試したURL：https://www.jfa.jp/about_jfa/news/00037015/ 、http://www.jfa.jp/about_jfa/news/00037015/ 。理由：https から http へのリダイレクト（302）が繰り返され本文を取得できず。連鎖名：アララ（241）／GMOペイメントサービス。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/5d5b2705b2b97b0b"
+      "reason_en": "2026-11-14: the primary notice could not be reached. URLs tried: https://www.jfa.jp/about_jfa/news/00037015/, http://www.jfa.jp/about_jfa/news/00037015/. Reason: redirects (302) between https and http repeated and the body could not be retrieved. Chain name: Arara (241) / GMO Payment Service.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/5d5b2705b2b97b0b",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/5d5b2705b2b97b0b"
     },
     {
       "org_ja": "Tsunaide（「茅原実里公式サイト」の出荷データ・オープンロジ）",
+      "org_en": "Tsunaide (shipping data for the \"Minori Chihara official site\", Openlogi)",
       "published": "2026-11-11（二次資料）",
+      "published_en": "2026-11-11 (secondary source)",
       "reported_scale": "二次資料では非公表",
+      "reported_scale_en": "Not disclosed according to secondary sources",
       "reason": "2026-11-14：一次公表文に到達できず。試したURL：https://minorichihara.com/blogs/news/202611111200 。理由：robots_disallowed。連鎖名：オープンロジ。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/51f8adf8c1b21252"
+      "reason_en": "2026-11-14: the primary notice could not be reached. URL tried: https://minorichihara.com/blogs/news/202611111200. Reason: robots_disallowed. Chain name: Openlogi.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/51f8adf8c1b21252",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/51f8adf8c1b21252"
     },
     {
       "org_ja": "読売巨人軍（公式ファンクラブ「CLUB GIANTS」の会員情報を管理するシステム）",
+      "org_en": "Yomiuri Giants (system managing member information of the official fan club \"CLUB GIANTS\")",
       "published": "2026-11-13（集計サイト）",
+      "published_en": "2026-11-13 (aggregator site)",
       "reported_scale": "集計サイト：メールアドレス80万7,030件（メールアドレス以外は調査中）",
+      "reported_scale_en": "Aggregator site: 807,030 email addresses (data other than email addresses under investigation)",
       "reason": "2026-11-14：一次公表文 https://www.giants.jp/news/31752/ がWebFetchでSITE_BLOCKED（サイト側で遮断）。代替の同文は見つからず。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/d55bf14671516ec3"
+      "reason_en": "2026-11-14: the primary notice https://www.giants.jp/news/31752/ was SITE_BLOCKED for WebFetch (blocked by the site). No alternative copy of the same text was found.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/d55bf14671516ec3",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/d55bf14671516ec3"
     },
     {
       "org_ja": "ロイヤルホテル（オンラインショップのメールマガジン配信・GMOメイクショップ経由アララ「アララメッセージ」）",
+      "org_en": "Royal Hotel (email newsletter delivery for the online shop; Arara \"Arara Message\" via GMO MakeShop)",
       "published": "2026-11-13（集計サイト）",
+      "published_en": "2026-11-13 (aggregator site)",
       "reported_scale": "集計サイト：メールアドレス約8,000件",
+      "reported_scale_en": "Aggregator site: about 8,000 email addresses",
       "reason": "2026-11-14：一次公表文PDF https://www.rihga.co.jp/hubfs/assets/pdf/group/notice-20261113.pdf は画像のみで本文テキストを取得できず（curlはプロキシで遮断、OCR不可）。HTML版は見つからず。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/1c9911cd13d19812"
+      "reason_en": "2026-11-14: the primary notice PDF https://www.rihga.co.jp/hubfs/assets/pdf/group/notice-20261113.pdf is image-only and its body text could not be retrieved (curl is blocked by the proxy; OCR not possible). No HTML version was found.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/1c9911cd13d19812",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/1c9911cd13d19812"
     },
     {
       "org_ja": "柏原市（教育部指導課・学校園の連絡システム「はなまる連絡帳」（サテライト）が利用するアララ）",
+      "org_en": "Kashiwara City (Education Department, Guidance Division; Arara used by the school-and-kindergarten contact system \"Hanamaru Renrakucho\" (satellite))",
       "published": "2026-11-13（集計サイト）",
+      "published_en": "2026-11-13 (aggregator site)",
       "reported_scale": "集計サイト：資料に明記なし",
+      "reported_scale_en": "Aggregator site: not stated in the source material",
       "reason": "2026-11-14：一次公表文 https://www.city.kashiwara.lg.jp/docs/2026111300042 が取得エラー（client_error、末尾スラッシュ付きも同じ）。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/2ddb5de84f8ebbd9"
+      "reason_en": "2026-11-14: the primary notice https://www.city.kashiwara.lg.jp/docs/2026111300042 returned a retrieval error (client_error; the same with a trailing slash).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/2ddb5de84f8ebbd9",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/2ddb5de84f8ebbd9"
     },
     {
       "org_ja": "ギフティ（「giftee」サービスの会員情報・会員情報の管理とログイン認証に利用するプリズマティクス「prismatix」）",
+      "org_en": "giftee (member information of the \"giftee\" service; Prismatix \"prismatix\", used for managing member information and login authentication)",
       "published": "2026-11-12（同社ニュース一覧で確認）",
+      "published_en": "2026-11-12 (confirmed on the company's news list)",
       "reported_scale": "集計サイト：調査中",
+      "reported_scale_en": "Aggregator site: under investigation",
       "reason": "2026-11-14：一次公表文 https://giftee.co.jp/press/news/info20261112/ が取得エラー（client_error）。同社ニュース一覧で表題「外部サービスへの不正アクセスに伴う「giftee」サービスの一時停止に関するお知らせ」と日付のみ確認、本文は未読。個人情報の漏えい（可能性）の記述の有無も未確認。既存行173（同社の別事案・ブラストメール経由）とは別。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/c786058aab086eb7"
+      "reason_en": "2026-11-14: the primary notice https://giftee.co.jp/press/news/info20261112/ returned a retrieval error (client_error). On the company's news list only the title \"Notice of temporary suspension of the 'giftee' service due to unauthorised access to an external service\" and the date were confirmed; the body was not read. Whether it describes leakage (or possible leakage) of personal information is also unconfirmed. Separate from existing row 173 (a different case of the same company, via Blast Mail).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/c786058aab086eb7",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/c786058aab086eb7"
     },
     {
       "org_ja": "弥生（社内の情報共有基盤として利用する「Notion AI」への入力情報・Notion社の委託先Fireworks AI）",
+      "org_en": "Yayoi (information entered into \"Notion AI\", used as an internal information-sharing platform; Fireworks AI, Notion's contractor)",
       "published": "2026-11-12（集計サイト）",
+      "published_en": "2026-11-12 (aggregator site)",
       "reported_scale": "集計サイト：調査中",
+      "reported_scale_en": "Aggregator site: under investigation",
       "reason": "2026-11-14：一次公表文 https://www.yayoi-kk.co.jp/yss/info/detail.20261113-3/ が取得エラー（client_error、index.html付きも同じ）。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/ced288ddc543bb93"
+      "reason_en": "2026-11-14: the primary notice https://www.yayoi-kk.co.jp/yss/info/detail.20261113-3/ returned a retrieval error (client_error; the same with index.html).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/ced288ddc543bb93",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/ced288ddc543bb93"
     },
     {
       "org_ja": "ECADソリューションズ（社内ネットワーク・Webサービス群）",
+      "org_en": "ECAD Solutions (internal network and web services)",
       "published": "2026-11-12（集計サイト）",
+      "published_en": "2026-11-12 (aggregator site)",
       "reported_scale": "集計サイト：記載なし",
+      "reported_scale_en": "Aggregator site: not stated",
       "reason": "2026-11-14：一次公表文 https://www.ecad-sol.com/news/20261112/ がrobotsで取得不可。個人情報の漏えい（可能性）の記述の有無も未確認。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/7b9b167099b475e6"
+      "reason_en": "2026-11-14: the primary notice https://www.ecad-sol.com/news/20261112/ could not be retrieved because of robots. Whether it describes leakage (or possible leakage) of personal information is also unconfirmed.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/7b9b167099b475e6",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/7b9b167099b475e6"
     },
     {
       "org_ja": "栃木県（スポーツ振興課・サイクルツーリズムポータルサイト「ぐるとち」・委託事業者が保守管理）",
+      "org_en": "Tochigi Prefecture (Sports Promotion Division; cycle-tourism portal \"Guru Tochi\", maintained by a contractor)",
       "published": "2026-11-12（集計サイト）",
+      "published_en": "2026-11-12 (aggregator site)",
       "reported_scale": "集計サイト：「非公表（個人情報は保有していない）」",
+      "reported_scale_en": "Aggregator site: \"Not disclosed (holds no personal information)\"",
       "reason": "2026-11-14：一次公表文 https://www.pref.tochigi.lg.jp/c09/syougai/20261112.html がrobotsで取得不可。集計サイトの記載どおり個人情報を保有していないなら収載対象外の可能性が高いが、一次公表文で未確認のため照合待ちとした。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/d88d99b5067aee06"
+      "reason_en": "2026-11-14: the primary notice https://www.pref.tochigi.lg.jp/c09/syougai/20261112.html could not be retrieved because of robots. If, as the aggregator site says, no personal information is held, the case is highly likely to be out of scope, but since this is unconfirmed in the primary notice it was placed on hold.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/d88d99b5067aee06",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/d88d99b5067aee06"
     },
     {
       "org_ja": "武蔵村山市（TKC再委託先 アララ メッセージ・「スマート申請システム」「マイナンバーカード交付予約管理システム」のメール配信）",
+      "org_en": "Musashimurayama City (Arara Message, TKC's subcontractor; email delivery for the \"Smart Application System\" and the \"My Number Card issuance reservation management system\")",
       "published": "2026-11-04（集計サイト）",
+      "published_en": "2026-11-04 (aggregator site)",
       "reported_scale": "集計サイトでは調査中",
+      "reported_scale_en": "Under investigation according to the aggregator site",
       "reason": "2026-11-14：一次公表文に到達できず（2026-11-14）。試したURL：https://www.city.musashimurayama.lg.jp/kurashi/todoke/1022763.html 。理由：client_error（2回）。台帳・照合待ちのどちらにもない。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/92857baf171e224a"
+      "reason_en": "2026-11-14: the primary notice could not be reached (2026-11-14). URL tried: https://www.city.musashimurayama.lg.jp/kurashi/todoke/1022763.html. Reason: client_error (twice). It is in neither the registry nor the pending list.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/92857baf171e224a",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/92857baf171e224a"
     },
     {
       "org_ja": "尾花沢市（TKC再委託先 アララ メッセージ・スマート申請システム／マイナンバーカード交付予約・管理システム）",
+      "org_en": "Obanazawa City (Arara Message, TKC's subcontractor; Smart Application System / My Number Card issuance reservation and management system)",
       "published": "2026-11-05（集計サイト）",
+      "published_en": "2026-11-05 (aggregator site)",
       "reported_scale": "集計サイトでは971件（スマート申請システム967件、マイナンバーカード交付予約・管理システム4件）",
+      "reported_scale_en": "971 records according to the aggregator site (967 for the Smart Application System, 4 for the My Number Card issuance reservation and management system)",
       "reason": "2026-11-14：一次公表文に到達できず（2026-11-14）。試したURL：https://www.city.obanazawa.yamagata.jp/news/4612 。理由：client_error。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/fa9bb5931d8deea2"
+      "reason_en": "2026-11-14: the primary notice could not be reached (2026-11-14). URL tried: https://www.city.obanazawa.yamagata.jp/news/4612. Reason: client_error.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/fa9bb5931d8deea2",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/fa9bb5931d8deea2"
     },
     {
       "org_ja": "福井県（県立恐竜博物館・アソビュー経由 アララ メッセージ）",
+      "org_en": "Fukui Prefecture (Fukui Prefectural Dinosaur Museum; Arara Message via Asoview)",
       "published": "2026-11-03（集計サイト）",
+      "published_en": "2026-11-03 (aggregator site)",
       "reported_scale": "集計サイトでは精査中（アソビューの15,821,184件の内数）",
+      "reported_scale_en": "Under scrutiny according to the aggregator site (part of Asoview's 15,821,184 records)",
       "reason": "2026-11-14：一次公表文に到達できず（2026-11-14）。集計サイトが示す一次資料はkintoneの公開ビューア（https://9a35b2b1.viewer.kintoneapp.com/public/6e133df0…）で、URLが長すぎてWebFetchのプロキシが拒否（url exceeds the maximum fetchable length）。県の公式サイト上の告知URLは未特定。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/35f7a064168c4bc4"
+      "reason_en": "2026-11-14: the primary notice could not be reached (2026-11-14). The primary material cited by the aggregator site is a public kintone viewer (https://9a35b2b1.viewer.kintoneapp.com/public/6e133df0...), and the WebFetch proxy rejected the URL as too long (url exceeds the maximum fetchable length). The URL of the notice on the prefecture's official site has not been identified.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/35f7a064168c4bc4",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/35f7a064168c4bc4"
     },
     {
       "org_ja": "砥部町（町のメールマガジン・メール配信サービス事業者）",
+      "org_en": "Tobe Town (town email newsletter; email delivery service provider)",
       "published": "2026-11-04",
+      "published_en": "2026-11-04",
       "reported_scale": "件数の記載なし",
+      "reported_scale_en": "Number of records not stated",
       "reason": "2026-11-14：一次公表文 https://www.town.tobe.ehime.jp/soshikikarasagasu/chiikishinkouka/koho/5970.html （表題「【重要なお知らせ】メールマガジン（メール配信サービス）の一時停止」、更新日：2026年11月04日）は読めたが、本文に不正アクセスの語を確認できず（「配信システムにおいてメールアドレスの情報が外部へ流出したことを確認した」との報告、事業者名の記載なし）。収載基準2を本文で確認できないため保留。集計サイトは「委託先のメール配信サービスへの不正アクセス」と分類。",
-      "reference": "https://www.town.tobe.ehime.jp/soshikikarasagasu/chiikishinkouka/koho/5970.html"
+      "reason_en": "2026-11-14: the primary notice https://www.town.tobe.ehime.jp/soshikikarasagasu/chiikishinkouka/koho/5970.html (title \"[Important notice] Temporary suspension of the email newsletter (email delivery service)\", updated 4 November 2026) could be read, but the words for unauthorised access could not be found in the body (it reports that \"it was confirmed that email address information was leaked outside from the delivery system\", with no provider name). Because admission criterion 2 cannot be confirmed in the body, the row is on hold. The aggregator site classifies it as \"unauthorised access to the contractor's email delivery service\".",
+      "reference": "https://www.town.tobe.ehime.jp/soshikikarasagasu/chiikishinkouka/koho/5970.html",
+      "reference_en": "https://www.town.tobe.ehime.jp/soshikikarasagasu/chiikishinkouka/koho/5970.html"
     },
     {
       "org_ja": "堺商工会議所（「さかいプレミアム商品券2026」・受託事業者が利用するアララのメール配信サービス）",
+      "org_en": "Sakai Chamber of Commerce and Industry (\"Sakai Premium Gift Voucher 2026\"; Arara email delivery service used by the commissioned operator)",
       "published": "2026-11-06（集計サイト）",
+      "published_en": "2026-11-06 (aggregator site)",
       "reported_scale": "集計サイトでは当選者最大約29万件、参加店舗最大約2,600件",
+      "reported_scale_en": "Up to about 290,000 winners and up to about 2,600 participating shops according to the aggregator site",
       "reason": "2026-11-14：一次公表文に到達できず（2026-11-14）。試したURL：https://sakaicci.or.jp/wp/wp-content/uploads/syouhinken.pdf 。理由：robots_disallowed。既存行525（堺市・同じ商品券事業）と同一事案の可能性が高く、統合時は525の 補足欄 への追記で足りるかを判断。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/3f9e58c28a593cda"
+      "reason_en": "2026-11-14: the primary notice could not be reached (2026-11-14). URL tried: https://sakaicci.or.jp/wp/wp-content/uploads/syouhinken.pdf. Reason: robots_disallowed. Highly likely to be the same case as existing row 525 (Sakai City, the same voucher programme); when merging, it should be judged whether an addition to row 525's notes column is enough.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/3f9e58c28a593cda",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/3f9e58c28a593cda"
     },
     {
       "org_ja": "ブランジスタソリューション（「まとまるEC店長」のサーバー）",
+      "org_en": "Brangista Solutions (servers of \"Matomaru EC Tencho\")",
       "published": "2026-11-09（集計サイト）",
+      "published_en": "2026-11-09 (aggregator site)",
       "reported_scale": "集計サイトでは注文情報21,873件（重複除く）",
+      "reported_scale_en": "21,873 order records (excluding duplicates) according to the aggregator site",
       "reason": "2026-11-14：一次公表文に到達できず（2026-11-14）。試したURL：https://www.ec-tencho.jp/news/sub_news_view.html?code=internet&tid=b0000835 。理由：robots_disallowed（同ドメインの続報 tid=b0000836・b0000837、https://www.ec-tencho.jp/info/access/report/index.html も同様と推定、未試行）。11/13にベガコーポレーション（まとまるEC店長とのAPI連携）の後続公表あり（範囲外）。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/ce6b9924db7cfe75"
+      "reason_en": "2026-11-14: the primary notice could not be reached (2026-11-14). URL tried: https://www.ec-tencho.jp/news/sub_news_view.html?code=internet&tid=b0000835. Reason: robots_disallowed (the follow-ups on the same domain, tid=b0000836 and b0000837, and https://www.ec-tencho.jp/info/access/report/index.html are presumed to be the same, not tried). On 11/13 Vega Corporation (API link with Matomaru EC Tencho) made a subsequent notice (out of scope).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/ce6b9924db7cfe75",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/ce6b9924db7cfe75"
     },
     {
       "org_ja": "三井住友海上あいおい生命保険（当社システム・MS&ADグループ4社への不正アクセス）",
+      "org_en": "Mitsui Sumitomo Aioi Life Insurance (own systems; unauthorised access to four MS&AD Group companies)",
       "published": "2026-11-06（集計サイト）",
+      "published_en": "2026-11-06 (aggregator site)",
       "reported_scale": "資料に明記なし（集計サイトの報道値 約5,300件）",
+      "reported_scale_en": "Not stated in the source material (press figure on the aggregator site: about 5,300 records)",
       "reason": "2026-11-14：同社自身の公表文を特定できず（https://www.msa-life.co.jp/ のトップに該当告知なし）。親会社MS&ADホールディングスの告知 https://www.ms-ad-hd.com/ja/important_notice/notice-06.html （表題「当社子会社への不正アクセスに伴う情報漏えいおよび一部サービスの一時停止について」）は読め、対象会社に「三井住友海上あいおい生命保険株式会社」を含み「影響調査の中で、情報漏えいが発生したことを確認いたしました。」とあるが、件数・項目の記載なし。既存行556・560・538と同一起点。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/747e2fb68eded8ea"
+      "reason_en": "2026-11-14: the company's own notice could not be identified (no matching notice on the top page of https://www.msa-life.co.jp/). The parent company MS&AD Holdings' notice https://www.ms-ad-hd.com/ja/important_notice/notice-06.html (title \"Information leakage and temporary suspension of some services due to unauthorised access to our subsidiaries\") could be read; it includes \"Mitsui Sumitomo Aioi Life Insurance Co., Ltd.\" among the companies concerned and says \"In the course of the impact investigation, we confirmed that information leakage had occurred.\", but gives no number of records or data items. The same starting point as existing rows 556, 560 and 538.",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/747e2fb68eded8ea",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/747e2fb68eded8ea"
     },
     {
       "org_ja": "新日本プロレスリング（「新日本プロレスリングメールマガジン」・委託先ラクスライトクラウド「ブラストメール」）",
+      "org_en": "New Japan Pro-Wrestling (\"New Japan Pro-Wrestling email newsletter\"; contractor Rakus Light Cloud \"Blast Mail\")",
       "published": "2026-10-22（二次資料）",
+      "published_en": "2026-10-22 (secondary source)",
       "reported_scale": "二次資料：非公表。対象はメールアドレス。11月11日の追記で運営会社の調査により漏えいはなかったと確認、メールマガジンは配信終了（二次資料）",
+      "reported_scale_en": "Secondary source: not disclosed. Subject: email addresses. In an addendum of 11 November it was confirmed, from the operating company's investigation, that there was no leakage, and the email newsletter was discontinued (secondary source).",
       "reason": "2026-11-14：一次公表文の本文を読めず（2026-11-14）。https://www.njpw.co.jp/677223/ はJavaScript描画で、WebFetchでは「新日本プロレス公式HPではjavascriptを使用しております。」の案内文のみ。Bash経由は接続拒否。二次資料（集計サイト）では初報に不正アクセスと漏えいのおそれの記載、11/11追記で漏えいなし。開ければ行（初報時点の可能性）か除外かを判断する。連鎖名：ラクスライトクラウド／ブラストメール（既存行059）。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/e4ea5df07478bcd3"
+      "reason_en": "2026-11-14: the body of the primary notice could not be read (2026-11-14). https://www.njpw.co.jp/677223/ is rendered by JavaScript, and WebFetch retrieved only the message \"The New Japan Pro-Wrestling official site uses JavaScript.\" A connection via Bash was refused. According to a secondary source (aggregator site), the first report described unauthorised access and a risk of leakage, and the 11/11 addendum says there was no leakage. If it can be opened, it will be judged whether this is a row (possibility at the time of the first report) or an exclusion. Chain name: Rakus Light Cloud / Blast Mail (existing row 059).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/e4ea5df07478bcd3",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/e4ea5df07478bcd3"
     },
     {
       "org_ja": "Progate（社内向けに試験運用していたシステムの稼働環境・クラウド環境）",
+      "org_en": "Progate (operating environment and cloud environment of a system trialled internally)",
       "published": "2026-09-16（二次資料）",
+      "published_en": "2026-09-16 (secondary source)",
       "reported_scale": "二次資料：非公表。従業員と2025年6月以降の同社主催ハッカソン・勉強会の参加者等の氏名・メールアドレス・GitHub等のアカウントID、開発活動の記録等。11月10日の続報で「漏えいのおそれがある事態」として対応、調査終了（二次資料）",
+      "reported_scale_en": "Secondary source: not disclosed. Names, email addresses, account IDs such as GitHub, records of development activity and so on of employees and of participants in hackathons and study sessions hosted by the company since June 2025. In the 10 November follow-up it was handled as \"a situation with a risk of leakage\" and the investigation ended (secondary source).",
       "reason": "2026-11-14：一次公表文の本文を読めず（2026-11-14）。https://progate.com/about/news/619 （表題「当社社内システムへの不正アクセス発生に関するお知らせとお詫び」）と https://progate.com/about/news/622 （表題「当社社内システムへの不正アクセスに関する調査結果のお知らせとお詫び」）は表題のメタ情報のみ取得でき、本文はJavaScript描画で取得できず。https://progate.com/news_posts/622 、?_rsc=1 も同じ。Bash経由は接続拒否。二次資料によれば経路はサービスアカウント鍵の不正利用（暗号資産マイニング）。",
-      "reference": "https://jouhourouei.clipmaster.jp/cases/f024d6a7f099f6a5"
+      "reason_en": "2026-11-14: the body of the primary notice could not be read (2026-11-14). For https://progate.com/about/news/619 (title \"Notice and apology regarding unauthorised access to our internal system\") and https://progate.com/about/news/622 (title \"Notice and apology regarding the results of the investigation into unauthorised access to our internal system\"), only the title metadata could be retrieved, and the body is rendered by JavaScript and could not be retrieved. https://progate.com/news_posts/622 and ?_rsc=1 are the same. A connection via Bash was refused. According to a secondary source, the route was unauthorised use of a service account key (cryptocurrency mining).",
+      "reference": "https://jouhourouei.clipmaster.jp/cases/f024d6a7f099f6a5",
+      "reference_en": "https://jouhourouei.clipmaster.jp/cases/f024d6a7f099f6a5"
     },
     {
       "org_ja": "icuco（午睡チェック・保育施設向けシステム「icuco touch&care」「icuco book」）",
+      "org_en": "icuco (nap checks; systems for childcare facilities \"icuco touch&care\" and \"icuco book\")",
       "published": "",
+      "published_en": "",
       "reported_scale": "不明（out_B.json のメモでは2026-11-07告知とされる）",
+      "reported_scale_en": "Unknown (the note in out_B.json says it was announced on 2026-11-07)",
       "reason": "2026-11-14：当事組織のサイト https://icuco.co.jp/ がrobots_disallowedで、一次公表文を特定・取得できず。WebSearchでも一次公表文は見つからなかった。",
-      "reference": "https://icuco.co.jp/"
+      "reason_en": "2026-11-14: the organisation's own site https://icuco.co.jp/ is robots_disallowed, and the primary notice could not be identified or retrieved. A web search also found no primary notice.",
+      "reference": "https://icuco.co.jp/",
+      "reference_en": "https://icuco.co.jp/"
     },
     {
       "org_ja": "イー・エム・ズィー（メール配信サービス「にいがた県環境メール」の運営事業者）",
+      "org_en": "EMZ (operator of the email delivery service \"Niigata Prefecture Environment Mail\")",
       "published": "",
+      "published_en": "",
       "reported_scale": "不明",
+      "reported_scale_en": "Unknown",
       "reason": "2026-11-14：事業者自身の公表を特定できず（新潟県の公表文にも事業者の公表URLの記載なし。https://www.emz.co.jp/ はrobots_disallowedで、同社のドメインかも未確認）。新潟県の行は out_B.json に収載済み。",
-      "reference": "https://www.pref.niigata.lg.jp/site/kankyo/kankyomail-rouei.html"
+      "reason_en": "2026-11-14: the operator's own notice could not be identified (Niigata Prefecture's notice does not give the operator's notice URL either; https://www.emz.co.jp/ is robots_disallowed, and it is also unconfirmed whether it is the company's domain). The Niigata Prefecture row is already admitted in out_B.json.",
+      "reference": "https://www.pref.niigata.lg.jp/site/kankyo/kankyomail-rouei.html",
+      "reference_en": "https://www.pref.niigata.lg.jp/site/kankyo/kankyomail-rouei.html"
     },
     {
       "org_ja": "ユニリタ（「おしごと改革らぼ」・委託先コミューン）",
+      "org_en": "Unirita (\"Oshigoto Kaikaku Labo\", contractor Commune)",
       "published": "2026-10-13",
+      "published_en": "2026-10-13",
       "reported_scale": "未確認",
+      "reported_scale_en": "Unconfirmed",
       "reason": "2026-11-14：別事案（社内文書管理システム、行586）の再照合で、同社のニュース一覧に2026年10月13日「外部委託先への不正アクセスによる弊社コミュニティ会員情報の漏えいについて」があることが分かった。本文は未読",
-      "reference": "https://www.unirita.co.jp/news/2026/media_20261013.html"
+      "reason_en": "2026-11-14: in re-checking a different case (internal document management system, row 586), it was found that the company's news list has, dated 13 October 2026, \"Leakage of community member information through unauthorised access to an external contractor\". The body has not been read.",
+      "reference": "https://www.unirita.co.jp/news/2026/media_20261013.html",
+      "reference_en": "https://www.unirita.co.jp/news/2026/media_20261013.html"
     }
   ]
 }
