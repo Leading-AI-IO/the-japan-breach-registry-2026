@@ -5,7 +5,7 @@
   },
   "repository": "https://github.com/Leading-AI-IO/the-japan-breach-registry-2026",
   "license": "CC BY 4.0",
-  "version": "6.0",
+  "version": "6.1",
   "snapshot_date": "2026-11-14",
   "scope": {
     "ja": "2026年9月1日以降に、日本に本社または主たる事業所を置く企業・団体・自治体・独立行政法人等が公表した、個人情報の漏えいまたは漏えいの可能性。著者が当事組織の一次公表文を自ら開いて確認した行だけを収載する。\n\n（2026年10月11日追記）\n第2版以降に新たに収載する行は、外部からの不正アクセス（第三者による不正アクセス、不正ログイン、委託先・利用サービスへの不正アクセスを含む）による漏えいまたは漏えいの可能性に限る。誤送付、誤送信、紛失、誤掲載、設定の誤りによる閲覧可能状態など、外部からの不正アクセスを伴わない事案は収載しない。該当するかどうかは、公表文に外部からの不正アクセスの記述があるかで判定する。第1版で収載した013（ベネフィット・ワン、「プログラムの条件設定不備」）はこの基準に該当しないが、追記専用の規律に従い、第1版の行として残す。\n\n（2026年11月10日訂正）\n第5版から、収載基準を「当事組織の一次公表文に到達し、その本文で収載の対象（外部からの不正アクセスによる個人情報の漏えいまたは漏えいの可能性）であることを確認できたこと」に改める。一次公表文の取得と照合はAIエージェントが行い、判定の根拠とした公表文の文を逐語で記録する。著者は抜き取りで公表文を開いて確認し、収載基準の境界にある行の可否を判断する。第4版までの300行は、著者が一次公表文を開いて読んだ行である。",
@@ -13,8 +13,8 @@
   },
   "canonical": true,
   "note_on_canonicity": {
-    "ja": "本ファイルが台帳の正本である。registry.csv と本文の第4章の表は scripts/build_registry.py により本ファイルから生成され、同一のコミットで更新される。\n\n（2026年11月15日追記）\n第6版の改訂（v6.0.1）で、各行に英訳の欄（data_en・dates_en・ai_mention_en・notes_en）を加え、日本語だけの registry.csv と英語だけの registry_en.csv の2つをこのファイルから生成するようにした。英訳の欄にある引用は日本語の公表文からの翻訳であり、公表文の逐語は日本語の欄と registry.csv にある。日本語の欄の値は変えていない。\n英語だけの registry_en.json も、このファイルから生成する（英語の欄だけを持ち、キーは英語名）。照合待ちにも英訳の欄（org_en・published_en・reported_scale_en・reason_en・reference_en）を加えた。",
-    "en": "This file is the canonical registry. registry.csv and the Chapter 4 table are generated from it by scripts/build_registry.py and updated in the same commit.\n\n(Added 15 November 2026)\nIn the revision of the sixth edition (v6.0.1), each row gained English fields (data_en, dates_en, ai_mention_en, notes_en), and two files are now generated from this file: registry.csv in Japanese only and registry_en.csv in English only. Quotations in the English fields are translated from the Japanese notices; the verbatim wording is in the Japanese fields and in registry.csv. No Japanese value was changed.\nThe English-only registry_en.json is also generated from this file (English fields only, with English key names). Pending entries gained English fields as well (org_en, published_en, reported_scale_en, reason_en, reference_en)."
+    "ja": "本ファイルが台帳の正本である。registry.csv と本文の第4章の表は scripts/build_registry.py により本ファイルから生成され、同一のコミットで更新される。\n\n（2026年11月15日追記）\n第6版の改訂（v6.1）で、各行に英訳の欄（data_en・dates_en・ai_mention_en・notes_en）を加え、日本語だけの registry.csv と英語だけの registry_en.csv の2つをこのファイルから生成するようにした。英訳の欄にある引用は日本語の公表文からの翻訳であり、公表文の逐語は日本語の欄と registry.csv にある。日本語の欄の値は変えていない。\n英語だけの registry_en.json も、このファイルから生成する（英語の欄だけを持ち、キーは英語名）。照合待ちにも英訳の欄（org_en・published_en・reported_scale_en・reason_en・reference_en）を加えた。",
+    "en": "This file is the canonical registry. registry.csv and the Chapter 4 table are generated from it by scripts/build_registry.py and updated in the same commit.\n\n(Added 15 November 2026)\nIn the revision of the sixth edition (v6.1), each row gained English fields (data_en, dates_en, ai_mention_en, notes_en), and two files are now generated from this file: registry.csv in Japanese only and registry_en.csv in English only. Quotations in the English fields are translated from the Japanese notices; the verbatim wording is in the Japanese fields and in registry.csv. No Japanese value was changed.\nThe English-only registry_en.json is also generated from this file (English fields only, with English key names). Pending entries gained English fields as well (org_en, published_en, reported_scale_en, reason_en, reference_en)."
   },
   "rules": {
     "append_only": true,

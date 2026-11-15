@@ -9,7 +9,7 @@ This file is public. The registry is written by one person, the author (see "Gov
 (Added 8 November 2026) 2026-11-08 (v5.0, 507 rows, 91 pending items. Follow-up additions and corrections reflected in 9 rows; 14 rows admitted from the pending list, 184 rows from notices published between 3 and 7 November, and 9 rows from notices published between 8 October and 2 November that the fourth edition had missed)
 (Added 10 November 2026) 2026-11-10 (v5.0, 584 rows, 110 pending items. Before publication of the fifth edition, 5 rows were admitted from the pending list, 64 rows from notices published between 6 and 9 November, and 8 rows from notices published between 30 October and 5 November that the fourth edition and the 8 November additions had missed; follow-up additions were reflected in 2 rows)
 (Added 14 November 2026) 2026-11-14 (v6.0, 844 rows, 120 pending items. 24 rows were admitted from the pending list, 128 rows from notices published between 10 and 13 November, and 108 rows from notices published between 7 September and 9 November that additions up to the fifth edition had missed; follow-up additions and corrections were reflected in 20 rows)
-(Added 15 November 2026) 2026-11-15 (v6.0.1, 844 rows, 120 pending items. No rows were changed; English columns, `registry_en.csv` and `registry_en.json` were added, and `registry.csv` was made Japanese-only)
+(Added 15 November 2026) 2026-11-15 (v6.1, 844 rows, 120 pending items. No rows were changed; English columns, `registry_en.csv` and `registry_en.json` were added, and `registry.csv` was made Japanese-only)
 
 ---
 
@@ -24,7 +24,7 @@ The book declares five operating rules in its text. **Every step in this runbook
 3. **Append-only.** Never delete or rewrite a row. A correction is appended with a statement that it is a correction and its date.
 4. **Canonical file and derived files are updated together.** Edit `data/registry.json`, generate `registry.csv` and the tables in the text with `scripts/build_registry.py`, and put them in the same commit.
    (Added 15 November 2026)
-   From v6.0.1, the English `registry_en.csv` and `registry_en.json` are added to the generated files.
+   From v6.1, the English `registry_en.csv` and `registry_en.json` are added to the generated files.
 5. **Sign every commit; never put the private key in the repository.** Same as the runbook of `the-ai-forecast-registry` (Appendices A and B).
 
 If you are unsure at any point in the procedure, go back to which of these five the operation is meant to protect.
@@ -79,7 +79,7 @@ From the notice, extract the following in the notice's own wording.
 | `notes_ja` | The verbatim route, URLs of follow-ups, relation to other rows and so on |
 
 (Added 15 November 2026)
-From v6.0.1, so that the English `registry_en.csv` can be generated, each row also carries English columns: `org_en`, `scale_en`, `status_en`, `data_en`, `dates_en`, `ai_mention_en` and `notes_en`. They are English translations of the Japanese columns; quotations are translated into English and enclosed in double quotation marks (the verbatim Japanese wording stays in the Japanese columns). If `ai_mention` is `なし`, `ai_mention_en` is `none`. Pending entries (`pending`) also carry English fields: `org_en`, `published_en`, `reported_scale_en`, `reason_en` and `reference_en`. When an addition or correction is written in a Japanese column, write it in the English column too, with the same date, prefixed by `(Added D Month YYYY)` or `(Corrected D Month YYYY)`. If an English column is missing, `build_registry.py` stops.
+From v6.1, so that the English `registry_en.csv` can be generated, each row also carries English columns: `org_en`, `scale_en`, `status_en`, `data_en`, `dates_en`, `ai_mention_en` and `notes_en`. They are English translations of the Japanese columns; quotations are translated into English and enclosed in double quotation marks (the verbatim Japanese wording stays in the Japanese columns). If `ai_mention` is `なし`, `ai_mention_en` is `none`. Pending entries (`pending`) also carry English fields: `org_en`, `published_en`, `reported_scale_en`, `reason_en` and `reference_en`. When an addition or correction is written in a Japanese column, write it in the English column too, with the same date, prefixed by `(Added D Month YYYY)` or `(Corrected D Month YYYY)`. If an English column is missing, `build_registry.py` stops.
 
 ### 1-3. Edit the file and generate
 

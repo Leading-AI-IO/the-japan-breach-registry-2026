@@ -9,7 +9,7 @@
 （2026年11月8日追記）2026-11-08（v5.0・507行・照合待ち91件。続報の追記・訂正を9行に反映し、照合待ちから14行、11月3日〜7日の公表から184行、第4版で漏れていた10月8日〜11月2日の公表から9行を収載）
 （2026年11月10日追記）2026-11-10（v5.0・584行・照合待ち110件。第5版の公開前に、照合待ちから5行、11月6日〜9日の公表から64行、第4版と11月8日の追加で漏れていた10月30日〜11月5日の公表から8行を収載し、続報の追記を2行に反映）
 （2026年11月14日追記）2026-11-14（v6.0・844行・照合待ち120件。照合待ちから24行、11月10日〜13日の公表から128行、第5版までの追加で漏れていた9月7日〜11月9日の公表から108行を収載し、続報の追記・訂正を20行に反映）
-（2026年11月15日追記）2026-11-15（v6.0.1・844行・照合待ち120件。行は変えず、英語の欄と `registry_en.csv`・`registry_en.json` を加え、`registry.csv` を日本語だけにした）
+（2026年11月15日追記）2026-11-15（v6.1・844行・照合待ち120件。行は変えず、英語の欄と `registry_en.csv`・`registry_en.json` を加え、`registry.csv` を日本語だけにした）
 
 ---
 
@@ -24,7 +24,7 @@
 3. **追記専用** ── 行を削除も書き換えもしない。訂正は、訂正である旨と日付を明記して追記する
 4. **正本と派生物は同時更新** ── `data/registry.json` を編集し、`scripts/build_registry.py` で `registry.csv` と本文の表を生成し、同じコミットに入れる
    （2026年11月15日追記）  
-   v6.0.1から、生成物に英語版の `registry_en.csv` と `registry_en.json` が加わる。
+   v6.1から、生成物に英語版の `registry_en.csv` と `registry_en.json` が加わる。
 5. **全コミットに署名、秘密鍵はリポジトリに入れない** ── `the-ai-forecast-registry` の手順書（付録A・B）と同じ
 
 手順の途中で迷ったら、その操作が上の5つのどれを守るためのものかに戻ること。
@@ -79,7 +79,7 @@ Get-ChildItem -Recurse -File -Include *.asc,*.rev,*.gpg,*.key,*.pgp
 | `notes_ja` | 経路の逐語、続報のURL、他の行との関係など |
 
 （2026年11月15日追記）  
-v6.0.1から、英語版の `registry_en.csv` を生成するため、各行に英語の欄 `org_en`・`scale_en`・`status_en`・`data_en`・`dates_en`・`ai_mention_en`・`notes_en` を書く。日本語の欄の英訳であり、引用は英語に訳して二重引用符で囲む（公表文の逐語は日本語の欄に残る）。`ai_mention` が `なし` なら `ai_mention_en` は `none`。照合待ち（`pending`）にも、英語の欄 `org_en`・`published_en`・`reported_scale_en`・`reason_en`・`reference_en` を書く。日本語の欄に追記・訂正を書いたときは、英語の欄にも同じ日付で`(Added D Month YYYY)`／`(Corrected D Month YYYY)`を前置して書く。英語の欄が欠けていると `build_registry.py` は止まる。
+v6.1から、英語版の `registry_en.csv` を生成するため、各行に英語の欄 `org_en`・`scale_en`・`status_en`・`data_en`・`dates_en`・`ai_mention_en`・`notes_en` を書く。日本語の欄の英訳であり、引用は英語に訳して二重引用符で囲む（公表文の逐語は日本語の欄に残る）。`ai_mention` が `なし` なら `ai_mention_en` は `none`。照合待ち（`pending`）にも、英語の欄 `org_en`・`published_en`・`reported_scale_en`・`reason_en`・`reference_en` を書く。日本語の欄に追記・訂正を書いたときは、英語の欄にも同じ日付で`(Added D Month YYYY)`／`(Corrected D Month YYYY)`を前置して書く。英語の欄が欠けていると `build_registry.py` は止まる。
 
 ### 1-3. ファイルを編集して生成する
 
