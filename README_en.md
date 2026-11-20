@@ -7,7 +7,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24243319.svg)](https://doi.org/10.5281/zenodo.24243319)
-[![Rows](https://img.shields.io/badge/Rows-844-informational)](data/registry.csv)
+[![Rows](https://img.shields.io/badge/Rows-1233-informational)](data/registry.csv)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--15-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
 <p align="left">
@@ -89,6 +89,9 @@ Sixty-four cases disclosed 6–9 November, 8 cases disclosed 30 October – 5 No
 (Added 14 November 2026)  
 128 cases disclosed 10–13 November, 108 cases disclosed 7 September – 9 November that earlier additions had missed, and 24 pending cases were admitted. The ledger now has 844 rows and 120 pending. Large new rows include Iris Plaza approx. 7.7 million people; Arcadia (disaster-alert service SpeeCAN RAIDEN) approx. 3.136 million email addresses (an estimate); the Japan Chamber of Commerce and Industry up to approx. 980,000 people (approx. 1.97 million records); Yeny 1,332,505; Kawajun 1,214,183; Osaka Metropolitan University approx. 170,000 people. **Sixty rows exceed one million and nine exceed ten million; 719 notices state the vector, 125 do not. 224 of the 260 new rows (86%) came through a contractor.** Beyond the Arara chain, disclosures followed from new chain origins: the logistics platform OPENLOGI, the e-ticketing service teket, and Fireworks AI as the processor of Notion's AI feature. Follow-ups were added to 20 existing rows (EDION's second notice found tampering of payment processing and withdrew its first notice's "no leak of card data or passwords"). Notices of 14 November were not yet captured at the time of the work.
 
+(Added 21 November 2026)
+260 cases disclosed 14–20 November and 128 cases from earlier notices and from pending were admitted. The ledger has 1,233 rows and 126 cases are pending. The largest new rows: DHC approx. 19.11 million records, JINS Holdings approx. 18.29 million accounts, Asoview 15,821,184 records, ZOZO approx. 15.18 million people, Rakuten Securities up to approx. 11.25 million accounts, Shimamura approx. 7 million records, Golf Digest Online up to 6,974,506 records, MUFG Bank approx. 6.5 million records. **Thirty-two new rows carry a figure of one million or more. 1,080 rows state the vector and 153 do not. Of the 389 new rows, 339 (87%) came through a contractor, 109 of them users of the CX platform KARTE (PLAID).**
+
 (Corrected 3 November 2026)  
 **Chapter 1's "not the count, but the size" is corrected for October.** Trend Micro's own article of 16 October (primary) counts 52 incidents in 1–9 October alone (about 5.8 a day, 2.6 times the January–September average). But 170 of the ledger's 268 October rows are contractor rows: much of the rise is organisations disclosing one intrusion, not the number of intrusions. Collapsing contractor chains, the 300 rows correspond to roughly 144 independent intrusions, about a third with a disclosed vector. Tokyo Shoko Research counted eight 10-million-plus breaches at listed companies by 23 October (three as of 5 October). **H7's "leaning refuted for large rows" is withdrawn**: skyticket, Prestige International and Yumirlink describe abused credentials, though taken during the intrusion, not bought on a market.
 
@@ -116,6 +119,9 @@ None of the 77 notices added on 10 November mentions attacker-side AI about its 
 
 (Added 14 November 2026)  
 None of the 260 notices added on 14 November mentions attacker-side AI about its own incident either; no mention stands at 843 of 844 rows.
+
+(Added 21 November 2026)
+None of the 389 notices added on 21 November does either; no mention stands at 1,232 of 1,233 rows.
 
 ### Eight explanations
 
@@ -168,6 +174,7 @@ From v6.1 there are two CSV files, the Japanese `registry.csv` and the English `
 | 2026-11-10 | v5.0 (addendum) | Before publication of the fifth edition, disclosures up to 9 November added. 584 rows, 110 pending. The 207 rows added on 8 November are unchanged; 508–584 added (5 from pending, 64 disclosed 6–9 Nov, 8 disclosed 30 Oct – 5 Nov missed by the fourth edition and the 8 November addition). Follow-ups in the notes of 2 rows (275, 055). 5 pending cases admitted; 24 added. Additions to the Prologue and Chapters 1–4. Chapter 5 onward not revisited |
 | 2026-11-14 | v6.0 | Sixth edition. 844 rows, 120 pending. The 584 fifth-edition rows are unchanged; 585–844 added (24 from pending, 128 disclosed 10–13 Nov, 108 disclosed 7 Sep – 9 Nov missed by earlier additions). Dated follow-ups in the notes of 20 rows (053, 119, 361, 445, 549 are corrections). All 110 pending cases retried: 23 moved, 2 removed, 35 added. Prologue and Chapters 1–4 appended; Chapter 5 onward not reviewed |
 | 2026-11-15 | v6.1 | Revision of the sixth edition. The 844 rows and 120 pending cases are unchanged. Each row in `registry.json` gained English fields (data_en, dates_en, ai_mention_en, notes_en); `registry.csv` is now Japanese only (12 columns) and a new `registry_en.csv` is English only (12 columns; quotations translated from the Japanese notices), and an English-only `registry_en.json` is generated too (pending cases translated as well). The English edition of the update runbook, `UPDATE_RUNBOOK_en.md`, was added. A Japanese word left at the end of row 323's English status was removed, with a correction in its English notes (also in the Chapter 4 table of the English text). The date on the Last Updated badge, the pending count under Contributing, and the admission criterion in `llms.txt` were corrected, and `registry_en.csv`, `registry_en.json` and the English runbook were added to `llms.txt`. `.zenodo.json` and `CITATION.cff` added for Zenodo |
+| 2026-11-21 | v7.0 | Seventh edition. 1,233 rows, 126 pending. The 844 sixth-edition rows are unchanged; 845–1233 added (260 disclosed 14–20 November; 128 from earlier notices and from pending). Follow-ups added to 17 rows. The 120 pending cases were retried: 55 moved into the ledger, 7 removed, 52 added. 14–20 November was then searched again from the routes of the organisations' own notices: 132 rows added (1102–1233); 126 pending |
 
 ---
 
