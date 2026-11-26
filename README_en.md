@@ -7,8 +7,8 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Language](https://img.shields.io/badge/Language-Japanese%20%7C%20English-blue)](docs/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24243319.svg)](https://doi.org/10.5281/zenodo.24243319)
-[![Rows](https://img.shields.io/badge/Rows-1233-informational)](data/registry.csv)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--24-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
+[![Rows](https://img.shields.io/badge/Rows-1315-informational)](data/registry.csv)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-2026--11--26-brightgreen)](https://github.com/Leading-AI-IO/the-japan-breach-registry-2026)
 
 <p align="left">
   <img src="./assets/ogp_design.png" width="80%">
@@ -98,6 +98,9 @@ Sixty-four cases disclosed 6–9 November, 8 cases disclosed 30 October – 5 No
 (Added 24 November 2026)  
 The 389 new rows break down as 260 disclosed 14–20 November, 128 from earlier notices and from pending, and 1 disclosed on 21 November (1181 Mercari). Pending cases went from 120 to 110 (55 moved into the ledger, 7 removed, 52 added); the first re-search moved 3, removed 3 and added 14, bringing them to 118; the second moved 2 and added 10, bringing them to 126 (Chapter 4).
 
+(Added 26 November 2026)
+32 cases disclosed 21–25 November and 50 cases from earlier notices and from pending were admitted. The ledger has 1,315 rows and 129 cases are pending. The largest new rows: Bic Camera, Kojima and Sofmap 15,204,757 records in total (via Arara; disclosed 2 November and missed through the seventh edition), Tower Records Japan approx. 11 million records (disclosed 21 November), Keio Corporation approx. 10.63 million people (possible leak; ransomware attack), Keisei Electric Railway up to approx. 3.37 million records (disclosed 13 November and missed through the seventh edition), Pal System Consumers' Co-operative Union 1,997,972 records in total, Mr Max Holdings up to 1,806,330 records, Uniform Next up to 1,701,006 records. **1,148 rows state the vector and 167 do not. 63 of the 82 new rows (77%) came through a contractor, 16 of them clients of KARTE (PLAID).** Eight of the 82 were found by cross-checking the aggregator after the search was finished and then checked against their primary notices. A new chain origin joined: the email delivery service "Mail Shonin" (EMZ). Notices whose leaked items are only internal management numbers or member IDs (Japan Post Insurance and three others) were placed in the pending list by the author's decision.
+
 (Corrected 3 November 2026)  
 **Chapter 1's "not the count, but the size" is corrected for October.** Trend Micro's own article of 16 October (primary) counts 52 incidents in 1–9 October alone (about 5.8 a day, 2.6 times the January–September average). But 170 of the ledger's 268 October rows are contractor rows: much of the rise is organisations disclosing one intrusion, not the number of intrusions. Collapsing contractor chains, the 300 rows correspond to roughly 144 independent intrusions, about a third with a disclosed vector. Tokyo Shoko Research counted eight 10-million-plus breaches at listed companies by 23 October (three as of 5 October). **H7's "leaning refuted for large rows" is withdrawn**: skyticket, Prestige International and Yumirlink describe abused credentials, though taken during the intrusion, not bought on a market.
 
@@ -129,6 +132,9 @@ None of the 260 notices added on 14 November mentions attacker-side AI about its
 (Added 21 November 2026)
 None of the 389 notices added on 21 November does either; no mention stands at 1,232 of 1,233 rows.
 
+(Added 26 November 2026)
+None of the 82 notices added on 26 November does either; no mention stands at 1,314 of 1,315 rows.
+
 ### Eight explanations
 
 Attacker-side AI, disclosure rules, Japan-specific weaknesses, a single actor, tool diffusion, defender-side AI disclosing vulnerabilities, credential markets, chance. Tested on identical criteria, **none is supported for Japan.** The book writes "undetermined" and leaves it there.
@@ -143,10 +149,10 @@ The defender's (Project Glasswing: announced 7 April → initial update 22 May, 
 
 | File | Role | Contents |
 | --- | --- | --- |
-| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16; 71 rows and 25 pending as of 2026-10-26; 300 rows and 67 pending as of 2026-11-03; 507 rows and 91 pending as of 2026-11-08; 584 rows and 110 pending as of 2026-11-10; 844 rows and 120 pending as of 2026-11-14; 1,233 rows and 126 pending as of 2026-11-21) |
+| [registry.json](./data/registry.json) | **Canonical** | Admission criteria, column definitions and rules at the top; 31 rows plus 16 pending cases (36 rows and 11 pending as of 2026-10-16; 71 rows and 25 pending as of 2026-10-26; 300 rows and 67 pending as of 2026-11-03; 507 rows and 91 pending as of 2026-11-08; 584 rows and 110 pending as of 2026-11-10; 844 rows and 120 pending as of 2026-11-14; 1,233 rows and 126 pending as of 2026-11-21; 1,315 rows and 129 pending as of 2026-11-26) |
 | [registry.csv](./data/registry.csv) | Derived | Spreadsheet-friendly (UTF-8 with BOM, 14 columns)<br>(Corrected 15 November 2026)<br>From v6.1, Japanese only, 12 columns (UTF-8 with BOM). The verbatim wording of the notices is in this file |
 | [registry_en.csv](./data/registry_en.csv) | Derived | (Added 15 November 2026)<br>English only, 12 columns (UTF-8 with BOM). Quotations are translated from the Japanese notices; the verbatim wording is in registry.csv |
-| [registry_en.json](./data/registry_en.json) | Derived | (Added 15 November 2026)<br>English-only JSON (844 rows and 120 pending cases) with English key names; pending cases are translated too. The canonical file is registry.json; this one is for reading<br>(Added 24 November 2026)<br>1,233 rows and 126 pending cases as of 2026-11-21 |
+| [registry_en.json](./data/registry_en.json) | Derived | (Added 15 November 2026)<br>English-only JSON (844 rows and 120 pending cases) with English key names; pending cases are translated too. The canonical file is registry.json; this one is for reading<br>(Added 24 November 2026)<br>1,233 rows and 126 pending cases as of 2026-11-21<br>(Added 26 November 2026)<br>1,315 rows and 129 pending cases as of 2026-11-26 |
 | [build_registry.py](./scripts/build_registry.py) | Generator | Builds the CSV files, the English-only JSON and the Chapter 4 table from the canonical file |
 
 The table in the text and the two data files are updated in the same commit.
@@ -182,6 +188,7 @@ From v6.1 there are two CSV files, the Japanese `registry.csv` and the English `
 | 2026-11-15 | v6.1 | Revision of the sixth edition. The 844 rows and 120 pending cases are unchanged. Each row in `registry.json` gained English fields (data_en, dates_en, ai_mention_en, notes_en); `registry.csv` is now Japanese only (12 columns) and a new `registry_en.csv` is English only (12 columns; quotations translated from the Japanese notices), and an English-only `registry_en.json` is generated too (pending cases translated as well). The English edition of the update runbook, `UPDATE_RUNBOOK_en.md`, was added. A Japanese word left at the end of row 323's English status was removed, with a correction in its English notes (also in the Chapter 4 table of the English text). The date on the Last Updated badge, the pending count under Contributing, and the admission criterion in `llms.txt` were corrected, and `registry_en.csv`, `registry_en.json` and the English runbook were added to `llms.txt`. `.zenodo.json` and `CITATION.cff` added for Zenodo |
 | 2026-11-21 | v7.0 | Seventh edition. 1,233 rows, 126 pending. The 844 sixth-edition rows are unchanged; 845–1233 added (260 disclosed 14–20 November; 128 from earlier notices and from pending). Follow-ups added to 17 rows. The 120 pending cases were retried: 55 moved into the ledger, 7 removed, 52 added. 14–20 November was then searched again from the routes of the organisations' own notices: 132 rows added (1102–1233); 126 pending |
 | 2026-11-24 | v7.0 (addendum) | The 1,233 rows and 126 pending cases are unchanged. The breakdown of the 389 rows added in the seventh edition now includes the 1 row disclosed on 21 November (1181 Mercari), and the changes in the pending count up to 126 were added. "Applied without discretion" under Governance was corrected to match the admission criterion from the fifth edition. The date on the Last Updated badge, the counts by date in the Data table, and the pending count under Contributing were updated |
+| 2026-11-26 | v8.0 | Eighth edition. 1,315 rows, 129 pending. The 1,233 seventh-edition rows are unchanged; 1234–1315 added (32 disclosed 21–25 November; 13 from pending; 37 disclosed on or before 20 November and missed through the seventh edition; rows 1307–1314 were found by cross-checking the aggregator after the search; 1315 Tower Records Japan was checked in the author’s browser and moved from pending). Follow-ups added to 23 rows (044 and 981 are corrections). The 126 pending cases were retried: 13 moved into the ledger, 6 removed, 22 added. Thirty of rows 1234–1306 were re-checked against the primary notices by AI agents that had not seen the drafts (no value changed). Additions to the Prologue (Japanese edition) and Chapters 1–4. Chapters 5 onward were not reviewed |
 
 ---
 
@@ -210,6 +217,9 @@ The pending cases number 120 as of the sixth edition (14 November 2026), not ele
 
 (Added 24 November 2026)  
 The pending cases number 126 as of the seventh edition (21 November 2026).
+
+(Added 26 November 2026)
+The pending cases number 129 as of the eighth edition (26 November 2026).
 
 Issues that include a verdict — "AI caused this," "AI had nothing to do with it" — are accepted minus the verdict. The book records only what primary sources say.
 
