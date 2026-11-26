@@ -7,8 +7,8 @@ authors:
     given-names: Satoshi
     affiliation: "Leading.AI LLC"
     orcid: "https://orcid.org/0009-0002-1976-656X"
-version: "7.0"
-date-released: "2026-11-21"
+version: "8.0"
+date-released: "2026-11-26"
 license: CC-BY-4.0
 repository-code: "https://github.com/Leading-AI-IO/the-japan-breach-registry-2026"
 keywords:
@@ -23,7 +23,7 @@ preferred-citation:
     - family-names: Yamauchi
       given-names: Satoshi
   year: 2026
-  date-published: "2026-11-21"
-  version: "7.0"
-  doi: 10.5281/zenodo.24407110
+  date-published: "2026-11-26"
+  version: "8.0"
+  doi: 10.5281/zenodo.24568349
   url: "https://github.com/Leading-AI-IO/the-japan-breach-registry-2026"
